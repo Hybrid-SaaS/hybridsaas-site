@@ -29,7 +29,7 @@ a:hover { text-decoration: underline; }
 #layout { width: 100%; }
 
 	/* header */
-	#header-part { position: fixed; top: 0; left: 0; width: 100%; z-index: 99; min-height: 115px; background: url(../images/header_bg.png) repeat; }
+	#header-part { top: 0; left: 0; width: 100%; z-index: 99; min-height: 115px; background: url(../images/header_bg.png) repeat; }
 	#header-part .logo { margin: 0 0 0 -30px; position: absolute; top: 40px; left: 50%; }
 	#header-part .logo a { display: block; }
 	
