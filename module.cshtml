@@ -1,0 +1,283 @@
+﻿@using Hybrid_Saas
+@{
+    Layout = "SiteLayout.cshtml";
+
+    if (IsPost)
+    {
+        var companyname = Request.Form["name"];
+        var contactname = Request.Form["email"];
+        var employeecount = Request.Form["bericht"];
+
+        if (Validation.IsValid())
+        {
+            SendMail.SendEmail(companyname, contactname, employeecount);
+        }
+    }
+}
+<!-- start content -->
+<section id="content-part">
+
+	<!-- start centerpart -->
+	<section id="center-part">
+
+		<!-- start commission bar -->
+        <article class="commission-bar">
+                	
+            <div class="centering">
+                <aside class="image">
+                <a><img src="images/commision_img.jpg" alt="" /></a>
+            </aside>
+
+                    	
+
+				<div class="merge">
+                    <div class="left">
+                        <h3>Offerte & Voorraad </h3>
+                        <div class="para semi">
+                            <p>Een klant doet een bestelling, maar bij het verwerken van de order blijkt het product niet op voorraad te zijn. In het voorraadbeheersysteem staat dat het product er wel had moeten zijn. Je collega die weet welk product bij welke leverancier wordt besteld, is op vakantie. Kortom: het voorraadbeheer is niet goed georganiseerd en het kost iedereen tijd. Met als eindresultaat een klant die te lang moet wachten op een bestelling. Zonde, want het is juist heel eenvoudig om offertes, orders en voorraadbeheer op orde te hebben!</p>
+                        </div>
+                        <div class="para">
+                            <p>Met het professionele online business software pakket Offerte & Voorraad van Hybrid SaaS weet je zeker dat je voortaan geen zorgen meer hebt over offertes, orders en inkoop- en voorraadbeheer. Het ervaren en gedreven team van Hybrid SaaS heeft krachtige software ontwikkeld die precies doet wat jij wilt. Wij steven naar perfectie en constante verbetering  van onze producten zodat jij altijd overzicht en inzicht hebt.</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="para">
+                            <p>Hybrid SaaS is een Nederlands product, gebaseerd op Nederlandse business logica met een professionele Nederlandse klantenservice. Bij ons hoef je niet bang te zijn voor vervelende verrassingen. We communiceren graag met onze klanten in heldere taal en vragen een eerlijke, betaalbare prijs voor onze producten.</p>
+                        </div>
+                        <div class="outlook">
+                        <ul>
+                            <li><a href="#"><img src="images/outlook_img6.png" alt="" /></a></li>
+                            <li><a href="#"><img src="images/outlook_img7.png" alt="" /></a></li>
+                            <li><a href="#"><img src="images/outlook_img8.png" alt="" /></a></li>
+                            <li><a href="#"><img src="images/outlook_img1.png" alt="" /></a></li>
+                            <li><a href="#"><img src="images/outlook_img2.png" alt="" /></a></li>
+                            <li><a href="#"><img src="images/outlook_img3.png" alt="" /></a></li>
+                            <li><a href="#"><img src="images/outlook_img4.png" alt="" /></a></li>
+                            <li><a href="#"><img src="images/outlook_img5.png" alt="" /></a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- end commission bar -->
+
+		<!-- start advantage bar -->
+        <article class="advantage-bar">
+                	
+            <div class="centering">
+                <h3>Welke functionaliteiten biedt Offerte & Voorraad?</h3>
+                <!--Start Item Content on the right-->
+				<div class="merge">
+                    <div class="image"><img src="images/foto_img.jpg" alt="" /></div>
+                    <div class="para">
+                        <h4>Maak offertes en orders in een handomdraai</h4>
+                        <p>Offertes en orders aanmaken was nog nooit zo makkelijk. Gebruik een standaard sjabloon, eventueel aangepast aan de eigen huisstijl van de organisatie
+                        Binnen de standaard sjablonen is het mogelijk om persoonlijke informatie toe te voegen. Vanuit het systeem verstuur je offertes eenvoudig per e-mail.
+                        Belangrijke documenten voeg je direct toe. De offertes en orders worden automatisch gekoppeld aan de andere gegevens die je al van de klant hebt. Het is mogelijk om per product opstart- en eenmalige kosten bij te houden. </p>
+                    </div>
+                </div>
+                <!--End Item Content on the right-->
+                <!--Start Item Content on the Left-->
+                <div class="merge second">
+                    <div class="image"><img src="images/foto_img1.jpg" alt="" /></div>
+                    <div class="para">
+                        <h4>Voeg producten toe aan orders en houd direct de voorraad up to date</h4>
+                        <p>Op verschillende momenten in het orderproces is het makkelijk om producten toe te voegen aan de order. Voeg je producten toe aan orders, dan wordt de voorraad automatisch bijgewerkt. Heb je voor een order één of meerdere bestellingen moeten doen? De order komt vanzelf voorbij in de workflow als één of meerdere producten geleverd zijn. Zo kun je bijvoorbeeld besluiten wanneer het een slim moment is om een deellevering te doen.</p>
+
+                    </div>
+                </div>
+                <!--End Item Content on the Left-->
+                        
+                <!--Start Item Content on the right-->
+				<div class="merge">
+                    <div class="image"><img src="images/foto_img.jpg" alt="" /></div> <!--Image--> 
+                    <div class="para">
+                        <h4>Weet wat je verkoopt</h4> <!--Title-->
+                        <p>Zorg dat het assortiment altijd up to date is in de module productbeheer. Leg zoveel gegevens vast als je wilt. Van alleen de basisgegevens tot serienummers, belangrijke details en andere bijzonderheden, je kiest zelf hoeveel je vastlegt. Het is ook mogelijk om relaties tussen producten vast te leggen. Weten wat je verkoopt is essentieel om de voorraad te beheren en uiteindelijk de klanten op tijd van de juiste producten te voorzien. </p>   <!--Content-->  
+                    </div>
+                </div>
+                <!--End Item Content on the right-->
+                <!--Start Item Content on the Left-->
+                <div class="merge second">
+                    <div class="image"><img src="images/foto_img1.jpg" alt="" /></div><!--Image--> 
+                    <div class="para">
+                        <h4>Weet wat je in huis hebt en haalt</h4> <!--Title-->
+                        <p>Heb je akkoord op een offerte en maak je een order aan? Je ziet gelijk wat de status is van de opgevraagde producten. Zo kun je zien of het product op voorraad is en of het product ook 'vrij' is (niet gereserveerd voor een andere klant). Is een product niet op voorraad? Dan maak je direct een inkooporder aan. Je hebt inzicht in de leveranciers, levertijden, bestelmomenten en bestelgroottes. Werk je op een later moment de voorraad bij, dan komt de bestelling die wachtte op een product, vanzelf weer naar boven via de workflow op het dashboard. Ook heb je altijd inzicht in kortingen, marges en productranges. </p> <!--Title-->
+                    </div>
+                </div>
+                <!--End Item Content on the Left-->
+                        
+                <!--Start Item Content on the right-->
+				<div class="merge">
+                    <div class="image"><img src="images/foto_img.jpg" alt="" /></div> <!--Image--> 
+                    <div class="para">
+                        <h4>Werk de voorraad bij na een levering </h4> <!--Title-->
+                        <p>Ontvang je nieuwe voorraad, dan werk de je voorraad eenvoudig bij door de productnummers te scannen of handmatig in te voeren. Wil je daarna meteen orders verzenden? Print direct vanuit het systeem een handige picklijst. </p>   <!--Content-->  
+                    </div>
+                </div>
+                <!--End Item Content on the right-->
+                <!--Start Item Content on the Left-->
+                <div class="merge second">
+                    <div class="image"><img src="images/foto_img1.jpg" alt="" /></div><!--Image--> 
+                    <div class="para">
+                        <h4>Altijd actuele managementinformatie bij de hand</h4> <!--Title-->
+                        <p>In de managementrapporten vind je bijvoorbeeld waardevolle informatie over de orderwaarde, maar ook over de inkoop- en verkoopwaarde van de voorraad. </p> <!--Title-->
+                    </div>
+                </div>
+                <!--End Item Content on the Left-->
+                <!--Start Item Content on the right-->
+				<div class="merge">
+                    <div class="image"><img src="images/foto_img.jpg" alt="" /></div> <!--Image--> 
+                    <div class="para">
+                        <h4>Weet alles over je relaties</h4> <!--Title-->
+                        <p>Leg alle gegevens van klanten, leveranciers en partners vast. Weet precies wat er bij je relaties speelt. Of het nu gaat om het aantal openstaande tickets of de verjaardag van je beste klant, jij hebt inzicht.</p>   <!--Content-->  
+                    </div>
+                </div>
+                <!--End Item Content on the right-->
+                <!--Start Item Content on the Left-->
+                <div class="merge second">
+                    <div class="image"><img src="images/foto_img1.jpg" alt="" /></div><!--Image--> 
+                    <div class="para">
+                        <h4>Maak gebruik van smartphone en tablet</h4> <!--Title-->
+                        <p>Wij snappen dat je niet altijd achter een computer zit. Daarom hebben we een extern online portaal gemaakt. Zo kun je ook met je smartphone of tablet gebruik maken van Hybrid SaaS online business software. Tijd registreren, offertes en orders aanmaken, werkbonnen invullen of actuele relatiegegevens inzien: het kan allemaal ook onderweg. </p> <!--Title-->
+                    </div>
+                </div>
+                <!--End Item Content on the Left-->
+
+                <!--Start Item Content on the right-->
+				<div class="merge">
+                    <div class="image"><img src="images/foto_img.jpg" alt="" /></div> <!--Image--> 
+                    <div class="para">
+                        <h4>Online 24/7 Klantportaal</h4> <!--Title-->
+                        <p>Bied je klanten de mogelijkheid om online contact te houden met je organisatie. In het online 24/7 klantportaal zien ze offertes, orders en (openstaande) facturen in. Deze kunnen klanten ook downloaden. Dit betekent meer inzicht voor de klant, minder e-mails en telefoontjes voor jou. </p>   <!--Content-->  
+                    </div>
+                </div>
+                <!--End Item Content on the right-->
+                <!--Start Item Content on the Left-->
+                <div class="merge second">
+                    <div class="image"><img src="images/foto_img1.jpg" alt="" /></div><!--Image--> 
+                    <div class="para">
+                        <h4>Prepaidkaarten en Strippenkaarten</h4> <!--Title-->
+                        <p>Verstuur je facturen voor diensten die je in de toekomst gaat uitvoeren? Daar hebben wij een handige oplossing voor. Aan de hand van de facturen die je stuurt, bouwen je klanten een saldo op. Op basis van de werktijd die jij registreert worden deze van het opgebouwde saldo gehaald. Jij en je klanten hebben altijd inzicht in het openstaande saldo. Heb je aan het eind van een periode te veel of te weinig in rekening gebracht, dan maak je met één druk een verrekening. </p> <!--Title-->
+                    </div>
+                </div>
+                <!--End Item Content on the Left-->
+
+                <!--Start Item Content on the right-->
+				<div class="merge">
+                    <div class="image"><img src="images/foto_img.jpg" alt="" /></div> <!--Image--> 
+                    <div class="para">
+                        <h4>Inzicht in projectafspraken</h4> <!--Title-->
+                        <p>Leg projectafspraken zoals uurtarieven, maximale uurbesteding en werkverdeling vast. Verder krijg je inzicht in financiële marges, urenbesteding, tickets en nog veel meer.</p>   <!--Content-->  
+                    </div>
+                </div>
+                <!--End Item Content on the right-->
+                <!--Start Item Content on the Left-->
+                <div class="merge second">
+                    <div class="image"><img src="images/foto_img1.jpg" alt="" /></div><!--Image--> 
+                    <div class="para">
+                        <h4>Veilig alle wachtwoorden opslaan</h4> <!--Title-->
+                        <p>Beheer alle wachtwoorden van relaties op één centrale plaats. De wachtwoorden worden versleuteld opgeslagen, dus je kunt erop vertrouwen dat ze veilig zijn. </p> <!--Title-->
+                    </div>
+                </div>
+                <!--End Item Content on the Left-->
+                        
+                <!--Start Item Content on the right-->
+				<div class="merge">
+                    <div class="image"><img src="images/foto_img.jpg" alt="" /></div> <!--Image--> 
+                    <div class="para">
+                        <h4>Koppel Hybrid SaaS aan je eigen administratiesysteem	</h4> <!--Title-->
+                        <p>Het kan natuurlijk dat je al een administratiesysteem gebruikt waar je tevreden over bent, of waar je accountant de voorkeur aangeeft. Dat is geen enkel probleem. Hybrid SaaS heeft koppelingen met onder andere Exact, Unit4, Accountview en Snelstart. </p>   <!--Content-->  
+                    </div>
+                </div>
+                <!--End Item Content on the right-->
+            </div>
+        </article>
+        <!-- end advantage bar -->
+
+		<!-- start connecting bar -->
+        <article class="connecting-bar">
+                	
+            <div class="centering">
+                <div class="image"><img src="images/connecting_img.JPG" alt="" /></div>
+
+                <div class="merge">
+                    <div class="left">
+                        <div class="para semi">
+                            <p>De unieke voordelen van Offerte & Voorraad</p>
+                        </div>
+                        <div class="para">
+                            <ul>
+                                <li>° Van order tot uitlevering, voorraadbeheer en –verwerking, alles komt samen in pakket Offerte & Voorraad</li>
+                                <li>° Koppeling met webshop mogelijk </li>
+                                <li>° Eenvoudig producten toevoegen aan orders vanuit de voorraad </li>
+                                <li>° Makkelijk en slim serienummers, facturen en garantiegegevens aan klanten koppelen</li>
+                                <li>° Altijd toegang tot de managementinformatie die je nodig hebt</li>
+                                <li>° Offerte opvolging overzichtelijk via duidelijke workflow op het dashboard</li>
+                                <li>° Geen langlopende contracten. Wij hebben vertrouwen in ons product, dus mag jij maandelijks je abonnement aanpassen</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="para semi">
+                            <p>Wat krijg je als je aan de slag gaat met Offerte & Voorraad? </p>
+                        </div>
+                        <div class="para">
+                            <ul>
+                                <li>° Een veelzijdig en handig systeem om offertes, orders, voorraad en inkoop te organiseren</li>
+                                <li>° Orders en offertes personaliseren en opmaken in huisstijl</li>
+                                <li>° Assortiment vastleggen en up to date houden met de module productbeheer</li>
+                                <li>° Ondersteunende modules in dit pakket: projectbeheer, prepaidkaarten, wachtwoordbeheer, klantportaal, relatiebeheer, notities, export naar externe boekhouding, 10 GB dataopslag</li>
+                            </ul>
+
+                            <p>Nieuwsgierig geworden wat wij nog meer voor jou kunnen betekenen? Vraag onze vrijblijvende Live Demo aan</p>
+                        </div>
+                    </div>
+                </div>
+				<div class="merge">
+                    <div class="module">
+                        <h3>Aanvullende modules en pakketten</h3>
+                        <p>Mis je nog iets? Breid je pakket eenvoudig uit met de volgende modules en pakketten</p>
+                        <p>Benieuwd naar de prijzen? Download prijslijst</p>
+                        <div class="pakket">
+                            <h4>Aanvullend pakket (maandelijks)</h4>
+                            <ul>
+                                <li>
+                                    <img src="images/connencting_img1.png" alt="" />
+                                    <h5>Webshop</h5>
+                                    <a href=" @LinkList.GetLink(Link.Webshop)">Meer info</a>
+                                </li>
+                                <li>
+                                    <img src="images/connencting_img2.png" alt="" />
+                                    <h5>Commissie</h5>
+                                    <a href="@LinkList.GetLink(Link.Commisie)">Meer info</a>
+                                </li>
+                                <li>
+                                    <img src="images/connencting_img3.png" alt="" />
+                                    <h5>FINANCIEEL</h5>
+                                    <a href="@LinkList.GetLink(Link.Financieel)">Meer info</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <h4>Interesse in deze module of een opmerking? Stuur ons een bericht.</h4>
+                        <form action="#">
+                                <input type="text" value="Naam" onFocus="if(this.value=='Naam')this.value='';" onBlur="if(this.value=='')this.value='Naam';" />
+                                <input type="text" value="E-mail" onFocus="if(this.value=='E-mail')this.value='';" onBlur="if(this.value=='')this.value='E-mail';" />
+                                <textarea cols="15" rows="5" onFocus="if(this.value=='Bericht')this.value='';" onBlur="if(this.value=='')this.value='Bericht';">Bericht</textarea>
+                                <input type="submit" value="VERSTUur" />
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- end connecting bar -->
+
+	</section>
+	<!-- end center part -->
+			
+</section>
+<!-- end content -->
+		

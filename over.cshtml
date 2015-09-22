@@ -1,63 +1,7 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-
-    <title>Hybrid Saas</title>
-    
-    
-    <meta charset="UTF-8" />		
-            
-	<!-- Mobile Specific Metas ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!--[if IE]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-	<link rel="stylesheet" href="css/layout.css" type="text/css" />
-
-    <script type="text/javascript" src="js/respond.src.js"></script>
-
-</head>
-
-<body>
-
-<!-- start template -->
-<section id="template">
-	
-	<!-- start layout -->
-	<section id="layout">
-		
-		<!-- start header -->
-		<header id="header-part">
-			<div class="centering">
-            
-                <div class="logo"><a href="#"><img alt="Hybrid Saas" src="images/logo.png" /></a></div>
-                <a class="menu"><span></span><span></span><span></span></a>
-                <!-- start nav -->
-                <nav class="nav-bar">
-                    <div class="leftmenu">
-                        <ul>
-                            <li><a href="/index.html">Home</a></li>
-                            <li><a href="/pakketten.html">pakketten</a></li>
-                            <li><a href="/module.html">modules</a></li>
-                        </ul>
-                    </div>
-                    <div class="rightmenu">
-                        <ul>
-                            <li><a href="/over.html">Over</a></li>
-                            <li><a href="/support.html">support</a></li>
-                            <li><a href="/contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </nav>
-                <!-- end nav -->
-                
-			</div>
-		</header>
-		<!-- end header -->
-		
+﻿@using Hybrid_Saas
+@{
+    Layout = "SiteLayout.cshtml";
+}
         <!-- start slider -->
 		<section id="slider-part">
 			
@@ -74,7 +18,7 @@
                         	<h2>Hybrid SaaS helpt  bedrijfsprocessen te verbeteren</h2>
                             <p>De vraagstukken die leven bij onze klanten, vormen voor ons altijd het startpunt bij de ontwikkeling van onze software. </p>
 						</div>                            
-                        <a href="#" class="software">Bekijk onze software</a>
+                        <a href="@LinkList.GetLink(Link.Pakketten)" class="software">Bekijk onze software</a>
                         <cite class="mourning">Duis mollis est non commodo luctus nisi erat porttitor.</cite>
 					</aside>
                     
@@ -198,75 +142,3 @@
 		</section>
 		<!-- end content -->
 		
-		<!-- start footer -->
-		<footer id="footer-part">
-
-            <!-- start footer bar -->
-            <article class="footer-bar">
-			<div class="centering">
-            
-            	<aside class="about">
-                	<a href="/index.html" class="footlogo"><img src="images/footer_logo.png" alt="" /></a>
-                    <p>Hybrid SaaS is sinds 2006 gespecialiseerd in systeembeheer en software ontwikkeling. Hybrid SaaS heeft een grote en zeer diverse relatiekring in tal van bedrijfsbranches. Ondanks dat elke organisatie verschilt en een unieke aanpak vereist, zijn veel basis processen praktisch hetzelfde. Het is daarom niet verwonderlijk dat vraagstukken over het optimaliseren van deze basisprocessen veel gelijkenissen vertonen.</p>
-                </aside>
-                
-                <aside class="common contact">
-                	<h3>Contact info</h3>
-                    <address>Hybrid SaaS | Online Business Software <br /> Postbus 31 | 2870 AA Schoonhoven <br /> +3185 002 1940 <br /> <a href="mailto:contact@hybridsaas.com">contact@hybridsaas.com</a> <br /> Hybrid SaaS ICT BV <br /> KvK Rotterdam 54528283
-                    </address>
-                </aside>
-                
-                <aside class="common link">
-                	<h3>Quick Links</h3>
-                    <ul>
-                    	<li><a href="/support.thml">Support</a></li>
-                    	<li><a href="/over.html">Over</a></li>
-                    	<li><a href="/https://www.youtube.com/user/HybridSaaSMovie">YouTube</a></li>
-                    	<li><a href="#">Blog</a></li>
-                    	<li><a href="#">Sitemap</a></li>
-                    	<li><a href="/contact.html">Contact</a></li>
-                    </ul>
-                </aside>
-                
-                <aside class="common news">
-                	<h3>Nieuwsbrief</h3>
-                	<p>Lorem ipsum dolor sit amet dolor consectetur adipiscing elit.</p>
-                    <form action="#">
-                    	<input type="text" value="E-mail" onFocus="if(this.value=='E-mail')this.value='';" onBlur="if(this.value=='')this.value='E-mail';" />
-                        <input type="submit" value="Ok">
-                    </form>
-                </aside>
-               	
-                <div class="clear"></div>
-                
-                <aside class="copy">
-                	<span>Copyright 2015 hybrid saas. All Rights Reserved.</span>
-                    <ul>
-                    	<li><a href="/AlgemeneVoorwaarden.html">Algemene voorwaarden</a></li>
-                        <li><a href="/Factsheet.html">Factsheet</a></li>
-                        <li><a href="/Releasenotes.html">Release notes</a></li>
-                    </ul>
-                </aside>
-            
-            </div>    
-            </article>
-            <!-- end footer bar -->
-        
-		</footer>
-		<!-- end footer -->
-        
-	</section>
-	<!-- end layout -->
-	
-</section>
-<!-- end template -->
-
-
-<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="js/respond.src.js"></script>
-<script type="text/javascript" src="js/jquery.flexslider.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
-
-</body>
-
-</html>
