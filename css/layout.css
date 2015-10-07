@@ -189,8 +189,8 @@ a:hover { text-decoration: underline; }
 			.hybrid-bar .owner { margin: 15px 0 0; }
 			.hybrid-bar span { font-size: 22px; line-height: 24px; color: #f7941e; } 
 			.hybrid-bar cite { display: block; font-style: normal; font-size: 14px; line-height: 22px; color: #777; }
-			.hybrid-bar .flexslider2 { margin: 0 130px 0; position: relative; }
-			.hybrid-bar .flexslider li { float: left; }
+			.hybrid-bar .flexslider2 { margin: 0 130px 0; position: relative;}
+			.hybrid-bar .flexslider li { float: left;}
 			.hybrid-bar .flexslider2 li { margin: 0 40px 0 0; }
 			.hybrid-bar .flexslider2 .flex-prev , .hybrid-bar .flexslider2 .flex-next { position: absolute; left: -40px; top: 5px; display: block; text-indent: -99999px; height: 27px; width: 27px; background: url(../images/prev.png) no-repeat; }
 			.hybrid-bar .flexslider2 .flex-next { left: auto; right: -30px;  background-image: url(../images/next.png) }
@@ -202,7 +202,7 @@ a:hover { text-decoration: underline; }
 			.support-bar h2 { color: #222; }
 			.support-bar .support li { padding: 0 20px 0 140px; margin: 0 0 45px; overflow: hidden;  } 
 			.support-bar .text { margin: 35px 15px 0 0; width: 73%; float: right; } 
-			.support-bar .left , .support-bar .right { padding: 0 12px; width: 50%; float: left; box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; } 
+			.support-bar .left , .support-bar .right { padding: 0 12px; width: 50%; float: left; box-sizing: border-box; -webkit-box-sizing: border-box; } 
 			.support-bar .right { padding: 15px 0 0 50px; }
 			.support-bar .right .image { width: 15%; }
 			.support-bar .right .text { margin: 20px 50px 10px 0; }
@@ -212,7 +212,9 @@ a:hover { text-decoration: underline; }
 			.support-bar .support { margin: 50px 0 0; overflow: hidden; }
 			.support-bar .support h3 { font-size: 24px; line-height: 26px; color: #222; text-transform: uppercase; font-family: 'ralewaymedium'; }
 			.support-bar .support p { padding: 10px 0 0; font-size: 16px; line-height: 24px; color: #777; }
-			.support-bar a.moreinfo { padding: 0 75px 0 0; margin: 25px auto 0; display: block; text-align: center; width: 520px; font-size: 23px; line-height: 47px; color: #f7941e; font-family: 'varela_roundregular'; text-transform: uppercase; background: url(../images/why_arrow.png) right center no-repeat; }
+			.support-bar .text a { font-size: 16px; color: #777; }
+			
+            .support-bar a.moreinfo { padding: 0 75px 0 0; margin: 25px auto 0; display: block; text-align: center; width: 520px; font-size: 23px; line-height: 47px; color: #f7941e; font-family: 'varela_roundregular'; text-transform: uppercase; background: url(../images/why_arrow.png) right center no-repeat; }
 			.support-bar span.border { margin: 45px auto 0; height: 2px; width: 91%; display: block; border-bottom: 1px dashed #c5c5c5; }
 		
 			/* form bar */
@@ -225,15 +227,16 @@ a:hover { text-decoration: underline; }
 			.form-bar .forminner { margin: 30px auto 0; overflow: hidden; width: 80%; }
 			.form-bar input[type="submit"] { margin: 0 0 0 2px; border: 0; cursor: pointer; width: 160px; height: 55px; text-align: center; font-size: 18px; line-height: 28px; color: #fff; text-transform: uppercase; font-family: 'varela_roundregular'; background: #f7941e; }
 			.form-bar input[type="submit"]:hover { opacity: 0.8; }
-			.form-bar a.moreinfo { padding: 0 65px 0 0; margin: 5px auto 0; display: block; text-align: center; width: 311px; font-size: 23px; line-height: 47px; color: #f7941e; font-family: 'varela_roundregular'; text-transform: uppercase; background: url(../images/why_arrow.png) right center no-repeat; }
+			.form-bar a.moreinfo { padding: 0 65px 0 0; margin: 5px auto 0; display: block; text-align: center; width: 420px; font-size: 23px; line-height: 47px; color: #f7941e; font-family: 'varela_roundregular'; text-transform: uppercase; background: url(../images/why_arrow.png) right center no-repeat; }
 			.form-bar .right p { padding: 0 30px 0 0; font-size: 18px; line-height: 24px; color: #4b4b4b; text-align: justify; word-break: break-all; }
 			.form-bar address { margin: 15px 0 0; display: block; font-size: 22px; line-height: 30px; color: #222; font-family: 'ralewaysemibold'; font-style: normal; }
 			.form-bar address a { margin: 30px 0 0; display: block; font-size: 22px; line-height: 30px; color: #222; font-family: 'ralewaysemibold'; font-style: normal; }
 			.form-bar .social { margin: 55px 0 0; }
 			.form-bar .social ul { padding: 0; margin: 0; }
-			.form-bar .social li { padding: 0 0 0 30px; float: left; }
+			.form-bar .social li {  float: left; }
 			.form-bar .social li:first-child { padding: 0; }
 			.form-bar .social li:hover a { opacity: 0.7; }
+            .form-bar .social a { padding: 0 30px 0 0; font-size: 18px; line-height: 24px; color: #4b4b4b; text-align: justify; word-break: break-all; }
 			
 			/* box bar */
 			.box-bar { margin: 65px 0 0; width: 100%; overflow: hidden; }
@@ -307,7 +310,6 @@ a:hover { text-decoration: underline; }
 			.boxdetail-bar .outlook { margin: 40px 0 0; }
 			.boxdetail-bar .outlook ul { text-align: center; width: 100%; }
 			.boxdetail-bar .outlook li { padding: 0 7px; display: inline-block; }
-			.boxdetail-bar .common.pak3 .outlook { margin: 10px 0 0; }
 			
 			/* module bar */
 			.module-bar { margin: 160px 0 0; width: 100%; overflow: hidden;  }
@@ -334,7 +336,7 @@ a:hover { text-decoration: underline; }
 			.select-bar .management span { margin: 0px 5px 0px 0px; float: left; font-size: 17px; line-height: 24px; color: #777; font-family: 'ralewaysemibold'; }
 			.select-bar .management li { padding: 0 5px; float: left; background: url(../images/sep.png) left center no-repeat; }
 			.select-bar .management li:first-child { padding-left: 0; background: none; }
-			.select-bar .management li a { font-size: 17px; line-height: 24px; color: #777; }
+			.select-bar .management li a { font-size: 17px; line-height: 24px; color: #777; text-decoration: none}
 			.select-bar .management {  }
 			.select-bar .outlook { padding: 0 225px 0 0; margin: 20px 0 0; overflow: hidden; }
 			.select-bar .outlook li { padding: 0 7px; background: none; }
@@ -356,6 +358,7 @@ a:hover { text-decoration: underline; }
 			.commission-bar .management li:first-child { padding-left: 0; background: none; }
 			.commission-bar .management li a { font-size: 21px; line-height: 30px; color: #777; }
 			.commission-bar .merge { padding-bottom: 65px; margin: 30px 0 0; overflow: hidden; border-bottom: 1px dashed #c4c4c4; }
+            .commission-bar .merge2 { padding-bottom: 65px; margin: 30px 0 0; overflow: hidden; }
 			.commission-bar .merge p { padding: 0 0 20px; font-size: 17px; line-height: 24px; color: #777; text-align: justify; word-break: break-all; }
 			.commission-bar .merge .para.semi { font-family: 'ralewaysemibold'; }
 			.commission-bar .merge .left , .commission-bar .merge .right { padding: 0 30px; width: 50%; float: left; box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; }
@@ -373,6 +376,7 @@ a:hover { text-decoration: underline; }
 			.advantage-bar .merge.third { padding-bottom: 150px; margin: 135px -10px 0 0; }
 			.advantage-bar .image { padding: 6px; margin: 2px 0 10px 52px; box-shadow: -7px 5px 8px #bdbdbd; -webkit-box-shadow: -7px 5px 8px #bdbdbd; -ms-box-shadow: -7px 5px 8px #bdbdbd; float: left; background: #dbdbdb; }
 			.advantage-bar .para { float: right; width: 43.5%; }
+            .advantage-bar .para2 { float: right;}
 			.advantage-bar .para h4 { margin: 0 0 25px; font-size: 26px; line-height: 27px; color: #222; font-family: 'ralewaysemibold'; }
 			.advantage-bar .para p { font-size: 17px; line-height: 24px; color: #777; }
 			.advantage-bar .merge.second .image { margin: 0; float: right; }
@@ -444,6 +448,7 @@ a:hover { text-decoration: underline; }
 			.contact-bar .contact h3 { padding: 40px 0 0; font-size: 40px; line-height: 47px; color: #777; }
 			.contact-bar .contact p { padding: 25px 0 0; font-size: 17px; line-height: 24px; color: #777; }
 			.contact-bar .contact .semi p { padding: 35px 0 0; font-family: 'ralewaysemibold'; }
+            .contact-bar .contact .semi a { padding: 25px 0 0; font-size: 17px; line-height: 24px; color: #777; }
 			
 	/* footer part */
 	#footer-part { overflow: hidden; width: 100%; }
@@ -502,6 +507,7 @@ a:hover { text-decoration: underline; }
 		.form-bar .forminner { width: auto; }
 		.box-bar { margin: 20px 0 0; }
 		.box-bar p { margin: 0; font-size: 22px; line-height: 28px; }
+        .box-bar a { margin: 0; font-size: 22px; line-height: 28px; }
 		.box-bar .common h3 { font-size: 18px; line-height: 20px; }
 		.box-bar img { padding: 40px 0 0; margin: 0 0 0 29%; width: 37%; }
 		.box-bar .boxcontent3 { right: -40px; }

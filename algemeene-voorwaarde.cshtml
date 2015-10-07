@@ -1,3 +1,21 @@
-﻿@{
+﻿@using Hybrid_Saas
+@{
     Layout = "SiteLayout.cshtml";
 }
+<!-- start content -->
+<section id="content-part">
+
+    <!-- start centerpart -->
+    <section id="center-part">
+
+        <!-- start contact bar -->
+        <article class="contact-bar">
+
+            <div class="centering">
+                <h1>Algemene voorwaarden</h1>
+                <a href="@LinkList.GetLink(Link.AlgemeeneVoorwaardePDF)"><h4>Algemene voorwaarden Hybrid SaaS B.V.</h4></a>
+                <a href="@LinkList.GetLink(Link.LicentievoorwaardenPDF)"><h4>Licentievoorwaarden Hybrid SaaS ICT B.V.</h4></a>
+            </div>
+            </article>
+    </section>
+</section>

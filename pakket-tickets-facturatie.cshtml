@@ -1,3 +1,288 @@
+@using Hybrid_Saas
 @{
     Layout = "SiteLayout.cshtml";
+
+    if (IsPost)
+    {
+        var companyname = Request.Form["name"];
+        var contactname = Request.Form["email"];
+        var employeecount = Request.Form["bericht"];
+
+        if (Validation.IsValid())
+        {
+            SendMail.SendEmail(companyname, contactname, employeecount);
+        }
+    }
 }
+<!-- start content -->
+<section id="content-part">
+    <!-- start centerpart -->
+    <section id="center-part">
+        <!-- start commission bar -->
+        <article class="commission-bar">
+            <div class="centering">
+                <aside class="image">
+                    <a><img src="images/commision_img.jpg" alt=""/></a>
+                </aside>
+                <div class="management">
+                <h4>Pakket Tickets & Facturatie</h4>
+                <div class="merge">
+                        <div class="para">
+                            <p>De e-mails, telefoontjes, tekst- en whatsappberichten van klanten vliegen je om de oren. E�n van je klanten stelt ondertussen ook nog een ingewikkelde vraag waar meerdere lagen in de organisatie bij betrokken zijn. Niemand weet meer wat de actuele status is van de vraag. Hoeveel tijd er precies besteed is aan het oplossen van het vraagstuk weet al helemaal niemand meer. Conclusie: Je mist het overzicht en laat daarmee veel geld liggen, terwijl dat nergens voor nodig is! Wij hebben de bewezen oplossing om jouw problemen op te lossen.</p>
+                        </div>
+                        <div class="left">
+                            <div class="para">
+                                <p>Met het professionele online business software pakket Tickets & Facturatie van Hybrid SaaS weet je zeker dat je voortaan geen zorgen meer hebt over tickets, tijdregistratie en facturatie. Het ervaren en gedreven team van Hybrid SaaS heeft krachtige software ontwikkeld die precies doet wat jij wilt. Wij steven naar perfectie en constante verbetering  van onze producten zodat jij altijd overzicht en inzicht hebt.</p>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="para">
+                                <p>Hybrid SaaS is een Nederlands product, gebaseerd op Nederlandse business logica met een professionele Nederlandse klantenservice. Bij ons hoef je niet bang te zijn voor vervelende verrassingen. We communiceren graag met onze klanten in heldere taal en vragen een eerlijke, betaalbare prijs voor onze producten.</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </article>
+        <!-- end commission bar -->
+        <article class="software-bar">
+
+            <div class="centering">
+                <div class="text">
+
+                    <h2>De unieke voordelen van Tickets &Aacute; Facturatie </h2>
+                    <ul>
+                        <li>
+                            <img src="images/softaware_img1.png" alt="" />
+                            <h3>Snel</h3>
+                            <p>Geen grote investeringen of implementaties, contract maandelijks opzegbaar, meteen aan de slag</p>
+                        </li>
+                        <li>
+                            <img src="images/softaware_img2.png" alt="" />
+                            <h3>Innovatief</h3>
+                            <p>Wij zoeken altijd naar mogelijkheden om onze software nog beter, mooier, sneller en vooral slimmer te maken. </p>
+                        </li>
+                        <li>
+                            <img src="images/softaware_img3.png" alt="" />
+                            <h3>Slim</h3>
+                            <p>Eenvoudige koppelingen met alle bekende boekhoudpakketten, betaal alleen voor het pakket met modules die je echt nodig hebt, betaal per gebruiker en per maand. </p>
+                        </li>
+                        <li>
+                            <img src="images/softaware_img4.png" alt="" />
+                            <h3>Gemak</h3>
+                            <p>Alle processen in ��n overzichtelijk dashboard, geen gedoe met meerdere aanbieders en ingewikkelde koppelingen</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="images/softaware_img1.png" alt="" />
+                            <h3>Snel</h3>
+                            <p>Geen grote investeringen of implementaties, contract maandelijks opzegbaar, meteen aan de slag</p>
+                        </li>
+                        <li>
+                            <img src="images/softaware_img2.png" alt="" />
+                            <h3>Innovatief</h3>
+                            <p>Wij zoeken altijd naar mogelijkheden om onze software nog beter, mooier, sneller en vooral slimmer te maken. </p>
+                        </li>
+                        <li>
+                            <img src="images/softaware_img3.png" alt="" />
+                            <h3>Slim</h3>
+                            <p>Eenvoudige koppelingen met alle bekende boekhoudpakketten, betaal alleen voor het pakket met modules die je echt nodig hebt, betaal per gebruiker en per maand. </p>
+                        </li>
+                        <li>
+                            <img src="images/softaware_img4.png" alt="" />
+                            <h3>Gemak</h3>
+                            <p>Alle processen in ��n overzichtelijk dashboard, geen gedoe met meerdere aanbieders en ingewikkelde koppelingen</p>
+                        </li>
+                    </ul>
+                </div>
+                <article class="solution-bar" id="module">
+                    <aside class="fill">
+                        <div class="satisfy">
+                            <span>Ben je tevreden over je huidige administratiesoftware? </span>
+                            <span>Je kunt je eigen administratie eenvoudig koppelen met onze modules, bijvoorbeeld met het Ticketsysteem of de module Werkbonnen.</span>
+                        </div>
+                    </aside>
+                </article>
+            </div>
+        </article>
+        <article class="connecting-bar">
+
+            <div class="centering">
+                <div class="merge">
+                    <h2>De unieke voordelen van Offerte & Voorraad</h2>
+                    <!--Dit deel kan je copyeren!-->
+                    <ul>
+                        <li><b>Weet alles over je relaties</b></li>
+                        <li>leg alles ballblaklf </li>
+                    </ul>
+                    <!--Tot hier!-->
+                </div>
+            </div>
+        </article>
+        <article class="connecting-bar">
+            <div class="centering">
+                <div class="merge">
+                    <div class="right">
+                        <div class="para">
+                            <p>Hybrid SaaS is een Nederlands product, gebaseerd op Nederlandse business logica met een professionele Nederlandse klantenservice. Bij ons hoef je niet bang te zijn voor vervelende verrassingen. We communiceren graag met onze klanten in heldere taal en vragen een eerlijke, betaalbare prijs voor onze producten.</p>
+
+                            <h2>De unieke voordelen van Offerte & Voorraad</h2>
+                            <!--Dit deel kan je copyeren!-->
+                            <ul>
+                                <li><b>Weet alles over je relaties</b></li>
+                                <li>leg alles ballblaklf </li>
+                            </ul>
+                            <br />
+                            <div class="merge">
+                                <!--Tot hier!-->
+                                <b>De aanshaf</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </article>
+        <article class="connecting-bar">
+
+            <div class="centering">
+                <div class="merge">
+                    <div class="module">
+                        <h3>Aanvullende modules en pakketten</h3>
+                        <p>Mis je nog iets? Breid je pakket eenvoudig uit met de volgende modules en pakketten</p>
+                        <p>Benieuwd naar de prijzen? Download prijslijst</p>
+                        <div class="pakket">
+                            <h4>Aanvullend pakket (maandelijks)</h4>
+                            <ul>
+                                <li>
+                                    <img src="images/connencting_img1.png" alt="" />
+                                    <h5>Webshop</h5>
+                                    <a href=" @LinkList.GetLink(Link.Webshop)">Meer info</a>
+                                </li>
+                                <li>
+                                    <img src="images/connencting_img2.png" alt="" />
+                                    <h5>Commissie</h5>
+                                    <a href="@LinkList.GetLink(Link.Commisie)">Meer info</a>
+                                </li>
+                                <li>
+                                    <img src="images/connencting_img3.png" alt="" />
+                                    <h5>FINANCIEEL</h5>
+                                    <a href="@LinkList.GetLink(Link.Financieel)">Meer info</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <h4>Interesse in deze module of een opmerking? Stuur ons een bericht.</h4>
+                        <form action="#">
+                            <input type="text" value="Naam" onFocus="if(this.value=='Naam')this.value='';" onBlur="if(this.value=='')this.value='Naam';" />
+                            <input type="text" value="E-mail" onFocus="if(this.value=='E-mail')this.value='';" onBlur="if(this.value=='')this.value='E-mail';" />
+                            <textarea cols="15" rows="5" onFocus="if(this.value=='Bericht')this.value='';" onBlur="if(this.value=='')this.value='Bericht';">Bericht</textarea>
+                            <input type="submit" value="VERSTUur" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="paket-bar" id="paket">
+            <div class="centering">
+                <div class="text">
+                    <aside class="ticket">
+
+                        <div class="common pak1">
+                            <img src="images/ticket_icon1.png" alt="" />
+                            <h3>Pakket <span>CONTRACTBEHEER</span></h3>
+                            <cite>&euro;125,- per maand</cite>
+                            <a href="@LinkList.GetLink(Link.PakketContactbeheer)" class="detail">DETAILs</a>
+                            <ul>
+                                <li><a href="@LinkList.GetLink(Link.PakketContactbeheer)">Relatiebeheer</a></li>
+                                <li><a href="@LinkList.GetLink(Link.PakketContactbeheer)">Facturatie</a></li>
+                                <li><a href="@LinkList.GetLink(Link.PakketContactbeheer)">Export naar externe boekhouding</a></li>
+                                <li><a href="@LinkList.GetLink(Link.PakketContactbeheer)">Notities</a></li>
+                                <li><a href="@LinkList.GetLink(Link.PakketContactbeheer)">1 Gebruiker</a></li>
+                                <li><a href="@LinkList.GetLink(Link.PakketContactbeheer)">1 GB dataopslag</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="common pak2">
+                            <img src="images/ticket_icon2.png" alt="" />
+                            <h3>Pakket <span>TICKETS + FACTURATIE</span></h3>
+                            <cite>&euro;250,- per maand</cite>
+                            <a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)" class="detail">DETAILs</a>
+                            <ul>
+                                <li><a href="#">Relatiebeheer</a></li>
+                                <li><a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)">Ticketsysteem</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)">Tijdregistratie</a></li>
+                                <li><a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)">Facturatie</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)">Projectbeheer</a></li>
+                                <li><a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)">Prepaidkaarten</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)">Wachtwoordbeheer</a></li>
+                                <li><a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)">Notities</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)">Outlook add-in</a></li>
+                                <li><a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)">Extranet</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)">Export naar externe boekhouding</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)">1 Gebruiker</a></li>
+                                <li><a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)">1 GB dataopslag</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="common pak3">
+                            <img src="images/ticket_icon3.png" alt="" />
+                            <h3>Pakket <span>TICKETS + FACTURATIE +  OFFERTE + VOORRAAD</span></h3>
+                            <cite>&euro;300,- per maand</cite>
+                            <a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)" class="detail">DETAILs</a>
+                            <ul>
+                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Relatiebeheer</a></li>
+                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Ticketsysteem</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Tijdregistratie</a></li>
+                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Facturatie</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Projectbeheer</a></li>
+                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Prepaidkaarten</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Wachtwoordbeheer</a></li>
+                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Notities</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Outlook add-in</a></li>
+                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Extranet</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Export naar externe boekhouding</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Offertes en orders</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Productenbeheer</a></li>
+                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Voorraadbeheer</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Inkooporder beheer</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">1 Gebruiker</a></li>
+                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">1 GB dataopslag</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </article>
+    </section>
+</section>

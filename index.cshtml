@@ -22,20 +22,18 @@
         <div class="flexslider">
              
             <ul class="slides">
-                <li><img src="images/slider_img.png" alt="" /></li>
-                <li><img src="images/slider_img.png" alt="" /></li>
-                <li><img src="images/slider_img.png" alt="" /></li>
-                <li><img src="images/slider_img.png" alt="" /></li>
-                <li><img src="images/slider_img.png" alt="" /></li>
-                <li><img src="images/slider_img.png" alt="" /></li>
+                <li><img src="images/slider_img.png" alt=""/></li>
+                <li><img src="images/slider_img1.png" alt="" /></li>
+                <li><img src="images/slider_img2.png" alt="" /></li>
+
             </ul>
 
             <aside class="text">
                 <div class="centering">
                     <h2>Online Business Software voor ICT dienstverleners</h2>
-                    <p>Hybrid SaaS Ticketsysteem, tijdregistratie en facturatie Eén overzichtelijk dashboard. Voor alles. </p>
+                    <p>Hybrid SaaS Ticketsysteem, tijdregistratie en facturatie Eén overzichtelijk dashboard.</p>
                 </div>
-                <span>Alle informatie over onze software vind je hier</span>
+                <a href="@LinkList.GetLink(Link.Pakketten)"><span>alle informatie over onze software vind je hier</span></a>
             </aside>
             <a class="downarrow" data-speed="2000" data-easing="easeOutQuint" href="#over"><img src="images/downarrow_img.png" alt="" /></a>
 
@@ -74,7 +72,7 @@
         <article class="choose-bar">
 
             <aside class="image">
-                <a href="#"><img src="images/choose_img.jpg" alt="" /></a>
+                <a href="https://www.youtube.com/watch?v=tu0xv-PvKXU" target="_blank"><img src="images/choose_img.jpg" alt="" /></a>
             </aside>
 
             <div class="centering">
@@ -130,17 +128,17 @@
                 <div class="text">
 
                     <h2>KIES JE PAKKET</h2>
-                    <aside class="include">
+                    <aside class="include" hidden="hidden">
                         <h3>Standaard inbegrepen:</h3>
                         <ul>
                             <li><a>1 user</a></li>
                             <li><a>1 GB opslag</a></li>
-                            <li><a>Email forward | Outlook add-in</a></li>
+                            <li><a>email forward | outlook add-in</a></li>
                             <li><a>CRM</a></li>
-                            <li><a>Wachtwoordbeheer</a></li>
-                            <li><a>Export naar Excel Extranet (lite)</a></li>
-                            <li><a>Notities</a></li>
-                            <li><a>Standaard met financiele export naar extern pakket</a></li>
+                            <li><a>wachtwoordbeheer</a></li>
+                            <li><a>export naar excel | extranet</a></li>
+                            <li><a>notities</a></li>
+                            <li><a>standaard met financiele export naar extern pakket</a></li>
                         </ul>
                     </aside>
 
@@ -151,98 +149,89 @@
 
                     <aside class="ticket">
 
-                        <div class="common pak1">
-                            <img src="images/ticket_icon1.png" alt="" />
-                            <h3>Pakket <span>CONTRACTBEHEER</span></h3>
-                            <cite>&euro;125,- per maand</cite>
-                            <a href="@LinkList.GetLink(Link.PakketContactbeheer)" class="detail">DETAILs</a>
-                            <ul>
-                                <li><a href="@LinkList.GetLink(Link.PakketContactbeheer)">Relatiebeheer</a></li>
-                                <li><a href="@LinkList.GetLink(Link.PakketContactbeheer)">Facturatie</a></li>
-                                <li><a href="@LinkList.GetLink(Link.PakketContactbeheer)">Export naar externe boekhouding</a></li>
-                                <li><a href="@LinkList.GetLink(Link.PakketContactbeheer)">Notities</a></li>
-                                <li><a href="@LinkList.GetLink(Link.PakketContactbeheer)">1 Gebruiker</a></li>
-                                <li><a href="@LinkList.GetLink(Link.PakketContactbeheer)">1 GB dataopslag</a></li>
-                            </ul
-                        </div>
-
                         <div class="common pak2">
                             <img src="images/ticket_icon2.png" alt="" />
                             <h3>Pakket <span>TICKETS + FACTURATIE</span></h3>
                             <cite>&euro;250,- per maand</cite>
-                            <a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)" class="detail">DETAILs</a>
+                            <a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)" class="detail">Over Pakket</a>
                             <ul>
-                                <li><a href="#">Relatiebeheer</a></li>
-                                <li><a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)">Ticketsysteem</a></li>
+                                <li><a href="@LinkList.GetLink(Link.Relatiebeheer)">relatiebeheer</a></li>
+                                <li><a href="@LinkList.GetLink(Link.TicketSysteem)">ticketsysteem</a></li>
                             </ul>
                             <ul>
-                                <li><a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)">Tijdregistratie</a></li>
-                                <li><a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)">Facturatie</a></li>
+                                <li><a href="@LinkList.GetLink(Link.Tijdregistratie)">tijdregistratie</a></li>
+                                <li><a href="@LinkList.GetLink(Link.Facturatie)">facturatie</a></li>
                             </ul>
                             <ul>
-                                <li><a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)">Projectbeheer</a></li>
-                                <li><a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)">Prepaidkaarten</a></li>
+                                <li><a href="@LinkList.GetLink(Link.Projectbeheer)">projectbeheer</a></li>
+                                <li><a href="@LinkList.GetLink(Link.Prepaidkaarten)">prepaidkaarten</a></li>
                             </ul>
                             <ul>
-                                <li><a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)">Wachtwoordbeheer</a></li>
-                                <li><a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)">Notities</a></li>
+                                <li><a href="@LinkList.GetLink(Link.Wachtwoordbeheer)">wachtwoordbeheer</a></li>
+                                <li><a href="@LinkList.GetLink(Link.Notities)">notities</a></li>
                             </ul>
                             <ul>
-                                <li><a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)">Outlook add-in</a></li>
-                                <li><a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)">Extranet</a></li>
+                                <li><a href="@LinkList.GetLink(Link.OutlookAddIn)">outlook add-in</a></li>
+                                <li><a href="@LinkList.GetLink(Link.Extranet)">extranet</a></li>
                             </ul>
                             <ul>
-                                <li><a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)">Export naar externe boekhouding</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)">1 Gebruiker</a></li>
-                                <li><a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)">1 GB dataopslag</a></li>
+                                <li><a href="@LinkList.GetLink(Link.ExportBoekhouding)">export naar externe boekhouding</a></li>
                             </ul>
                         </div>
-                       
-                        <div class="common pak3">
+
+                        <div class="common pak1">
+                            <img src="images/ticket_icon1.png" alt="" />
+                            <h3>Pakket <span>CONTRACTBEHEER</span></h3>
+                            <cite>&euro;125,- per maand</cite>
+                            <a href="@LinkList.GetLink(Link.PakketContactbeheer)" class="detail">Over Pakket</a>
+                            <ul>
+                                <li><a href="@LinkList.GetLink(Link.Relatiebeheer)">relatiebeheer</a></li>
+                                <li><a href="@LinkList.GetLink(Link.Facturatie)">facturatie</a></li>
+                                <li><a href="@LinkList.GetLink(Link.ExportBoekhouding)">export naar externe boekhouding</a></li>
+                                <li><a href="@LinkList.GetLink(Link.Notities)">notities</a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="common pak2">
                             <img src="images/ticket_icon3.png" alt="" />
-                            <h3>Pakket <span>TICKETS + FACTURATIE +  OFFERTE + VOORRAAD</span></h3>
+                            <h3>Pakket <span>OFFERTE + VOORRAAD</span></h3>
                             <cite>&euro;300,- per maand</cite>
-                            <a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)" class="detail">DETAILs</a>
+                            <a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)" class="detail">Over Pakket</a>
                             <ul>
-                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Relatiebeheer</a></li>
-                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Ticketsysteem</a></li>
+                                <li><a href="@LinkList.GetLink(Link.Relatiebeheer)">relatiebeheer</a></li>
+                                <li><a href="@LinkList.GetLink(Link.TicketSysteem)">ticketsysteem</a></li>
                             </ul>
                             <ul>
-                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Tijdregistratie</a></li>
-                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Facturatie</a></li>
+                                <li><a href="@LinkList.GetLink(Link.Tijdregistratie)">tijdregistratie</a></li>
+                                <li><a href="@LinkList.GetLink(Link.Facturatie)">facturatie</a></li>
                             </ul>
                             <ul>
-                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Projectbeheer</a></li>
-                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Prepaidkaarten</a></li>
+                                <li><a href="@LinkList.GetLink(Link.Projectbeheer)">projectbeheer</a></li>
+                                <li><a href="@LinkList.GetLink(Link.Prepaidkaarten)">prepaidkaarten</a></li>
                             </ul>
                             <ul>
-                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Wachtwoordbeheer</a></li>
-                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Notities</a></li>
+                                <li><a href="@LinkList.GetLink(Link.Wachtwoordbeheer)">wachtwoordbeheer</a></li>
+                                <li><a href="@LinkList.GetLink(Link.Notities)">notities</a></li>
                             </ul>
                             <ul>
-                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Outlook add-in</a></li>
-                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Extranet</a></li>
+                                <li><a href="@LinkList.GetLink(Link.OutlookAddIn)">outlook add-in</a></li>
+                                <li><a href="@LinkList.GetLink(Link.Extranet)">extranet</a></li>
                             </ul>
                             <ul>
-                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Export naar externe boekhouding</a></li>
+                                <li><a href="@LinkList.GetLink(Link.ExportBoekhouding)">export naar externe boekhouding</a></li>
                             </ul>
                             <ul>
-                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Offertes en orders</a></li>
+                                <li><a href="@LinkList.GetLink(Link.OffertesOrders)">offertes en orders</a></li>
                             </ul>
                             <ul>
-                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Productenbeheer</a></li>
-                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Voorraadbeheer</a></li>
+                                <li><a href="@LinkList.GetLink(Link.Productenbeheer)">productenbeheer</a></li>
+                                <li><a href="@LinkList.GetLink(Link.Voorraadbeheer)">voorraadbeheer</a></li>
                             </ul>
                             <ul>
-                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">Inkooporder beheer</a></li>
+                                <li><a href="@LinkList.GetLink(Link.Inkooporderbeheer)">inkooporder beheer</a></li>
                             </ul>
-                            <ul>
-                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">1 Gebruiker</a></li>
-                                <li><a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)">1 GB dataopslag</a></li>
-                            </ul>
-                        </div>
+                          </div>
 
                     </aside>
 
@@ -270,12 +259,12 @@
                                 <li>
                                     <img src="images/connencting_img1.png" alt="" />
                                     <h5>Commissie<span>beheer</span></h5>
-                                    <a href="@LinkList.GetLink(Link.Commisie)">Meer info</a>
+                                    <a href="@LinkList.GetLink(Link.Commissiebeheer)">Meer info</a>
                                 </li>
                                 <li>
                                     <img src="images/connencting_img2.png" alt="" />
                                     <h5>CONTRACT<span>beheer</span></h5>
-                                    <a href="@LinkList.GetLink(Link.Contact)">Meer info</a>
+                                    <a href="@LinkList.GetLink(Link.Contractenbeheer)">Meer info</a>
                                 </li>
                                 <li>
                                     <img src="images/connencting_img3.png" alt="" />
@@ -285,12 +274,12 @@
                                 <li>
                                     <img src="images/connencting_img5.png" alt="" />
                                     <h5>extra<span>gebruiker</span></h5>
-                                    <a href="#">Meer info</a>
+                                    <a href="@LinkList.GetLink(Link.Gebruiker)">Meer info</a>
                                 </li>
                                 <li>
                                     <img src="images/connencting_img4.png" alt="" />
                                     <h5>Extra<span>dataopslag</span></h5>
-                                    <a href="#">Meer info</a>
+                                    <a href="@LinkList.GetLink(Link.Dataopslag)">Meer info</a>
                                 </li>
                             </ul>
                             <div class="clear"></div>
@@ -323,7 +312,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="furnishing">
+                        <div class="furnishing" hidden="hidden">
                             <h4>Aanvullende Implementatie & Inrichting (eenmalig)<span>De onderstaande werkzaamheden kunnen als aanvulling worden gekozen op de bovengenoemde implementatiepakketten</span></h4>
                             <ul>
                                 <li></li>
@@ -350,7 +339,7 @@
         <article class="hybrid-bar" id="over">
 
             <div class="centering">
-                <div class="orhybrid">
+                <div class="orhybrid" hidden="hidden">
 
                     <h2>DIT ZEGGEN KLANTEN OVER HYBRID SAAS</h2>
                     <aside class="hybrid">
@@ -407,15 +396,11 @@
                     <div class="flexslider2 carasoule">
                         <ul class="slides">
                             <!--Add companys-->
-                            <li><a href="#"><img src="images/broadby_img1.png" alt="" /></a></li>
-                            <li><a href="#"><img src="images/broadby_img2.png" alt="" /></a></li>
-                            <li><a href="#"><img src="images/broadby_img3.png" alt="" /></a></li>
-                            <li><a href="#"><img src="images/broadby_img3.png" alt="" /></a></li>
-                            <li><a href="#"><img src="images/broadby_img2.png" alt="" /></a></li>
-                            <li><a href="#"><img src="images/broadby_img1.png" alt="" /></a></li>
-                            <li><a href="#"><img src="images/broadby_img3.png" alt="" /></a></li>
-                            <li><a href="#"><img src="images/broadby_img2.png" alt="" /></a></li>
-                            <li><a href="#"><img src="images/broadby_img1.png" alt="" /></a></li>
+                            <li><a href="http://www.vriedak.nl/" target="_blank"><img src="images/broadby_img1.png" alt="" /></a></li>
+                            <li><a href="http://www.groenenboom.nl/" target="_blank"><img src="images/broadby_img2.png" alt="" /></a></li>
+                            <li><a href="http://www.renedon.nl/" target="_blank"><img src="images/broadby_img3.png" alt="" /></a></li>
+                            <li><a href="http://www.bamtechniek.nl/" target="_blank"><img src="images/broadby_img4.png" alt="" /></a></li>
+                            <li><a href="http://www.fws.nl/" target="_blank"><img src="images/broadby_img5.png" alt="" /></a></li>
                         </ul>
                     </div>
 
@@ -425,63 +410,79 @@
         </article>
         <!-- end hybrid bar -->
         <!-- start support bar -->
-        <article class="support-bar" id="support">
-
-            <div class="centering">
-                <div class="supportive">
-
-                    <h2>onze support<span>Vragen? Neem contact op met onze helpdesk (bereikbaar op werkdagen van 9.00 tot 17.00 uur) </span></h2>
-                    <aside class="support">
-                        <div class="left">
-                            <ul>
-                                <li>
-                                    <div class="image"><img src="images/support_img1.png" alt="" /></div>
-                                    <div class="text">
-                                        <h3>downloads</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="image"><img src="images/support_img3.png" alt="" /></div>
-                                    <div class="text">
-                                        <h3>handleiding</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="right">
-                            <ul>
-                                <li>
-                                    <div class="image"><img src="images/support_img2.png" alt="" /></div>
-                                    <div class="text">
-                                        <h3>ticket systemen</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="image"><img src="images/support_img4.png" alt="" /></div>
-                                    <div class="text">
-                                        <h3>helpdesk</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </aside>
-                    <a href=" @LinkList.GetLink(Link.Support)" class="moreinfo">NAAR DE SUPPORTPAGINA</a>
-                    <span class="border"></span>
-                </div>
-            </div>
-        </article>
-        <!-- end support bar -->
+                <article class="support-bar" id="support">
+                	
+                	<div class="centering">
+                		<div class="supportive">
+                        
+                            <h2>onze support<span></span></h2>
+                            <aside class="support">
+                                <div class="left">
+                                    <ul>
+                                        <li>
+                                            <div class="image"><img src="images/support_img1.png" alt="" /></div>
+                                            <div class="text">
+                                                <h3>downloads</h3>
+                                                <a href="@LinkList.GetLink(Link.BrowserDownload)">Hybrid SaaS Browser </a> |
+                                                <a href="@LinkList.GetLink(Link.WordAddDownload)">Hybrid SaaS Word add-in </a> | 
+                                                <a href="@LinkList.GetLink(Link.OutlookAddDownload)">Hybrid SaaS Outlook add-in </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="image"><img src="images/support_img3.png" alt="" /></div>
+                                            <div class="text">
+                                                <a href="@LinkList.GetLink(Link.Handleiding)"><h3>handleiding</h3></a>
+                                                <p>Onze uitgebreide handleiding geeft inzicht in de werking van onze software.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="image"><img src="images/support_img3.png" alt="" /></div>
+                                            <div class="text">
+                                                <a href="@LinkList.GetLink(Link.KijkMetMijMee)"><h3>Kijk met mij mee</h3></a>
+                                                <p>Wij kunnen op afstand meekijken op uw computer, gebruik deze optie om onze medewerkers toegang te geven tot uw pc.</p>
+                                            </div>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="right">
+                                    <ul>
+                                        <li>
+                                            <div class="image"><img src="images/support_img2.png" alt="" /></div>
+                                            <div class="text">
+                                                <a href="@LinkList.GetLink(Link.InvoerTicket)"><h3>ticket systemen</h3></a>
+                                                <p>Stel snel en gemakkelijk uw vraag online aan onze organisatie.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="image"><img src="images/support_img3.png" alt="" /></div>
+                                            <div class="text">
+                                                <a href="@LinkList.GetLink(Link.Contact)"><h3>helpdesk</h3></a>
+                                                <p>Onze contact gegevens.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="image"><img src="images/support_img3.png" alt="" /></div>
+                                            <div class="text">
+                                                <a href="@LinkList.GetLink(Link.Handleiding)"><h3>Consultancy</h3></a>
+                                                <p>Maak gebruik van onze jarenlange kennis als systeembeheerder, softwareontwikkelaar & bedrijfsautomatiseerder.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </aside>
+							<span class="border"></span>
+						</div>
+	                </div>
+                </article>
+                <!-- end support bar -->
         <!-- start form bar -->
         <article class="form-bar" id="contact">
 
             <div class="centering">
                 <div class="form">
 
-                    <h2>HEB JE EEN VRAAG?<span>NEEM CONTACT MET ONS OP.</span></h2>
+                    <h2>Heeft u vragen<span> neem dan contact met ons op.</span></h2>
                     <aside class="forminner">
                         <div class="left">
                             <form method="post">
@@ -492,13 +493,18 @@
                             </form>
                         </div>
                         <div class="right">
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
-                            <address>Hybrid SaaS | Online Business Software <br /> Postbus 31 | 2870 AA Schoonhoven <br /> +3185 002 1940 <a href="mailto:contact@hybridsaas.com">contact@hybridsaas.com</a></address>
+                            <address>Hybrid SaaS | Online Business Software <a href="mailto:support@hybridsaas.com">support@hybridsaas.com</a></address>
+                            <p><b>Wij zijn telefonisch bereikbaar van:</b><br>
+                                Maandag t/m vrijdag 09.00 uur - 17.00 uur<br>
+                                op: +31 (0)85 -002 1940</p>
+                            <p><b>Correspondentieadres:</b><br />Postbus 31 2870 AA Schoonhoven</p>
+                            <p><b>Kamer van Koophandel:</b><br />Hybrid SaaS ICT B.V. K.v.K. Rotterdam 54529239</p>
                             <div class="social">
+                            <div class="semi"><p>Heeft u vragen over de werking van onze <br /> software, dan kunt u uiteraard contact opnemen met de medewerkers van onze helpdesk <br>middels het <a href="@LinkList.GetLink(Link.InvoerTicket)">online ticketsysteem</a> </p></div>
                                 <ul>
-                                    <li><a href="@LinkList.GetLink(Link.Facebook)"><img src="images/social_icon1.png" alt="" /></a></li>
-                                    <li><a href="@LinkList.GetLink(Link.Twitter)"><img src="images/social_icon2.png" alt="" /></a></li>
-                                    <li><a href="@LinkList.GetLink(Link.GooglePlus)"><img src="images/social_icon3.png" alt="" /></a></li>
+                                    <li><a href="@LinkList.GetLink(Link.Facebook)" target="_blank"><img src="images/social_icon1.png" alt="" /></a></li>
+                                    <li><a href="@LinkList.GetLink(Link.Twitter)" target="_blank"><img src="images/social_icon2.png" alt="" /></a></li>
+                                    <li><a href="@LinkList.GetLink(Link.GooglePlus)" target="_blank"><img src="images/social_icon3.png" alt="" /></a></li>
                                 </ul>
                             </div>
                         </div>

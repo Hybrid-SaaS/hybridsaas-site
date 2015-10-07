@@ -1,0 +1,189 @@
+﻿@using Hybrid_Saas
+@{
+    Layout = "/SiteLayout.cshtml";
+
+    if (IsPost)
+    {
+        var companyname = Request.Form["name"];
+        var contactname = Request.Form["email"];
+        var employeecount = Request.Form["bericht"];
+
+        if (Validation.IsValid())
+        {
+            SendMail.SendEmail(companyname, contactname, employeecount);
+        }
+    }
+}
+<!-- start content -->
+<section id="content-part">
+
+	<!-- start centerpart -->
+    <section id="center-part">
+
+        <!-- start commission bar -->
+        <article class="commission-bar">
+
+            <div class="centering">
+                <aside class="image">
+                    <a><img src="/images/commision_img.jpg" alt="" /></a>
+                </aside>
+
+
+                <div class="management">
+                    <div class="merge">
+                        <div class="left">
+                            <h4>Notities</h4>
+                            <div class="para semi">
+                                <p>Met de Module Notities kan je eenvoudig een verslag bijhouden wat er is afgesproken met de klant. Je kan hem inplannen zodat hij een dag van te voren als je een afspraak heb staan weer naar voren komt. Ook kan je er bijlage in bijhouden. Dus alle relevante informatie over het gesprek word bij elkaar bewaard zodat je het altijd terug kan vinden</p>
+                            </div>
+                            <div class="para">
+                                <p>Notities</p>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="para">
+                                <p></p>
+                            </div>
+                            <div class="outlook">
+                                <!--<ul>
+                                    <li><a href="@LinkList.GetLink(Link.Webshop)"><img src="/images/outlook_img6.png" alt="" /></a></li>
+                                    <li><a href="#"><img src="/images/outlook_img7.png" alt="" /></a></li>
+                                    <li><a href="#"><img src="/images/outlook_img8.png" alt="" /></a></li>
+                                    <li><a href="#"><img src="/images/outlook_img1.png" alt="" /></a></li>
+                                    <li><a href="#"><img src="/images/outlook_img2.png" alt="" /></a></li>
+                                    <li><a href="#"><img src="/images/outlook_img3.png" alt="" /></a></li>
+                                    <li><a href="#"><img src="/images/outlook_img4.png" alt="" /></a></li>
+                                    <li><a href="#"><img src="/images/outlook_img5.png" alt="" /></a></li>
+                                </ul>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </article>
+        <!-- end commission bar -->
+        <!-- start advantage bar -->
+        <article class="advantage-bar">
+
+            <div class="centering">
+                <h3>Wat heeft de module Notities te bieden?</h3>
+                <!--Start Item Content on the right-->
+                <div class="merge">
+                    <div class="image"><img src="/images/foto_img.jpg" alt="" /></div>
+                    <div class="para">
+                        <h4>Notities</h4>
+                        <p>Notities</p>
+                    </div>
+                </div>
+                <!--End Item Content on the right-->
+                <!--Start Item Content on the Left-->
+                <div class="merge second">
+                    <div class="image"><img src="/images/foto_img1.jpg" alt="" /></div>
+                    <div class="para">
+                        <h4>Notities</h4>
+                        <p>Notities</p>
+
+                    </div>
+                </div>
+                <!--End Item Content on the Left-->
+            </div>
+        </article>
+        <!-- end advantage bar -->
+        
+                    <!-- start connecting bar -->
+                    <!-- start content -->
+                    <section id="content-part">
+
+                        <!-- start centerpart -->
+                        <section id="center-part">
+
+                            <!-- start contact bar -->
+                            <article class="contact-bar">
+
+                                <div class="merge">
+                                    <div class="left">
+                                        <div class="para semi">
+                                            <p>Factsheets</p>
+                                        </div>
+                                        <div class="para">
+                                            <ul>
+                                                <li>° Notities aanmaken op bedrijven</li>
+                                                <li>° Notities aanmaken op personen</li>
+                                                <li>° Notities aanmaken op projecten</li>
+                                                <li>° Actiedatum toekennen (incl herinneringsdatum)</li>
+                                                <li>° Begin- en eindtijd vastleggen</li>
+                                                <li>° Notitie toewijzen aan medewerker</li>
+                                                <li>° Notities afhandelen</li>
+                                                <li>° Digitale bijlagen opslaan</li>
+                                                <li>° Datumstempel toevoegen aan notitie</li>
+                                                <li>° Bestanden toevoegen aan een notitie</li>
+                                                <li>° Notities exporteren naar Microsoft Excel</li>
+                                                <li>° Notities omzetten naar agenda items in Microsoft Outlook</li>
+                                                <li>° Notities mailen via Microsoft Outlook</li>
+                                                <li>° Notities omzetten in tijdregistraties</li>
+                                                <li>° Notities koppelen aan categorieën</li>
+                                                <li>° Document opmaken van een notitie</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="para semi">
+                                            <p>Wat zit er standaard inbegrepen bij Notities? </p>
+                                        </div>
+                                        <div class="para">
+                                            <ul>
+                                                <li>° </li>
+                                                <li>° </li>
+                                                <li>° </li>
+                                                <li>° </li>
+                                                <ul></ul>
+                                                <p>Nieuwsgierig geworden wat wij nog meer voor jou kunnen betekenen? Vraag onze vrijblijvende Live Demo aan</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="centering">
+                                    <div class="image"><img src="/images/connecting_img.JPG" alt="" /></div>
+                                    <div class="merge">
+                                        <div class="module">
+                                            <h3>Aanvullende modules en pakketten</h3>
+                                            <p>Mis je nog iets? Breid je pakket eenvoudig uit met de volgende modules en pakketten</p>
+                                            <p>Benieuwd naar de prijzen? Download prijslijst</p>
+                                            <div class="pakket">
+                                                <h4>Aanvullend pakket (maandelijks)</h4>
+                                                <ul>
+                                                    <li>
+                                                        <img src="/images/connencting_img1.png" alt="" />
+                                                        <h5>Webshop</h5>
+                                                        <a href="@LinkList.GetLink(Link.Webshop)">Meer info</a>
+                                                    </li>
+                                                    <li>
+                                                        <img src="/images/connencting_img2.png" alt="" />
+                                                        <h5>Commissie</h5>
+                                                        <a href="@LinkList.GetLink(Link.Commisie)">Meer info</a>
+                                                    </li>
+                                                    <li>
+                                                        <img src="/images/connencting_img3.png" alt="" />
+                                                        <h5>FINANCIEEL</h5>
+                                                        <a href="@LinkList.GetLink(Link.Financieel)">Meer info</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form">
+                                            <h4>Interesse in deze module of een opmerking? Stuur ons een bericht.</h4>
+                                            <form action="#">
+                                                <input type="text" value="Naam" onFocus="if(this.value=='Naam')this.value='';" onBlur="if(this.value=='')this.value='Naam';" />
+                                                <input type="text" value="E-mail" onFocus="if(this.value=='E-mail')this.value='';" onBlur="if(this.value=='')this.value='E-mail';" />
+                                                <textarea cols="15" rows="5" onFocus="if(this.value=='Bericht')this.value='';" onBlur="if(this.value=='')this.value='Bericht';">Bericht</textarea>
+                                                <input type="submit" value="VERSTUur" />
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- end connecting bar -->
+
+                        </section>
+                        <!-- end center part -->
+
+                    </section>
+                    <!-- end content -->

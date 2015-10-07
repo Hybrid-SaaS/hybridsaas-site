@@ -67,25 +67,25 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Web.Razor">
-      <HintPath>bin\System.Web.Razor.dll</HintPath>
+      <HintPath>..\..\..\NuGet\Packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Webpages">
-      <HintPath>bin\System.Web.Webpages.dll</HintPath>
+      <HintPath>..\..\..\NuGet\Packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Webpages.Deployment">
-      <HintPath>bin\System.Web.Webpages.Deployment.dll</HintPath>
+      <HintPath>..\..\..\NuGet\Packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Webpages.Razor">
-      <HintPath>bin\System.Web.Webpages.Razor.dll</HintPath>
+      <HintPath>..\..\..\NuGet\Packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Helpers">
-      <HintPath>bin\System.Web.Razor.dll</HintPath>
+      <HintPath>..\..\..\NuGet\Packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Web.Infrastructure">
-      <HintPath>bin\Microsoft.Web.Infrastructure.dll</HintPath>
+      <HintPath>..\..\..\NuGet\Packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Mvc">
-      <HintPath>bin\System.Web.Mvc.dll</HintPath>
+      <HintPath>..\..\..\NuGet\Packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -106,7 +106,7 @@
     <Content Include="packages.config" />
     <Content Include="algemeene-voorwaarde.cshtml" />
     <Content Include="blog.cshtml" />
-    <Content Include="Comissie.cshtml" />
+    <Content Include="Commissie.cshtml" />
     <Content Include="contact.cshtml" />
     <Content Include="Factsheet.cshtml" />
     <Content Include="Financieel.cshtml" />
@@ -122,14 +122,62 @@
     <Content Include="site-map.cshtml" />
     <Content Include="SiteLayout.cshtml" />
     <Content Include="support.cshtml" />
-    <Content Include="ticket-systeem.cshtml" />
+    <Content Include="Module\ticket-systeem.cshtml" />
+    <Content Include="abonnementen-certificatenbeheer.cshtml" />
+    <Content Include="balans-winst-verliesrekening.cshtml" />
+    <Content Include="bankrekening.cshtml" />
+    <Content Include="bedrijfsagenda.cshtml" />
+    <Content Include="contractenbeheer.cshtml" />
+    <Content Include="gebouwbeheer.cshtml" />
+    <Content Include="human-resource-management.cshtml" />
+    <Content Include="inkoopfacturatie-en-crediteurenbeheer.cshtml" />
+    <Content Include="inventarisbeheer.cshtml" />
+    <Content Include="km-registratie.cshtml" />
+    <Content Include="notities.cshtml" />
+    <Content Include="productenbeheer.cshtml" />
+    <Content Include="Module\projectbeheer.cshtml" />
+    <Content Include="Module\relatiebeheer.cshtml" />
+    <Content Include="ticketsysteem.cshtml" />
+    <Content Include="Module\tijdregistratie.cshtml" />
+    <Content Include="Module\voorraadbeheer.cshtml" />
+    <Content Include="Module\vragenlijsten.cshtml" />
+    <Content Include="Module\wachtwoordbeheer.cshtml" />
+    <Content Include="Module\abonnementen.cshtml" />
+    <Content Include="Module\balans-winst-verliesrekening.cshtml" />
+    <Content Include="Module\bankrekening.cshtml" />
+    <Content Include="Module\bedrijfsagenda.cshtml" />
+    <Content Include="Module\certificatenbeheer.cshtml" />
+    <Content Include="Module\commissciebeheer.cshtml" />
+    <Content Include="Module\contractenbeheer.cshtml" />
+    <Content Include="Module\debiteuren-crediteurenbeheerr.cshtml" />
+    <Content Include="Module\facturatie.cshtml" />
+    <Content Include="Module\human-resource-management.cshtml" />
+    <Content Include="Module\inventarisbeheer.cshtml" />
+    <Content Include="Module\notities.cshtml" />
+    <Content Include="Module\Extranet.cshtml" />
+    <Content Include="Module\Prepaid-kaarten.cshtml" />
+    <Content Include="Module\facturatie-debiteurbeheer.cshtml" />
+    <Content Include="Module\Excel-export.cshtml" />
+    <Content Include="Meest-gestelde-vragen.cshtml" />
+    <Content Include="Module\offertes-orders.cshtml" />
+    <Content Include="Module\km-registratie.cshtml" />
+    <Content Include="Module\gebouwbeheer.cshtml" />
+    <Content Include="Module\exportboekhouding.cshtml" />
+    <Content Include="Module\gebruiker.cshtml" />
+    <Content Include="Module\opslag.cshtml" />
+    <Content Include="Module\outlook-addin.cshtml" />
+    <Content Include="Module\prepaidkaarten.cshtml" />
+    <Content Include="Module\product-voorraadbeheer.cshtml" />
+    <Content Include="Module\Inkoopbeheer.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="Webshop.cshtml" />
+    <Content Include="Module\Webshop.cshtml" />
+    <Content Include="WebApplication1.csproj.bak" />
+    <Content Include="Module\werkbonnen.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

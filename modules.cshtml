@@ -1,4 +1,5 @@
-﻿@{
+﻿@using Hybrid_Saas
+@{
     Layout = "SiteLayout.cshtml";
 }
 		<!-- start content -->
@@ -37,231 +38,444 @@
                 	
                 	<div class="centering">
                 		<div class="text">
-                        	<h3>Selecteer een categorie</h3>
+                        	<!--<h3>Selecteer een categorie</h3>
                           	<div class="category">
                                 <ul>
-                                    <li><a href="#">Alles</a></li>
-                                    <li><a href="#">Financieel</a></li>
-                                    <li class="active"><a href="#">Administratie</a></li>
-                                    <li><a href="#">Voorraadbeheer</a></li>
-                                    <li><a href="#">Ticketsystemen</a></li>
-                                    <li><a href="#">Overig</a></li>	
+                                    <li><a href="@LinkList.GetLink(Link.Molules)">Alles</a></li>
+                                    <li><a href="@LinkList.GetLink(Link.Financieel)">Financieel</a></li>
+                                    <li class="active"><a href="@LinkList.GetLink(Link.Administratie)">Administratie</a></li>
+                                    <li><a href="@LinkList.GetLink(Link.Voorraadbeheer)">Voorraadbeheer</a></li>
+                                    <li><a href="@LinkList.GetLink(Link.TicketSysteem)">Ticketsystemen</a></li>
+                                    <li><a href="@LinkList.GetLink(Link.Overig)">Overig</a></li>	
                                 </ul>
-                            </div>
+                            </div>-->
                             
                             <div class="management">
-								<h4>Module Commisiebeheer</h4>
-                                <span>Standaard inbegrepen:</span>
-                            	<ul>
-                                    <li><a href="#">1 user</a></li>
-                                    <li><a href="#">1 GB opslag</a></li>
-                                    <li><a href="#">Email forward</a></li>
-                                    <li><a href="#">Outlook add-in</a></li>
-                                    <li><a href="#">CRM</a></li>
-                                    <li><a href="#">Wachtwoordbeheer</a></li>
-                                    <li><a href="#">Export naar Excel</a></li>
-								</ul>
+								<h4>Abonnementen</h4>
                                 <ul>
-                                    <li><a href="#">Extranet (lite)</a></li>
-                                    <li><a href="#">Notities</a></li>
-                                    <li><a href="#">* Standaard met financiele export naar extern pakket</a></li>
-								</ul>
-                                <div class="clear"></div>
-								<ul>
-                                    <li><a href="#">Relatiebeheer</a></li>
-                                    <li><a href="#">Facturatie</a></li>
-                                    <li><a href="#">Export naar externe boekhouding</a></li>
-                                    <li><a href="#">Notities</a></li>
-                                    <li><a href="#">1 Gebruiker</a></li>
-                                    <li><a href="#">1 GB dataopslag</a></li>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>Wil jij ook in één oogopslag kunnen zien wanneer een leasecontract afloopt en wanneer een telefoonabonnement of verzekering dient te worden verlengd? Hybrid Saas maakt het mogelijk! De module Hybrid Saas Abonnementenbeheer schept orde in de chaos en plaatst alle behaalde certificaten en afgesloten contracten overzichtelijk bij elkaar.Wanneer een certificaat of overeenkomst tegen de einddatum aanloopt word je hier automatisch van op de hoogte gesteld. Op deze manier voorkom je eenvoudig dat certificaten verlopen en je kosten moet betalen voor onnodige abonnementen. Met Hybrid Saas Abonnementenbeheer loop je nooit meer achter de feiten aan.</a></li>
                                 </ul>
                                 <div class="clear"></div>
                                 <div class="outlook">
-									<ul>
-                                        <li><a href="#"><img src="images/outlook_img6.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img7.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img8.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img1.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img2.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img3.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img4.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img5.png" alt="" /></a></li>
-                                    </ul>
-                                    <a href="#" class="detail">detail overzicht</a>
+									
+                                    <a href="@LinkList.GetLink(Link.Abonnementen)" class="detail">detail overzicht</a>
                                 </div>
                             </div>
                             <div class="management">
-								<h4>Module Contractbeheer</h4>
-                                <span>Standaard inbegrepen:</span>
-                            	<ul>
-                                    <li><a href="#">1 user</a></li>
-                                    <li><a href="#">1 GB opslag</a></li>
-                                    <li><a href="#">Email forward</a></li>
-                                    <li><a href="#">Outlook add-in</a></li>
-                                    <li><a href="#">CRM</a></li>
-                                    <li><a href="#">Wachtwoordbeheer</a></li>
-                                    <li><a href="#">Export naar Excel</a></li>
-								</ul>
+                                <h4>Balans & winst en verliesrekening</h4>
                                 <ul>
-                                    <li><a href="#">Extranet (lite)</a></li>
-                                    <li><a href="#">Notities</a></li>
-                                    <li><a href="#">* Standaard met financiele export naar extern pakket</a></li>
-								</ul>
-                                <div class="clear"></div>
-								<ul>
-                                    <li><a href="#">Relatiebeheer</a></li>
-                                    <li><a href="#">Facturatie</a></li>
-                                    <li><a href="#">Export naar externe boekhouding</a></li>
-                                    <li><a href="#">Notities</a></li>
-                                    <li><a href="#">1 Gebruiker</a></li>
-                                    <li><a href="#">1 GB dataopslag</a></li>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>De balans & winsten verliesrekening is een kasstroomoverzicht en daarmee een onderdeel van een jaarrekening. De balans & winst en verliesrekening geeft een overzicht van de kosten en opbrengsten  van de entiteit over een bepaalde periode (meestal een jaar). Het saldo van de balans & winst en verliesrekening is de over de periode behaalde winst of het over de periode geleden verlies. In dit artikel wordt het proces om een balans & winst en verliesrekening op te maken beschreven. Voordat u een Balans & Winst en verliesrekening kunt opmaken dient u eerst de basis inrichting uit te voeren</a></li>
                                 </ul>
                                 <div class="clear"></div>
                                 <div class="outlook">
-									<ul>
-                                        <li><a href="#"><img src="images/outlook_img6.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img7.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img8.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img1.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img2.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img3.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img4.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img5.png" alt="" /></a></li>
-                                    </ul>
-                                    <a href="#" class="detail">detail overzicht</a>
+
+                                    <a href="@LinkList.GetLink(Link.BalansWinstVerliesrekening)" class="detail">detail overzicht</a>
                                 </div>
                             </div>
                             <div class="management">
-								<h4>Module Financieel</h4>
-                                <span>Standaard inbegrepen:</span>
-                            	<ul>
-                                    <li><a href="#">1 user</a></li>
-                                    <li><a href="#">1 GB opslag</a></li>
-                                    <li><a href="#">Email forward</a></li>
-                                    <li><a href="#">Outlook add-in</a></li>
-                                    <li><a href="#">CRM</a></li>
-                                    <li><a href="#">Wachtwoordbeheer</a></li>
-                                    <li><a href="#">Export naar Excel</a></li>
-								</ul>
+                                <h4>Bankrekening</h4>
                                 <ul>
-                                    <li><a href="#">Extranet (lite)</a></li>
-                                    <li><a href="#">Notities</a></li>
-                                    <li><a href="#">* Standaard met financiele export naar extern pakket</a></li>
-								</ul>
-                                <div class="clear"></div>
-								<ul>
-                                    <li><a href="#">Relatiebeheer</a></li>
-                                    <li><a href="#">Facturatie</a></li>
-                                    <li><a href="#">Export naar externe boekhouding</a></li>
-                                    <li><a href="#">Notities</a></li>
-                                    <li><a href="#">1 Gebruiker</a></li>
-                                    <li><a href="#">1 GB dataopslag</a></li>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>De module Bankrekeningen schept orde in de chaos. U kan eenvoudig banktransacties importeren en afletteren waardoor u altijd inzicht heeft in de openstaande en betaalde facturen.</a></li>
                                 </ul>
                                 <div class="clear"></div>
                                 <div class="outlook">
-									<ul>
-                                        <li><a href="#"><img src="images/outlook_img6.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img7.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img8.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img1.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img2.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img3.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img4.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img5.png" alt="" /></a></li>
-                                    </ul>
-                                    <a href="#" class="detail">detail overzicht</a>
+
+                                    <a href="@LinkList.GetLink(Link.Bankrekening)" class="detail">detail overzicht</a>
                                 </div>
                             </div>
                             <div class="management">
-								<h4>Extra gebruiker</h4>
-                                <span>Standaard inbegrepen:</span>
-                            	<ul>
-                                    <li><a href="#">1 user</a></li>
-                                    <li><a href="#">1 GB opslag</a></li>
-                                    <li><a href="#">Email forward</a></li>
-                                    <li><a href="#">Outlook add-in</a></li>
-                                    <li><a href="#">CRM</a></li>
-                                    <li><a href="#">Wachtwoordbeheer</a></li>
-                                    <li><a href="#">Export naar Excel</a></li>
-								</ul>
+                            <h4>Bedrijfsagenda</h4>
                                 <ul>
-                                    <li><a href="#">Extranet (lite)</a></li>
-                                    <li><a href="#">Notities</a></li>
-                                    <li><a href="#">* Standaard met financiele export naar extern pakket</a></li>
-								</ul>
-                                <div class="clear"></div>
-								<ul>
-                                    <li><a href="#">Relatiebeheer</a></li>
-                                    <li><a href="#">Facturatie</a></li>
-                                    <li><a href="#">Export naar externe boekhouding</a></li>
-                                    <li><a href="#">Notities</a></li>
-                                    <li><a href="#">1 Gebruiker</a></li>
-                                    <li><a href="#">1 GB dataopslag</a></li>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>Met de bedrijfsagenda kan je heel eenvoudig het rooster van je mederwerkers bijhouden, je kan in één opslag zien hoeveel uur een mederwerker nog heeft staan of al heeft opgenomen. Vanuit de bedrijfagenda kan je makkelijk een ticket aanmaken en inplannen, een verlof aanvragen of een bedrijfsgebeurtenis aanmaken. Je kan per mederwerker ook een export naar excel maken zodat je makkelijk kunt zien wanneer er vrij is genomen of ziek is geweest.   </a></li>
                                 </ul>
                                 <div class="clear"></div>
                                 <div class="outlook">
-									<ul>
-                                        <li><a href="#"><img src="images/outlook_img6.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img7.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img8.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img1.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img2.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img3.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img4.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img5.png" alt="" /></a></li>
-                                    </ul>
-                                    <a href="#" class="detail">detail overzicht</a>
+
+                                    <a href="@LinkList.GetLink(Link.Bedrijfsagenda)" class="detail">detail overzicht</a>
                                 </div>
                             </div>
-                            <div class="management noborder">
-								<h4>Extra dataopslag</h4>
-                                <span>Standaard inbegrepen:</span>
-                            	<ul>
-                                    <li><a href="#">1 user</a></li>
-                                    <li><a href="#">1 GB opslag</a></li>
-                                    <li><a href="#">Email forward</a></li>
-                                    <li><a href="#">Outlook add-in</a></li>
-                                    <li><a href="#">CRM</a></li>
-                                    <li><a href="#">Wachtwoordbeheer</a></li>
-                                    <li><a href="#">Export naar Excel</a></li>
-								</ul>
+                            <div class="management">
+                                <h4>Certificatenbeheer</h4>
                                 <ul>
-                                    <li><a href="#">Extranet (lite)</a></li>
-                                    <li><a href="#">Notities</a></li>
-                                    <li><a href="#">* Standaard met financiele export naar extern pakket</a></li>
-								</ul>
-                                <div class="clear"></div>
-								<ul>
-                                    <li><a href="#">Relatiebeheer</a></li>
-                                    <li><a href="#">Facturatie</a></li>
-                                    <li><a href="#">Export naar externe boekhouding</a></li>
-                                    <li><a href="#">Notities</a></li>
-                                    <li><a href="#">1 Gebruiker</a></li>
-                                    <li><a href="#">1 GB dataopslag</a></li>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>Eenvoudig kunnen zien wanneer een het rijbewijs of paspoort verloopt van je persooneel verloopt? Hybrid Saas maakt het mogelijk! De module Certificatenbeheer schept orde in de chaos en plaatst alle certificaten overzichtelijk bij elkaar.Wanneer een certificaat tegen de einddatum aanloopt word je hier automatisch van op de hoogte gesteld. Zodat je gegevens altijd op orde zijn.</a></li>
                                 </ul>
                                 <div class="clear"></div>
                                 <div class="outlook">
-									<ul>
-                                        <li><a href="#"><img src="images/outlook_img6.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img7.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img8.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img1.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img2.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img3.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img4.png" alt="" /></a></li>
-                                        <li><a href="#"><img src="images/outlook_img5.png" alt="" /></a></li>
-                                    </ul>
-                                    <a href="#" class="detail">detail overzicht</a>
+
+                                    <a href="@LinkList.GetLink(Link.Certificatenbeheer)" class="detail">detail overzicht</a>
                                 </div>
                             </div>
-						</div>                            
+                            <div class="management">
+                                <h4>Commissiebeheer</h4>
+                                <ul>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>Als bedrijf kan je externe bedrijven en/of personen inzetten om arbeid te verrichten. In De bouw praat je dan over onderaannemers en in de groothandel over vertegenwoordigers (accountmanagers). Deze diensten kan je belonen via commissie.</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                                <div class="outlook">
+
+                                    <a href="@LinkList.GetLink(Link.Commissiebeheer)" class="detail">detail overzicht</a>
+                                </div>
+                            </div>
+                            <div class="management">
+                                <h4>Contractenbeheer</h4>
+                                <ul>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>Waarom tijd blijven besteden aan steeds terugkerende facturen en bestellingen als het ook automatisch kan? Met Hybrid SaaS Contracten heb je nauwelijks omkijken naar je periodiek uitgaande facturen en bestellingen en zo verbeter je eenvoudig je positieve cashflow. Periodiek terugkerende bestellingen plaats je automatisch bij je leveranciers. Abonnementen van je klanten kunnen worden ingegeven, waarbij de factuur per ingegeven termijn wordt verstuurd. Verzend facturen en bestellingen direct via e-mail. Bestaande orders en facturen kunnen direct geautomatiseerd worden.</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                                <div class="outlook">
+
+                                    <a href="@LinkList.GetLink(Link.Contractenbeheer)" class="detail">detail overzicht</a>
+                                </div>
+                            </div>
+                            <div class="management">
+                                <h4>Debiteuren & Crediteurenbeheer</h4>
+                                <ul>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>Met Hybrid SaaS Debiteuren & Crediteurenbeheer kun je snel en eenvoudig inkomende facturen beheren. Met slechts enkele drukken op de knop voer je de (inkoop)factuur in en kun je het verdere proces managen. Inkomende facturen worden overzichtelijk opgeslagen, waardoor je ze altijd eenvoudig terug kunt vinden en de huidige betalingsstatus kunt controleren. Het proces voor inkomende facturen verloopt hierdoor sneller en facturen kunnen eerder op tijd worden betaald.</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                                <div class="outlook">
+
+                                    <a href="@LinkList.GetLink(Link.FacturatieDebiteurbeheer)" class="detail">detail overzicht</a>
+                                </div>
+                            </div>
+                            <div class="management">
+                                <h4>Extranet</h4>
+                                <ul>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>.</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                                <div class="outlook">
+
+                                    <a href="@LinkList.GetLink(Link.Extranet)" class="detail">detail overzicht</a>
+                                </div>
+                            </div>
+                            <div class="management">
+                                <h4>Export naar externe boekhouding</h4>
+                                <ul>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>.</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                                <div class="outlook">
+
+                                    <a href="@LinkList.GetLink(Link.ExportBoekhouding)" class="detail">detail overzicht</a>
+                                </div>
+                            </div>
+                            <div class="management">
+                                <h4>Facturatie</h4>
+                                <ul>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>Een goede cashflow begint bij het op tijd versturen van je facturen. Met Hybrid SaaS Facturatie kun je eenvoudig en snel een factuur opmaken en (digitaal) versturen. Je maakt gebruik van vooraf ingestelde gegevens. Op deze manier win je veel tijd en wordt de kans op fouten aanzienlijk verkleind. Facturen worden overzichtelijk opgeslagen en zijn hierdoor eenvoudig terug te vinden. Het verzenden van kopie- en creditfacturen was nog nooit zo gemakkelijk. Daarnaast geeft de module altijd het actuele facturatieproces weer en kun je in één oogopslag zien welke facturen zijn afgehandeld en welke er nog openstaan. Wanneer een betalingstermijn van een factuur is verstreken kunnen er gemakkelijk en snel betalingsherinneringen worden verstuurd. </a></li>
+                                </ul>
+                                <div class="clear"></div>
+                                <div class="outlook">
+
+                                    <a href="@LinkList.GetLink(Link.Facturatie)" class="detail">detail overzicht</a>
+                                </div>
+                            </div>
+                            <div class="management">
+                                <h4>Gebouwbeheer</h4>
+                                <ul>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>.</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                                <div class="outlook">
+
+                                    <a href="@LinkList.GetLink(Link.Gebouwbeheer)" class="detail">detail overzicht</a>
+                                </div>
+                            </div>
+                            <div class="management">
+                                <h4>Gebruikers</h4>
+                                <ul>
+                                    <span>€ 5,- per gebruiker</span>
+                                </ul>
+                                <ul>
+                                    <li><a>.</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                                <div class="outlook">
+
+                                    <a href="@LinkList.GetLink(Link.Gebruiker)" class="detail">detail overzicht</a>
+                                </div>
+                            </div>
+                            <div class="management">
+                                <h4>Human resource management (HRM)</h4>
+                                <ul>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>Met Hybrid Saas Human Resource Management kun je personeelszaken eenvoudig automatiseren en heb je altijd een up-to-date inzicht in de gehele personeelsadministratie. Alle personeelsgegevens staan op één centrale veilige plaats en zaken als contactgegevens, dienstverband en verlofuren kunnen altijd en overal worden geraadpleegd. Het zogenoemde Employee Self Service (ESS) maakt het mogelijk dat medewerkers zelf veranderingen en aanvragen in kunnen dienen. Deze worden vervolgens door de betreffende manager goedgekeurd en definitief doorgevoerd.</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                                <div class="outlook">
+
+                                    <a href="@LinkList.GetLink(Link.HRM)" class="detail">detail overzicht</a>
+                                </div>
+                            </div>
+                            <div class="management">
+                                <h4>Inventarisbeheer</h4>
+                                <ul>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>Uw heeft diverse objecten in uw bezit, maar geen idee waar deze zich bevinden. Laat staan dat u snel handleidingen, inkoopfacturen of serienummers kunt opzoeken. Met Online Inventarisbeheer van Hybrid SaaS kunnen gegevens over uw inventaris overzichtelijk worden geregistreerd en gecontroleerd. Bij elk object kunt u aankooprijs, identificatienummers en diverse data vastleggen.</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                                <div class="outlook">
+
+                                    <a href="@LinkList.GetLink(Link.Inventarisbeheer)" class="detail">detail overzicht</a>
+                                </div>
+                            </div>
+                            <div class="management">
+                                <h4>KM-registratie</h4>
+                                <ul>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>.</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                                <div class="outlook">
+
+                                    <a href="@LinkList.GetLink(Link.KmRegistratie)" class="detail">detail overzicht</a>
+                                </div>
+                            </div>
+                            <div class="management">
+                                <h4>Notities</h4>
+                                <ul>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>Met de Module Notities kan je eenvoudig een verslag bijhouden wat er is afgesproken met de klant. Je kan hem inplannen zodat hij een dag van te voren als je een afspraak heb staan weer naar voren komt. Ook kan je er bijlage in bijhouden. Dus alle relevante informatie over het gesprek word bij elkaar bewaard zodat je het altijd terug kan vinden
+                                    </a></li>
+                                </ul>
+                                <div class="clear"></div>
+                                <div class="outlook">
+
+                                    <a href="@LinkList.GetLink(Link.Notities)" class="detail">detail overzicht</a>
+                                </div>
+                            </div>
+                            <div class="management">
+                                <h4>Offertes en orders</h4>
+                                <ul>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>In een handomdraai een professionele offerte opstellen en daarna vliegensvlug omzetten in een order? Dat kan! Met de module Hybrid Saas Offertes & Orders. Eenmalig stel je een offerte lay-out op, waarna je alleen nog maar de producten of diensten als offerteregels hoeft toe te voegen. Deze basis kan na acceptatie van de offerte dienen als order, werkbon en/of pakbon, waarbij alleen de lay-out verandert. De offerte dan wel order kan rechtstreeks digitaal verzonden worden vanuit Hybrid SaaS.</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                                <div class="outlook">
+
+                                    <a href="@LinkList.GetLink(Link.OffertesOrders)" class="detail">detail overzicht</a>
+                                </div>
+                            </div>
+                            <div class="management">
+                                <h4>Opslag</h4>
+                                <ul>
+                                    <span>€ 10,- per GB</span>
+                                </ul>
+                                <ul>
+                                    <li><a>.</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                                <div class="outlook">
+
+                                    <a href="@LinkList.GetLink(Link.Dataopslag)" class="detail">detail overzicht</a>
+                                </div>
+                            </div>
+                            <div class="management">
+                                <h4>Outlook Add-In</h4>
+                                <ul>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>Door middel van de Outlook add-in krijg je de mogelijkheid om e-mails vanuit Microsoft Outlook mailbox om te zetten in tickets. Op deze manier kan je je mailbox leeg houden en sla je e-mails netjes op bij de juiste relaties en/ of projecten.</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                                <div class="outlook">
+
+                                    <a href="@LinkList.GetLink(Link.OutlookAddIn)" class="detail">detail overzicht</a>
+                                </div>
+                            </div>
+                            <div class="management">
+                                <h4>Prepaidkaarten</h4>
+                                <ul>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>.</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                                <div class="outlook">
+
+                                    <a href="@LinkList.GetLink(Link.Prepaidkaarten)" class="detail">detail overzicht</a>
+                                </div>
+                            </div>
+                            <div class="management">
+								<h4>Product & Voorraadbeheer</h4>
+                                <ul>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>Overal ter wereld je complete productenbestand snel en eenvoudig beheren? Hybrid Saas Productbeheer maakt het mogelijk. Producten worden voorzien van een duidelijke omschrijving en zijn op deze manier altijd gemakkelijk terug te vinden. Ook is het mogelijk om producten naar eigen inzicht onder te verdelen aan de hand van verschillende eigenschappen, zoals productkenmerken, product- of barcodes en leveranciers. Hybrid SaaS Productbeheer helpt je een goed overzicht te houden over je producten en maakt het gemakkelijk om gegevens aan te passen of een productafbeelding toe te voegen. Wanneer een product niet meer op voorraad is, word je hier automatisch van op de hoogte gesteld. Wel zo gemakkelijk!</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                                <div class="outlook">
+
+                                    <a href="@LinkList.GetLink(Link.Productenbeheer)" class="detail">detail overzicht</a>
+                                </div>
+                            </div>
+                            <div class="management">
+								<h4>Projectbeheer</h4>
+                                <ul>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>Met de module Projectbeheer worden alle projectgegevens op één centrale plaats vastgelegd. De projecten kunnen worden gekoppeld aan relaties en worden overzichtelijk en gestructureerd weergegeven. Met Hybrid Saas Projectbeheer ben je in staat om projecten eenvoudiger te managen. Ook kun je deadlines gemakkelijk monitoren, openstaande taken inzien en het vastgestelde budget bewaken. Per project kun je financiële afspraken vastleggen en altijd en overal de projecthistorie inzien. Offertes en facturen kunnen eenvoudig aan projecten worden gekoppeld en met één druk op de knop worden verstuurd. Kortom, een forse tijdbesparing!</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                                <div class="outlook">
+
+                                    <a href="@LinkList.GetLink(Link.Productenbeheer)" class="detail">detail overzicht</a>
+                                </div>
+                            </div>
+                            <div class="management">
+								<h4>Relatiebeheer</h4>
+                                <ul>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>Relaties zijn de motor van iedere organisatie. Juist daarom is het belangrijk om als organisatie over een compleet en overzichtelijk CRM-systeem (Customer Relationship Management) te beschikken.Met de module Relatiebeheer van Hybrid SaaS kunnen klantgegevens gemakkelijk en snel worden vastgelegd. Bovendien heeft elke medewerker altijd en overal toegang tot de actuele gegevens en de historie van elke klant. Dit is ook voor de klant een goede zaak, want dit zorgt voor een optimale klantbediening.</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                                <div class="outlook">
+
+                                    <a href="@LinkList.GetLink(Link.Relatiebeheer)" class="detail">detail overzicht</a>
+                                </div>
+                            </div>
+                            <div class="management">
+                                <h4>Ticketsysteem</h4>
+                                <ul>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>Met het ticketsysteem krijg je de mogelijkheid om al je klantvragen te organiseren en op te volgen. Weet precies wat er speelt bij je relaties, projecten en je eigen organisatie. Met behulp van de juiste categorieën en urgentie bepaal je zelf waar de prioriteiten liggen en heb je altijd een actueel overzicht. Op deze manier krijg je een beter inzicht in openstaande acties en verhoog je de efficiëntie en servicegerichtheid naar je (klant) relaties. Communicatie is misschien wel het belangrijkste element voor een goede samenwerking. Ons doel is bedrijven en hun relaties dichter bij elkaar te brengen om op deze manier een optimale samenwerking te realiseren. Klantvragen komen via verschillende kanalen binnen en worden vaak op verschillende plaatsen opgeslagen. Door de inefficiënte gaat veel tijd verloren en gooi je onnodig geld weg. Het ticketsysteem van Hybrid SaaS biedt veel mogelijkheden om dit te voorkomen en is vrijwel door ieder bedrijf te gebruiken.</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                                <div class="outlook">
+
+                                    <a href="@LinkList.GetLink(Link.TicketSysteem)" class="detail">detail overzicht</a>
+                                </div>
+                            </div>
+                            <div class="management">
+                                <h4>Tijdregistratie</h4>
+                                <ul>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>Het bijhouden van gewerkte uren wordt door medewerkers vaak als een tijdrovende klus beschouwd. Mede hierdoor wordt deze taak nogal eens uitgesteld en worden er achteraf dikwijls foutieve gegevens vastgelegd. Maar daar komt vanaf nu verandering in. Met Hybrid SaaS Tijdregistratie kan iedere medewerker op elke gewenst moment snel en eenvoudig uren, onkosten en kilometers registreren. Op deze manier creëer je meer uniformiteit, tijden worden accurater bijgehouden en je beschikt altijd en overal over de meest actuele gegevens.</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                                <div class="outlook">
+
+                                    <a href="@LinkList.GetLink(Link.Tijdregistratie)" class="detail">detail overzicht</a>
+                                </div>
+                            </div>
+                            <div class="management">
+                                <h4>Vragenlijsten en Equettes</h4>
+                                <ul>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>Informatie is misschien wel het belangrijkste onderdeel binnen elke organisatie. Maar hoe zorgt u ervoor dat u de juiste informatie krijgt, zonder dat er een hele papierstroom aan vooraf gaat. Met de Online Enquête en vragenlijsten van Hybrid SaaS kunt u klanttevredenheidsonderzoeken uitvoeren, gestandaardiseerde (voor) opnamelijsten en nog veel meer. U heeft de volledige vrijheid om zelf vragen op te stellen en deze te laten beantwoorden door middel van muliplechoice of open antwoorden.</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                                <div class="outlook">
+
+                                    <a href="@LinkList.GetLink(Link.VragenlijstenEquettes)" class="detail">detail overzicht</a>
+                                </div>
+                            </div>
+                            <div class="management">
+                                <h4>Wachtwoordbeheer</h4>
+                                <ul>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>Je heb zoveel verschillende website's en zoveel verschillende inloggegevens dat je het overzicht zo kwijt ben welk wachtwoord waarbij hoort. In deze module kunt u wachtwoorden registreren en koppelen aan het bedrijf zodat u altijd uw wachtwoorden bij de hand heeft.</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                                <div class="outlook">
+
+                                    <a href="@LinkList.GetLink(Link.Wachtwoordbeheer)" class="detail">detail overzicht</a>
+                                </div>
+                            </div>
+                            <div class="management">
+                                <h4>Webshop</h4>
+                                <ul>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>Met de Hybrid SaaS Webwinkel kan snel en eenvoudig een webshop worden gerealiseerd en kun je direct producten en diensten aan (potentiele) klanten aanbieden. Met een webshop ben je niet locatie gebonden en 24 uur per dag, 7 dagen per week bereikbaar. De uitgelezen kans om nieuwe klanten aan te trekken en de behoeften van bestaande klanten te voorzien.  Online winkelen, het nieuwe winkelen!</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                                <div class="outlook">
+
+                                    <a href="@LinkList.GetLink(Link.Webshop)" class="detail">detail overzicht</a>
+                                </div>
+                            </div>
+                            <div class="management">
+                                <h4>Werkbonnen</h4>
+                                <ul>
+                                    <span>€ 30,-</span>
+                                </ul>
+                                <ul>
+                                    <li><a>Buitendienstmedewerkers zijn veel tijd kwijt aan het invullen van papieren werkbonnen.  Waarom zou u onnodig papier en tijd verspillen, terwijl uw werkbonnen gedigitaliseerd kunnen worden. Met de digitale werkbon kunnen uw buitendienstmedewerkers snel een eenvoudig werkzaamheden en kosten registreren. Het overtypen van handgeschreven werkbonnen behoort tot het verleden. De communicatietijd zal verkleinen terwijl u de efficiëntie verhoogd. Doordat de werkbonnen direct gekoppeld zijn aan uw backoffice heeft u altijd en over een actueel overzicht.</a></li>
+                                </ul>
+                                <div class="clear"></div>
+                                <div class="outlook">
+
+                                    <a href="@LinkList.GetLink(Link.Werkbonnen)" class="detail">detail overzicht</a>
+                                </div>
+                            </div>
+                       </div>                            
                 </div>
-                </article>
-                <!-- end select bar -->
-                
-			</section>
-			<!-- end center part -->
-			
+            </article>
+            <!-- end select bar -->
 		</section>
-		<!-- end content -->
-		
+		<!-- end center part -->
+	</section>
+	<!-- end content -->

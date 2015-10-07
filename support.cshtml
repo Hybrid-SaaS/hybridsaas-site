@@ -17,10 +17,10 @@
                 
                 	<aside class="text space">
                     	<div class="centering">
-                        	<h2>De support van Hybrid Saas</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                        	<h2>Wij staan voor je klaar</h2>
+                            <p>Heb je een vraag of kom je ergens niet uit? Wij helpen je graag verder</p>
 						</div>                            
-                        <a href="#" class="software">Meest gestelde vragen</a>
+                        <a href="@LinkList.GetLink(Link.MeestGesteldeVragen)" class="software">Meest gestelde vragen</a>
                     </aside>
                     
             	</div>
@@ -29,6 +29,8 @@
 
 		</section>
 		<!-- end slider -->
+
+
 		
 		<!-- start content -->
 		<section id="content-part">
@@ -40,10 +42,10 @@
 				<article class="about-bar">
 				<div class="centering">
                 
-					<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+					<h3>Met Hybrid SaaS heb je alles wat je nodig hebt om alle bedrijfsprocessen slim te organiseren. </h3>
                     
                     <aside class="left">
-                    	<p>Met Hybrid SaaS heb je alles wat je nodig hebt om alle bedrijfsprocessen slim te organiseren. Van relatiebeheer, ticketsysteem tot het beheer van de voorraad en de facturatie. Je kiest zelf het pakket dat aansluit op jouw wensen, en voegt eventueel naar wens specifieke modules toe. </p>
+                    	<p>Van relatiebeheer, ticketsysteem tot het beheer van de voorraad en de facturatie. Je kiest zelf het pakket dat aansluit op jouw wensen, en voegt eventueel naar wens specifieke modules toe. </p>
                     </aside>
                     
                     <aside class="right">
@@ -63,24 +65,34 @@
                 	<div class="centering">
                 		<div class="supportive">
                         
-                            <h2>onze support<span>Vragen? Neem @LinkList.GetLink(Link.Contact) op met onze helpdesk (bereikbaar op werkdagen van 9.00 tot 17.00 uur) </span></h2>
+                            <h2>onze support<span></span></h2>
                             <aside class="support">
-                            	<div class="left">
+                                <div class="left">
                                     <ul>
                                         <li>
                                             <div class="image"><img src="images/support_img1.png" alt="" /></div>
                                             <div class="text">
                                                 <h3>downloads</h3>
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+                                                <a href="@LinkList.GetLink(Link.BrowserDownload)">Hybrid SaaS Browser </a> |
+                                                <a href="@LinkList.GetLink(Link.WordAddDownload)">Hybrid SaaS Word add-in </a> | 
+                                                <a href="@LinkList.GetLink(Link.OutlookAddDownload)">Hybrid SaaS Outlook add-in </a>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="image"><img src="images/support_img3.png" alt="" /></div>
                                             <div class="text">
-                                                <h3>handleiding</h3>
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+                                                <a href="@LinkList.GetLink(Link.Handleiding)"><h3>handleiding</h3></a>
+                                                <p>Onze uitgebreide handleiding geeft inzicht in de werking van onze software.</p>
                                             </div>
                                         </li>
+                                        <li>
+                                            <div class="image"><img src="images/support_img3.png" alt="" /></div>
+                                            <div class="text">
+                                                <a href="@LinkList.GetLink(Link.KijkMetMijMee)"><h3>Kijk met mij mee</h3></a>
+                                                <p>Wij kunnen op afstand meekijken op uw computer, gebruik deze optie om onze medewerkers toegang te geven tot uw pc.</p>
+                                            </div>
+                                        </li>
+                                        
                                     </ul>
                                 </div>
                                 <div class="right">
@@ -88,61 +100,34 @@
                                         <li>
                                             <div class="image"><img src="images/support_img2.png" alt="" /></div>
                                             <div class="text">
-                                                <h3>ticket systemen</h3>
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+                                                <a href="@LinkList.GetLink(Link.InvoerTicket)"><h3>ticket systemen</h3></a>
+                                                <p>Stel snel en gemakkelijk uw vraag online aan onze organisatie.</p>
                                             </div>
                                         </li>
                                         <li>
-                                            <div class="image"><img src="images/support_img4.png" alt="" /></div>
+                                            <div class="image"><img src="images/support_img3.png" alt="" /></div>
                                             <div class="text">
-                                                <h3>helpdesk</h3>
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+                                                <a href="@LinkList.GetLink(Link.Contact)"><h3>helpdesk</h3></a>
+                                                <p>Onze contact gegevens.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="image"><img src="images/support_img3.png" alt="" /></div>
+                                            <div class="text">
+                                                <a href="@LinkList.GetLink(Link.Handleiding)"><h3>Consultancy</h3></a>
+                                                <p>Maak gebruik van onze jarenlange kennis als systeembeheerder, softwareontwikkelaar & bedrijfsautomatiseerder.</p>
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
                             </aside>
-							<a href="/support.cshtml" class="moreinfo">NAAR DE SUPPORTPAGINA</a>
 							<span class="border"></span>
 						</div>
 	                </div>
                 </article>
                 <!-- end support bar -->
 
-				<!-- start form bar -->
-                <article class="form-bar" id="@LinkList.GetLink(Link.Contact)">
-                	
-                	<div class="centering">
-                		<div class="form">
-                        
-                            <h2>HEB JE EEN VRAAG?<span>NEEM @LinkList.GetLink(Link.Contact) MET ONS OP.</span></h2>
-                            <aside class="forminner">
-                            	<div class="left">
-                                    <form action="#">
-                                    	<input type="text" value="Naam" onFocus="if(this.value=='Naam')this.value='';" onBlur="if(this.value=='')this.value='Naam';" />
-                                    	<input type="text" value="E-mail" onFocus="if(this.value=='E-mail')this.value='';" onBlur="if(this.value=='')this.value='E-mail';" />
-                                    	<textarea cols="15" rows="5" onFocus="if(this.value=='Bericht')this.value='';" onBlur="if(this.value=='')this.value='Bericht';">Bericht</textarea>
-                                    	<input type="submit" value="VERSTUur" />
-                                    </form>
-                                </div>
-                                <div class="right">
-                                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
-                                   <address>Hybrid SaaS | Online Business Software <br /> Postbus 31 | 2870 AA Schoonhoven <br /> +3185 002 1940 <a href="mailto:contact.hybridsaas.com">contact.hybridsaas.com</a></address>
-                                    <div class="social">
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Facebook)"><img src="images/social_icon1.png" alt="" /></a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Twitter)"><img src="images/social_icon2.png" alt="" /></a></li>
-                                            <li><a href="@LinkList.GetLink(Link.GooglePlus)"><img src="images/social_icon3.png" alt="" /></a></li>
-                                        </ul>	
-                                    </div>
-                                </div>
-                            </aside>
-							<a href="@LinkList.GetLink(Link.Contact)" class="moreinfo">NAAR DE Contact PAGINA</a>
-						</div>
-	                </div>
-                </article>
-                <!-- end form bar -->
-                
+				
 			</section>
 			<!-- end center part -->
 			
