@@ -99,7 +99,7 @@ namespace Hybrid_Saas
             };
             LinkDictionary[Link.Commisie] = new LinkInfo
             {
-                Url = "/Commissie"
+                Url = "/Module/Commissie"
             };
             LinkDictionary[Link.Contact] = new LinkInfo
             {
@@ -111,7 +111,7 @@ namespace Hybrid_Saas
             };
             LinkDictionary[Link.Financieel] = new LinkInfo
             {
-                Url = "/Financieel"
+                Url = "/Module/Financieel"
             };
             LinkDictionary[Link.Index] = new LinkInfo
             {
@@ -143,7 +143,7 @@ namespace Hybrid_Saas
             };
             LinkDictionary[Link.ReleaseNotes] = new LinkInfo
             {
-                Url = "http://www.hybridsaas.com/release-notes"
+                Url = "http://hybridsaas.support/pages/release-notes/latest/release-notes"
             };
             LinkDictionary[Link.Support] = new LinkInfo
             {
@@ -217,7 +217,7 @@ namespace Hybrid_Saas
             }; 
             LinkDictionary[Link.Contractenbeheer] = new LinkInfo
             {
-                Url = "/pakket-contactbeheer"
+                Url = "/Module/pakket-contactbeheer"
             }; 
             LinkDictionary[Link.FacturatieDebiteurbeheer] = new LinkInfo
             {
@@ -337,7 +337,7 @@ namespace Hybrid_Saas
             };
             LinkDictionary[Link.ExportBoekhouding] = new LinkInfo
             { //not init
-                Url = "/Modules/ExportBoekhouding"
+                Url = "/Modules/exportboekhouding"
             };
             LinkDictionary[Link.HelpDesk] = new LinkInfo
             { //not init
@@ -384,6 +384,8 @@ namespace Hybrid_Saas
             { //not init
                 Url = "/Module/Gebouwbeheer"
             };
+
+            /*
             foreach (var foo in Enum.GetValues(typeof(Link)))
             {
                 if (!LinkDictionary.ContainsKey((Link)foo))
@@ -393,7 +395,7 @@ namespace Hybrid_Saas
                         Url = "#"
                     };
                 }
-            }
+            }*/
         }
 
         public static string GetLink(Link link)

@@ -114,7 +114,7 @@
     <Content Include="module.cshtml" />
     <Content Include="modules.cshtml" />
     <Content Include="over.cshtml" />
-    <Content Include="pakket-contactbeheer.cshtml" />
+    <Content Include="pakket-contractbeheer.cshtml" />
     <Content Include="pakket-offerte-voorraad.cshtml" />
     <Content Include="pakket-tickets-facturatie.cshtml" />
     <Content Include="pakketten.cshtml" />
@@ -124,7 +124,6 @@
     <Content Include="support.cshtml" />
     <Content Include="Module\ticket-systeem.cshtml" />
     <Content Include="abonnementen-certificatenbeheer.cshtml" />
-    <Content Include="balans-winst-verliesrekening.cshtml" />
     <Content Include="bankrekening.cshtml" />
     <Content Include="bedrijfsagenda.cshtml" />
     <Content Include="contractenbeheer.cshtml" />
@@ -156,7 +155,6 @@
     <Content Include="Module\notities.cshtml" />
     <Content Include="Module\Extranet.cshtml" />
     <Content Include="Module\Prepaid-kaarten.cshtml" />
-    <Content Include="Module\facturatie-debiteurbeheer.cshtml" />
     <Content Include="Module\Excel-export.cshtml" />
     <Content Include="Meest-gestelde-vragen.cshtml" />
     <Content Include="Module\offertes-orders.cshtml" />
@@ -169,6 +167,9 @@
     <Content Include="Module\prepaidkaarten.cshtml" />
     <Content Include="Module\product-voorraadbeheer.cshtml" />
     <Content Include="Module\Inkoopbeheer.cshtml" />
+    <Content Include="Module\Temp.cshtml" />
+    <Content Include="Module\facturatie-debiteurbeheer.cshtml" />
+    <Content Include="Module\abonnementen - Copy.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

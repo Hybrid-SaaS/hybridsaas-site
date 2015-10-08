@@ -50,12 +50,12 @@ a:hover { text-decoration: underline; }
 		.slider-bar ul { padding: 0; margin: 0; }
 		.slider-bar li img { width: 100%; }
 		.slider-bar .flexslider { position: relative; height: 765px; }
-		.slider-bar .text { margin: 0 0 0 -490px; position: absolute; top: 210px; left: 50%; z-index: 9; }
-		.slider-bar .text.space p { padding: 17px 255px 0 15px; }
-		.slider-bar .text h2 { font-size: 42px; line-height: 50px; color: #f7941e; text-transform: none; text-align: left; }
-		.slider-bar .text p { padding: 20px 305px 0 55px; font-size: 32px; line-height: 45px; color: #fff; text-align: center; }
-		.slider-bar .text span { padding: 10px 20px 15px; margin: 145px 0 0 210px; float: left; min-width: 480px; font-size: 24px; line-height: 30px; color: #fff; font-family: 'varela_roundregular'; background: url(../images/info_bg.png) repeat; }
-		.slider-bar .text a.software { padding: 10px 12px 17px; margin: 145px 0 0 365px; width: 240px; border-radius: 4px; font-style: normal; display: block; font-size: 24px; line-height: 30px; color: #fff; font-family: 'varela_roundregular'; background: #f7941e; }
+		.slider-bar .text { margin: 0 0 0 -600px; position: absolute; top: 210px; left: 50%; z-index: 9; }
+		.slider-bar .text.space p { padding: 17px 0 0 15px; }
+		.slider-bar .text h2 { font-size: 42px; line-height: 50px; color: #f7941e; text-transform: none; text-align: center; }
+		.slider-bar .text p {  font-size: 32px; margin:50px; line-height: 45px; color: #fff; text-align: center; }
+		.slider-bar .text span {text-align:center; display:block;width:300px; padding: 10px 20px 15px; margin: auto; min-width: 550px; font-size: 24px; line-height: 30px; color: #fff; font-family: 'varela_roundregular'; background: url(../images/info_bg.png) repeat; }
+		.slider-bar .text a.software { padding: 10px 12px 17px; margin: 100px auto; width: 240px; border-radius: 4px; font-style: normal; display: block; font-size: 24px; line-height: 30px; color: #fff; font-family: 'varela_roundregular'; background: #f7941e; }
 		.slider-bar .text cite.mourning { margin: 25px 0 0 -185px; font-style: normal; font-size: 23px; line-height: 40px; color: #fff; display: block; text-align: center; }
 		.slider-bar .text a.software:hover { opacity: 0.9; text-decoration: none; }
 		.slider-bar a.downarrow { margin: 0 0 0 -20px; display: block; position: absolute; z-index: 999; bottom: 45px; left: 50%; }
@@ -96,7 +96,7 @@ a:hover { text-decoration: underline; }
 			.software-bar .text { padding: 0 0 55px; overflow: hidden; }
 			.software-bar span.border { margin: 55px auto 0; height: 2px; width: 91%; display: block; border-bottom: 1px dashed #c5c5c5; }
 			.software-bar ul { padding: 0; margin: 70px 0 0; overflow: hidden; }
-			.software-bar li { padding: 0 15px; float: left; text-align: center; width: 25.7%; box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; }
+			.software-bar li { padding: 0 15px; float: left; text-align: center; width: 25%; box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; }
 			.software-bar li:first-child { padding: 0 5px; width: 22.7%; }
 			.software-bar li img { margin: auto; }
 			.software-bar li h3 { margin: 35px 0 0px; text-transform: uppercase; font-size: 21px; line-height: 22px; color: #777; font-family: 'ralewaysemibold'; }
@@ -206,13 +206,14 @@ a:hover { text-decoration: underline; }
 			.support-bar .right { padding: 15px 0 0 50px; }
 			.support-bar .right .image { width: 15%; }
 			.support-bar .right .text { margin: 20px 50px 10px 0; }
-			.support-bar .right li { padding: 0; }
+            .support-bar .left li { padding: 0; height:140px}
+			.support-bar .right li { padding: 0; height:140px}
 			.support-bar .image { float: left; width: 20%; } 
 			.support-bar ul { padding: 0; margin: 0; width: auto; } 
 			.support-bar .support { margin: 50px 0 0; overflow: hidden; }
-			.support-bar .support h3 { font-size: 24px; line-height: 26px; color: #222; text-transform: uppercase; font-family: 'ralewaymedium'; }
+			.support-bar .support h3 { font-size: 24px; line-height: 26px; color: #222; text-transform: uppercase; font-family: 'ralewaymedium'; text-align:left;margin-left:0px; }
 			.support-bar .support p { padding: 10px 0 0; font-size: 16px; line-height: 24px; color: #777; }
-			.support-bar .text a { font-size: 16px; color: #777; }
+			.support-bar .text a { padding: 10px 0 0; font-size: 16px; line-height: 24px; color: #777; }
 			
             .support-bar a.moreinfo { padding: 0 75px 0 0; margin: 25px auto 0; display: block; text-align: center; width: 520px; font-size: 23px; line-height: 47px; color: #f7941e; font-family: 'varela_roundregular'; text-transform: uppercase; background: url(../images/why_arrow.png) right center no-repeat; }
 			.support-bar span.border { margin: 45px auto 0; height: 2px; width: 91%; display: block; border-bottom: 1px dashed #c5c5c5; }
@@ -246,17 +247,25 @@ a:hover { text-decoration: underline; }
 			.box-bar .merge { margin: 110px 0 0; position: relative; min-height: 485px; }
 			
 			.box-bar .boxcontent1 { position: absolute; top: 90px; left: 0; }
+            .box-bar .boxcontent4 { position: absolute; Bottom: 0; left: 90px; }
 			.box-bar .boxcontent2 { position: absolute; top: -50px; right: -45px; width: 37%; }
 			.box-bar .boxcontent3 { position: absolute; bottom: 10px; right: -140px; width: 37%; }
 			
 			.box-bar .common { padding: 0; margin: 0px; width: 100%; box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; float: left; text-align: center; font-family: 'archivo_narrowregular'; }
 			.box-bar .common img { margin: auto; }
-			.box-bar .common h3 { margin: 15px 0 0; font-size: 24px; line-height: 26px; color: #222; text-transform: uppercase; }
+			.box-bar .common h3 {text-align:right; margin: 15px 10px 0; font-size: 24px; line-height: 26px; color: #222; text-transform: uppercase; }
 			.box-bar .common h3 span { display: block; }
 			.box-bar .common cite { margin: 5px 10px; float: right; font-style: normal; font-size: 18px; line-height: 18px; color: #777; text-transform: uppercase; }
 			.box-bar .common a.detail { padding: 6px 0; margin: 10px 10px 0 0; float: right; font-size: 10px; width: 85px; border-radius: 2px; line-height: 14px; color: #fff; text-transform: uppercase; letter-spacing: 0.1em; font-family: 'varela_roundregular'; background: #f7941e; }
 			.box-bar .common.pak1 ul { padding: 0;overflow: hidden; float: right; }
 			.box-bar .common li { padding: 0 10px; float: left; background: url(../images/sep5.png) left center no-repeat; }
+			
+            .box-bar .common.pak4 h3 {text-align:right; margin: 18px 10px 0; font-size: 14px; line-height: 26px; color: #222; text-transform: uppercase; }
+			.box-bar .common.pak4 ul { padding: 0;overflow: hidden; float: right; }
+            .box-bar .common.pak4 a.detail { padding: 6px 0; margin: 7px 7px 0 0; float: right; font-size: 8px; width: 85px; border-radius: 2px; line-height: 14px; color: #fff; text-transform: uppercase; letter-spacing: 0.1em; font-family: 'varela_roundregular'; background: #f7941e; }
+			.box-bar .common.pak4 li { padding: 0 10px; float: left; background: url(../images/sep5.png) left center no-repeat; }
+			.box-bar .common.pak4 li a { display: block; font-size: 14px; line-height: 20px; color: #777; font-family: 'archivo_narrowregular'; }
+			.box-bar .common.pak4 cite { margin: 5px 10px; float: right; font-style: normal; font-size: 14px; line-height: 18px; color: #777; text-transform: uppercase; }
 			
 			.box-bar .common.pak2 h3 { text-align: left; }
 			.box-bar .common.pak2 cite { margin: 5px 0 0; float: left; }
@@ -292,6 +301,11 @@ a:hover { text-decoration: underline; }
 			.boxdetail-bar .ticket .common h3 { margin: 20px 0 0; font-size: 36px; line-height: 36px; color: #f7941e; }
 			.boxdetail-bar .ticket .common.pak2 h3 { margin: 35px 0 0; }
 			
+            .boxdetail-bar .ticket .common.pak4 img { margin: auto; height:50px;}
+            .boxdetail-bar .ticket .common.pak4 a img { margin: auto; height:30px;}
+            .boxdetail-bar .ticket .common.pak4 h3 { margin: 20px 0 0; font-size: 30px; line-height: 36px; color: #f7941e; }
+            .boxdetail-bar .ticket .common.pak4 .stand li a {margin: 0 5px 0 5px;  display: block; font-size: 15px; line-height: 20px; color: #777; }
+			
 			.boxdetail-bar .ticket .common h4 { margin: 25px 0 5px; font-size: 17px; line-height: 24px; color: #222; font-family: 'ralewaysemibold'; }
 			.boxdetail-bar .ticket .common h3 span { display: block; }
 			.boxdetail-bar .ticket .common cite { margin: 15px 0; display: block; font-style: normal; font-size: 18px; line-height: 18px; color: #777; text-transform: uppercase; }
@@ -299,7 +313,7 @@ a:hover { text-decoration: underline; }
 			.boxdetail-bar .ticket .common ul { padding: 0;overflow: hidden; width: auto; text-align: center; }
 			.boxdetail-bar .ticket .common .stand li { padding: 0 5px; display: inline-block; background: url(../images/sep5.png) left center no-repeat; }
 			.boxdetail-bar .ticket .common .stand li:first-child { padding-left: 0; background: none; }
-			.boxdetail-bar .ticket .common .stand li a { display: block; font-size: 17px; line-height: 20px; color: #777; }
+			.boxdetail-bar .ticket .common .stand li a {margin: 0 5px 0 5px;  display: block; font-size: 17px; line-height: 20px; color: #777; }
 			
 			.boxdetail-bar .ticket .common.pak3 ul , .boxdetail-bar .ticket .common.pak2 ul { padding: 0px 0 5px; overflow: hidden; }
 			.boxdetail-bar .ticket .common.pak3 li:first-child, .boxdetail-bar .ticket .common.pak2 li:first-child { padding-left: 2px; background: none; }
@@ -384,6 +398,10 @@ a:hover { text-decoration: underline; }
 			.advantage-bar .merge.third .para { width: 44%; }
 			.advantage-bar .merge.third { padding-bottom: 0; border: 0; }
 			
+            .advantage-bar .merge.fourth .para { width: 100%; }
+            .advantage-bar .merge.fourth .para2 { float: left;}
+            .advantage-bar .merge.fourth .para2 h2 { font-size: 22px; color: #777; text-transform: uppercase; text-align: left; margin-top:50px; margin-bottom:10px; }
+            .advantage-bar .merge.fourth .para2 li { line-height: 25px; color: #36372f; font-size: 18px; list-style-type:disc; margin-left:20px;}
 			/* connecting bar */
 			.connecting-bar { padding: 0 0 65px; margin: 80px 0 0; width: 100%; overflow: hidden; border-bottom: 1px dashed #c4c4c4; }
 			.connecting-bar .image { margin: 0 0 0 -40px; }
@@ -623,7 +641,7 @@ a:hover { text-decoration: underline; }
 		.box-bar { margin: 10px 0 0; }
 		.box-bar p { font-size: 17px; line-height: 22px; }
 		.box-bar img { display: none; }
-		.box-bar .boxcontent1 , .box-bar .boxcontent2 , .box-bar .boxcontent3 { padding: 0 10px; position: static; overflow: hidden; width: 33%; float: left; box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; }
+		.box-bar .boxcontent1 , .box-bar .boxcontent2 , .box-bar .boxcontent3 , .box-bar .boxcontent4 { padding: 0 10px; position: static; overflow: hidden; width: 33%; float: left; box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; }
 		.box-bar .common li a { text-align: left; }
 		.box-bar .common cite { margin: 5px 0; float: left; }
 		.box-bar .common a.detail { float: left; }
@@ -755,7 +773,7 @@ a:hover { text-decoration: underline; }
 		.box-bar .common ul { text-align: center; width: 100%; }
 		.box-bar .common li , .box-bar .common.pak2 li , .box-bar .common.pak3 li { float: none; display: inline-block; }
 		.box-bar .common li a { line-height: 20px; }
-		.box-bar .boxcontent1, .box-bar .boxcontent2, .box-bar .boxcontent3 { margin: 15px 0 0; width: auto; overflow: hidden; float: none; }
+		.box-bar .boxcontent1, .box-bar .boxcontent2, .box-bar .boxcontent3 , .box-bar .boxcontent4{ margin: 15px 0 0; width: auto; overflow: hidden; float: none; }
 		.box-bar .common h3, .box-bar .common.pak3 h3, .box-bar .common.pak2 h3 { text-align: center; }
 		.box-bar .common cite , .box-bar .common.pak2 cite , .box-bar .common.pak3 cite { float: none; display: block; text-align: center; }
 		.box-bar .common a.detail { float: none; display: inline-block; }
