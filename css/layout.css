@@ -41,8 +41,70 @@ a:hover { text-decoration: underline; }
 		.nav-bar li { padding: 0 0 0 75px; float: left; }
 		.nav-bar li:first-child { padding: 0; margin: 0; }
 		.nav-bar li a { display: block; font-size: 16px; line-height: 18px; color: #fff; font-family: 'archivo_narrowbold'; text-transform: uppercase; letter-spacing: 0.08em; }
-		.nav-bar li a:hover {  }
-	
+		.nav-bar li .nav-bar li a:hover {  }
+
+        .nav-bar .leftmenu .dropdown ul
+        {
+            font-family: Arial, Verdana;
+            font-size: 50px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .nav-bar .leftmenu .dropdown ul li
+        {
+            display: block;
+            position: relative;
+            float: left;
+        }
+
+        .nav-bar .leftmenu .dropdown li ul
+        {
+            display: none;
+        }
+
+        .nav-bar .leftmenu .dropdown ul li a 
+        {
+            display: block;
+            text-decoration: none;
+            color: #ffffff;
+            border-top: 1px solid #ffffff;
+            padding: 5px 15px 5px 15px;
+            background: #000000;
+            margin-left: 1px;
+            margin-top: 1px;
+            white-space: nowrap;
+            float:left;
+            letter-spacing:unset;
+        }
+
+        .nav-bar .leftmenu .dropdown ul li a:hover 
+        {
+            background: #000000;
+        }
+        .nav-bar .leftmenu .dropdown li:hover ul 
+        {
+            display: block;
+            position: absolute;
+        }
+
+        .nav-bar .leftmenu .dropdown li:hover li
+        {
+            float: none;
+            font-size: 11px;
+        }
+
+        .nav-bar .leftmenu .dropdown li:hover a 
+        {
+            background: #000000;
+        }
+
+        .nav-bar .leftmenu .dropdown li:hover li a:hover 
+        {
+            background: #95A9B1;
+        }
+
 	#slider-part { overflow: hidden; width: 100%; background: #000; }
 		
 		/* slider bar */
@@ -95,7 +157,7 @@ a:hover { text-decoration: underline; }
 			.software-bar { margin: 15px 0 0 0; width: 100%; overflow: hidden; }
 			.software-bar .text { padding: 0 0 55px; overflow: hidden; }
 			.software-bar span.border { margin: 55px auto 0; height: 2px; width: 91%; display: block; border-bottom: 1px dashed #c5c5c5; }
-			.software-bar ul { padding: 0; margin: 70px 0 0; overflow: hidden; }
+			.software-bar ul { padding: 0; margin: 70px 0 70px; overflow: hidden; }
 			.software-bar li { padding: 0 15px; float: left; text-align: center; width: 25%; box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; }
 			.software-bar li:first-child { padding: 0 5px; width: 22.7%; }
 			.software-bar li img { margin: auto; }
@@ -115,15 +177,17 @@ a:hover { text-decoration: underline; }
 			.paket-bar .image span { position: absolute; bottom: 300px; right: 200px; display: block; font-size: 25px; line-height: 32px; color: #f7941e; }
 			
 			.paket-bar .ticket { padding: 0 0 0 122px; margin: 25px 0 0; overflow: hidden; width: auto; }
-			.paket-bar .ticket .common { padding: 30px 15px; margin: 0px 40px 10px 10px; min-height: 625px; width: 25.8%; box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; float: left; text-align: center; box-shadow: -6px 5px 9px 0 #c1c1c1; font-family: 'archivo_narrowregular'; background: url(../images/ticket_bg.jpg) left top repeat-x; }
-			.paket-bar .ticket .common img { margin: auto; }
+			.paket-bar .ticket .common { padding: 30px 15px; margin: 0px 40px 10px 10px; min-height: 525px; width: 25.8%; box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; float: left; text-align: center; box-shadow: -6px 5px 9px 0 #c1c1c1; font-family: 'archivo_narrowregular'; background: url(../images/ticket_bg.jpg) left top repeat-x; }
+			.paket-bar .ticket.pak3 .common { padding: 30px 15px; margin: 0px 40px 10px 10px; min-height: 525px; width: 25.8%; box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; float: left; text-align: center; box-shadow: -6px 5px 9px 0 #c1c1c1; font-family: 'archivo_narrowregular'; background: url(../images/ticket_bg.jpg) left top repeat-x; }
+
+            .paket-bar .ticket .common img { margin: auto; }
 			.paket-bar .ticket .common h3 { margin: 15px 0 0; font-size: 24px; line-height: 26px; color: #222; text-transform: uppercase; }
 			.paket-bar .ticket .common h3 span { display: block; }
 			.paket-bar .ticket .common cite { margin: 15px 0; display: block; font-style: normal; font-size: 18px; line-height: 18px; color: #777; text-transform: uppercase; }
 			.paket-bar .ticket .common a.detail { padding: 15px 0; margin: auto; display: block; font-size: 18px; width: 160px; line-height: 18px; color: #fff; text-transform: uppercase; letter-spacing: 0.1em; font-family: 'varela_roundregular'; background: #f7941e; }
 			.paket-bar .ticket .common.pak1 ul { padding: 15px 0;overflow: hidden; }
 			.paket-bar .ticket .common.pak1 li { padding: 3px 0; }
-			.paket-bar .ticket .common li a { display: block; font-size: 19px; line-height: 20px; color: #222; }
+			.paket-bar .ticket .common li a { display: block; font-size: 19px; line-height: 20px; color: #222; text-decoration:initial }
 			
 			.paket-bar .ticket .common.pak2 ul { padding: 0px 0 0;overflow: hidden; }
 			.paket-bar .ticket .common.pak3 li , .paket-bar .ticket .common.pak2 li { padding: 3px 0 4px 7px; display: inline-block; background: url(../images/sep2.png) left center no-repeat; }
@@ -206,7 +270,7 @@ a:hover { text-decoration: underline; }
 			.support-bar .right { padding: 15px 0 0 50px; }
 			.support-bar .right .image { width: 15%; }
 			.support-bar .right .text { margin: 20px 50px 10px 0; }
-            .support-bar .left li { padding: 0; height:140px}
+            .support-bar .left li { padding: 0; height:140px;margin-left:100px;width:500px;}
 			.support-bar .right li { padding: 0; height:140px}
 			.support-bar .image { float: left; width: 20%; } 
 			.support-bar ul { padding: 0; margin: 0; width: auto; } 
@@ -240,7 +304,7 @@ a:hover { text-decoration: underline; }
             .form-bar .social a { padding: 0 30px 0 0; font-size: 18px; line-height: 24px; color: #4b4b4b; text-align: justify; word-break: break-all; }
 			
 			/* box bar */
-			.box-bar { margin: 65px 0 0; width: 100%; overflow: hidden; }
+			.box-bar { margin: 65px 0 0; width: 100%; overflow: hidden; border-bottom:1px dashed #c4c4c4; margin-top: 50px}
 			.box-bar h4 { font-size: 42px; line-height: 48px; color: #f7941e; text-align: center; }
 			.box-bar p { margin: 15px 0 0;  font-size: 32px; line-height: 48px; color: #777; text-align: center; }
 			.box-bar img { margin: 0 auto; }
@@ -248,24 +312,23 @@ a:hover { text-decoration: underline; }
 			
 			.box-bar .boxcontent1 { position: absolute; top: 90px; left: 0; }
             .box-bar .boxcontent4 { position: absolute; Bottom: 0; left: 90px; }
-			.box-bar .boxcontent2 { position: absolute; top: -50px; right: -45px; width: 37%; }
+			.box-bar .boxcontent2 { position: absolute; top: -120px; right: -45px; width: 37%; }
 			.box-bar .boxcontent3 { position: absolute; bottom: 10px; right: -140px; width: 37%; }
 			
 			.box-bar .common { padding: 0; margin: 0px; width: 100%; box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; float: left; text-align: center; font-family: 'archivo_narrowregular'; }
 			.box-bar .common img { margin: auto; }
-			.box-bar .common h3 {text-align:right; margin: 15px 10px 0; font-size: 24px; line-height: 26px; color: #222; text-transform: uppercase; }
+            .box-bar .common.pak3 img { margin: auto; }
+			.box-bar .common h3 {text-align:right; margin: 15px 0 0; font-size: 24px; line-height: 26px; color: #222; text-transform: uppercase; }
 			.box-bar .common h3 span { display: block; }
 			.box-bar .common cite { margin: 5px 10px; float: right; font-style: normal; font-size: 18px; line-height: 18px; color: #777; text-transform: uppercase; }
 			.box-bar .common a.detail { padding: 6px 0; margin: 10px 10px 0 0; float: right; font-size: 10px; width: 85px; border-radius: 2px; line-height: 14px; color: #fff; text-transform: uppercase; letter-spacing: 0.1em; font-family: 'varela_roundregular'; background: #f7941e; }
 			.box-bar .common.pak1 ul { padding: 0;overflow: hidden; float: right; }
 			.box-bar .common li { padding: 0 10px; float: left; background: url(../images/sep5.png) left center no-repeat; }
 			
-            .box-bar .common.pak4 h3 {text-align:right; margin: 18px 10px 0; font-size: 14px; line-height: 26px; color: #222; text-transform: uppercase; }
+            .box-bar .common.pak4 h3 {text-align:right; margin: 15px 10px 0; font-size: 24px; line-height: 26px; color: #222; text-transform: uppercase; }
 			.box-bar .common.pak4 ul { padding: 0;overflow: hidden; float: right; }
-            .box-bar .common.pak4 a.detail { padding: 6px 0; margin: 7px 7px 0 0; float: right; font-size: 8px; width: 85px; border-radius: 2px; line-height: 14px; color: #fff; text-transform: uppercase; letter-spacing: 0.1em; font-family: 'varela_roundregular'; background: #f7941e; }
+            .box-bar .common.pak4 a.detail { padding: 6px 0; margin: 7px 7px 0 0; float: right; font-size: 10px; width: 85px; border-radius: 2px; line-height: 14px; color: #fff; text-transform: uppercase; letter-spacing: 0.1em; font-family: 'varela_roundregular'; background: #f7941e; }
 			.box-bar .common.pak4 li { padding: 0 10px; float: left; background: url(../images/sep5.png) left center no-repeat; }
-			.box-bar .common.pak4 li a { display: block; font-size: 14px; line-height: 20px; color: #777; font-family: 'archivo_narrowregular'; }
-			.box-bar .common.pak4 cite { margin: 5px 10px; float: right; font-style: normal; font-size: 14px; line-height: 18px; color: #777; text-transform: uppercase; }
 			
 			.box-bar .common.pak2 h3 { text-align: left; }
 			.box-bar .common.pak2 cite { margin: 5px 0 0; float: left; }
@@ -288,7 +351,7 @@ a:hover { text-decoration: underline; }
 			
 			.box-bar a.moreinfo { padding: 0 75px 0 0; margin: 30px auto 0; display: block; text-align: center; width: 520px; font-size: 23px; line-height: 47px; color: #f7941e; font-family: 'varela_roundregular'; text-transform: uppercase; background: url(../images/why_arrow.png) right center no-repeat; }
 			.box-bar span.border{ margin: 55px auto 0; height: 2px; width: 91%; display: block; border-bottom: 1px dashed #c5c5c5; }
-			.box-bar .common.pak3 h3 { margin: -11px 0 0; }
+			/*.box-bar .common.pak3 h3 { margin: -11px 0 0; }*/
 			
 			/* boxdetail bar */
 			.boxdetail-bar { margin: 60px 0 0; width: 100%; overflow: hidden; }
@@ -346,8 +409,8 @@ a:hover { text-decoration: underline; }
 			.select-bar .management { padding: 0 0 60px; margin: 55px 0 0 30px; border-bottom: 1px dashed #c4c4c4; }
 			.select-bar .management.noborder { border: 0; }
 			.select-bar .management h4 { margin-bottom: 25px; font-size: 36px; line-height: 40px; color: #f7941e; }
-			.select-bar .management ul { padding: 0 150px 0 0; overflow: hidden; }
-			.select-bar .management span { margin: 0px 5px 0px 0px; float: left; font-size: 17px; line-height: 24px; color: #777; font-family: 'ralewaysemibold'; }
+			.select-bar .management ul { padding: 0 150px 0 0; overflow: hidden;}
+			.select-bar .management span { margin: 0px 5px 0px 0px;  font-size: 17px; line-height: 24px; color: #777; font-family: 'ralewaysemibold'; }
 			.select-bar .management li { padding: 0 5px; float: left; background: url(../images/sep.png) left center no-repeat; }
 			.select-bar .management li:first-child { padding-left: 0; background: none; }
 			.select-bar .management li a { font-size: 17px; line-height: 24px; color: #777; text-decoration: none}
@@ -364,7 +427,7 @@ a:hover { text-decoration: underline; }
 			.commission-bar .image img { margin: auto; }
 			.commission-bar .management { padding: 0 0 15px; margin: 45px 0 0 30px; }
 			.commission-bar .management.noborder { border: 0; }
-			.commission-bar .management h4 { margin-bottom: 10px; font-size: 56px; line-height: 90px; color: #f7941e; }
+			.commission-bar .management h4 { margin-bottom: 10px; font-size: 56px; line-height: 90px; color: #f7941e; text-align:center;}
 			.commission-bar .management h4 img { margin: 0 20px 0 0; float: left; }
 			.commission-bar .management ul { padding: 0; overflow: hidden; }
 			.commission-bar .management span { margin: 0px 5px 0px 0px; float: left; font-size: 21px; line-height: 23px; color: #222; font-family: 'ralewaysemibold'; }
@@ -373,7 +436,7 @@ a:hover { text-decoration: underline; }
 			.commission-bar .management li a { font-size: 21px; line-height: 30px; color: #777; }
 			.commission-bar .merge { padding-bottom: 65px; margin: 30px 0 0; overflow: hidden; border-bottom: 1px dashed #c4c4c4; }
             .commission-bar .merge2 { padding-bottom: 65px; margin: 30px 0 0; overflow: hidden; }
-			.commission-bar .merge p { padding: 0 0 20px; font-size: 17px; line-height: 24px; color: #777; text-align: justify; word-break: break-all; }
+			.commission-bar .merge p { padding: 0 0 20px; font-size: 17px; line-height: 24px; color: #777; text-align: justify;}
 			.commission-bar .merge .para.semi { font-family: 'ralewaysemibold'; }
 			.commission-bar .merge .left , .commission-bar .merge .right { padding: 0 30px; width: 50%; float: left; box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; }
 			.commission-bar .merge .right { padding: 0 0 0 70px; }

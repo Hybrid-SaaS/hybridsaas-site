@@ -37,3 +37,9 @@ C:\Workspace\Ontwikkeling\GitHub\hybridsaas-site\bin\WebApplication1.dll.config
 C:\Workspace\Ontwikkeling\GitHub\hybridsaas-site\bin\WebApplication1.dll
 C:\Workspace\Ontwikkeling\GitHub\hybridsaas-site\bin\WebApplication1.pdb
 C:\Workspace\Ontwikkeling\GitHub\hybridsaas-site\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+\\192.168.33.33\hybridsaas-site\bin\WebApplication1.dll.config
+\\192.168.33.33\hybridsaas-site\bin\WebApplication1.dll
+\\192.168.33.33\hybridsaas-site\bin\WebApplication1.pdb
+\\192.168.33.33\hybridsaas-site\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+\\192.168.33.33\hybridsaas-site\obj\Debug\WebApplication1.dll
+\\192.168.33.33\hybridsaas-site\obj\Debug\WebApplication1.pdb
