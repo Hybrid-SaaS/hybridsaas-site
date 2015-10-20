@@ -129,7 +129,6 @@
     <Content Include="bedrijfsagenda.cshtml" />
     <Content Include="contractenbeheer.cshtml" />
     <Content Include="gebouwbeheer.cshtml" />
-    <Content Include="inkoopfacturatie-en-crediteurenbeheer.cshtml" />
     <Content Include="inventarisbeheer.cshtml" />
     <Content Include="km-registratie.cshtml" />
     <Content Include="notities.cshtml" />
@@ -178,6 +177,7 @@
     <Content Include="pakket-erp.cshtml" />
     <Content Include="pakket-kwaliteitscontrolle-tickets.cshtml" />
     <Content Include="pakket-kwaliteitscontrolle.cshtml" />
+    <Content Include="inkoopfacturatie-en-crediteurenbeheer.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

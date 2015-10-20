@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 
@@ -132,7 +133,7 @@ namespace Hybrid_Saas
             };
             LinkDictionary[Link.Commisie] = new LinkInfo
             {
-                Url = "/Module/Commissie",
+                Url = "/Commissie",
                 Title = "",
                 Description = ""
             };
@@ -150,7 +151,7 @@ namespace Hybrid_Saas
             };
             LinkDictionary[Link.Financieel] = new LinkInfo
             {
-                Url = "/Module/Financieel",
+                Url = "/Financieel",
                 Title = "",
                 Description = ""
             };
@@ -186,19 +187,19 @@ namespace Hybrid_Saas
             };
             LinkDictionary[Link.pakketerp] = new LinkInfo
             {
-                Url = "/pakketerp",
+                Url = "/pakket-erp",
                 Title = "",
                 Description = ""
             };
             LinkDictionary[Link.pakketkwaliteitscontrolletickets] = new LinkInfo
             {
-                Url = "/pakketkwaliteitscontrolletickets",
+                Url = "/pakket-kwaliteitscontrolle-tickets",
                 Title = "",
                 Description = ""
             };
             LinkDictionary[Link.pakketkwaliteitscontrolle] = new LinkInfo
             {
-                Url = "/pakketkwaliteitscontrolle",
+                Url = "/pakket-kwaliteitscontrolle",
                 Title = "",
                 Description = ""
             };
@@ -350,7 +351,7 @@ namespace Hybrid_Saas
             };
             LinkDictionary[Link.Inkooporderbeheer] = new LinkInfo
             {
-                Url = "/Module/inkooporderbeheer",
+                Url = "/Module/Inkooporderbeheer",
                 Title = "",
                 Description = ""
             };
@@ -512,7 +513,7 @@ namespace Hybrid_Saas
             };
             LinkDictionary[Link.ExportBoekhouding] = new LinkInfo
             { //not init
-                Url = "/Module/exportboekhouding.cshtml",
+                Url = "/Module/exportboekhouding",
                 Title = "",
                 Description = ""
             };
@@ -602,17 +603,16 @@ namespace Hybrid_Saas
                 Description = ""
             };
 
-            /*
-            foreach (var foo in Enum.GetValues(typeof(Link)))
+
+            foreach (var item in LinkDictionary)
             {
-                if (!LinkDictionary.ContainsKey((Link)foo))
-                {
-                    LinkDictionary[(Link)foo] = new LinkInfo
-                    { //not init
-                        Url = "#"
-                    };
-                }
-            }*/
+                var file = "C:/Workspace/Ontwikkeling/GitHub/hybridsaas-site" + item.Value.Url + ".cshtml";
+                if(!item.Value.Url.Contains("#") && !item.Value.Url.Contains("http"))
+                    if (!File.Exists(file))
+                    {
+                    
+                    }
+            }
         }
     }
 }
