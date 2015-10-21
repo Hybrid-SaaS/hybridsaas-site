@@ -254,7 +254,6 @@
     <Content Include="Module\prepaidkaarten.cshtml" />
     <Content Include="Module\Inkoopbeheer.cshtml" />
     <Content Include="Module\Temp.cshtml" />
-    <Content Include="Module\facturatie-debiteurbeheer.cshtml" />
     <Content Include="Module\productenbeheer.cshtml" />
     <Content Include="pakket-aanvullend-financieel.cshtml" />
     <Content Include="Module\Prepaid-kaarten.cshtml" />
