@@ -416,6 +416,7 @@
     <Content Include="fonts\webfontkit-20150608-014249\titilliumweb-semibold-webfont.ttf" />
     <Content Include="fonts\webfontkit-20150608-014249\titilliumweb-semibold-webfont.woff" />
     <Content Include="fonts\webfontkit-20150608-014249\titilliumweb-semibold-webfont.woff2" />
+    <Content Include="App_Code\Links.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

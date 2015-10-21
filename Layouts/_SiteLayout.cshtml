@@ -52,16 +52,16 @@
                     <nav class="nav-bar">
                         <div class="leftmenu">
                             <ul class="dropdown">
-                                <li>@LinkList.WriteLink( Link.Home )</li>
-                                <li><a href="@LinkList.GetLink(Link.Pakketten)">pakketten</a></li>
-                                <li><a href="@LinkList.GetLink(Link.Module)">Modules</a></li>
+                                <li>@Links.Write( Link.Home )</li>
+                                <li>@Links.Write( Link.Pakketten )</li>
+                                <li>@Links.Write( Link.Modules )</li>
                             </ul>
                         </div>
                         <div class="rightmenu">
                             <ul>
-                                <li><a href="@LinkList.GetLink(Link.Over)">Over</a></li>
-                                <li><a href="@LinkList.GetLink(Link.Support)">support</a></li>
-                                <li><a href="@LinkList.GetLink(Link.Contact)">Contact</a></li>
+                                <li>@Links.Write( Link.Over )</li>
+                                <li>@Links.Write( Link.Support )</li>
+                                <li>@Links.Write( Link.Contact )</li>
                             </ul>
                         </div>
                     </nav>
