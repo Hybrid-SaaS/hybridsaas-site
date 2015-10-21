@@ -1,0 +1,81 @@
+﻿@using Hybrid_Saas
+@{
+    Layout = "SiteLayout.cshtml";
+
+    if (IsPost)
+    {
+        var companyname = Request.Form["name"];
+        var contactname = Request.Form["email"];
+        var employeecount = Request.Form["bericht"];
+
+        if (Validation.IsValid())
+        {
+            SendMail.SendEmail(companyname, contactname, employeecount);
+        }
+    }
+}
+<!-- start content -->
+<section id="content-part">
+
+	<!-- start centerpart -->
+	<section id="center-part">
+				
+        <!-- start contact bar -->
+        <article class="contact-bar">
+                	
+            <div class="centering">
+                <div class="map">
+                    <img src="images/map_img.jpg" alt="" class="map" />	
+                    <div class="contact">
+                        <div class="left">
+                            <h3>Heeft u vragen neem dan contact met ons op. </h3>
+                            <div class="semi"><p>Heeft u vragen over de werking van onze <br /> software, dan kunt u uiteraard contact opnemen met de medewerkers van onze helpdesk middels het <a href="@LinkList.GetLink(Link.InvoerTicket)">online ticketsysteem</a> </p></div>
+                        </div>
+                        <div class="right">
+                            <img src="images/type_img.png" alt="" />
+                        </div>
+                    </div>
+				</div>
+	        </div>
+        </article>
+        <!-- end contact bar -->
+		<!-- start form bar -->
+        <article class="form-bar">
+                	
+            <div class="centering">
+                <div class="form">
+                    <aside class="forminner">
+                        <div class="left">
+                            <form action="#">
+                                <input type="text" value="Naam" onFocus="if(this.value=='Naam')this.value='';" onBlur="if(this.value=='')this.value='Naam';" name="Name" />
+                                <input type="text" value="E-mail" onFocus="if(this.value=='E-mail')this.value='';" onBlur="if(this.value=='')this.value='E-mail';" name="email" />
+                                <textarea name="Bericht" cols="15" rows="5" onFocus="if(this.value=='Bericht')this.value='';" onBlur="if(this.value=='')this.value='Bericht';">Bericht</textarea>
+                                <input type="submit" value="VERSTUur" />
+                            </form>
+                        </div>
+                        <div class="right">
+                            <address>Hybrid SaaS | Online Business Software <a href="mailto:support@hybridsaas.com">support@hybridsaas.com</a></address>
+                            <p><b>Wij zijn telefonisch bereikbaar van:</b><br>
+                                Maandag t/m vrijdag 09.00 uur - 17.00 uur<br>
+                                op: +31 (0)85 -002 1940</p>
+                            <p><b>Correspondentieadres:</b><br />Postbus 31 2870 AA Schoonhoven</p>
+                            <p><b>Kamer van Koophandel:</b><br />Hybrid SaaS ICT B.V. K.v.K. Rotterdam 54529239</p>
+                            <div class="social">
+                                <ul>
+                                    <li><a href="@LinkList.GetLink(Link.Facebook)" target="_blank"><img src="images/social_icon1.png" alt="" /></a></li>
+                                    <li><a href="@LinkList.GetLink(Link.Twitter)" target="_blank"><img src="images/social_icon2.png" alt="" /></a></li>
+                                    <li><a href="@LinkList.GetLink(Link.GooglePlus)" target="_blank"><img src="images/social_icon3.png" alt="" /></a></li>
+                                </ul>	
+                            </div>
+                        </div>
+                    </aside>
+				</div>
+	        </div>
+        </article>
+        <!-- end form bar -->
+
+	</section>
+	<!-- end center part -->
+			
+</section>
+<!-- end content -->

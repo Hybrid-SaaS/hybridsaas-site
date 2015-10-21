@@ -1,0 +1,120 @@
+﻿@using Hybrid_Saas
+@{
+    Layout = "/SiteLayout.cshtml";
+
+    if (IsPost)
+    {
+        var companyname = Request.Form["name"];
+        var contactname = Request.Form["email"];
+        var employeecount = Request.Form["bericht"];
+
+        if (Validation.IsValid())
+        {
+            SendMail.SendEmail(companyname, contactname, employeecount);
+        }
+    }
+}
+
+<!-- start content -->
+<section id="content-part">
+    <!-- start centerpart -->
+    <section id="center-part">
+        <!-- start commission bar -->
+        <article class="commission-bar">
+            <div class="centering">
+                <div class="management">
+                    <div class="merge">
+                        <h4>Balans & winst en verliesrekening</h4>
+                        <div class="para">
+                            <p>
+                                De balans & winsten verliesrekening is een kasstroomoverzicht en daarmee een onderdeel van een jaarrekening. De balans & winst en verliesrekening geeft een overzicht van de kosten en opbrengsten van de entiteit over een bepaalde periode (meestal een jaar). Het saldo van de balans & winst en verliesrekening is de over de periode behaalde winst of het over de periode geleden verlies. In dit artikel wordt het proces om een balans & winst en verliesrekening op te maken beschreven. Voordat u een Balans & Winst en verliesrekening kunt opmaken dient u eerst de basis inrichting uit te voeren
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- end commission bar -->
+        <!-- start advantage bar -->
+        <article class="advantage-bar">
+            <div class="centering">
+                <h3>Wat heeft de module Abonnementen te bieden?</h3>
+                <!--Start Item Content on the right-->
+                <div class="merge">
+                    <div class="image"><img src="/images/foto_img.jpg" alt="" /></div>
+                    <div class="para">
+                        <h4>Balans & winst en verliesrekening</h4>
+                        <p>Balans & winst en verliesrekening</p>
+                    </div>
+                </div>
+                <!--End Item Content on the right-->
+                <!--Start Item Content on the Left-->
+                <div class="merge second">
+                    <div class="image"><img src="/images/foto_img1.jpg" alt="" /></div>
+                    <div class="para">
+                        <h4>Balans & winst en verliesrekening</h4>
+                        <p>Balans & winst en verliesrekening</p>
+
+                    </div>
+                </div>
+                <!--End Item Content on the Left-->
+            </div>
+        </article>
+        <!-- end advantage bar -->
+        <!-- start connecting bar -->
+        <article class="connecting-bar" style="margin:auto;">
+            <article class="advantage-bar" style="margin:auto;">
+                <div class="centering">
+                    <!--End Item Content on the right-->
+                    <!--Start Item Content on the Left-->
+                    <div class="merge fourth" style="margin:unset;">
+                        <div class="para facts">
+                            <div class="module" style="width: auto; margin-top:35px;">
+                                <h4>Factsheet</h4>
+                                <p>
+                                    Hieronder zijn alle mogelijkheden binnen de verschillende online modules weergegeven.Het kan voorkomen dat het beschreven functionaliteiten aanvullende modules nodig te hebben.Mocht u vragen hebben, neem dan contact met ons op.
+                                </p>
+                                <div class="para2">
+                                    <h2><b>Balans & winst en verliesrekening</b></h2>
+                                    <ul>
+                                        <li>Winst- en verlies rekening opstellen</li>
+                                        <li>Balans opstellen</li>
+                                        <li>Memoriaal boekingen aanmaken en inzien</li>
+                                        <li>Zoeken op grootboekrekeningnummers</li>
+                                        <li>Overzichten afdrukken</li>
+                                        <li>Overzicht exporten naar Mircosoft Excel</li>
+                                        <li>Verkoop facturen exporteren naar ander boekhoudsysteem (Exact Online, Exact Globe, Accountview)</li>
+                                        <li>Inkoop facturen exporteren naar ander boekhoudsysteem (Exact Online, Exact Globe, Accountview)</li>
+                                        <li>Verkoopboek inzien</li>
+                                        <li>Inkoopboek inzien</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Item Content on the Left-->
+                </div>
+            </article>
+            <div class="centering">
+                <div class="merge">
+                    <div class="module">
+                        <h4 style="margin-top:35px;">Nieuwsgierig geworden wat wij nog meer voor jou kunnen betekenen?<br>Vraag onze vrijblijvende Live Demo aan!</h4>
+                        <div class="image"><img src="/images/connecting_img.JPG" alt="" style="width:760px; margin-top:35px" /></div>
+                    </div>
+                    <div class="form">
+                        <h4>Interesse in deze module of een opmerking? Stuur ons een bericht.</h4>
+                        <form action="#">
+                            <input type="text" value="Naam" onFocus="if(this.value=='Naam')this.value='';" onBlur="if(this.value=='')this.value='Naam';" />
+                            <input type="text" value="E-mail" onFocus="if(this.value=='E-mail')this.value='';" onBlur="if(this.value=='')this.value='E-mail';" />
+                            <textarea cols="15" rows="5" onFocus="if(this.value=='Bericht')this.value='';" onBlur="if(this.value=='')this.value='Bericht';">Bericht</textarea>
+                            <input type="submit" value="VERSTUur" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- end connecting bar -->
+    </section>
+    <!-- end center part -->
+</section>
+<!-- end content -->

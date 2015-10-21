@@ -1,0 +1,207 @@
+﻿
+@using Hybrid_Saas
+@{
+    Layout = "SiteLayout.cshtml";
+
+    if (IsPost)
+    {
+        var companyname = Request.Form["name"];
+        var contactname = Request.Form["email"];
+        var employeecount = Request.Form["bericht"];
+
+        if (Validation.IsValid())
+        {
+            SendMail.SendEmail(companyname, contactname, employeecount);
+        }
+    }
+}
+<!-- start content -->
+<section id="content-part">
+    <!-- start centerpart -->
+    <section id="center-part">
+        <!-- start commission bar -->
+        <article class="commission-bar">
+            <div class="centering">
+                <div class="management">
+                    <h4>Pakket Contractbeheer</h4>
+                    <div class="merge">
+                        <div class="para">
+                            <p>Pakket Contractbeheer</p>
+                        </div>
+                        <div class="left">
+                            <div class="para">
+                                <p>Pakket Contractbeheer</p>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="para">
+                                <p>Pakket Contractbeheer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- end commission bar -->
+        <article class="software-bar">
+            <div class="centering">
+                <<div class="text">
+
+                    <h2>De unieke voordelen van<br>Pakket Contractbeheer </h2>
+                    <ul>
+                        <li>
+                            <img src="images/softaware_img1.png" alt="" />
+                            <h3>Snel</h3>
+                            <p>Contractbeheer</p>
+                        </li>
+                        <li>
+                            <img src="images/softaware_img2.png" alt="" />
+                            <h3>Innovatief</h3>
+                            <p>Contractbeheer</p>
+                        </li>
+                        <li>
+                            <img src="images/softaware_img3.png" alt="" />
+                            <h3>Slim</h3>
+                            <p>Contractbeheer</p>
+                        </li>
+                        <li>
+                            <img src="images/softaware_img4.png" alt="" />
+                            <h3>Gemak</h3>
+                            <p>Contractbeheer</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <h2>Wat krijg je als je aan de slag gaat met<br>Pakket Contractbeheer </h2>
+                        <ul></ul>
+                        <li>
+                            <img src="images/softaware_img1.png" alt="" />
+                            <h3>Snel</h3>
+                            <p>Contractbeheer</p>
+                        </li>
+                        <li>
+                            <img src="images/softaware_img2.png" alt="" />
+                            <h3>Innovatief</h3>
+                            <p>Contractbeheer </p>
+                        </li>
+                        <li>
+                            <img src="images/softaware_img3.png" alt="" />
+                            <h3>Slim</h3>
+                            <p>Contractbeheer </p>
+                        </li>
+                        <li>
+                            <img src="images/softaware_img4.png" alt="" />
+                            <h3>Gemak</h3>
+                            <p>Contractbeheer</p>
+                        </li>
+                    </ul>
+                </div>
+                <article class="solution-bar" style="margin:unset" id="module">
+                    <aside class="fill">
+                        <div class="satisfy" style="margin:0px auto 0">
+                            <span>Welke modules zitten er standaard inbegrepen in dit pakket?</span>
+                        </div>
+                    </aside>
+                </article>
+            </div>
+        </article>
+        <section id="content-part">
+            <!-- start centerpart -->
+            <section id="center-part">
+                <!-- start boxdetail bar -->
+                <article class="boxdetail-bar" style="margin: unset">
+                    <div class="centering">
+                        <aside class="ticket">
+                            <div class="common pak3" style="padding:0px 0 57px">
+                                <h4>Standaard inbegrepen:</h4>
+                                <div class="stand">
+                                    <ul>
+                                        <li><a href="@LinkList.GetLink(Link.Relatiebeheer)">Relatiebeheer</a></li>
+                                        <li><a href="@LinkList.GetLink(Link.Facturatie)">Facturatie</a></li>
+                                        <li><a href="@LinkList.GetLink(Link.Wachtwoordbeheer)">Wachtwoordbeheer</a></li>
+                                        <li><a href="@LinkList.GetLink(Link.Notities)">Notities</a></li>
+                                        <li><a href="@LinkList.GetLink(Link.CRM)">CRM</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li><a href="@LinkList.GetLink(Link.ExportExternPakket)">Financiele export naar extern pakket</a></li>
+                                        <li><a href="@LinkList.GetLink(Link.ExportBoekhouding)">Export naar externe boekhouding</a></li>
+                                        <li><a href="@LinkList.GetLink(Link.ExportExcel)">Export naar Excel</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li><a href="@LinkList.GetLink(Link.Extranet)">Extranet</a></li>
+                                        <li><a href="@LinkList.GetLink(Link.OutlookAddIn)">Outlook add-in</a></li>
+                                        <li><a href="@LinkList.GetLink(Link.Gebruiker)">1 Gebruiker</a></li>
+                                        <li><a href="@LinkList.GetLink(Link.Dataopslag)">1 GB dataopslag</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </article>
+                <!-- end boxdetail bar -->
+            </section>
+            <!-- end center part -->
+        </section>
+        <article class="connecting-bar" style="margin:unset">
+            <!-- start commission bar -->
+            <article class="commission-bar" style="margin:unset">
+                <div class="centering">
+                    <div class="management">
+                        <h2>WELKE FUNCTIONALITEITEN BIEDT<br>Pakket Contractbeheer</h2>
+                        <div class="merge2">
+                            <div class="para">
+                                <p><b>Contractbeheer</b></p>
+                                <p>Contractbeheer</p><br />
+
+                                <p><b>Contractbeheer</b></p>
+                                <p>Contractbeheer</p><br />
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </article>
+        <article class="connecting-bar" style="margin:unset">
+            <div class="centering">
+                <div class="merge">
+                    <div class="module">
+                        <h3>Aanvullende modules en pakketten</h3>
+                        <p>Mis je nog iets? Breid je pakket eenvoudig uit met de volgende modules en pakketten</p>
+                        <p>Benieuwd naar de prijzen? Download prijslijst</p>
+                        <div class="pakket">
+                            <h4>Aanvullend pakket (maandelijks)</h4>
+                            <ul>
+                                <li>
+                                    <img src="images/connencting_img1.png" alt="" />
+                                    <h5>Webshop</h5>
+                                    <a href=" @LinkList.GetLink(Link.Webshop)">Meer info</a>
+                                </li>
+                                <li>
+                                    <img src="images/connencting_img2.png" alt="" />
+                                    <h5>Commissie</h5>
+                                    <a href="@LinkList.GetLink(Link.Commissiebeheer)">Meer info</a>
+                                </li>
+                                <li>
+                                    <img src="images/connencting_img3.png" alt="" />
+                                    <h5>Vragenlijsten<br>en Equettes</h5>
+                                    <a href="@LinkList.GetLink(Link.VragenlijstenEquettes)">Meer info</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <h4>Interesse in deze module of een opmerking? Stuur ons een bericht.</h4>
+                        <form action="#">
+                            <input type="text" value="Naam" onFocus="if(this.value=='Naam')this.value='';" onBlur="if(this.value=='')this.value='Naam';" />
+                            <input type="text" value="E-mail" onFocus="if(this.value=='E-mail')this.value='';" onBlur="if(this.value=='')this.value='E-mail';" />
+                            <textarea cols="15" rows="5" onFocus="if(this.value=='Bericht')this.value='';" onBlur="if(this.value=='')this.value='Bericht';">Bericht</textarea>
+                            <input type="submit" value="VERSTUur" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+</section>
