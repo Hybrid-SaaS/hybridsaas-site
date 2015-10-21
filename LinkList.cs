@@ -590,17 +590,6 @@ namespace Hybrid_SaaS
                 
                 
             };
-
-
-            foreach (var item in LinkDictionary)
-            {
-                var file = "C:/Workspace/Ontwikkeling/GitHub/hybridsaas-site" + item.Value.Url + ".cshtml";
-                if(!item.Value.Url.Contains("#") && !item.Value.Url.Contains("http"))
-                    if (!File.Exists(file))
-                    {
-                    
-                    }
-            }
         }
     }
 }
