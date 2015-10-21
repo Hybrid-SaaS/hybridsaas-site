@@ -7,9 +7,15 @@
     {
         title = String.Format( " title=\"{0}\"", HttpUtility.HtmlAttributeEncode( linkInfo.Title ) );
     }
-    @Html.Raw( String.Format("<a href=\"{0}\"{2}>{1}</a>",
-    HttpUtility.HtmlAttributeEncode(linkInfo.Url),
-    HttpUtility.HtmlEncode(linkInfo.Name),
-    title
-    ));
+    var target = "";
+    if ( linkInfo.OpenInNewWindow )
+    {
+        target = " target=\"_blank\"";
+    }
+    @Html.Raw( String.Format( "<a href=\"{0}\"{2}{3}>{1}</a>",
+        HttpUtility.HtmlAttributeEncode( linkInfo.Url ),
+        HttpUtility.HtmlEncode( linkInfo.Name ),
+        title,
+        target
+        ) )
 }

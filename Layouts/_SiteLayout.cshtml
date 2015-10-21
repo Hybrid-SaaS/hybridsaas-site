@@ -51,7 +51,6 @@
     <link rel="stylesheet" href="/css/layout.css" type="text/css" />
 
     <script type="text/javascript" src="/js/respond.src.js"></script>
-
 </head>
 
 <body>
@@ -115,11 +114,11 @@
                         <aside class="common link">
                             <h3>Quick Links</h3>
                             <ul>
-                                <li><a href="@LinkList.GetLink(Link.MenuSupport)">Support</a></li>
-                                <li><a href="@LinkList.GetLink(Link.MenuOver)">Over</a></li>
-                                <li><a href="@LinkList.GetLink(Link.Youtube)" target="_blank">YouTube</a></li>
-                                <li><a href="@LinkList.GetLink(Link.SiteMap)">Sitemap</a></li>
-                                <li><a href="@LinkList.GetLink(Link.MenuContact)">Contact</a></li>
+                                <li>@Links.Write( Link.MenuSupport )</li>
+                                <li>@Links.Write( Link.MenuOver )</li>
+                                <li>@Links.Write( Link.Youtube )</li>
+                                <li>@Links.Write( Link.SiteMap )</li>
+                                <li>@Links.Write( Link.MenuContact )</li>
                             </ul>
                         </aside>
 
@@ -137,9 +136,8 @@
                         <aside class="copy">
                             <span>Copyright 2015 Hybrid SaaS. All Rights Reserved.</span>
                             <ul>
-                                <li><a href="@LinkList.GetLink(Link.AlgemeneVoorwaarden)">Algemene voorwaarden</a></li>
-                                <!--<li><a href="@LinkList.GetLink(Link.Factsheet)">Factsheet</a></li>-->
-                                <li><a href="@LinkList.GetLink(Link.ReleaseNotes)">Release notes</a></li>
+                                <li>@Links.Write( Link.AlgemeneVoorwaarden )</li>
+                                <li>@Links.Write( Link.ReleaseNotes )</li>
                             </ul>
                         </aside>
 

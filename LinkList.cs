@@ -101,6 +101,12 @@ namespace Hybrid_SaaS
 
             //indien pagetitle leeg is, valt deze terug naar title
             public string PageTitle;
+
+            public bool OpenInNewWindow
+            {
+                get;
+                set;
+            }
         }
 
         public static Dictionary<Link, LinkInfo> LinkDictionary = new Dictionary<Link, LinkInfo>();
@@ -222,8 +228,8 @@ namespace Hybrid_SaaS
             LinkDictionary[Link.ReleaseNotes] = new LinkInfo
             {
                 Url = "http://hybridsaas.support/pages/release-notes/latest/release-notes",
-                
-                
+                Title = "Release notes",
+                OpenInNewWindow = true
             };
             LinkDictionary[Link.MenuSupport] = new LinkInfo
             {
@@ -255,6 +261,8 @@ namespace Hybrid_SaaS
             LinkDictionary[Link.Youtube] = new LinkInfo
             {
                 Url = "https://www.youtube.com/user/HybridSaaSMovie",
+                Name = "YouTube",
+                OpenInNewWindow = true
                 
                 
             };
@@ -273,13 +281,14 @@ namespace Hybrid_SaaS
             LinkDictionary[Link.SiteMap] = new LinkInfo
             {
                 Url = "/site-map",
+                Name = "Sitemap"
                 
                 
             };
             LinkDictionary[Link.AlgemeneVoorwaarden] = new LinkInfo
             {
                 Url = "/algemene-voorwaarden",
-                
+                Name = "Algemene voorwaarden"
                 
             };
             LinkDictionary[Link.GooglePlus] = new LinkInfo
