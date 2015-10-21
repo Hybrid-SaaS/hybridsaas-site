@@ -129,6 +129,8 @@ a:hover { text-decoration: underline; }
 		.slider-bar.adding .text a.software { margin-top: 100px; width: 265px; }
 		.slider-bar.adding .text.space p { padding-right: 75px; color: #464646; }
 		.slider-bar.adding .text.space h2 { text-align: center; color: #4a4a4a; }
+		.slider-bar .header h2 { text-align: left; color: #F7941E; text-transform: none; font-size: 58px; display: inline-block; line-height: 60px; width: 475px; }
+		.slider-bar .header { top: 307px; position: absolute; width: 100%; }
 		
 	/* content */
 	#content-part { overflow: hidden; width: 100%; }
@@ -189,6 +191,7 @@ a:hover { text-decoration: underline; }
 			.paket-bar .ticket .common.pak1 li { padding: 3px 0; }
 			.paket-bar .ticket .common li a { display: block; font-size: 19px; line-height: 20px; color: #222; text-decoration:initial }
 			
+			
 			.paket-bar .ticket .common.pak2 ul { padding: 0px 0 0;overflow: hidden; }
 			.paket-bar .ticket .common.pak3 li , .paket-bar .ticket .common.pak2 li { padding: 3px 0 4px 7px; display: inline-block; background: url(../images/sep2.png) left center no-repeat; }
 			.paket-bar .ticket .common.pak3 li:first-child, .paket-bar .ticket .common.pak2 li:first-child { padding-left: 2px; background: none; }
@@ -198,7 +201,6 @@ a:hover { text-decoration: underline; }
 			.paket-bar .ticket .common.pak3 h3 { margin: -11px 0 0; }
 			.paket-bar .ticket {  }
 			.paket-bar .ticket {  }
-			
 			/* solution bar */
 			.solution-bar { margin: 90px 0 0; width: 100%; overflow: hidden; position: relative; }
 			.solution-bar h2 { margin-bottom: 40px; }
@@ -491,6 +493,57 @@ a:hover { text-decoration: underline; }
 			.connecting-bar input[type="submit"]:hover { opacity: 0.8; }
 			.connecting-bar a.moreinfo { padding: 0 65px 0 0; margin: 5px auto 0; display: block; text-align: center; width: 311px; font-size: 23px; line-height: 47px; color: #f7941e; font-family: 'varela_roundregular'; text-transform: uppercase; background: url(../images/why_arrow.png) right center no-repeat; }
 			
+			.ticketsen-bar { width: 100%; overflow: hidden; margin-top: 20px; }
+			.ticketsen-bar .centering { padding-bottom: 30px; border-bottom: dashed 1px #ccc; }
+			.ticketsen-bar h4{ padding-left: 14px; font-size: 56px; line-height: 90px; color: #F7941E; }
+			.ticketsen-bar h4 img { float: left; }
+			.ticketsen-bar h4 span { display: inline-block; margin-top: 20px; padding-left: 12px;}	
+			.ticketsen-bar p { padding: 08px 18px; font-size: 21px; color: #777777; line-height: 30px; font-family: 'ralewaysemibold'; }
+			.ticketsen-bar .Left { padding-left: 10px; width: 570px; float: left; }
+			.ticketsen-bar .Right { width: 538px; float: right; }
+			.ticketsen-bar .parah { padding-bottom: 40px; }
+			.ticketsen-bar .parah p { padding: 42px 0px 0px 0px; font-size: 17px; color: #777; line-height: 24px; font-family: 'ralewaylight';  }
+			.ticketsen-bar .parah a { margin: 0px; text-align: left; font-size: 17px; color: #f7941e; line-height: 25px; font-family: 'ralewaysemibold'; text-transform: none;}
+			.ticketsen-bar a {margin-top: 40px; margin-bottom: 20px; display: block; font-size: 23px; color: #f7941e; font-family: 'varela_roundregular'; text-align: center; text-transform: uppercase;}
+			.ticketsen-bar a span { padding-right: 60px; display: inline-block; background-image: url(../images/why_arrow.png); background-repeat: no-repeat; line-height: 50px; background-position: 100% 0%;}
+			.ticketsen-bar a span:hover { text-decoration: underline; }
+			
+			.voordelen { width: 100%; }
+			.voordelen h3 { margin-top: 80px; margin-bottom: 45px; font-family: 'ralewaylight'; font-size: 40px; color: #777; display: block; text-align: center; margin-top: 80px; }
+			.voordelen .servicebox { width: 100%; }
+			.voordelen .servicebox .pannel { margin-left: 10px; margin-top: 45px; margin-bottom: 45px; width: 380px; float: left; text-align: center; overflow: hidden; }
+			.voordelen .servicebox .pannel img{ margin: auto; }
+			.voordelen .servicebox .pannel h6 { margin-top: 30px; font-size: 21px; color: #777; text-transform: uppercase; font-family: 'ralewaysemibold'; }
+			.voordelen .servicebox .pannel p { font-size: 18px; color: #777; font-family: 'ralewaylight'; line-height: 25px;}
+			.nieuws-bar { width: 1180px; margin: auto; overflow: hidden; padding-bottom: 75px; border-bottom: dashed 1px #ccc; }
+			.nieuws-bar h2 { padding: 14px 125px; margin-top: 60px; margin-bottom: 70px; font-size: 32px; color: #fff; font-family: 'archivo_narrowbold'; text-align: center; background-color: #f7941e; line-height: 35px;  }
+			.nieuws-bar h3 { font-size: 40px; line-height: 47px; color: #777; text-align: center; }
+			.nieuws-bar .support { text-align: center; margin-top: 60px; }
+			.nieuws-bar .support li { margin: 0px 80px; display: inline-block; text-align: center; }
+			.nieuws-bar .support li img { margin: auto; }
+			.nieuws-bar .support li a { font-size: 27px; color: #777; font-family: 'ralewaylight'; line-height: 45px; }
+			.nieuws-bar .modules { text-align: center;  }
+			.nieuws-bar h5{ margin-top: 100px; margin-bottom: 65px; font-size: 32px; font-family: 'ralewaylight'; color: #777; text-align: center; }
+			.nieuws-bar .modules li { float:left; margin: 0 0px; width: 128px; }
+			.nieuws-bar .modules li .imgs{ min-height: 80px; }
+			.nieuws-bar .modules li img { margin: auto; }
+			.nieuws-bar .modules li a { font-size: 17px;}
+			.welke-bar { width: 100%; overflow:hidden; margin-top: 85px;  }
+			.welke-bar .centering{ padding-bottom: 130px; border-bottom: dashed 1px #ccc; }
+			.welke-bar h3 { margin-bottom: 85px; font-size: 40px; line-height: 47px; color: #777; text-align: center; }
+			.welke-bar h5 { padding: 0px 8px; margin-top: 25px; font-size: 22px; color: #777; font-family: 'ralewaysemibold'; }
+			.welke-bar p { padding: 0px 8px; font-size: 17px; color: #777; font-family: 'ralewaylight'; line-height: 25px; }
+			
+			.connecting-bar .submt { float: right; }
+			.connecting-bar .misjenog { font-size: 20px; color: #777; font-family: 'ralewaysemibold'; }
+			.subbar { margin-top: 0px; }
+			
+			.andere-bar { width: 100%; margin-top: 130px; }
+			.andere-bar h2 { text-align: center; color: #f7941e; text-transform: none; font-size: 48px; }
+			
+			
+			
+
 			/* detail bar */
 			.detail-bar { margin: 85px 0 0; width: 100%; overflow: hidden; }
 			.detail-bar .head { width: auto; overflow: hidden; }
