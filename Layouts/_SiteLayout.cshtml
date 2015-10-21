@@ -46,22 +46,22 @@
             <header id="header-part">
                 <div class="centering">
 
-                    <div class="logo"><a href="@LinkList.GetLink(Link.Home)"><img alt="Hybrid SaaS" src="/images/logo.png" /></a></div>
+                    <div class="logo"><a href="@LinkList.GetLink(Link.MenuHome)"><img alt="Hybrid SaaS" src="/images/logo.png" /></a></div>
                     <a class="menu"><span></span><span></span><span></span></a>
                     <!-- start nav -->
                     <nav class="nav-bar">
                         <div class="leftmenu">
                             <ul class="dropdown">
-                                <li>@Links.Write( Link.Home )</li>
-                                <li>@Links.Write( Link.Pakketten )</li>
-                                <li>@Links.Write( Link.Modules )</li>
+                                <li>@Links.Write( Link.MenuHome )</li>
+                                <li>@Links.Write( Link.MenuPakketten )</li>
+                                <li>@Links.Write( Link.MenuModules )</li>
                             </ul>
                         </div>
                         <div class="rightmenu">
                             <ul>
-                                <li>@Links.Write( Link.Over )</li>
-                                <li>@Links.Write( Link.Support )</li>
-                                <li>@Links.Write( Link.Contact )</li>
+                                <li>@Links.Write( Link.MenuOver )</li>
+                                <li>@Links.Write( Link.MenuSupport )</li>
+                                <li>@Links.Write( Link.MenuContact )</li>
                             </ul>
                         </div>
                     </nav>
@@ -81,7 +81,7 @@
                     <div class="centering">
 
                         <aside class="about">
-                            <a href="@LinkList.GetLink(Link.Over)" class="footlogo"><img src="/images/footer_logo.png" alt="" /></a>
+                            <a href="@LinkList.GetLink(Link.MenuOver)" class="footlogo"><img src="/images/footer_logo.png" alt="" /></a>
                             <p>Hybrid SaaS is sinds 2006 gespecialiseerd in systeembeheer en software ontwikkeling. Hybrid SaaS heeft een grote en zeer diverse relatiekring in tal van bedrijfsbranches. Ondanks dat elke organisatie verschilt en een unieke aanpak vereist, zijn veel basis processen praktisch hetzelfde. Het is daarom niet verwonderlijk dat vraagstukken over het optimaliseren van deze basisprocessen veel gelijkenissen vertonen.</p>
                         </aside>
 
@@ -95,11 +95,11 @@
                         <aside class="common link">
                             <h3>Quick Links</h3>
                             <ul>
-                                <li><a href="@LinkList.GetLink(Link.Support)">Support</a></li>
-                                <li><a href="@LinkList.GetLink(Link.Over)">Over</a></li>
+                                <li><a href="@LinkList.GetLink(Link.MenuSupport)">Support</a></li>
+                                <li><a href="@LinkList.GetLink(Link.MenuOver)">Over</a></li>
                                 <li><a href="@LinkList.GetLink(Link.Youtube)" target="_blank">YouTube</a></li>
                                 <li><a href="@LinkList.GetLink(Link.SiteMap)">Sitemap</a></li>
-                                <li><a href="@LinkList.GetLink(Link.Contact)">Contact</a></li>
+                                <li><a href="@LinkList.GetLink(Link.MenuContact)">Contact</a></li>
                             </ul>
                         </aside>
 

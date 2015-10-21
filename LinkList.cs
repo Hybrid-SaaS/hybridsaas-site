@@ -5,86 +5,88 @@ namespace Hybrid_SaaS
 {
     public enum Link
     {
-        Commisie,
-        TicketSysteem,
-        Contact,
-        Factsheet, 
-        Financieel,
-        Home,
-        Modules,
-        Molules,
-        PakketContractbeheer,
-        PakketOfferteVoorraad,
-        PakketTicketsFacturatie,
-        PakketAanvullendFinancieel,
-        Pakketten,
-        ReleaseNotes,
-        Support,
-        Webshop,
-        Over,
-        Youtube,
-        Twitter,
-        Facebook,
-        SiteMap,
+        //Menu opties
+        MenuHome,
+        MenuPakketten,
+        MenuModules,
+        MenuOver,
+        MenuSupport,
+        MenuContact,
+
+
+        
+        Abonnementen,
+        Administratie,
         AlgemeneVoorwaarden,
-        GooglePlus,
-		Abonnementen,
-        Certificatenbeheer,
-        Bankrekening,
+        AlgemeneVoorwaardenPdf,
+        Alles,
         BalansWinstVerliesrekening,
+        Bankrekening,
         Bedrijfsagenda,
+        BrowserDownload,
+        Certificatenbeheer,
+        Commisie,
         Commissiebeheer,
         Contractenbeheer,
+        Crm,
+        Dataopslag,
+        Download,
+        Email,
+        ExportBoekhouding,
+        ExportExcel,
+        ExportExternPakket,
+        Extranet,
+        Facebook,
+        Factsheet,
+        Facturatie,
         FacturatieDebiteurbeheer,
+        Financieel,
+        Gebouwbeheer,
+        GebruikerExtern,
+        GebruikerIntern,
+        GooglePlus,
+        Handleiding,
+        HelpDesk,
         Hrm,
         InkoopfacturatieCrediteurenbeheer,
         Inkooporderbeheer,
         Inventarisbeheer,
+        InvoerTicket,
+        KijkMetMijMee,
         KmRegistratie,
+        LicentieVoorwaardenPdf,
+        Meerwerk,
+        MeestGesteldeVragen,
         Notities,
         OffertesOrders,
+        OutlookAddDownload,
+        OutlookAddIn,
+        Overig,
+        PakketAanvullendFinancieel,
+        PakketContractbeheer,
+        PakketErp,
+        PakketKwaliteitsControle,
+        PakketKwaliteitsControleTickets,
+        PakketOfferteVoorraad,
+        PakketTicketsFacturatie,
         Prepaidkaarten,
         Productenbeheer,
+        Prognosebeheer,
         Projectbeheer,
         Relatiebeheer,
+        ReleaseNotes,
+        SiteMap,
+        Termijnstatenbeheer,
+        TicketSysteem,
         Tijdregistratie,
+        Twitter,
         Voorraadbeheer,
         VragenlijstenEquettes,
         Wachtwoordbeheer,
+        Webshop,
         Werkbonnen,
-        Dataopslag,
-        Administratie,
-        Alles,
-        Overig,
-        GebruikerIntern,
-        OutlookAddIn,
-        Facturatie,
-        Crm,
-        ExportExcel,
-        Email,
-        Extranet,
-        ExportExternPakket,
-        ExportBoekhouding,    
-        Download,
-        HelpDesk,
-        Handleiding,
-        BrowserDownload,
         WordAddDownload,
-        OutlookAddDownload,
-        KijkMetMijMee,
-        LicentieVoorwaardenPdf,
-        AlgemeneVoorwaardenPdf,
-        InvoerTicket,
-        Gebouwbeheer,
-        MeestGesteldeVragen,
-        GebruikerExtern,
-        Prognosebeheer,
-        Termijnstatenbeheer,
-        Meerwerk,
-        PakketErp,
-        PakketKwaliteitsControleTickets,
-        PakketKwaliteitsControle,
-
+        Youtube,
     }
 
     public static class LinkList
@@ -131,7 +133,7 @@ namespace Hybrid_SaaS
                 
                 
             };
-            LinkDictionary[Link.Contact] = new LinkInfo
+            LinkDictionary[Link.MenuContact] = new LinkInfo
             {
                 Name = "Contact",
                 Url = "/contact",
@@ -149,24 +151,18 @@ namespace Hybrid_SaaS
                 
                 
             };
-            LinkDictionary[Link.Home] = new LinkInfo
+            LinkDictionary[Link.MenuHome] = new LinkInfo
             {
                 Name = "Home",
                 Url = "/",
                 Title = "Ga naar de startpagina",
                 
             };
-            LinkDictionary[Link.Modules] = new LinkInfo
+            LinkDictionary[Link.MenuModules] = new LinkInfo
             {
                 Name = "Modules",
                 Url = "/modules",
-                
-                
-            };
-            LinkDictionary[Link.Molules] = new LinkInfo
-            {
-                Url = "/module",
-                
+                Title = "Ga naar de module-overzichts pagina"
                 
             };
             LinkDictionary[Link.PakketContractbeheer] = new LinkInfo
@@ -199,7 +195,7 @@ namespace Hybrid_SaaS
                 
                 
             };
-            LinkDictionary[Link.Pakketten] = new LinkInfo
+            LinkDictionary[Link.MenuPakketten] = new LinkInfo
             {
                 Name = "Pakketten",
                 Url = "/pakketten",
@@ -217,7 +213,7 @@ namespace Hybrid_SaaS
                 
                 
             };
-            LinkDictionary[Link.Support] = new LinkInfo
+            LinkDictionary[Link.MenuSupport] = new LinkInfo
             {
                 Name = "Support",
                 Url = "/support",
@@ -237,7 +233,7 @@ namespace Hybrid_SaaS
                 Title = "Met de Hybrid SaaS Webwinkel kan snel en eenvoudig een webshop worden gerealiseerd en kun je direct producten en diensten aan(potentiele) klanten aanbieden.",
                 
             };
-            LinkDictionary[Link.Over] = new LinkInfo
+            LinkDictionary[Link.MenuOver] = new LinkInfo
             {
                 Name = "Over",
                 Url = "/over",
