@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 
 namespace Hybrid_SaaS
@@ -97,9 +98,14 @@ namespace Hybrid_SaaS
             public string Url = "#";
             public string Title = "";
             public string Description = "";
+
+            //indien pagetitle leeg is, valt deze terug naar title
+            public string PageTitle;
         }
 
         public static Dictionary<Link, LinkInfo> LinkDictionary = new Dictionary<Link, LinkInfo>();
+        public static Dictionary<string, LinkInfo> UrlDictionary = new Dictionary<string, LinkInfo>(StringComparer.InvariantCultureIgnoreCase);
+
         public static string GetLink(Link link)
         {
             return LinkDictionary[link].Url;
@@ -137,7 +143,8 @@ namespace Hybrid_SaaS
             {
                 Name = "Contact",
                 Url = "/contact",
-                Title = "Ga naar de contactpagina"
+                Title = "Ga naar de contactpagina",
+                PageTitle = "Contactgegevens"
             };
             LinkDictionary[Link.Factsheet] = new LinkInfo
             {
@@ -155,14 +162,17 @@ namespace Hybrid_SaaS
             {
                 Name = "Home",
                 Url = "/",
+
                 Title = "Ga naar de startpagina",
-                
+                PageTitle = "Welkom bij Hybrid SaaS"
             };
             LinkDictionary[Link.MenuModules] = new LinkInfo
             {
                 Name = "Modules",
                 Url = "/modules",
-                Title = "Ga naar de module-overzichts pagina"
+
+                Title = "Ga naar de module-overzichts pagina",
+                PageTitle = "Module overzicht"
                 
             };
             LinkDictionary[Link.PakketContractbeheer] = new LinkInfo
@@ -199,7 +209,9 @@ namespace Hybrid_SaaS
             {
                 Name = "Pakketten",
                 Url = "/pakketten",
+
                 Title = "Ga naar de pakketten-overzichts pagina",
+                PageTitle = "Pakketten overzicht"
             };
             LinkDictionary[Link.PakketTicketsFacturatie] = new LinkInfo
             {
@@ -217,9 +229,9 @@ namespace Hybrid_SaaS
             {
                 Name = "Support",
                 Url = "/support",
-                Title = "Ga naar de support pagina"
-                
-                
+                Title = "Ga naar de support pagina",
+
+                PageTitle = "Supportpagina"
             };
             LinkDictionary[Link.TicketSysteem] = new LinkInfo
             {
@@ -237,6 +249,7 @@ namespace Hybrid_SaaS
             {
                 Name = "Over",
                 Url = "/over",
+
                 Title = "Over ons"
             };
             LinkDictionary[Link.Youtube] = new LinkInfo
@@ -587,9 +600,14 @@ namespace Hybrid_SaaS
             LinkDictionary[Link.Meerwerk] = new LinkInfo
             {//not init
                 Url = "/Module/Meerwerk",
-                
-                
             };
+
+
+            //lookup voor urls
+            foreach ( var item in LinkDictionary.Values )
+            {
+                UrlDictionary[item.Url] = item;
+            }
         }
     }
 }

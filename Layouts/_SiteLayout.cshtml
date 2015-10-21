@@ -10,14 +10,34 @@
         //check thingie
         SendMail.SendEmail(companyname, contactname, employeecount);
     }
+
+    LinkList.LinkInfo currentPage = null;
+    var url = HttpContext.Current.Request.Url.AbsolutePath;
+    if ( LinkList.UrlDictionary.ContainsKey( url ) )
+    {
+        currentPage = LinkList.UrlDictionary[url];
+    }
+
 }
 <!DOCTYPE html>
 <html>
 
 <head>
 
-    <title>Hybrid SaaS | Online Business Software</title>
-
+    <title>@{
+               if ( currentPage != null )
+               {
+                   if ( !String.IsNullOrEmpty( currentPage.PageTitle ) )
+                   {
+                       @currentPage.PageTitle
+                   }
+                   else
+                   {
+                       @currentPage.Title
+                   }
+                   <text> - </text>
+               }
+           }Hybrid SaaS | Online Business Software</title>
 
     <meta charset="UTF-8" />
 
