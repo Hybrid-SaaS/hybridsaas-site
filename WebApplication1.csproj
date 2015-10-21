@@ -177,7 +177,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <Content Include="Module\Webshop.cshtml" />
-    <Content Include="WebApplication1.csproj.bak" />
     <Content Include="Module\werkbonnen.cshtml" />
   </ItemGroup>
   <ItemGroup>
