@@ -94,6 +94,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="DefaultModules.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -128,12 +129,9 @@
     <Content Include="bedrijfsagenda.cshtml" />
     <Content Include="contractenbeheer.cshtml" />
     <Content Include="gebouwbeheer.cshtml" />
-    <Content Include="human-resource-management.cshtml" />
-    <Content Include="inkoopfacturatie-en-crediteurenbeheer.cshtml" />
     <Content Include="inventarisbeheer.cshtml" />
     <Content Include="km-registratie.cshtml" />
     <Content Include="notities.cshtml" />
-    <Content Include="productenbeheer.cshtml" />
     <Content Include="Module\projectbeheer.cshtml" />
     <Content Include="Module\relatiebeheer.cshtml" />
     <Content Include="ticketsysteem.cshtml" />
@@ -154,22 +152,32 @@
     <Content Include="Module\inventarisbeheer.cshtml" />
     <Content Include="Module\notities.cshtml" />
     <Content Include="Module\Extranet.cshtml" />
-    <Content Include="Module\Prepaid-kaarten.cshtml" />
     <Content Include="Module\Excel-export.cshtml" />
     <Content Include="Meest-gestelde-vragen.cshtml" />
     <Content Include="Module\offertes-orders.cshtml" />
     <Content Include="Module\km-registratie.cshtml" />
     <Content Include="Module\gebouwbeheer.cshtml" />
     <Content Include="Module\exportboekhouding.cshtml" />
-    <Content Include="Module\gebruiker.cshtml" />
     <Content Include="Module\opslag.cshtml" />
-    <Content Include="Module\outlook-addin.cshtml" />
     <Content Include="Module\prepaidkaarten.cshtml" />
     <Content Include="Module\product-voorraadbeheer.cshtml" />
     <Content Include="Module\Inkoopbeheer.cshtml" />
     <Content Include="Module\Temp.cshtml" />
     <Content Include="Module\facturatie-debiteurbeheer.cshtml" />
-    <Content Include="Module\abonnementen - Copy.cshtml" />
+    <Content Include="Module\productenbeheer.cshtml" />
+    <Content Include="pakket-aanvullend-financieel.cshtml" />
+    <Content Include="Module\Prepaid-kaarten.cshtml" />
+    <Content Include="Module\outlook-add-in.cshtml" />
+    <Content Include="Module\dataopslag.cshtml" />
+    <Content Include="Module\gebruiker-extern.cshtml" />
+    <Content Include="Module\gebruiker-intern.cshtml" />
+    <Content Include="Module\debiteurbeheer.cshtml" />
+    <Content Include="bouw.cshtml" />
+    <Content Include="groothandel.cshtml" />
+    <Content Include="pakket-erp.cshtml" />
+    <Content Include="pakket-kwaliteitscontrolle-tickets.cshtml" />
+    <Content Include="pakket-kwaliteitscontrolle.cshtml" />
+    <Content Include="inkoopfacturatie-en-crediteurenbeheer.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
