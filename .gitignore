@@ -4,3 +4,8 @@
 
 /bin
 /obj/Debug
+/packages
+/.vs
+*.user
+*.xml
+*.suo
