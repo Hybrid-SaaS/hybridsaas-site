@@ -252,7 +252,6 @@
     <Content Include="Module\exportboekhouding.cshtml" />
     <Content Include="Module\opslag.cshtml" />
     <Content Include="Module\prepaidkaarten.cshtml" />
-    <Content Include="Module\product-voorraadbeheer.cshtml" />
     <Content Include="Module\Inkoopbeheer.cshtml" />
     <Content Include="Module\Temp.cshtml" />
     <Content Include="Module\facturatie-debiteurbeheer.cshtml" />
