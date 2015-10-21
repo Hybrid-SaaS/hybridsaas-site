@@ -1,18 +1,5 @@
-﻿@using Hybrid_Saas
-@{
-    Layout = "/SiteLayout.cshtml";
-
-    if (IsPost)
-    {
-        var companyname = Request.Form["name"];
-        var contactname = Request.Form["email"];
-        var employeecount = Request.Form["bericht"];
-
-        if (Validation.IsValid())
-        {
-            SendMail.SendEmail(companyname, contactname, employeecount);
-        }
-    }
+﻿@{
+    Layout = "/Layouts/_SiteLayout.cshtml";
 }
 
 <!-- start content -->
@@ -67,7 +54,7 @@
                 <div class="centering">
                     <!--End Item Content on the right-->
                     <!--Start Item Content on the Left-->
-                    <div class="merge fourth" style="margin:unset;">
+                    <div class="merge fourth" style="margin:initial;">
                         <div class="para facts" >
                             <div class="module" style="width: auto; margin-top:35px;">
                                 <h4>Factsheet</h4>

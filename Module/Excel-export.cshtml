@@ -1,18 +1,6 @@
-﻿@using Hybrid_Saas
+﻿@using Hybrid_SaaS
 @{
-    Layout = "/SiteLayout.cshtml";
-
-    if (IsPost)
-    {
-        var companyname = Request.Form["name"];
-        var contactname = Request.Form["email"];
-        var employeecount = Request.Form["bericht"];
-
-        if (Validation.IsValid())
-        {
-            SendMail.SendEmail(companyname, contactname, employeecount);
-        }
-    }
+    Layout = "/Layouts/_SiteLayout.cshtml";
 }
 <!-- start content -->
 <section id="content-part">
@@ -28,7 +16,7 @@
                     <div class="left">
                         <h4>Abonnementen</h4>
                         <div class="para semi">
-                            <p>Wil jij ook in één oogopslag kunnen zien wanneer een leasecontract afloopt en wanneer een telefoonabonnement of verzekering dient te worden verlengd? Hybrid Saas maakt het mogelijk! De module Hybrid Saas Abonnementenbeheer schept orde in de chaos en plaatst alle behaalde certificaten en afgesloten contracten overzichtelijk bij elkaar.Wanneer een certificaat of overeenkomst tegen de einddatum aanloopt word je hier automatisch van op de hoogte gesteld. Op deze manier voorkom je eenvoudig dat certificaten verlopen en je kosten moet betalen voor onnodige abonnementen. Met Hybrid Saas Abonnementenbeheer loop je nooit meer achter de feiten aan.</p>
+                            <p>Wil jij ook in één oogopslag kunnen zien wanneer een leasecontract afloopt en wanneer een telefoonabonnement of verzekering dient te worden verlengd? Hybrid SaaS maakt het mogelijk! De module Hybrid SaaS Abonnementenbeheer schept orde in de chaos en plaatst alle behaalde certificaten en afgesloten contracten overzichtelijk bij elkaar.Wanneer een certificaat of overeenkomst tegen de einddatum aanloopt word je hier automatisch van op de hoogte gesteld. Op deze manier voorkom je eenvoudig dat certificaten verlopen en je kosten moet betalen voor onnodige abonnementen. Met Hybrid SaaS Abonnementenbeheer loop je nooit meer achter de feiten aan.</p>
                         </div>
                         <div class="para">
                             <p>Abonnementen</p>
@@ -124,7 +112,6 @@
                                 <li>° </li>
                                 <li>° </li>
                                 <li>° </li>
-                            <ul>
                             </ul>
                             <p>Nieuwsgierig geworden wat wij nog meer voor jou kunnen betekenen? Vraag onze vrijblijvende Live Demo aan</p>
                         </div>
@@ -158,15 +145,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="form">
-                        <h4>Interesse in deze module of een opmerking? Stuur ons een bericht.</h4>
-                        <form action="#">
-                                <input type="text" value="Naam" onFocus="if(this.value=='Naam')this.value='';" onBlur="if(this.value=='')this.value='Naam';" />
-                                <input type="text" value="E-mail" onFocus="if(this.value=='E-mail')this.value='';" onBlur="if(this.value=='')this.value='E-mail';" />
-                                <textarea cols="15" rows="5" onFocus="if(this.value=='Bericht')this.value='';" onBlur="if(this.value=='')this.value='Bericht';">Bericht</textarea>
-                                <input type="submit" value="VERSTUur" />
-                            </form>
-                    </div>
+                    @Content.ContactFormDemo()
                 </div>
             </div>
         </article>

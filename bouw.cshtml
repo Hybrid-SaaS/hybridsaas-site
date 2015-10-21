@@ -1,18 +1,6 @@
-﻿@using Hybrid_Saas
+﻿@using Hybrid_SaaS
 @{
-    Layout = "SiteLayout.cshtml";
-
-    if (IsPost)
-    {
-        var companyname = Request.Form["name"];
-        var contactname = Request.Form["email"];
-        var employeecount = Request.Form["bericht"];
-
-        if (Validation.IsValid())
-        {
-            SendMail.SendEmail(companyname, contactname, employeecount);
-        }
-    }
+    Layout = "/Layouts/_SiteLayout.cshtml";
 }
 <!-- start slider -->
 <section id="slider-part">
@@ -114,7 +102,7 @@
                         </li>
                     </ul>
 
-                    <a href="@LinkList.GetLink(Link.Over)">LEES MEER OVER HYBRID SAas</a>
+                    <a href="@LinkList.GetLink(Link.Over)">LEES MEER OVER Hybrid SaaS</a>
                     <span class="border"></span>
                 </div>
             </div>
@@ -246,7 +234,7 @@
             <div class="centering">
                 <div class="text">
 
-                    <h2>DE TOTAALOPLOSSING VAN HYBRID SAAS</h2>
+                    <h2>DE TOTAALOPLOSSING VAN Hybrid SaaS</h2>
 
                     <p>Hybrid SaaS biedt de een totaaloplossing voor dienstverlenende organisaties in de ICT branche. Met ons Online Business Software pakket automatiseer je eenvoudig alle bedrijfsprocessen via één systeem. </p>
                     <p>Organiseer alles: van het eerste klantcontact tot en met de nazorg, van administratie tot voorraadbeheer. Overzichtelijk gepresenteerd in een dashboard en met een flexibiliteit die past bij deze tijd.</p>
@@ -340,7 +328,7 @@
             <div class="centering">
                 <div class="orhybrid" hidden="hidden">
 
-                    <h2>DIT ZEGGEN KLANTEN OVER HYBRID SAAS</h2>
+                    <h2>DIT ZEGGEN KLANTEN OVER Hybrid SaaS</h2>
                     <aside class="hybrid">
                         <div class="left">
                             <ul>
@@ -478,44 +466,7 @@
                 </article>
                 <!-- end support bar -->
         <!-- start form bar -->
-        <article class="form-bar" id="contact">
-
-            <div class="centering">
-                <div class="form">
-
-                    <h2>Heeft u vragen<span> neem dan contact met ons op.</span></h2>
-                    <aside class="forminner">
-                        <div class="left">
-                            <form method="post">
-                                <input type="text" value="Naam" onFocus="if(this.value=='Naam')this.value='';" onBlur="if(this.value=='')this.value='Naam';" name="Name"/>
-                                <input type="text" value="E-mail" onFocus="if(this.value=='E-mail')this.value='';" onBlur="if(this.value=='')this.value='E-mail';" name="email"/>
-                                <textarea name="Bericht" cols="15" rows="5" onFocus="if(this.value=='Bericht')this.value='';" onBlur="if(this.value=='')this.value='Bericht';">Bericht</textarea>
-                                <input type="submit" value="VERSTUUR" />
-                            </form>
-                        </div>
-                        <div class="right">
-                            <address>Hybrid SaaS | Online Business Software <a href="mailto:support@hybridsaas.com">support@hybridsaas.com</a></address>
-                            <p><b>Wij zijn telefonisch bereikbaar van:</b><br>
-                                Maandag t/m vrijdag 09.00 uur - 17.00 uur<br>
-                                op: +31 (0)85 -002 1940</p>
-                            <p><b>Correspondentieadres:</b><br />Postbus 31 2870 AA Schoonhoven</p>
-                            <p><b>Kamer van Koophandel:</b><br />Hybrid SaaS ICT B.V. K.v.K. Rotterdam 54529239</p>
-                            <div class="social">
-                            <div class="semi"><p>Heeft u vragen over de werking van onze <br /> software, dan kunt u uiteraard contact opnemen met de medewerkers van onze helpdesk <br>middels het <a href="@LinkList.GetLink(Link.InvoerTicket)">online ticketsysteem</a> </p></div>
-                                <ul>
-                                    <li><a href="@LinkList.GetLink(Link.Facebook)" target="_blank"><img src="images/social_icon1.png" alt="" /></a></li>
-                                    <li><a href="@LinkList.GetLink(Link.Twitter)" target="_blank"><img src="images/social_icon2.png" alt="" /></a></li>
-                                    <li><a href="@LinkList.GetLink(Link.GooglePlus)" target="_blank"><img src="images/social_icon3.png" alt="" /></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </aside>
-                    <a href="@LinkList.GetLink(Link.Contact)" class="moreinfo">NAAR DE CONTACTPAGINA</a>
-                </div>
-            </div>
-        </article>
-        <!-- end form bar -->
-        
+        @Content.ContactForm()
     </section>
     <!-- end center part -->
 

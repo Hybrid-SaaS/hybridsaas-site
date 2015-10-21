@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Web;
 
-namespace Hybrid_Saas
+namespace Hybrid_SaaS
 {
     public enum Link
     {
@@ -25,12 +22,11 @@ namespace Hybrid_Saas
         Support,
         Webshop,
         Over,
-        Blog,
         Youtube,
         Twitter,
         Facebook,
         SiteMap,
-        AlgemeeneVoorwaarde,
+        AlgemeneVoorwaarden,
         GooglePlus,
         lol,
 		Abonnementen,
@@ -245,12 +241,6 @@ namespace Hybrid_Saas
                 Title = "",
                 Description = ""
             };
-            LinkDictionary[Link.Blog] = new LinkInfo
-            {
-                Url = "/blog",
-                Title = "",
-                Description = ""
-            };
             LinkDictionary[Link.Youtube] = new LinkInfo
             {
                 Url = "https://www.youtube.com/user/HybridSaaSMovie",
@@ -275,9 +265,9 @@ namespace Hybrid_Saas
                 Title = "",
                 Description = ""
             };
-            LinkDictionary[Link.AlgemeeneVoorwaarde] = new LinkInfo
+            LinkDictionary[Link.AlgemeneVoorwaarden] = new LinkInfo
             {
-                Url = "/algemeene-voorwaarde",
+                Url = "/algemene-voorwaarden",
                 Title = "",
                 Description = ""
             };
@@ -290,13 +280,13 @@ namespace Hybrid_Saas
             LinkDictionary[Link.Abonnementen] = new LinkInfo
             {
                 Url = "/Module/Abonnementen",
-                Title = "Wil jij ook in één oogopslag kunnen zien wanneer een leasecontract afloopt en wanneer een telefoonabonnement of verzekering dient te worden verlengd? Hybrid Saas maakt het mogelijk!",
-                Description = "De module Hybrid Saas Abonnementenbeheer schept orde in de chaos en plaatst alle behaalde certificaten en afgesloten contracten overzichtelijk bij elkaar.Wanneer een certificaat of overeenkomst tegen de einddatum aanloopt word je hier automatisch van op de hoogte gesteld. Op deze manier voorkom je eenvoudig dat certificaten verlopen en je kosten moet betalen voor onnodige abonnementen. Met Hybrid Saas Abonnementenbeheer loop je nooit meer achter de feiten aan."
+                Title = "Wil jij ook in één oogopslag kunnen zien wanneer een leasecontract afloopt en wanneer een telefoonabonnement of verzekering dient te worden verlengd? Hybrid SaaS maakt het mogelijk!",
+                Description = "De module Hybrid SaaS Abonnementenbeheer schept orde in de chaos en plaatst alle behaalde certificaten en afgesloten contracten overzichtelijk bij elkaar.Wanneer een certificaat of overeenkomst tegen de einddatum aanloopt word je hier automatisch van op de hoogte gesteld. Op deze manier voorkom je eenvoudig dat certificaten verlopen en je kosten moet betalen voor onnodige abonnementen. Met Hybrid SaaS Abonnementenbeheer loop je nooit meer achter de feiten aan."
             };
             LinkDictionary[Link.Certificatenbeheer] = new LinkInfo
             {
                 Url = "/Module/certificatenbeheer",
-                Title = "Eenvoudig kunnen zien wanneer een het rijbewijs of paspoort verloopt van je persooneel verloopt? Hybrid Saas maakt het mogelijk! ",
+                Title = "Eenvoudig kunnen zien wanneer een het rijbewijs of paspoort verloopt van je persooneel verloopt? Hybrid SaaS maakt het mogelijk! ",
                 Description = ""
             };
             LinkDictionary[Link.Bankrekening] = new LinkInfo
@@ -334,13 +324,13 @@ namespace Hybrid_Saas
             LinkDictionary[Link.FacturatieDebiteurbeheer] = new LinkInfo
             {
                 Url = "/Module/debiteurbeheer",
-                Title = "Wil jij ook in één oogopslag kunnen zien wanneer een leasecontract afloopt en wanneer een telefoonabonnement of verzekering dient te worden verlengd? Hybrid Saas maakt het mogelijk! ",
+                Title = "Wil jij ook in één oogopslag kunnen zien wanneer een leasecontract afloopt en wanneer een telefoonabonnement of verzekering dient te worden verlengd? Hybrid SaaS maakt het mogelijk! ",
                 Description = ""
             };
             LinkDictionary[Link.HRM] = new LinkInfo
             {
                 Url = "/Module/human-resource-management",
-                Title = "Met Hybrid Saas Human Resource Management kun je personeelszaken eenvoudig automatiseren en heb je altijd een up-to-date inzicht in de gehele personeelsadministratie. ",
+                Title = "Met Hybrid SaaS Human Resource Management kun je personeelszaken eenvoudig automatiseren en heb je altijd een up-to-date inzicht in de gehele personeelsadministratie. ",
                 Description = ""
             };
             LinkDictionary[Link.InkoopfacturatieCrediteurenbeheer] = new LinkInfo
@@ -376,7 +366,7 @@ namespace Hybrid_Saas
             LinkDictionary[Link.OffertesOrders] = new LinkInfo
             {
                 Url = "/Module/offertes-orders",
-                Title = "In een handomdraai een professionele offerte opstellen en daarna vliegensvlug omzetten in een order? Dat kan! Met de module Hybrid Saas Offertes & Orders. Eenmalig stel je een offerte lay-out op, waarna je alleen nog maar de producten of diensten als offerteregels hoeft toe te voegen. ",
+                Title = "In een handomdraai een professionele offerte opstellen en daarna vliegensvlug omzetten in een order? Dat kan! Met de module Hybrid SaaS Offertes & Orders. Eenmalig stel je een offerte lay-out op, waarna je alleen nog maar de producten of diensten als offerteregels hoeft toe te voegen. ",
                 Description = ""
             };
             LinkDictionary[Link.Prepaidkaarten] = new LinkInfo
@@ -388,7 +378,7 @@ namespace Hybrid_Saas
             LinkDictionary[Link.Productenbeheer] = new LinkInfo
             {
                 Url = "/Module/productenbeheer",
-                Title = "Overal ter wereld je complete productenbestand snel en eenvoudig beheren? Hybrid Saas Productbeheer maakt het mogelijk. Producten worden voorzien van een duidelijke omschrijving en zijn op deze manier altijd gemakkelijk terug te vinden. ",
+                Title = "Overal ter wereld je complete productenbestand snel en eenvoudig beheren? Hybrid SaaS Productbeheer maakt het mogelijk. Producten worden voorzien van een duidelijke omschrijving en zijn op deze manier altijd gemakkelijk terug te vinden. ",
                 Description = ""
             };
             LinkDictionary[Link.Projectbeheer] = new LinkInfo
@@ -412,7 +402,7 @@ namespace Hybrid_Saas
             LinkDictionary[Link.Voorraadbeheer] = new LinkInfo
             {
                 Url = "/Module/voorraadbeheer",
-                Title = "Overal ter wereld je complete productenbestand snel en eenvoudig beheren? Hybrid Saas Productbeheer maakt het mogelijk. Producten worden voorzien van een duidelijke omschrijving en zijn op deze manier altijd gemakkelijk terug te vinden. ",
+                Title = "Overal ter wereld je complete productenbestand snel en eenvoudig beheren? Hybrid SaaS Productbeheer maakt het mogelijk. Producten worden voorzien van een duidelijke omschrijving en zijn op deze manier altijd gemakkelijk terug te vinden. ",
                 Description = ""
             };
             LinkDictionary[Link.VragenlijstenEquettes] = new LinkInfo
