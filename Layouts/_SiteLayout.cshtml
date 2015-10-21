@@ -46,15 +46,13 @@
             <header id="header-part">
                 <div class="centering">
 
-                    <div class="logo"><a href="@LinkList.GetLink(Link.Index)"><img alt="Hybrid SaaS" src="/images/logo.png" /></a></div>
+                    <div class="logo"><a href="@LinkList.GetLink(Link.Home)"><img alt="Hybrid SaaS" src="/images/logo.png" /></a></div>
                     <a class="menu"><span></span><span></span><span></span></a>
                     <!-- start nav -->
                     <nav class="nav-bar">
                         <div class="leftmenu">
                             <ul class="dropdown">
-                                <li><a href="@LinkList.GetLink(Link.Index)">Home</a> 
-                                    
-                                </li>
+                                <li>@LinkList.WriteLink( Link.Home )</li>
                                 <li><a href="@LinkList.GetLink(Link.Pakketten)">pakketten</a></li>
                                 <li><a href="@LinkList.GetLink(Link.Module)">Modules</a></li>
                             </ul>

@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Web;
 
 namespace Hybrid_SaaS
 {
@@ -10,7 +12,7 @@ namespace Hybrid_SaaS
         Contact,
         Factsheet, 
         Financieel,
-        Index,
+        Home,
         Module,
         Molules,
         PakketContactbeheer,
@@ -92,6 +94,7 @@ namespace Hybrid_SaaS
     {
         public class LinkInfo
         {
+            public string Name;
             public string Url = "#";
             public string Title = "";
             public string Description = "";
@@ -99,6 +102,21 @@ namespace Hybrid_SaaS
 
         static Dictionary<Link, LinkInfo> LinkDictionary = new Dictionary<Link, LinkInfo>();
 
+
+        public static string WriteLink( Link link )
+        {
+            var linkInfo = LinkDictionary[link];
+
+            var title = "";
+            if ( !String.IsNullOrEmpty( linkInfo.Title ) )
+                title = String.Format( " title=\"{0}\"", HttpUtility.HtmlAttributeEncode( linkInfo.Title ) );
+
+            return String.Format( "<a href=\"{0}\"{2}>{1}</a>",
+                HttpUtility.HtmlAttributeEncode( linkInfo.Url ),
+                HttpUtility.HtmlEncode( linkInfo.Name ),
+                title
+                );
+        }
 
         public static string GetLink(Link link)
         {
@@ -151,10 +169,11 @@ namespace Hybrid_SaaS
                 Title = "",
                 Description = ""
             };
-            LinkDictionary[Link.Index] = new LinkInfo
+            LinkDictionary[Link.Home] = new LinkInfo
             {
-                Url = "/index",
-                Title = "",
+                Name = "Home",
+                Url = "/",
+                Title = "Ga naar de startpagina",
                 Description = ""
             };
             LinkDictionary[Link.Module] = new LinkInfo
@@ -201,9 +220,9 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.Pakketten] = new LinkInfo
             {
+                Name = "Pakketten",
                 Url = "/pakketten",
-                Title = "",
-                Description = ""
+                Title = "Ga naar de pakketten-overzichts pagina",
             };
             LinkDictionary[Link.PakketTicketsFacturatie] = new LinkInfo
             {
