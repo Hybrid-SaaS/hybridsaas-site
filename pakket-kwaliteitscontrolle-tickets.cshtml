@@ -1,18 +1,6 @@
-@using Hybrid_Saas
+@using Hybrid_SaaS
 @{
-    Layout = "SiteLayout.cshtml";
-
-    if (IsPost)
-    {
-        var companyname = Request.Form["name"];
-        var contactname = Request.Form["email"];
-        var employeecount = Request.Form["bericht"];
-
-        if (Validation.IsValid())
-        {
-            SendMail.SendEmail(companyname, contactname, employeecount);
-        }
-    }
+    Layout = "/Layouts/_SiteLayout.cshtml";
 }
 <!-- start content -->
 <section id="content-part">
@@ -94,7 +82,7 @@
                         </li>
                     </ul>
                 </div>
-                <article class="solution-bar" style="margin:unset" id="module">
+                <article class="solution-bar" style="margin:initial" id="module">
                     <aside class="fill">
                         <div class="satisfy" style="margin:0px auto 0">
                             <span>Welke modules zitten er standaard inbegrepen in dit pakket?</span>
@@ -107,7 +95,7 @@
             <!-- start centerpart -->
             <section id="center-part">
                 <!-- start boxdetail bar -->
-                <article class="boxdetail-bar" style="margin: unset">
+                <article class="boxdetail-bar" style="margin: initial">
                     <div class="centering">
                         <aside class="ticket">
                             <div class="common pak3" style="padding:0px 0 57px">
@@ -135,9 +123,9 @@
             </section>
             <!-- end center part -->
         </section>
-        <article class="connecting-bar" style="margin:unset">
+        <article class="connecting-bar" style="margin:initial">
             <!-- start commission bar -->
-            <article class="commission-bar" style="margin:unset">
+            <article class="commission-bar" style="margin:initial">
                 <div class="centering">
                     <div class="management">
                         <h2>Welke functionaliteiten biedt<br>Pakket Kwaliteitscontrolle + Tickets</h2>
@@ -168,7 +156,7 @@
                 </div>
             </article>
         </article>
-        <article class="connecting-bar" style="margin:unset">
+        <article class="connecting-bar" style="margin:initial">
             <div class="centering">
                 <div class="merge">
                     <div class="module">

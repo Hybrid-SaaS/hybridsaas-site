@@ -1,18 +1,5 @@
-﻿@using Hybrid_Saas
-@{
-    Layout = "/SiteLayout.cshtml";
-
-    if (IsPost)
-    {
-        var companyname = Request.Form["name"];
-        var contactname = Request.Form["email"];
-        var employeecount = Request.Form["bericht"];
-
-        if (Validation.IsValid())
-        {
-            SendMail.SendEmail(companyname, contactname, employeecount);
-        }
-    }
+﻿@{
+    Layout = "/Layouts/_SiteLayout.cshtml";
 }
 
 <!-- start content -->
@@ -28,7 +15,7 @@
                         <div class="para">
                             <p>
                                 <!--Header content-->
-                                Overal ter wereld je complete productenbestand snel en eenvoudig beheren? Hybrid Saas Productbeheer maakt het mogelijk. Producten worden voorzien van een duidelijke omschrijving en zijn op deze manier altijd gemakkelijk terug te vinden. Ook is het mogelijk om producten naar eigen inzicht onder te verdelen aan de hand van verschillende eigenschappen, zoals productkenmerken, product- of barcodes en leveranciers. Hybrid SaaS Productbeheer helpt je een goed overzicht te houden over je producten en maakt het gemakkelijk om gegevens aan te passen of een productafbeelding toe te voegen. Wanneer een product niet meer op voorraad is, word je hier automatisch van op de hoogte gesteld. Wel zo gemakkelijk!
+                                Overal ter wereld je complete productenbestand snel en eenvoudig beheren? Hybrid SaaS Productbeheer maakt het mogelijk. Producten worden voorzien van een duidelijke omschrijving en zijn op deze manier altijd gemakkelijk terug te vinden. Ook is het mogelijk om producten naar eigen inzicht onder te verdelen aan de hand van verschillende eigenschappen, zoals productkenmerken, product- of barcodes en leveranciers. Hybrid SaaS Productbeheer helpt je een goed overzicht te houden over je producten en maakt het gemakkelijk om gegevens aan te passen of een productafbeelding toe te voegen. Wanneer een product niet meer op voorraad is, word je hier automatisch van op de hoogte gesteld. Wel zo gemakkelijk!
                             </p>
                         </div>
                     </div>
@@ -68,7 +55,7 @@
                 <div class="centering">
                     <!--End Item Content on the right-->
                     <!--Start Item Content on the Left-->
-                    <div class="merge fourth" style="margin:unset;">
+                    <div class="merge fourth" style="margin:initial;">
                         <div class="para facts">
                             <div class="module" style="width: auto; margin-top:35px;">
                                 <h4>Factsheet</h4>

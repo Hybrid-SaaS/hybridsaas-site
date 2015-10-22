@@ -1,7 +1,7 @@
 ﻿using System.Net.Mail;
 using System.Web.Configuration;
 
-namespace Hybrid_Saas
+namespace Hybrid_SaaS
 {
     public class SendMail
     {

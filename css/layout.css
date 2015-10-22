@@ -76,7 +76,7 @@ a:hover { text-decoration: underline; }
             margin-top: 1px;
             white-space: nowrap;
             float:left;
-            letter-spacing:unset;
+            letter-spacing: initial;
         }
 
         .nav-bar .leftmenu .dropdown ul li a:hover 

@@ -1,18 +1,6 @@
-﻿@using Hybrid_Saas
+﻿@using Hybrid_SaaS
 @{
-    Layout = "SiteLayout.cshtml";
-
-    if (IsPost)
-    {
-        var companyname = Request.Form["name"];
-        var contactname = Request.Form["email"];
-        var employeecount = Request.Form["bericht"];
-
-        if (Validation.IsValid())
-        {
-            SendMail.SendEmail(companyname, contactname, employeecount);
-        }
-    }
+    Layout = "/Layouts/_SiteLayout.cshtml";
 }
 <!-- start content -->
 <section id="content-part">

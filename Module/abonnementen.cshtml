@@ -1,18 +1,6 @@
-﻿@using Hybrid_Saas
+﻿@using Hybrid_SaaS
 @{
-    Layout = "/SiteLayout.cshtml";
-
-    if (IsPost)
-    {
-        var companyname = Request.Form["name"];
-        var contactname = Request.Form["email"];
-        var employeecount = Request.Form["bericht"];
-
-        if (Validation.IsValid())
-        {
-            SendMail.SendEmail(companyname, contactname, employeecount);
-        }
-    }
+    Layout = "/Layouts/_SiteLayout.cshtml";
 }
 
 <!-- start content -->
@@ -63,13 +51,13 @@
         <!-- end advantage bar -->
 		<!-- start connecting bar -->
         <article class="connecting-bar" style="margin:auto;">
-            <article class="advantage-bar" style="margin:auto;">
+            <article class="advantage-bar" style="margin: auto;">
                 <div class="centering">
                     <!--End Item Content on the right-->
                     <!--Start Item Content on the Left-->
-                    <div class="merge fourth" style="margin:unset;">
-                        <div class="para facts" >
-                            <div class="module" style="width: auto; margin-top:35px;">
+                    <div class="merge fourth" style="margin: initial;">
+                        <div class="para facts">
+                            <div class="module" style="width: auto; margin-top: 35px;">
                                 <h4>Factsheet</h4>
                                 <p>
                                     Hieronder zijn alle mogelijkheden binnen de verschillende online modules weergegeven.Het kan voorkomen dat het beschreven functionaliteiten aanvullende modules nodig te hebben.Mocht u vragen hebben, neem dan contact met ons op.
@@ -86,23 +74,7 @@
                     <!--End Item Content on the Left-->
                 </div>
             </article>
-            <div class="centering">
-				<div class="merge">
-                    <div class="module">
-                        <h4 style="margin-top:35px;">Nieuwsgierig geworden wat wij nog meer voor jou kunnen betekenen?<br>Vraag onze vrijblijvende Live Demo aan!</h4>
-                        <div class="image"><img src="/images/connecting_img.JPG" alt="" style="width:760px; margin-top:35px"/></div>
-                    </div>
-                    <div class="form">
-                        <h4>Interesse in deze module of een opmerking? Stuur ons een bericht.</h4>
-                        <form action="#">
-                            <input type="text" value="Naam" onFocus="if(this.value=='Naam')this.value='';" onBlur="if(this.value=='')this.value='Naam';" />
-                            <input type="text" value="E-mail" onFocus="if(this.value=='E-mail')this.value='';" onBlur="if(this.value=='')this.value='E-mail';" />
-                            <textarea cols="15" rows="5" onFocus="if(this.value=='Bericht')this.value='';" onBlur="if(this.value=='')this.value='Bericht';">Bericht</textarea>
-                            <input type="submit" value="VERSTUur" />
-                        </form>
-                    </div>
-                </div>
-            </div>
+            @Content.ContactFormDemo()
         </article>
         <!-- end connecting bar -->
 	</section>

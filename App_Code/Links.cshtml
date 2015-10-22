@@ -1,0 +1,21 @@
+﻿@using Hybrid_SaaS
+@helper Write(Link link)
+{
+    var linkInfo = LinkList.LinkDictionary[link];
+    var title = "";
+    if ( !String.IsNullOrEmpty( linkInfo.Title ) )
+    {
+        title = String.Format( " title=\"{0}\"", HttpUtility.HtmlAttributeEncode( linkInfo.Title ) );
+    }
+    var target = "";
+    if ( linkInfo.OpenInNewWindow )
+    {
+        target = " target=\"_blank\"";
+    }
+    @Html.Raw( String.Format( "<a href=\"{0}\"{2}{3}>{1}</a>",
+        HttpUtility.HtmlAttributeEncode( linkInfo.Url ),
+        HttpUtility.HtmlEncode( linkInfo.Name ),
+        title,
+        target
+        ) )
+}

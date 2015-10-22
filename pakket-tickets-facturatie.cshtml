@@ -1,19 +1,6 @@
-
-@using Hybrid_Saas
+@using Hybrid_SaaS
 @{
-    Layout = "SiteLayout.cshtml";
-
-    if (IsPost)
-    {
-        var companyname = Request.Form["name"];
-        var contactname = Request.Form["email"];
-        var employeecount = Request.Form["bericht"];
-
-        if (Validation.IsValid())
-        {
-            SendMail.SendEmail(companyname, contactname, employeecount);
-        }
-    }
+    Layout = "/Layouts/_SiteLayout.cshtml";
 }
 
 <!-- start slider -->
@@ -90,6 +77,7 @@
                         <p>Integratie met Microsoft Outlook en Excel voor optimaal gemak</p>
                     </div>
                 </div>
+<<<<<<< HEAD
                 <div class="clear"></div>
 
                 <div class="servicebox">
@@ -131,6 +119,71 @@
                     <a href="#">Facturatie</a>
                 </li>
             </ul>
+=======
+                <article class="solution-bar" style="margin:initial" id="module">
+                    <aside class="fill">
+                        <div class="satisfy" style="margin:0px auto 0">
+                            <span>Welke modules zitten er standaard inbegrepen in dit pakket?</span>
+                        </div>
+                    </aside>
+                </article>
+            </div>
+        </article>
+        <section id="content-part">
+            <!-- start centerpart -->
+            <section id="center-part">
+                <!-- start boxdetail bar -->
+                <article class="boxdetail-bar" style="margin: initial">
+                    <div class="centering">
+                        <aside class="ticket">
+                            <div class="common pak3" style="padding:0px 0 57px">
+                                <h4>Standaard inbegrepen:</h4>
+                                <div class="stand">
+                                    <ul>
+                                        <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)">Relatiebeheer</a></li>
+                                        <li><a href="@LinkList.GetLink(Link.TicketSysteem)">Ticketsysteem</a></li>
+                                        <li><a href="@LinkList.GetLink(Link.Tijdregistratie)">Tijdregistratie </a></li>
+                                        <li><a href="@LinkList.GetLink(Link.Facturatie)">Facturatie</a></li>
+                                        <li><a href="@LinkList.GetLink(Link.Projectbeheer)">Projectbeheer</a></li>
+                                        <li><a href="@LinkList.GetLink(Link.Prepaidkaarten)">Prepaidkaarten</a></li>
+                                        <li><a href="@LinkList.GetLink(Link.Wachtwoordbeheer)">Wachtwoordbeheer</a></li>
+                                        <li><a href="@LinkList.GetLink(Link.Notities)">Notities</a></li>
+                                   </ul>
+
+                                   <ul> 
+                                        <li><a href="@LinkList.GetLink(Link.Crm)">CRM</a></li>
+                                        <li><a href="@LinkList.GetLink(Link.ExportExternPakket)">Financiele export naar extern pakket</a></li>
+                                        <li><a href="@LinkList.GetLink(Link.ExportBoekhouding)">Export naar externe boekhouding</a></li>
+                                        <li><a href="@LinkList.GetLink(Link.ExportExcel)">Export naar Excel</a></li>
+                                        
+                                   </ul>
+
+                                   <ul>
+                                        <li><a href="@LinkList.GetLink(Link.OutlookAddIn)">Outlook add-in</a></li>
+                                        <li><a href="@LinkList.GetLink(Link.Extranet)">Extranet</a></li>
+                                        <li><a href="@LinkList.GetLink(Link.GebruikerIntern)">1 Gebruiker</a></li>
+                                        <li><a href="@LinkList.GetLink(Link.Dataopslag)">1 GB dataopslag</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </article>
+                <!-- end boxdetail bar -->
+            </section>
+            <!-- end center part -->
+        </section>
+        <article class="connecting-bar" style="margin:initial">
+            <!-- start commission bar -->
+            <article class="commission-bar" style="margin:initial">
+                <div class="centering">
+                    <div class="management">
+                        <h2>Welke functionaliteiten biedt<br>Pakket Tickets & Facturatie</h2>
+                        <div class="merge2">
+                            <div class="para">
+                                <p><b>Maak gebruik van smartphone en tablet</b></p>
+                                <p>Wij snappen dat je niet altijd achter een computer zit. Daarom hebben we een extern online portaal gemaakt. Zo kun je ook met je smartphone of tablet gebruik maken van Hybrid SaaS online business software. Tijd registreren, offertes en orders aanmaken, werkbonnen invullen of actuele relatiegegevens inzien: het kan allemaal ook onderweg.  </p><br />
+>>>>>>> 87ce3d6182a99bf491b6aaa171944a00b33f2b6d
 
             <h5>Ondersteunende modules in dit pakket</h5>
 
@@ -253,6 +306,7 @@
                 <p class="misjenog">Mis je nog iets? Breid je pakket eenvoudig uit met de volgende modules.</p>
                 <div class="pakket">
 
+<<<<<<< HEAD
                     <ul>
                         <li>
                             <img src="images/connencting_img1.png" alt="" />
@@ -270,6 +324,51 @@
                             <a href="#">Meer info</a>
                         </li>
                     </ul>
+=======
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </article>
+        <article class="connecting-bar" style="margin:initial">
+            <div class="centering">
+                <div class="merge">
+                    <div class="module">
+                        <h3>Aanvullende modules en pakketten</h3>
+                        <p>Mis je nog iets? Breid je pakket eenvoudig uit met de volgende modules en pakketten</p>
+                        <p>Benieuwd naar de prijzen? Download prijslijst</p>
+                        <div class="pakket">
+                            <h4>Aanvullend pakket (maandelijks)</h4>
+                            <ul>
+                                <li>
+                                    <img src="images/connencting_img1.png" alt="" />
+                                    <h5>Webshop</h5>
+                                    <a href=" @LinkList.GetLink(Link.Webshop)">Meer info</a>
+                                </li>
+                                <li>
+                                    <img src="images/connencting_img2.png" alt="" />
+                                    <h5>Commissie</h5>
+                                    <a href="@LinkList.GetLink(Link.Commissiebeheer)">Meer info</a>
+                                </li>
+                                <li>
+                                    <img src="images/connencting_img3.png" alt="" />
+                                    <h5>Vragenlijsten<br>en Equettes</h5>
+                                    <a href="@LinkList.GetLink(Link.VragenlijstenEquettes)">Meer info</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <h4>Interesse in deze module of een opmerking? Stuur ons een bericht.</h4>
+                        <form action="#">
+                            <input type="text" value="Naam" onFocus="if(this.value=='Naam')this.value='';" onBlur="if(this.value=='')this.value='Naam';" />
+                            <input type="text" value="E-mail" onFocus="if(this.value=='E-mail')this.value='';" onBlur="if(this.value=='')this.value='E-mail';" />
+                            <textarea cols="15" rows="5" onFocus="if(this.value=='Bericht')this.value='';" onBlur="if(this.value=='')this.value='Bericht';">Bericht</textarea>
+                            <input type="submit" value="VERSTUur" />
+                        </form>
+                    </div>
+>>>>>>> 87ce3d6182a99bf491b6aaa171944a00b33f2b6d
                 </div>
             </div>
             <div class="form">

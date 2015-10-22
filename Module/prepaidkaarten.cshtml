@@ -1,18 +1,6 @@
-﻿@using Hybrid_Saas
+﻿@using Hybrid_SaaS
 @{
-    Layout = "/SiteLayout.cshtml";
-
-    if (IsPost)
-    {
-        var companyname = Request.Form["name"];
-        var contactname = Request.Form["email"];
-        var employeecount = Request.Form["bericht"];
-
-        if (Validation.IsValid())
-        {
-            SendMail.SendEmail(companyname, contactname, employeecount);
-        }
-    }
+    Layout = "/Layouts/_SiteLayout.cshtml";
 }
 <!-- start content -->
 <section id="content-part">
@@ -39,16 +27,6 @@
                             <p></p>
                         </div>
                         <div class="outlook">
-                        <!--<ul>
-                            <li><a href="@LinkList.GetLink(Link.Webshop)"><img src="images/outlook_img6.png" alt="" /></a></li>
-                            <li><a href="#"><img src="images/outlook_img7.png" alt="" /></a></li>
-                            <li><a href="#"><img src="images/outlook_img8.png" alt="" /></a></li>
-                            <li><a href="#"><img src="images/outlook_img1.png" alt="" /></a></li>
-                            <li><a href="#"><img src="images/outlook_img2.png" alt="" /></a></li>
-                            <li><a href="#"><img src="images/outlook_img3.png" alt="" /></a></li>
-                            <li><a href="#"><img src="images/outlook_img4.png" alt="" /></a></li>
-                            <li><a href="#"><img src="images/outlook_img5.png" alt="" /></a></li>
-                        </ul>-->
                     </div>
                     </div>
                 </div>
@@ -107,7 +85,6 @@
                                 <li>° </li>
                                 <li>° </li>
                                 <li>° </li>
-                            <ul>
                             </ul>
                             <p>Nieuwsgierig geworden wat wij nog meer voor jou kunnen betekenen? Vraag onze vrijblijvende Live Demo aan</p>
                         </div>
