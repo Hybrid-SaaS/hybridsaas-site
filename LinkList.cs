@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
 
 namespace Hybrid_SaaS
 {
@@ -88,6 +89,8 @@ namespace Hybrid_SaaS
         Werkbonnen,
         WordAddDownload,
         Youtube,
+        pijzenljst,
+        pakketCommisiebeheer,
     }
 
     public static class LinkList
@@ -612,11 +615,26 @@ namespace Hybrid_SaaS
                 Url = "/Module/Meerwerk",
             };
 
-
-            //lookup voor urls
-            foreach ( var item in LinkDictionary.Values )
+            LinkDictionary[Link.pakketCommisiebeheer] = new LinkInfo
             {
-                UrlDictionary[item.Url] = item;
+                Url = "/pakket-aanvullend-commissiebeheer",
+            };
+
+            LinkDictionary[Link.pijzenljst] = new LinkInfo
+            {
+                Url = "#",
+            };
+
+            foreach (var item in Enum.GetValues(typeof(Link)))
+            {
+                if (!LinkDictionary.ContainsKey((Link)item))
+                    continue;
+            }
+
+            foreach (var item in LinkDictionary.Values)
+            {
+                if (!File.Exists("C:/Workspace/Ontwikkeling/GitHub/hybridsaas-site" + item.Url + ".cshtml"))
+                    continue;
             }
         }
     }
