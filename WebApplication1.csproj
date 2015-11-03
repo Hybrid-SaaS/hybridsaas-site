@@ -273,6 +273,7 @@
     <Content Include="js\jquery.flexslider.js" />
     <Content Include="js\respond.src.js" />
     <Content Include="js\smooth-scroll.js" />
+    <Content Include="robots.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

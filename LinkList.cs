@@ -625,17 +625,13 @@ namespace Hybrid_SaaS
                 Url = "#",
             };
 
-            foreach (var item in Enum.GetValues(typeof(Link)))
-            {
-                if (!LinkDictionary.ContainsKey((Link)item))
-                    continue;
-            }
-
+            /*var file = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\\robots.txt";
+            string content = "";
             foreach (var item in LinkDictionary.Values)
             {
-                if (!File.Exists("C:/Workspace/Ontwikkeling/GitHub/hybridsaas-site" + item.Url + ".cshtml"))
-                    continue;
+                content += "Allow: "+item.Url + Environment.NewLine;
             }
+            File.WriteAllText(file,content);*/
         }
     }
 }
