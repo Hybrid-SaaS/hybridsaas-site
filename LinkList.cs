@@ -414,7 +414,7 @@ namespace Hybrid_SaaS
             LinkDictionary[Link.Relatiebeheer] = new LinkInfo
             {
                 Url = "/Module/relatiebeheer",
-                Title = "Relaties zijn de motor van iedere organisatie. Juist daarom is het belangrijk om als organisatie over een compleet en overzichtelijk CRM-systeem (Customer Relationship Management) te beschikken.",
+                Title = < img alt = "" src = "images/modules_img6.png" > "Relaties zijn de motor van iedere organisatie. Juist daarom is het belangrijk om als organisatie over een compleet en overzichtelijk CRM-systeem (Customer Relationship Management) te beschikken.",
                 
             };
             LinkDictionary[Link.Tijdregistratie] = new LinkInfo
