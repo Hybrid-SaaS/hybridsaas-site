@@ -1,3 +1,114 @@
+@using Hybrid_SaaS
 @{
     Layout = "/Layouts/_SiteLayout.cshtml";
 }
+
+<!-- start content -->
+<section id="content-part">
+    <!-- start centerpart -->
+    <section id="center-part">
+        <!-- start commission bar -->
+        <article class="commission-bar">
+            <div class="centering">
+                <div class="management">
+                    <div class="merge">
+                        <h4>Financeel (luxe module)</h4> <!--Header!-->
+                        <div class="para">
+                            <p>
+                                <!--Header content-->
+                                Wil je het boekhoudproces nog slimmer inrichten? Kies dan ons pakket Financieel. Dit is de perfecte aanvulling op bijvoorbeeld Tickets & Facturatie of Offerte & Voorraad.
+                                Wij hebben zelf een boekhoudpakket ontwikkeld waarmee je eenvoudig digitaal online de complete boekhouding bijhoudt. Van het versturen van facturen tot een actueel overzicht in de balans, winst- en verliesrekening; dit pakket is zo ontworpen dat het voor 100% aansluit op de andere pakketten van Hybrid SaaS.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- end commission bar -->
+        <!-- start welke-bar -->
+        <div class="welke-bar">
+            <div class="centering">
+                <h3>Welke functionaliteiten biedt financieel?</h3>
+                <h5>Houd debiteuren- en crediteurenbeheer overzichtelijk</h5>
+                <p>Zie in één oogopslag de status van facturen en onderneem direct actie als dat nodig is. Sorteer de facturen op de manier die jij zelf handig vindt. Dit kan bijvoorbeeld op klant, maar ook op vervaldatum of aantal herinneringen. Hoe vaak en hoe snel een klant een herinnering moet ontvangen, leg je zelf vast in het systeem. </p><br />
+
+                <h5>Banktransacties inlezen</h5>
+                <p>Lees de banktransacties in en koppel ze eenvoudig aan openstaande verkoopfacturen. Het is ook mogelijk om incassobatches aan te maken. Het inlezen van banktransacties is ook handig voor de verwerking van inkoopfacturen. Zo kun je afschrijvingen direct koppelen aan de grootboekrekening of gegevens van inkoopfacturen automatisch gebruiken voor betalingen en incasso's. </p><br />
+
+                <h5>Stuur meerdere herinneringen tegelijk</h5>
+                <p>Zie je dat er meerdere facturen te lang openstaan? Stuur alle betrokkenen tegelijk een herinnering. Dat scheelt je veel tijd. </p><br />
+
+                <h5>Weet altijd alles over de financiële positie van je organisatie</h5>
+                <p>Met het Hybrid SaaS boekhoudpakket weet je zeker dat jou geen financiële verrassingen te wachten staan. Je kunt altijd zien hoe je ervoor staat door de balans, winst- en verliesrekening te openen. Mochten er gegevens ontbreken, dan krijg je hier een melding over. Zo kun je dit zelf aanpassen. Door op de verschillende posten van de rekeningen te klikken, krijg je alle informatie tot in detail te zien. Dit kan duidelijkheid scheppen of fouten aan het licht brengen. Is het tijd om de administratie naar de belasting te brengen? Dan kan jouw boekhouder met een eigen inlogcode de rekeningen controleren. Correcties aanbrengen kan direct in de rekening als dat nodig is. Daarna exporteer je het bestand naar Excel. </p><br />
+
+                <h5>Mis je nog iets? Breid je pakket eenvoudig uit met de volgende modules en pakketten</h5>
+                <p>Benieuwd naar de prijzen? <a style="font-size:17px; line-height:24px; color:#777;" href="@LinkList.GetLink(Link.pijzenljst)">Download</a> prijslijst</p><br />
+            </div>
+        </div>
+        <!-- ends welke-bar -->
+        <!-- start boxdetail bar -->
+        <article class="boxdetail-bar" style="margin: initial">
+            <div class="centering">
+                <aside class="ticket">
+                    <div class="common pak3" style="padding:0px 0 57px">
+                        <h4>Welke modules zitten bij Financieel inbegrepen:</h4>
+                        <div class="stand">
+                            <ul>
+                                <li><div class="imgs"><img alt="" src="images/modules_img6.png"></div><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)">Relatiebeheer</a></li>
+                                <li><a href="@LinkList.GetLink(Link.Facturatie)">Facturatie</a></li>
+                                <li><div class="imgs"><img alt="" src="images/modules_img3.png"></div><a href="@LinkList.GetLink(Link.Wachtwoordbeheer)">Wachtwoordbeheer</a></li>
+                                <li><div class="imgs"><img alt="" src="images/modules_img7.png"></div><a href="@LinkList.GetLink(Link.Notities)">Notities</a></li>
+                                <li><a href="@LinkList.GetLink(Link.Crm)">CRM</a></li>
+                            </ul>
+
+                            <ul>
+                                <li><a href="@LinkList.GetLink(Link.ExportExternPakket)">Financiele export naar extern pakket</a></li>
+                                <li><div class="imgs"><img alt="" src="images/modules_img8.png"></div><a href="@LinkList.GetLink(Link.ExportBoekhouding)">Export naar externe boekhouding</a></li>
+                                <li><a href="@LinkList.GetLink(Link.ExportExcel)">Export naar Excel</a></li>
+                            </ul>
+
+                            <ul>
+                                <li><div class="imgs"><img alt="" src="images/modules_img5.png"></div><a href="@LinkList.GetLink(Link.Extranet)">Extranet</a></li>
+                                <li><div class="imgs"><img alt="" src="images/modules_img4.png"></div><a href="@LinkList.GetLink(Link.OutlookAddIn)">Outlook add-in</a></li>
+                                <li><a href="@LinkList.GetLink(Link.GebruikerIntern)">1 Gebruiker</a></li>
+                                <li><div class="imgs"><img alt="" src="images/modules_img9.png"></div><a href="@LinkList.GetLink(Link.Dataopslag)">10 GB dataopslag</a></li>
+                            </ul>
+                            <cite>&euro; 125,- per maand</cite>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </article>
+        <!-- end boxdetail bar -->
+        <!-- start connecting bar -->
+        <article class="connecting-bar" style="margin:auto;">
+            <article class="advantage-bar" style="margin:auto;">
+                <div class="centering">
+                    <!--End Item Content on the right-->
+                    <!--Start Item Content on the Left-->
+                    <div class="merge fourth" style="margin:initial;">
+                        <div class="para facts">
+                            <div class="module" style="width: auto; margin-top:35px;">
+                                <h4>Factsheet</h4>
+                                <p>
+                                    Hieronder zijn alle mogelijkheden binnen de verschillende online modules weergegeven.Het kan voorkomen dat het beschreven functionaliteiten aanvullende modules nodig te hebben.Mocht u vragen hebben, neem dan contact met ons op.
+                                </p>
+                                <div class="para2">
+                                    <h2>Financieel</h2>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Item Content on the Left-->
+                </div>
+            </article>
+            @Content.ContactFormDemo()
+        </article>
+        <!-- end connecting bar -->
+    </section>
+    <!-- end center part -->
+</section>
+<!-- end content -->

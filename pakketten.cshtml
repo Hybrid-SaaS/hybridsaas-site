@@ -29,40 +29,38 @@
 		<!-- end slider -->
 		
 		<!-- start content -->
-		<section id="content-part">
-
+		<section id="content-part"></section>
 			<!-- start centerpart -->
-            <section id="center-part">
-
+            <section id="center-part"></section>
                 <!-- start box bar -->
                 <article class="box-bar">
 
                     <div class="centering">
                         <div class="box">
-                            <h4>Speciaal geoptimaliseerd voor de ICT</h4>
-                            <p>Dankzij de samengestelde pakketten heb je alle modules<br>die je nodig heb voor de juiste workflow.</p>
+                            <h4>Kies hier je basis startpakket</h4>
+                            <p>Naast het gekozen startpakket kan je hem desgewenst <br>uitbreiden met modules</p>
                             <div class="merge">
                                 <img src="images/box_ict.png" alt="" class="boximg" />
                                 <div class="boxcontent1">
                                     <div class="common pak1">
-                                        <img src="images/ticket_icon1.png" alt="" />
+                                        <img src="@LinkList.GetImages(Link.PakketContractbeheer)" />
                                         <h3>Pakket CONTRACTBEHEER</h3>
                                         <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)">Relatiebeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Facturatie)" title="@LinkList.GetTitle(Link.Facturatie)">Facturatie</a></li>
+                                            <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)">@LinkList.GetLinkName(Link.Relatiebeheer)</a></li>
+                                            <li><a href="@LinkList.GetLink(Link.Facturatie)" title="@LinkList.GetTitle(Link.Facturatie)">@LinkList.GetLinkName(Link.Facturatie)</a></li>
                                         </ul>
                                         <div class="clear"></div>
                                         <ul>
-                                            <li><a href="@LinkList.GetLink(Link.ExportBoekhouding)" title="@LinkList.GetTitle(Link.ExportBoekhouding)">Export naar externe boekhouding</a></li>
+                                            <li><a href="@LinkList.GetLink(Link.ExportBoekhouding)" title="@LinkList.GetTitle(Link.ExportBoekhouding)">@LinkList.GetLinkName(Link.ExportBoekhouding)</a></li>
                                         </ul>
                                         <div class="clear"></div>
                                         <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Notities)" title="@LinkList.GetTitle(Link.Notities)">Notities</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.GebruikerIntern)" title="@LinkList.GetTitle(Link.GebruikerIntern)">1 Gebruiker</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Dataopslag)" title="@LinkList.GetTitle(Link.Dataopslag)">10 GB dataopslag</a></li>
+                                            <li><a href="@LinkList.GetLink(Link.Notities)" title="@LinkList.GetTitle(Link.Notities)">@LinkList.GetLinkName(Link.Notities)</a></li>
+                                            <li><a href="@LinkList.GetLink(Link.GebruikerIntern)" title="@LinkList.GetTitle(Link.GebruikerIntern)">@LinkList.GetLinkName(Link.GebruikerIntern)</a></li>
+                                            <li><a href="@LinkList.GetLink(Link.Dataopslag)" title="@LinkList.GetTitle(Link.Dataopslag)">@LinkList.GetLinkName(Link.Dataopslag)</a></li>
                                         </ul>
                                         <div class="clear"></div>
-                                        <cite>&euro; 125,- per maand</cite>
+                                        <cite>@LinkList.GetPrice(Link.PakketContractbeheer)</cite>
                                         <div class="clear"></div>
                                         <a href="@LinkList.GetLink(Link.PakketContractbeheer)" class="detail">DETAILs</a>
                                     </div>
@@ -70,260 +68,56 @@
 
                                 <div class="boxcontent2">
                                     <div class="common pak2">
-                                        <img src="images/ticket_icon2a.png" alt="" />
+                                        <img src="@LinkList.GetImages(Link.PakketTicketsFacturatie)" />
                                         <h3>Pakket TICKETS + FACTURATIE</h3>
                                         <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)">Relatiebeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.TicketSysteem)" title="@LinkList.GetTitle(Link.TicketSysteem)">Ticketsysteem</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Tijdregistratie)" title="@LinkList.GetTitle(Link.Tijdregistratie)">Tijdregistratie</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Facturatie)" title="@LinkList.GetTitle(Link.Facturatie)">Facturatie</a></li>
+                                            <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)">@LinkList.GetLinkName(Link.Relatiebeheer)</a></li>
+                                            <li><a href="@LinkList.GetLink(Link.TicketSysteem)" title="@LinkList.GetTitle(Link.TicketSysteem)">@LinkList.GetLinkName(Link.TicketSysteem)</a></li>
+                                            <li><a href="@LinkList.GetLink(Link.Tijdregistratie)" title="@LinkList.GetTitle(Link.Tijdregistratie)">@LinkList.GetLinkName(Link.Tijdregistratie)</a></li>
+                                            <li><a href="@LinkList.GetLink(Link.Facturatie)" title="@LinkList.GetTitle(Link.Facturatie)">@LinkList.GetLinkName(Link.Facturatie)</a></li>
                                         </ul>
                                         <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Projectbeheer)" title="@LinkList.GetTitle(Link.Projectbeheer)">Projectbeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Prepaidkaarten)" title="@LinkList.GetTitle(Link.Prepaidkaarten)">Prepaidkaarten</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Wachtwoordbeheer)" title="@LinkList.GetTitle(Link.Wachtwoordbeheer)">Wachtwoordbeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Notities)" title="@LinkList.GetTitle(Link.Notities)">Notities</a></li>
+                                            <li><a href="@LinkList.GetLink(Link.Projectbeheer)" title="@LinkList.GetTitle(Link.Projectbeheer)">@LinkList.GetLinkName(Link.Projectbeheer)</a></li>
+                                            <li><a href="@LinkList.GetLink(Link.Prepaidkaarten)" title="@LinkList.GetTitle(Link.Prepaidkaarten)">@LinkList.GetLinkName(Link.Prepaidkaarten)</a></li>
+                                            <li><a href="@LinkList.GetLink(Link.Wachtwoordbeheer)" title="@LinkList.GetTitle(Link.Wachtwoordbeheer)">@LinkList.GetLinkName(Link.Wachtwoordbeheer)</a></li>
+                                            <li><a href="@LinkList.GetLink(Link.Notities)" title="@LinkList.GetTitle(Link.Notities)">@LinkList.GetLinkName(Link.Notities)</a></li>
                                         </ul>
                                         <ul>
-                                            <li><a href="@LinkList.GetLink(Link.OutlookAddIn)" title="@LinkList.GetTitle(Link.OutlookAddIn)">Outlook add-in</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Extranet)" title="@LinkList.GetTitle(Link.Extranet)">Extranet</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.ExportBoekhouding)" title="@LinkList.GetTitle(Link.ExportBoekhouding)">Export naar externe boekhouding</a></li>
+                                            <li><a href="@LinkList.GetLink(Link.OutlookAddIn)" title="@LinkList.GetTitle(Link.OutlookAddIn)">@LinkList.GetLinkName(Link.OutlookAddIn)</a></li>
+                                            <li><a href="@LinkList.GetLink(Link.Extranet)" title="@LinkList.GetTitle(Link.Extranet)">@LinkList.GetLinkName(Link.Extranet)</a></li>
+                                            <li><a href="@LinkList.GetLink(Link.ExportBoekhouding)" title="@LinkList.GetTitle(Link.ExportBoekhouding)">@LinkList.GetLinkName(Link.ExportBoekhouding)</a></li>
                                         </ul>
                                         <ul>
-                                            <li><a href="@LinkList.GetLink(Link.GebruikerIntern)" title="@LinkList.GetTitle(Link.GebruikerIntern)">1 Gebruiker</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Dataopslag)" title="@LinkList.GetTitle(Link.Dataopslag)">10 GB dataopslag</a></li>
+                                            <li><a href="@LinkList.GetLink(Link.GebruikerIntern)" title="@LinkList.GetTitle(Link.GebruikerIntern)">@LinkList.GetLinkName(Link.GebruikerIntern)</a></li>
+                                            <li><a href="@LinkList.GetLink(Link.Dataopslag)" title="@LinkList.GetTitle(Link.Dataopslag)">@LinkList.GetLinkName(Link.Dataopslag)</a></li>
                                         </ul>
-                                        <cite>&euro; 250,- per maand</cite>
+                                        <cite>@LinkList.GetPrice(Link.PakketTicketsFacturatie)</cite>
                                         <div class="clear"></div>
                                         <a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)" class="detail">DETAILs</a>
                                     </div>
                                 </div>
                                 <div class="boxcontent3">
                                     <div class="common pak3">
-                                        <img src="images/ticket_icon3a.png" alt="" />
-                                        <h3>Pakket OFFERTE + VOORRAAD</h3>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)">Relatiebeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.TicketSysteem)" title="@LinkList.GetTitle(Link.TicketSysteem)">Ticketsysteem</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Tijdregistratie)" title="@LinkList.GetTitle(Link.Tijdregistratie)">Tijdregistratie</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Facturatie)" title="@LinkList.GetTitle(Link.Facturatie)">Facturatie</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Projectbeheer)" title="@LinkList.GetTitle(Link.Projectbeheer)">Projectbeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Prepaidkaarten)" title="@LinkList.GetTitle(Link.Prepaidkaarten)">Prepaidkaarten</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Wachtwoordbeheer)" title="@LinkList.GetTitle(Link.Wachtwoordbeheer)">Wachtwoordbeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Notities)" title="@LinkList.GetTitle(Link.Notities)">Notities</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.OutlookAddIn)" title="@LinkList.GetTitle(Link.OutlookAddIn)">Outlook add-in</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Extranet)" title="@LinkList.GetTitle(Link.Extranet)">Extranet</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.ExportBoekhouding)" title="@LinkList.GetTitle(Link.ExportBoekhouding)">Export naar externe boekhouding</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.OffertesOrders)" title="@LinkList.GetTitle(Link.OffertesOrders)">Offertes en orders</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Productenbeheer)" title="@LinkList.GetTitle(Link.Productenbeheer)">Productenbeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Voorraadbeheer)" title="@LinkList.GetTitle(Link.Voorraadbeheer)">Voorraadbeheer</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Inkooporderbeheer)" title="@LinkList.GetTitle(Link.Inkooporderbeheer)">Inkooporder beheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.GebruikerIntern)" title="@LinkList.GetTitle(Link.GebruikerIntern)">1 Gebruiker</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Dataopslag)" title="@LinkList.GetTitle(Link.Dataopslag)">10 GB dataopslag</a></li>
-                                        </ul>
-                                        <cite>&euro; 300,- per maand</cite>
-                                        <div class="clear"></div>
-                                        <a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)" class="detail">DETAILs</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <!-- end box bar -->
-                <!-- start box bar -->
-                <article class="box-bar">
-
-                    <div class="centering">
-                        <div class="box">
-                            <h4><font color="blue">Speciaal geoptimaliseerd voor de BOUW</font></h4>
-                            <p>Dankzij de samengestelde pakketten heb je alle modules<br>die je nodig heb voor de juiste workflow.</p>
-                            <div class="merge">
-                                <img src="images/box_ict.png" alt="" class="boximg" />
-                                <div class="boxcontent1">
-                                    <div class="common pak1">
-                                        <img src="images/ticket_icon1.png" alt="" />
+                                        <img src=" @LinkList.GetImages(Link.PakketKwaliteitsControle)" />
                                         <h3>Pakket Kwaliteitscontrolle</h3>
                                         <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)">Relatiebeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.VragenlijstenEquettes)" title="@LinkList.GetTitle(Link.VragenlijstenEquettes)">Vragenlijsten</a></li>
+                                            <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)">@LinkList.GetLinkName(Link.Relatiebeheer)</a></li>
+                                            <li><a href="@LinkList.GetLink(Link.VragenlijstenEquettes)" title="@LinkList.GetTitle(Link.VragenlijstenEquettes)">@LinkList.GetLinkName(Link.VragenlijstenEquettes)</a></li>
                                         </ul>
                                         <div class="clear"></div>
                                         <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Extranet)" title="@LinkList.GetTitle(Link.Extranet)">Extranet</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.GebruikerIntern)" title="@LinkList.GetTitle(Link.GebruikerIntern)">10 Gebruikers</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Dataopslag)" title="@LinkList.GetTitle(Link.Dataopslag)">10 GB dataopslag</a></li>
+                                            <li><a href="@LinkList.GetLink(Link.GebruikerIntern)" title="@LinkList.GetTitle(Link.GebruikerIntern)">@LinkList.GetLinkName(Link.GebruikerIntern)</a></li>
+                                            <li><a href="@LinkList.GetLink(Link.GebruikerExtern)" title="@LinkList.GetTitle(Link.GebruikerExtern)">@LinkList.GetLinkName(Link.GebruikerExtern)</a></li>
                                         </ul>
                                         <div class="clear"></div>
-                                        <cite>&euro; 100,- per maand</cite>
+                                        <ul>
+                                            <li><a href="@LinkList.GetLink(Link.Extranet)" title="@LinkList.GetTitle(Link.Extranet)">@LinkList.GetLinkName(Link.Extranet)</a></li>
+                                            <li><a href="@LinkList.GetLink(Link.Dataopslag)" title="@LinkList.GetTitle(Link.Dataopslag)">@LinkList.GetLinkName(Link.Dataopslag)</a></li>
+                                        </ul>
+                                        <div class="clear"></div>
+                                        <cite>@LinkList.GetLinkName(Link.PakketKwaliteitsControle)</cite>
                                         <div class="clear"></div>
                                         <a href="@LinkList.GetLink(Link.PakketKwaliteitsControle)" class="detail">DETAILs</a>
-                                    </div>
-                                </div>
-
-                                <div class="boxcontent2">
-                                    <div class="common pak2">
-                                        <img src="images/ticket_icon2a.png" alt="" />
-                                        <h3>Pakket Kwaliteitscontrolle + Tickets</h3>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)">Relatiebeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Projectbeheer)" title="@LinkList.GetTitle(Link.Projectbeheer)">Projectbeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.TicketSysteem)" title="@LinkList.GetTitle(Link.TicketSysteem)">Ticketsysteem</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.VragenlijstenEquettes)" title="@LinkList.GetTitle(Link.VragenlijstenEquettes)">Vragenlijsten</a></li>
-                                        </ul>
-                                        <div class="clear"></div>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Extranet)" title="@LinkList.GetTitle(Link.Extranet)">Extranet</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.GebruikerIntern)" title="@LinkList.GetTitle(Link.GebruikerIntern)">10 Gebruikers</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Dataopslag)" title="@LinkList.GetTitle(Link.Dataopslag)">10 GB dataopslag</a></li>
-                                        </ul>
-                                        <cite>&euro; 250,- per maand</cite>
-                                        <div class="clear"></div>
-                                        <a href="@LinkList.GetLink(Link.PakketKwaliteitsControleTickets)" class="detail">DETAILs</a>
-                                    </div>
-                                </div>
-                                <div class="boxcontent3">
-                                    <div class="common pak3">
-                                        <img src="images/ticket_icon3a.png" alt="" />
-                                        <h3>Pakket ERP</h3>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)">Relatiebeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Projectbeheer)" title="@LinkList.GetTitle(Link.Projectbeheer)">Projectbeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.TicketSysteem)" title="@LinkList.GetTitle(Link.TicketSysteem)">Ticketsysteem</a></li>
-                                        </ul>
-                                        <div class="clear"></div>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Tijdregistratie)" title="@LinkList.GetTitle(Link.Tijdregistratie)">Tijdregistratie</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Prognosebeheer)" title="@LinkList.GetTitle(Link.Prognosebeheer)">Prognosebeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Termijnstatenbeheer)" title="@LinkList.GetTitle(Link.Termijnstatenbeheer)">Termijnstatenbeheer</a></li>
-                                        </ul>
-                                        <div class="clear"></div>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.VragenlijstenEquettes)" title="@LinkList.GetTitle(Link.VragenlijstenEquettes)">Vragenlijsten</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Meerwerk)" title="@LinkList.GetTitle(Link.Meerwerk)">Meerwerk</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Extranet)" title="@LinkList.GetTitle(Link.Extranet)">Extranet</a></li>
-                                        </ul>
-                                        <div class="clear"></div>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.GebruikerIntern)" title="@LinkList.GetTitle(Link.GebruikerIntern)">10 Gebruiker</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Dataopslag)" title="@LinkList.GetTitle(Link.Dataopslag)">10 GB dataopslag</a></li>
-                                        </ul>
-                                        <cite>&euro; 500,- per maand</cite>
-                                        <div class="clear"></div>
-                                        <a href="@LinkList.GetLink(Link.PakketErp)" class="detail">DETAILs</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <!-- end box bar -->
-                <!-- start box bar -->
-                <article class="box-bar" hidden="hidden">
-
-                    <div class="centering">
-                        <div class="box">
-                            <h4><font color="red">Speciaal geoptimaliseerd voor de GROOTHANDEL</font></h4>
-                            <p>Dankzij de samengestelde pakketten heb je alle modules<br>die je nodig heb voor de juiste workflow.</p>
-                            <div class="merge">
-                                <img src="images/box_groothandel.png" alt="" class="boximg" />
-                                <div class="boxcontent1">
-                                    <div class="common pak1">
-                                        <img src="images/ticket_icon1_groothandel.png" alt="" />
-                                        <h3>Pakket CONTRACTBEHEER</h3>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)">Relatiebeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Facturatie)" title="@LinkList.GetTitle(Link.Facturatie)">Facturatie</a></li>
-                                        </ul>
-                                        <div class="clear"></div>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.ExportBoekhouding)" title="@LinkList.GetTitle(Link.ExportBoekhouding)">Export naar externe boekhouding</a></li>
-                                        </ul>
-                                        <div class="clear"></div>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Notities)" title="@LinkList.GetTitle(Link.Notities)">Notities</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.GebruikerIntern)" title="@LinkList.GetTitle(Link.GebruikerIntern)">1 Gebruiker</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Dataopslag)" title="@LinkList.GetTitle(Link.Dataopslag)">1 GB dataopslag</a></li>
-                                        </ul>
-                                        <div class="clear"></div>
-                                        <cite>&euro; 125,- per maand</cite>
-                                        <div class="clear"></div>
-                                        <a href="@LinkList.GetLink(Link.PakketContractbeheer)" class="detail">DETAILs</a>
-                                    </div>
-                                </div>
-
-                                <div class="boxcontent2">
-                                    <div class="common pak2">
-                                        <img src="images/ticket_icon2a_groothandel.png" alt="" />
-                                        <h3>Pakket TICKETS + FACTURATIE</h3>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)">Relatiebeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.TicketSysteem)" title="@LinkList.GetTitle(Link.TicketSysteem)">Ticketsysteem</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Tijdregistratie)" title="@LinkList.GetTitle(Link.Tijdregistratie)">Tijdregistratie</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Facturatie)" title="@LinkList.GetTitle(Link.Facturatie)">Facturatie</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Projectbeheer)" title="@LinkList.GetTitle(Link.Projectbeheer)">Projectbeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Prepaidkaarten)" title="@LinkList.GetTitle(Link.Prepaidkaarten)">Prepaidkaarten</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Wachtwoordbeheer)" title="@LinkList.GetTitle(Link.Wachtwoordbeheer)">Wachtwoordbeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Notities)" title="@LinkList.GetTitle(Link.Notities)">Notities</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.OutlookAddIn)" title="@LinkList.GetTitle(Link.OutlookAddIn)">Outlook add-in</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Extranet)" title="@LinkList.GetTitle(Link.Extranet)">Extranet</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.ExportBoekhouding)" title="@LinkList.GetTitle(Link.ExportBoekhouding)">Export naar externe boekhouding</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.GebruikerIntern)" title="@LinkList.GetTitle(Link.GebruikerIntern)">1 Gebruiker</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Dataopslag)" title="@LinkList.GetTitle(Link.Dataopslag)">1 GB dataopslag</a></li>
-                                        </ul>
-                                        <cite>&euro; 250,- per maand</cite>
-                                        <div class="clear"></div>
-                                        <a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)" class="detail">DETAILs</a>
-                                    </div>
-                                </div>
-                                <div class="boxcontent3">
-                                    <div class="common pak3">
-                                        <img src="images/ticket_icon3a_groothandel.png" alt="" />
-                                        <h3>Pakket OFFERTE + VOORRAAD</h3>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)">Relatiebeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.TicketSysteem)" title="@LinkList.GetTitle(Link.TicketSysteem)">Ticketsysteem</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Tijdregistratie)" title="@LinkList.GetTitle(Link.Tijdregistratie)">Tijdregistratie</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Facturatie)" title="@LinkList.GetTitle(Link.Facturatie)">Facturatie</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Projectbeheer)" title="@LinkList.GetTitle(Link.Projectbeheer)">Projectbeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Prepaidkaarten)" title="@LinkList.GetTitle(Link.Prepaidkaarten)">Prepaidkaarten</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Wachtwoordbeheer)" title="@LinkList.GetTitle(Link.Wachtwoordbeheer)">Wachtwoordbeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Notities)" title="@LinkList.GetTitle(Link.Notities)">Notities</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.OutlookAddIn)" title="@LinkList.GetTitle(Link.OutlookAddIn)">Outlook add-in</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Extranet)" title="@LinkList.GetTitle(Link.Extranet)">Extranet</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.ExportBoekhouding)" title="@LinkList.GetTitle(Link.ExportBoekhouding)">Export naar externe boekhouding</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.OffertesOrders)" title="@LinkList.GetTitle(Link.OffertesOrders)">Offertes en orders</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Productenbeheer)" title="@LinkList.GetTitle(Link.Productenbeheer)">Productenbeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Voorraadbeheer)" title="@LinkList.GetTitle(Link.Voorraadbeheer)">Voorraadbeheer</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Inkooporderbeheer)" title="@LinkList.GetTitle(Link.Inkooporderbeheer)">Inkooporder beheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.GebruikerIntern)" title="@LinkList.GetTitle(Link.GebruikerIntern)">1 Gebruiker</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Dataopslag)" title="@LinkList.GetTitle(Link.Dataopslag)">1 GB dataopslag</a></li>
-                                        </ul>
-                                        <cite>&euro; 300,- per maand</cite>
-                                        <div class="clear"></div>
-                                        <a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)" class="detail">DETAILs</a>
                                     </div>
                                 </div>
                             </div>
@@ -340,562 +134,50 @@
 
                                 <div class="centering">
                                     <div class="box">
-                                        <h4><font color="gray">Aanvullende pakketten</font></h4>
+                                        <h4><font color="gray">Ga naar:</font></h4>
                                     </div>
                                 </div>
                             </article>
                             <aside class="ticket">
-
                                 <div class="common pak1" style="margin:0px 10px 10px 10px; width:22% ">
-                                    <img src="images/ticket_icon2.png" alt="" />
-                                    <h3>Aanvullend Pakket <span>Commissiebeheer</span></h3>
-                                    <cite>&euro; 250,- per maand</cite>
-                                    <a href="@LinkList.GetLink(Link.pakketCommisiebeheer)" class="detail">Over Pakket</a>
+                                    <img src="@LinkList.GetImages(Link.MenuModules)" title="@LinkList.GetLinkName(Link.MenuModules)" />
+                                    <h3>@LinkList.GetLinkName(Link.MenuModules)</h3>
+                                    <cite>@LinkList.GetPrice(Link.MenuModules)</cite>
+                                    <a href="@LinkList.GetLink(Link.MenuModules)" class="detail">Over Pakket</a>
                                     <ul>
-                                        <li> Hybrid SaaS Ticketsysteem, tijdregistratie en facturatie Eén overzichtelijk dashboard. Voor alles.</li>
+                                        <li> Hybrid SaaS modules</li>
                                     </ul>
                                 </div>
-
                                 <div class="common pak1" style="margin:0px 10px 10px 10px; width:22% ">
-                                    <img src="images/ticket_icon1.png" alt="" />
-                                    <h3>Aanvullend Pakket<span>Financieel</span></h3>
-                                    <cite>&euro; 125,- per maand</cite>
-                                    <a href="@LinkList.GetLink(Link.PakketAanvullendFinancieel)" class="detail">Over Pakket</a>
-                                    <ul>
-                                        <li> Hybrid SaaS Contractbeheer, Eén overzichtelijk dashboard. Voor alles.</li>
-                                    </ul>
-                                </div>
-
-
-                                <div class="common pak1" style="margin:0px 10px 10px 10px; width:22%">
-                                    <img src="images/ticket_icon3.png" alt="" />
-                                    <h3><span>Dataopslag</span></h3>
-                                    <cite>&euro; 10,- per 10 GB</cite>
-                                    <a href="@LinkList.GetLink(Link.Dataopslag)" class="detail" style="margin-top:55px;">Over Pakket</a>
-                                    <ul>
-                                        <li> Hybrid SaaS Offerte & Voorraad Eén overzichtelijk dashboard. Voor alles.</li>
-                                    </ul>
-                                </div>
-
-
-                                <div class="common pak1" style="margin:0px 10px 10px 10px; width:22% ">
-                                    <img src="images/ticket_icon3.png" alt="" />
-                                    <h3><span>Gebruikers</span></h3>
-                                    <cite>&euro; 5,- per gebruiker</cite>
+                                    <img src="@LinkList.GetImages(Link.GebruikerIntern)" title="@LinkList.GetLinkName(Link.GebruikerIntern)" />
+                                    <h3><span>@LinkList.GetLinkName(Link.GebruikerIntern)</span></h3>
+                                    <cite>@LinkList.GetPrice(Link.GebruikerIntern)</cite>
                                     <a href="@LinkList.GetLink(Link.GebruikerIntern)" class="detail" style="margin-top:60px;">Over Pakket</a>
                                     <ul>
-                                        <li> Hybrid SaaS Offerte & Voorraad Eén overzichtelijk dashboard. Voor alles.</li>
+                                        <li> Hybrid SaaS gebruikers</li>
                                     </ul>
                                 </div>
-
+                                <div class="common pak1" style="margin:0px 10px 10px 10px; width:22% ">
+                                    <img src="@LinkList.GetImages(Link.GebruikerExtern)" title="@LinkList.GetLinkName(Link.GebruikerExtern)" />
+                                    <h3><span>@LinkList.GetLinkName(Link.GebruikerExtern)</span></h3>
+                                    <cite>@LinkList.GetPrice(Link.GebruikerExtern)</cite>
+                                    <a href="@LinkList.GetLink(Link.GebruikerExtern)" class="detail" style="margin-top:60px;">Over Pakket</a>
+                                    <ul>
+                                        <li> Hybrid SaaS buitendienst medewerkers</li>
+                                    </ul>
+                                </div>
+                                <div class="common pak1" style="margin:0px 10px 10px 10px; width:22%">
+                                    <img src="@LinkList.GetImages(Link.Dataopslag)" title="@LinkList.GetLinkName(Link.Dataopslag)" />
+                                    <h3><span>@LinkList.GetLinkName(Link.Dataopslag)</span></h3>
+                                    <cite>@LinkList.GetPrice(Link.Dataopslag)</cite>
+                                    <a href="@LinkList.GetLink(Link.Dataopslag)" class="detail" style="margin-top:55px;">Over Pakket</a>
+                                    <ul>
+                                        <li> Hybrid SaaS dataopslag</li>
+                                    </ul>
+                                </div>
                             </aside>
+                <!-- start paket bar -->
                         </div>
                     </div>
                 </article>
-                <!-- end paket bar -->
-                <!-- start centerpart -->
-                <article class="box-bar">
-
-                    <div class="centering" style="display: none;">
-                        <div class="box">
-                            <h4>Aanvullende Pakketen</h4>
-                            <p>Vul je pakket aan met deze aanvullende pakketen.</p>
-                            <div class="merge">
-                                <img src="images/box_img_aanvullend.png" alt="" class="boximg" />
-                                <div class="boxcontent1" style="left:-30px;">
-                                    <div class="common pak1">
-                                        <h3>Aanvullend Pakket Commissiebeheer</h3>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)">Relatiebeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Facturatie)">Facturatie</a></li>
-                                        </ul>
-                                        <div class="clear"></div>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.ExportBoekhouding)">Export naar externe boekhouding</a></li>
-                                        </ul>
-                                        <div class="clear"></div>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Notities)">Notities</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.GebruikerIntern)">1 Gebruiker</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Dataopslag)">1 GB dataopslag</a></li>
-                                        </ul>
-                                        <div class="clear"></div>
-                                        <cite>&euro; 125,- per maand</cite>
-                                        <div class="clear"></div>
-                                        <a href="@LinkList.GetLink(Link.pakketCommisiebeheer)" class="detail">DETAILs</a>
-                                    </div>
-                                </div>
-                                <div class="boxcontent4">
-                                    <div class="common pak4">
-                                        <h3>Aanvullend Pakket Financieel</h3>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)">Relatiebeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Facturatie)">Facturatie</a></li>
-                                        </ul>
-                                        <div class="clear"></div>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.ExportBoekhouding)">Export naar externe boekhouding</a></li>
-                                        </ul>
-                                        <div class="clear"></div>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Notities)">Notities</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.GebruikerIntern)">1 Gebruiker</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Dataopslag)">1 GB dataopslag</a></li>
-                                        </ul>
-                                        <div class="clear"></div>
-                                        <cite>&euro; 125,- per maand</cite>
-                                        <div class="clear"></div>
-                                        <a href="@LinkList.GetLink(Link.Financieel)" class="detail">DETAILs</a>
-                                    </div>
-                                </div>
-                                <div class="boxcontent2">
-                                    <div class="common pak2">
-                                        <h3>gebruikers</h3>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)">Relatiebeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.TicketSysteem)">Ticketsysteem</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Tijdregistratie)">Tijdregistratie</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Facturatie)">Facturatie</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Projectbeheer)">Projectbeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Prepaidkaarten)">Prepaidkaarten</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Wachtwoordbeheer)">Wachtwoordbeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Notities)">Notities</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.OutlookAddIn)">Outlook add-in</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Extranet)">Extranet</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.ExportBoekhouding)">Export naar externe boekhouding</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.GebruikerIntern)">1 Gebruiker</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Dataopslag)">1 GB dataopslag</a></li>
-                                        </ul>
-                                        <cite>&euro; 250,- per maand</cite>
-                                        <div class="clear"></div>
-                                        <a href="@LinkList.GetLink(Link.GebruikerIntern)" class="detail">DETAILs</a>
-                                    </div>
-                                </div>
-                                <div class="boxcontent3">
-                                    <div class="common pak3">
-                                        <h3>Dataopslag (Per 10GB)</h3>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)">Relatiebeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.TicketSysteem)">Ticketsysteem</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Tijdregistratie)">Tijdregistratie</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Facturatie)">Facturatie</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Projectbeheer)">Projectbeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Prepaidkaarten)">Prepaidkaarten</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Wachtwoordbeheer)">Wachtwoordbeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Notities)">Notities</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.OutlookAddIn)">Outlook add-in</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Extranet)">Extranet</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.ExportBoekhouding)">Export naar externe boekhouding</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.OffertesOrders)">Offertes en orders</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Productenbeheer)">Productenbeheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Voorraadbeheer)">Voorraadbeheer</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li><a href="@LinkList.GetLink(Link.Inkooporderbeheer)">Inkooporder beheer</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.GebruikerIntern)">1 Gebruiker</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Dataopslag)">1 GB dataopslag</a></li>
-                                        </ul>
-                                        <cite>&euro; 300,- per maand</cite>
-                                        <div class="clear"></div>
-                                        <a href="@LinkList.GetLink(Link.Dataopslag)" class="detail">DETAILs</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <!-- start boxdetail bar -->
-                <article class="boxdetail" style="display: none;">
-
-                    <div class="centering">
-                        <aside class="ticket">
-
-                            <div class="common pak2">
-                                <img src="images/ticket_icon2a.png" alt="" />
-                                <a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)" style="text-decoration: none"><h3>Pakket Tickets & Facturatie</h3></a>
-                                <h4>Standaard inbegrepen:</h4>
-                                <div class="stand">
-
-                                    <ul>
-                                        <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)">Relatiebeheer</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.TicketSysteem)">Ticketsysteem</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Tijdregistratie)">Tijdregistratie </a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Facturatie)">Facturatie</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Projectbeheer)">Projectbeheer</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Prepaidkaarten)">Prepaidkaarten</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Wachtwoordbeheer)">Wachtwoordbeheer</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Notities)">Notities</a></li>
-                                    </ul>
-
-                                    <ul>
-                                        <li><a href="@LinkList.GetLink(Link.Crm)">CRM</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.ExportExternPakket)">Financiele export naar extern pakket</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.ExportBoekhouding)">Export naar externe boekhouding</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.ExportExcel)">Export naar Excel</a></li>
-
-                                    </ul>
-
-                                    <ul>
-                                        <li><a href="@LinkList.GetLink(Link.OutlookAddIn)">Outlook add-in</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Extranet)">Extranet</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.GebruikerIntern)">1 Gebruiker</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Dataopslag)">1 GB dataopslag</a></li>
-                                    </ul>
-
-                                </div>
-                                <div class="outlook">
-                                    <ul>
-                                        <li><img src="images/outlook_img2.png" alt="" /></li>
-                                        <li><img src="images/outlook_img3.png" alt="" /></li>
-                                        <li><img src="images/outlook_img4.png" alt="" /></li>
-                                        <li><img src="images/outlook_img5.png" alt="" /></li>
-                                        <li><img src="images/outlook_img1.png" alt="" /></li>
-                                        <li><img src="images/outlook_img2.png" alt="" /></li>
-                                        <li><img src="images/outlook_img3.png" alt="" /></li>
-                                        <li><img src="images/outlook_img4.png" alt="" /></li>
-                                        <li><img src="images/outlook_img5.png" alt="" /></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="common pak1">
-                                <img src="images/ticket_icon1.png" alt="" />
-                                <a href="@LinkList.GetLink(Link.PakketContractbeheer)" style="text-decoration: none"><h3>Pakket Contractbeheer</h3></a>
-                                <h4>Standaard inbegrepen:</h4>
-                                <div class="stand">
-
-                                    <ul>
-                                        <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)">Relatiebeheer</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Facturatie)">Facturatie</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Wachtwoordbeheer)">Wachtwoordbeheer</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Notities)">Notities</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Crm)">CRM</a></li>
-                                    </ul>
-
-                                    <ul>
-                                        <li><a href="@LinkList.GetLink(Link.ExportExternPakket)">Financiele export naar extern pakket</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.ExportBoekhouding)">Export naar externe boekhouding</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.ExportExcel)">Export naar Excel</a></li>
-                                    </ul>
-
-                                    <ul>
-                                        <li><a href="@LinkList.GetLink(Link.Extranet)">Extranet</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.OutlookAddIn)">Outlook add-in</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.GebruikerIntern)">1 Gebruiker</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Dataopslag)">1 GB dataopslag</a></li>
-                                    </ul>
-
-                                </div>
-
-                                <div class="outlook">
-                                    <ul>
-                                        <li><img src="images/outlook_img1.png" alt="" /></li>
-                                        <li><img src="images/outlook_img2.png" alt="" /></li>
-                                        <li><img src="images/outlook_img3.png" alt="" /></li>
-                                        <li><img src="images/outlook_img4.png" alt="" /></li>
-                                        <li><img src="images/outlook_img5.png" alt="" /></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
-                            <div class="common pak3">
-                                <img src="images/ticket_icon3a.png" alt="" />
-                                <a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)" style="text-decoration: none"><h3>Pakket Offerte & Voorraad</h3></a>
-                                <h4>Standaard inbegrepen:</h4>
-                                <div class="stand">
-
-                                    <ul>
-                                        <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)"> Relatiebeheer </a></li>
-                                        <li><a href="@LinkList.GetLink(Link.TicketSysteem)"> Ticketsysteem </a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Tijdregistratie)"> Tijdregistratie </a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Facturatie)"> Facturatie </a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Projectbeheer)"> Projectbeheer </a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Prepaidkaarten)"> Prepaidkaarten </a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Wachtwoordbeheer)"> Wachtwoordbeheer </a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Notities)"> Notities </a></li>
-                                    </ul>
-
-                                    <ul>
-                                        <li><a href="@LinkList.GetLink(Link.OffertesOrders)">Offertes en orders</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Productenbeheer)">Productenbeheer</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Voorraadbeheer)">Voorraadbeheer</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Inkooporderbeheer)">Inkooporder beheer</a></li>
-                                    </ul>
-
-                                    <ul>
-                                        <li><a href="@LinkList.GetLink(Link.Crm)">CRM</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Financieel)">Financiele export naar extern pakket</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.ExportBoekhouding)">Export naar externe boekhouding</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.ExportExcel)">Export naar Excel</a></li>
-
-                                    </ul>
-
-                                    <ul>
-                                        <li><a href="@LinkList.GetLink(Link.OutlookAddIn)">Outlook add-in</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Extranet)">Extranet</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.GebruikerIntern)">1 Gebruiker</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Dataopslag)">10 GB dataopslag</a></li>
-                                    </ul>
-                                </div>
-                                <div class="outlook">
-                                    <ul>
-                                        <li><img src="images/outlook_img1.png" alt="" /></li>
-                                        <li><img src="images/outlook_img2.png" alt="" /></li>
-                                        <li><img src="images/outlook_img3.png" alt="" /></li>
-                                        <li><img src="images/outlook_img4.png" alt="" /></li>
-                                        <li><img src="images/outlook_img5.png" alt="" /></li>
-                                        <li><img src="images/outlook_img1.png" alt="" /></li>
-                                        <li><img src="images/outlook_img2.png" alt="" /></li>
-                                        <li><img src="images/outlook_img3.png" alt="" /></li>
-                                        <li><img src="images/outlook_img4.png" alt="" /></li>
-                                        <li><img src="images/outlook_img5.png" alt="" /></li>
-                                        <li><img src="images/outlook_img4.png" alt="" /></li>
-                                        <li><img src="images/outlook_img5.png" alt="" /></li>
-                                        <li><img src="images/outlook_img1.png" alt="" /></li>
-                                        <li><img src="images/outlook_img2.png" alt="" /></li>
-                                        <li><img src="images/outlook_img3.png" alt="" /></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </aside>
-                    </div>
-                </article>
-                <!-- end boxdetail bar -->
-                <!-- start boxdetail bar -->
-                <article class="boxdetail" style="display: none;">
-
-                    <div class="centering">
-                        <aside class="ticket">
-
-                            <div class="common pak2">
-                                <img src="images/ticket_icon2a.png" alt="" />
-                                <a href="@LinkList.GetLink(Link.Commissiebeheer)" style="text-decoration: none"><h3>AANVULLEND COMMISSIEBEHEER</h3></a>
-                                <h4>Standaard inbegrepen:</h4>
-                                <div class="stand">
-
-                                    <ul>
-                                        <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)">Relatiebeheer</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.TicketSysteem)">Ticketsysteem</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Tijdregistratie)">Tijdregistratie </a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Facturatie)">Facturatie</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Projectbeheer)">Projectbeheer</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Prepaidkaarten)">Prepaidkaarten</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Wachtwoordbeheer)">Wachtwoordbeheer</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Notities)">Notities</a></li>
-                                    </ul>
-
-                                    <ul>
-                                        <li><a href="@LinkList.GetLink(Link.Crm)">CRM</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.ExportExternPakket)">Financiele export naar extern pakket</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.ExportBoekhouding)">Export naar externe boekhouding</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.ExportExcel)">Export naar Excel</a></li>
-
-                                    </ul>
-
-                                    <ul>
-                                        <li><a href="@LinkList.GetLink(Link.OutlookAddIn)">Outlook add-in</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Extranet)">Extranet</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.GebruikerIntern)">1 Gebruiker</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Dataopslag)">1 GB dataopslag</a></li>
-                                    </ul>
-
-                                </div>
-                                <div class="outlook">
-                                    <ul>
-                                        <li><img src="images/outlook_img2.png" alt="" /></li>
-                                        <li><img src="images/outlook_img3.png" alt="" /></li>
-                                        <li><img src="images/outlook_img4.png" alt="" /></li>
-                                        <li><img src="images/outlook_img5.png" alt="" /></li>
-                                        <li><img src="images/outlook_img1.png" alt="" /></li>
-                                        <li><img src="images/outlook_img2.png" alt="" /></li>
-                                        <li><img src="images/outlook_img3.png" alt="" /></li>
-                                        <li><img src="images/outlook_img4.png" alt="" /></li>
-                                        <li><img src="images/outlook_img5.png" alt="" /></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="common pak1">
-                                <img src="images/ticket_icon1.png" alt="" />
-                                <a href="@LinkList.GetLink(Link.Financieel)" style="text-decoration: none"><h3>AANVULLEND PAKKET FINANCIEEL</h3></a>
-                                <h4>Standaard inbegrepen:</h4>
-                                <div class="stand">
-
-                                    <ul>
-                                        <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)">Relatiebeheer</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Facturatie)">Facturatie</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Wachtwoordbeheer)">Wachtwoordbeheer</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Notities)">Notities</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Crm)">CRM</a></li>
-                                    </ul>
-
-                                    <ul>
-                                        <li><a href="@LinkList.GetLink(Link.ExportExternPakket)">Financiele export naar extern pakket</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.ExportBoekhouding)">Export naar externe boekhouding</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.ExportExcel)">Export naar Excel</a></li>
-                                    </ul>
-
-                                    <ul>
-                                        <li><a href="@LinkList.GetLink(Link.Extranet)">Extranet</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.OutlookAddIn)">Outlook add-in</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.GebruikerIntern)">1 Gebruiker</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Dataopslag)">1 GB dataopslag</a></li>
-                                    </ul>
-
-                                </div>
-
-                                <div class="outlook">
-                                    <ul>
-                                        <li><img src="images/outlook_img1.png" alt="" /></li>
-                                        <li><img src="images/outlook_img2.png" alt="" /></li>
-                                        <li><img src="images/outlook_img3.png" alt="" /></li>
-                                        <li><img src="images/outlook_img4.png" alt="" /></li>
-                                        <li><img src="images/outlook_img5.png" alt="" /></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
-                            <div class="common pak3">
-                                <img src="images/ticket_icon3a.png" alt="" />
-                                <a href="@LinkList.GetLink(Link.GebruikerIntern)" style="text-decoration: none"><h3>AANVULLEND GEBRUIKER</h3></a>
-                                <h4>Standaard inbegrepen:</h4>
-                                <div class="stand">
-
-                                    <ul>
-                                        <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)"> Relatiebeheer </a></li>
-                                        <li><a href="@LinkList.GetLink(Link.TicketSysteem)"> Ticketsysteem </a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Tijdregistratie)"> Tijdregistratie </a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Facturatie)"> Facturatie </a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Projectbeheer)"> Projectbeheer </a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Prepaidkaarten)"> Prepaidkaarten </a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Wachtwoordbeheer)"> Wachtwoordbeheer </a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Notities)"> Notities </a></li>
-                                    </ul>
-
-                                    <ul>
-                                        <li><a href="@LinkList.GetLink(Link.OffertesOrders)">Offertes en orders</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Productenbeheer)">Productenbeheer</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Voorraadbeheer)">Voorraadbeheer</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Inkooporderbeheer)">Inkooporder beheer</a></li>
-                                    </ul>
-
-                                    <ul>
-                                        <li><a href="@LinkList.GetLink(Link.Crm)">CRM</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Financieel)">Financiele export naar extern pakket</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.ExportBoekhouding)">Export naar externe boekhouding</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.ExportExcel)">Export naar Excel</a></li>
-
-                                    </ul>
-
-                                    <ul>
-                                        <li><a href="@LinkList.GetLink(Link.OutlookAddIn)">Outlook add-in</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Extranet)">Extranet</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.GebruikerIntern)">1 Gebruiker</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Dataopslag)">10 GB dataopslag</a></li>
-                                    </ul>
-                                </div>
-                                <div class="outlook">
-                                    <ul>
-                                        <li><img src="images/outlook_img1.png" alt="" /></li>
-                                        <li><img src="images/outlook_img2.png" alt="" /></li>
-                                        <li><img src="images/outlook_img3.png" alt="" /></li>
-                                        <li><img src="images/outlook_img4.png" alt="" /></li>
-                                        <li><img src="images/outlook_img5.png" alt="" /></li>
-                                        <li><img src="images/outlook_img1.png" alt="" /></li>
-                                        <li><img src="images/outlook_img2.png" alt="" /></li>
-                                        <li><img src="images/outlook_img3.png" alt="" /></li>
-                                        <li><img src="images/outlook_img4.png" alt="" /></li>
-                                        <li><img src="images/outlook_img5.png" alt="" /></li>
-                                        <li><img src="images/outlook_img4.png" alt="" /></li>
-                                        <li><img src="images/outlook_img5.png" alt="" /></li>
-                                        <li><img src="images/outlook_img1.png" alt="" /></li>
-                                        <li><img src="images/outlook_img2.png" alt="" /></li>
-                                        <li><img src="images/outlook_img3.png" alt="" /></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
-                            <div class="common pak3">
-                                <img src="images/ticket_icon3a.png" alt="" />
-                                <a href="@LinkList.GetLink(Link.Dataopslag)" style="text-decoration: none"><h3>AANVULLEND DATAOPSLAG (PER 10GB)</h3></a>
-                                <h4>Standaard inbegrepen:</h4>
-                                <div class="stand">
-
-                                    <ul>
-                                        <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)"> Relatiebeheer </a></li>
-                                        <li><a href="@LinkList.GetLink(Link.TicketSysteem)"> Ticketsysteem </a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Tijdregistratie)"> Tijdregistratie </a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Facturatie)"> Facturatie </a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Projectbeheer)"> Projectbeheer </a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Prepaidkaarten)"> Prepaidkaarten </a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Wachtwoordbeheer)"> Wachtwoordbeheer </a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Notities)"> Notities </a></li>
-                                    </ul>
-
-                                    <ul>
-                                        <li><a href="@LinkList.GetLink(Link.OffertesOrders)">Offertes en orders</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Productenbeheer)">Productenbeheer</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Voorraadbeheer)">Voorraadbeheer</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Inkooporderbeheer)">Inkooporder beheer</a></li>
-                                    </ul>
-
-                                    <ul>
-                                        <li><a href="@LinkList.GetLink(Link.Crm)">CRM</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Financieel)">Financiele export naar extern pakket</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.ExportBoekhouding)">Export naar externe boekhouding</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.ExportExcel)">Export naar Excel</a></li>
-
-                                    </ul>
-
-                                    <ul>
-                                        <li><a href="@LinkList.GetLink(Link.OutlookAddIn)">Outlook add-in</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Extranet)">Extranet</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.GebruikerIntern)">1 Gebruiker</a></li>
-                                        <li><a href="@LinkList.GetLink(Link.Dataopslag)">10 GB dataopslag</a></li>
-                                    </ul>
-                                </div>
-                                <div class="outlook">
-                                    <ul>
-                                        <li><img src="images/outlook_img1.png" alt="" /></li>
-                                        <li><img src="images/outlook_img2.png" alt="" /></li>
-                                        <li><img src="images/outlook_img3.png" alt="" /></li>
-                                        <li><img src="images/outlook_img4.png" alt="" /></li>
-                                        <li><img src="images/outlook_img5.png" alt="" /></li>
-                                        <li><img src="images/outlook_img1.png" alt="" /></li>
-                                        <li><img src="images/outlook_img2.png" alt="" /></li>
-                                        <li><img src="images/outlook_img3.png" alt="" /></li>
-                                        <li><img src="images/outlook_img4.png" alt="" /></li>
-                                        <li><img src="images/outlook_img5.png" alt="" /></li>
-                                        <li><img src="images/outlook_img4.png" alt="" /></li>
-                                        <li><img src="images/outlook_img5.png" alt="" /></li>
-                                        <li><img src="images/outlook_img1.png" alt="" /></li>
-                                        <li><img src="images/outlook_img2.png" alt="" /></li>
-                                        <li><img src="images/outlook_img3.png" alt="" /></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </aside>
-                    </div>
-                </article>
-            </section>
-                    <!-- end center part -->
-
-</section>
 <!-- end content -->
