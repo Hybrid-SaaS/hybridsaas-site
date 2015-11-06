@@ -1,4 +1,5 @@
-﻿@{
+﻿@using Hybrid_SaaS
+@{
     Layout = "/Layouts/_SiteLayout.cshtml";
 }
 
@@ -11,12 +12,20 @@
             <div class="centering">
                 <div class="management">
                     <div class="merge">
-                        <h4>Inventarisbeheer</h4> <!--Header!-->
+                        <table>
+                            <tr>
+                                <td><img alt="" src="@LinkList.GetImages(Link.Inventarisbeheer)"></td>
+                            </tr>
+                            <tr>
+                                <td><h4>@LinkList.GetLinkName(Link.Inventarisbeheer)</h4></td>
+                            </tr>
+                        </table>
+                        <!--Header!-->
                         <div class="para">
-                            <p>
-                                <!--Header content-->
-                                Uw heeft diverse objecten in uw bezit, maar geen idee waar deze zich bevinden. Laat staan dat u snel handleidingen, inkoopfacturen of serienummers kunt opzoeken. Met Online Inventarisbeheer van Hybrid SaaS kunnen gegevens over uw inventaris overzichtelijk worden geregistreerd en gecontroleerd. Bij elk object kunt u aankooprijs, identificatienummers en diverse data vastleggen.
-                            </p>
+
+                            <!--Header content-->
+                            <p>@LinkList.GetTitle(Link.Inventarisbeheer)@LinkList.GetDescription(Link.Inventarisbeheer)</p>
+
                         </div>
                     </div>
                 </div>
@@ -26,7 +35,7 @@
         <!-- start advantage bar -->
         <article class="advantage-bar">
             <div class="centering">
-                <h3>Wat heeft de module Inventarisbeheer te bieden?</h3>
+                <h3>Wat heeft de module @LinkList.GetLinkName(Link.Inventarisbeheer) te bieden?</h3>
                 <!--Start Item Content on the right-->
                 <div class="merge">
                     <div class="image"><img src="/images/foto_img.jpg" alt="" /></div>
@@ -63,18 +72,36 @@
                                     Hieronder zijn alle mogelijkheden binnen de verschillende online modules weergegeven.Het kan voorkomen dat het beschreven functionaliteiten aanvullende modules nodig te hebben.Mocht u vragen hebben, neem dan contact met ons op.
                                 </p>
                                 <div class="para2">
-                                    <h2>Inventarisbeheer</h2>
+                                    <h2>@LinkList.GetLinkName(Link.Inventarisbeheer)</h2>
                                     <ul>
-                                        <li>Inventaris registreren onder een bedrijf
-                                       </li><li>Inventaris registreren onder een persoon
-                                       </li><li>Inventaris registreren onder een medewerker
-                                       </li><li>Leverancier vastleggen
-                                       </li><li>Inventaristype vastleggen
-                                       </li><li>Omschrijving en serienummer vastleggen
-                                       </li><li>Diverse data vastleggen (installatie uitleendatum, garantie, retour e.d.)
-                                       </li><li>Inkoopfactuur koppelen aan inventarisstuk
-                                       </li><li>Opmerkingen opslaan bij inventarisstukken
-                                       </li><li>Tickets opmaken bij inventarisstuk</li>
+                                        <li>
+                                            Inventaris registreren onder een bedrijf
+                                        </li>
+                                        <li>
+                                            Inventaris registreren onder een persoon
+                                        </li>
+                                        <li>
+                                            Inventaris registreren onder een medewerker
+                                        </li>
+                                        <li>
+                                            Leverancier vastleggen
+                                        </li>
+                                        <li>
+                                            Inventaristype vastleggen
+                                        </li>
+                                        <li>
+                                            Omschrijving en serienummer vastleggen
+                                        </li>
+                                        <li>
+                                            Diverse data vastleggen (installatie uitleendatum, garantie, retour e.d.)
+                                        </li>
+                                        <li>
+                                            Inkoopfactuur koppelen aan inventarisstuk
+                                        </li>
+                                        <li>
+                                            Opmerkingen opslaan bij inventarisstukken
+                                        </li>
+                                        <li>Tickets opmaken bij inventarisstuk</li>
                                     </ul>
                                 </div>
                             </div>

@@ -1,4 +1,5 @@
-﻿@{
+﻿@using Hybrid_SaaS
+@{
     Layout = "/Layouts/_SiteLayout.cshtml";
 }
 
@@ -11,12 +12,20 @@
             <div class="centering">
                 <div class="management">
                     <div class="merge">
-                        <h4>Human resource management (HRM)</h4> <!--Header!-->
+                        <table>
+                            <tr>
+                                <td><img alt="" src="@LinkList.GetImages(Link.Hrm)"></td>
+                            </tr>
+                            <tr>
+                                <td><h4>@LinkList.GetLinkName(Link.Hrm)</h4></td>
+                            </tr>
+                        </table>
+                        <!--Header!-->
                         <div class="para">
-                            <p>
-                                <!--Header content-->
-                                Met Hybrid SaaS Human Resource Management kun je personeelszaken eenvoudig automatiseren en heb je altijd een up-to-date inzicht in de gehele personeelsadministratie. Alle personeelsgegevens staan op één centrale veilige plaats en zaken als contactgegevens, dienstverband en verlofuren kunnen altijd en overal worden geraadpleegd. Het zogenoemde Employee Self Service (ESS) maakt het mogelijk dat medewerkers zelf veranderingen en aanvragen in kunnen dienen. Deze worden vervolgens door de betreffende manager goedgekeurd en definitief doorgevoerd.
-                            </p>
+
+                            <!--Header content-->
+                            <p>@LinkList.GetTitle(Link.Hrm)@LinkList.GetDescription(Link.Hrm)</p>
+
                         </div>
                     </div>
                 </div>
@@ -26,7 +35,7 @@
         <!-- start advantage bar -->
         <article class="advantage-bar">
             <div class="centering">
-                <h3>Wat heeft de module Human resource management (HRM) te bieden?</h3>
+                <h3>Wat heeft de module @LinkList.GetLinkName(Link.Hrm) te bieden?</h3>
                 <!--Start Item Content on the right-->
                 <div class="merge">
                     <div class="image"><img src="/images/foto_img.jpg" alt="" /></div>
@@ -63,33 +72,81 @@
                                     Hieronder zijn alle mogelijkheden binnen de verschillende online modules weergegeven.Het kan voorkomen dat het beschreven functionaliteiten aanvullende modules nodig te hebben.Mocht u vragen hebben, neem dan contact met ons op.
                                 </p>
                                 <div class="para2">
-                                    <h2>Human resource management (HRM)</h2>
+                                    <h2>@LinkList.GetLinkName(Link.Hrm)</h2>
                                     <ul>
-                                        <li>Medewerker contactgegevens vastleggen
-                                        </li><li>Legitimatiegegevens vastleggen
-                                        </li><li>Digitale kopie van legitimatiebewijs opslaan
-                                        </li><li>Dienstverband vastleggen
-                                        </li><li>Digitale kopie van (getekend) arbeidscontract opslaan
-                                        </li><li>Verlof- en vakantierooster vastleggen
-                                        </li><li>Familiegegevens vastleggen
-                                        </li><li>Nood- en medische gegevens vastleggen
-                                        </li><li>Certificaten en opleidingen vastleggen
-                                        </li><li>Medewerkers koppelen aan groepen
-                                        </li><li>Bedrijfsmiddelen (inventaris) registreren
-                                        </li><li>Arbeidscontracten opstellen op basis van sjablonen
-                                        </li><li>Correspondentiebrieven opstellen
-                                        </li><li>Adreslabels opmaken en uitprinten
-                                        </li><li>Arbeidscontracten opstellen
-                                        </li><li>Verlofverzoeken indienen
-                                        </li><li>Verlofverzoeken goedkeuren
-                                        </li><li>Bedrijfsagenda met overzicht van alle verlofdagen per medewerker en bedrijfsactiviteiten
-                                        </li><li>Actueel overzicht van alle vakantiesaldo’s per medewerker
-                                        </li><li>Overzicht van medewerkers exporten naar Microsoft Excel
-                                        </li><li>Overzicht openstaande verlofaanvragen
-                                        </li><li>Overzicht verwerkte verlofaanvragen
-                                        </li><li>Roosters exporten naar Microsoft Excel
-                                        </li><li>Lokale bestanden opslaan bij medewerker
-                                        </li><li>Algemene opmerkingen toevoegen bij een medewerker</li>
+                                        <li>
+                                            Medewerker contactgegevens vastleggen
+                                        </li>
+                                        <li>
+                                            Legitimatiegegevens vastleggen
+                                        </li>
+                                        <li>
+                                            Digitale kopie van legitimatiebewijs opslaan
+                                        </li>
+                                        <li>
+                                            Dienstverband vastleggen
+                                        </li>
+                                        <li>
+                                            Digitale kopie van (getekend) arbeidscontract opslaan
+                                        </li>
+                                        <li>
+                                            Verlof- en vakantierooster vastleggen
+                                        </li>
+                                        <li>
+                                            Familiegegevens vastleggen
+                                        </li>
+                                        <li>
+                                            Nood- en medische gegevens vastleggen
+                                        </li>
+                                        <li>
+                                            Certificaten en opleidingen vastleggen
+                                        </li>
+                                        <li>
+                                            Medewerkers koppelen aan groepen
+                                        </li>
+                                        <li>
+                                            Bedrijfsmiddelen (inventaris) registreren
+                                        </li>
+                                        <li>
+                                            Arbeidscontracten opstellen op basis van sjablonen
+                                        </li>
+                                        <li>
+                                            Correspondentiebrieven opstellen
+                                        </li>
+                                        <li>
+                                            Adreslabels opmaken en uitprinten
+                                        </li>
+                                        <li>
+                                            Arbeidscontracten opstellen
+                                        </li>
+                                        <li>
+                                            Verlofverzoeken indienen
+                                        </li>
+                                        <li>
+                                            Verlofverzoeken goedkeuren
+                                        </li>
+                                        <li>
+                                            Bedrijfsagenda met overzicht van alle verlofdagen per medewerker en bedrijfsactiviteiten
+                                        </li>
+                                        <li>
+                                            Actueel overzicht van alle vakantiesaldo’s per medewerker
+                                        </li>
+                                        <li>
+                                            Overzicht van medewerkers exporten naar Microsoft Excel
+                                        </li>
+                                        <li>
+                                            Overzicht openstaande verlofaanvragen
+                                        </li>
+                                        <li>
+                                            Overzicht verwerkte verlofaanvragen
+                                        </li>
+                                        <li>
+                                            Roosters exporten naar Microsoft Excel
+                                        </li>
+                                        <li>
+                                            Lokale bestanden opslaan bij medewerker
+                                        </li>
+                                        <li>Algemene opmerkingen toevoegen bij een medewerker</li>
                                     </ul>
                                 </div>
                             </div>

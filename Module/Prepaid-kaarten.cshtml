@@ -1,34 +1,43 @@
-﻿@{
+﻿@using Hybrid_SaaS
+@{
     Layout = "/Layouts/_SiteLayout.cshtml";
 }
 
 <!-- start content -->
 <section id="content-part">
-	<!-- start centerpart -->
-	<section id="center-part">
-		<!-- start commission bar -->
+    <!-- start centerpart -->
+    <section id="center-part">
+        <!-- start commission bar -->
         <article class="commission-bar">
             <div class="centering">
                 <div class="management">
                     <div class="merge">
-                        <img alt="" src="/images/modules_img2.png">
-                        <h4>Prepaid kaarten</h4> <!--Header!-->
+                        <table>
+                            <tr>
+                                <td><img alt="" src="@LinkList.GetImages(Link.Prepaidkaarten)"></td>
+                            </tr>
+                            <tr>
+                                <td><h4>@LinkList.GetLinkName(Link.Prepaidkaarten)</h4></td>
+                            </tr>
+                        </table>
+                        <!--Header!-->
                         <div class="para">
-                            <p> <!--Header content-->
-                                
-                            </p>
+
+                            <!--Header content-->
+                            <p>@LinkList.GetTitle(Link.Prepaidkaarten)@LinkList.GetDescription(Link.Prepaidkaarten)</p>
+
                         </div>
                     </div>
                 </div>
             </div>
         </article>
         <!-- end commission bar -->
-		<!-- start advantage bar -->
+        <!-- start advantage bar -->
         <article class="advantage-bar">
             <div class="centering">
-                <h3>Wat heeft de module Prepaid kaarten te bieden?</h3>
+                <h3>Wat heeft de module @LinkList.GetLinkName(Link.Prepaidkaarten) te bieden?</h3>
                 <!--Start Item Content on the right-->
-				<div class="merge">
+                <div class="merge">
                     <div class="image"><img src="/images/foto_img.jpg" alt="" /></div>
                     <div class="para">
                         <h4>Prepaid kaarten</h4>
@@ -49,21 +58,21 @@
             </div>
         </article>
         <!-- end advantage bar -->
-		<!-- start connecting bar -->
+        <!-- start connecting bar -->
         <article class="connecting-bar" style="margin:auto;">
             <article class="advantage-bar" style="margin:auto;">
                 <div class="centering">
                     <!--End Item Content on the right-->
                     <!--Start Item Content on the Left-->
                     <div class="merge fourth" style="margin:initial;">
-                        <div class="para facts" >
+                        <div class="para facts">
                             <div class="module" style="width: auto; margin-top:35px;">
                                 <h4>Factsheet</h4>
                                 <p>
                                     Hieronder zijn alle mogelijkheden binnen de verschillende online modules weergegeven.Het kan voorkomen dat het beschreven functionaliteiten aanvullende modules nodig te hebben.Mocht u vragen hebben, neem dan contact met ons op.
                                 </p>
                                 <div class="para2">
-                                    <h2>Prepaid kaarten</h2>
+                                    <h2>@LinkList.GetLinkName(Link.Prepaidkaarten)</h2>
                                     <ul>
                                         <li>Periodieke facturen/ contracten instellen</li>
                                     </ul>
@@ -77,8 +86,7 @@
             @Content.ContactFormDemo();
         </article>
         <!-- end connecting bar -->
-	</section>
-	<!-- end center part -->		
+    </section>
+    <!-- end center part -->
 </section>
 <!-- end content -->
-		

@@ -100,6 +100,9 @@ namespace Hybrid_SaaS
         prijzenlijst,
         pakketCommisiebeheer,
         Consultancy,
+        Correspondentie,
+        Onderaannemer,
+
     }
 
     public static class LinkList
@@ -255,6 +258,30 @@ namespace Hybrid_SaaS
                 BigImages = "/images/advantage_img7.png",
 
             };
+            LinkDictionary[Link.Crm] = new LinkInfo
+            {
+                Url = "/Module/Crm",
+                Title = "",
+                Description = "",
+                Images = "/images/why_arrow.png",
+                Price = "€ 30,- per maand",
+                LinkName = "Crm",
+                BigImages = "/images/advantage_img7.png",
+
+
+            };
+            LinkDictionary[Link.Correspondentie] = new LinkInfo
+            {
+                Url = "/Module/Correspondentie",
+                Title = "",
+                Description = "",
+                Images = "/images/why_arrow.png",
+                Price = "€ 30,- per maand",
+                LinkName = "Correspondentie",
+                BigImages = "/images/advantage_img7.png",
+
+
+            };
             LinkDictionary[Link.FacturatieDebiteurbeheer] = new LinkInfo
             {
                 Url = "/Module/debiteurbeheer",
@@ -377,6 +404,17 @@ namespace Hybrid_SaaS
                 Images = "/images/why_arrow.png",
                 Price = "€ 30,- per maand",
                 LinkName = "Offertes & Orders",
+                BigImages = "/images/advantage_img7.png",
+
+            };
+            LinkDictionary[Link.Onderaannemer] = new LinkInfo
+            {
+                Url = "/Module/Onderaannemer",
+                Title = "",
+                Description = "",
+                Images = "/images/why_arrow.png",
+                Price = "€ 30,- per maand",
+                LinkName = "Onderaannemer",
                 BigImages = "/images/advantage_img7.png",
 
             };
@@ -577,18 +615,7 @@ namespace Hybrid_SaaS
 
 
             };
-             LinkDictionary[Link.Crm] = new LinkInfo
-            { 
-                Url = "/Module/commissciebeheer",
-                Title = "",
-                Description = "",
-                Images = "/images/why_arrow.png",
-                Price = "",
-                LinkName = "Crm",
-                BigImages = "/images/advantage_img7.png",
-
-
-             };
+             
             LinkDictionary[Link.ExportExcel] = new LinkInfo
             { 
                 Url = "/Module/Excel-export",
@@ -616,7 +643,7 @@ namespace Hybrid_SaaS
            
             LinkDictionary[Link.ExportExternPakket] = new LinkInfo
             { 
-                Url = "#",
+                Url = "/Module/Externpakket",
                 Title = "",
                 Description = "",
                 Images = "/images/why_arrow.png",

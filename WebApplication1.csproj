@@ -439,6 +439,10 @@
     <Content Include="fonts\webfontkit-20150608-014249\titilliumweb-semibold-webfont.woff" />
     <Content Include="fonts\webfontkit-20150608-014249\titilliumweb-semibold-webfont.woff2" />
     <Content Include="App_Code\Links.cshtml" />
+    <Content Include="Module\Crm.cshtml" />
+    <Content Include="Module\Correspondentie.cshtml" />
+    <Content Include="Module\Onderaannemer.cshtml" />
+    <Content Include="Module\Externpakket.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
