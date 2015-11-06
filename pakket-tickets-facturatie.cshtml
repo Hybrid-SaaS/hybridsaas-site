@@ -16,7 +16,7 @@
 
             <div class="header">
                 <div class="centering">
-                    <h2>Tickets, facturatie en tijdregistratie onder controle</h2>
+                    <h2>@LinkList.GetLinkName(Link.PakketTicketsFacturatie)</h2>
                 </div>
             </div>
 
@@ -34,7 +34,14 @@
         <!-- start ticketsen bar-->
         <div class="ticketsen-bar">
             <div class="centering">
-                <h4>@LinkList.GetImages(Link.PakketTicketsFacturatie)<span>Tickets en Facturatie</span></h4>
+                <table>
+                    <tr>
+                        <td><img src="@LinkList.GetImages(Link.PakketTicketsFacturatie)" title="@LinkList.GetLinkName(Link.PakketTicketsFacturatie)" /></td>
+                    </tr>
+                    <tr>
+                        <td><h4>@LinkList.GetLinkName(Link.PakketTicketsFacturatie)</h4></td>
+                    </tr>
+                </table>
                 <p>De e-mails, telefoontjes, tekst- en whatsappberichten van klanten vliegen je om de oren. E&#233;n van je klanten stelt ondertussen ook nog een ingewikkelde vraag waar meerdere lagen in de organisatie bij betrokken zijn. Niemand weet meer wat de actuele status is van de vraag. Hoeveel tijd er precies besteed is aan het oplossen van het vraagstuk weet al helemaal niemand meer. Conclusie: Je mist het overzicht en laat daarmee veel geld liggen, terwijl dat nergens voor nodig is! Wij hebben de bewezen oplossing om jouw problemen op te lossen.</p>
 
                 <div class="Left parah">
@@ -43,19 +50,19 @@
 
                 <div class="Right parah">
                     <p>Hybrid SaaS is een Nederlands product, gebaseerd op Nederlandse business logica met een professionele Nederlandse klantenservice. Bij ons hoef je niet bang te zijn voor vervelende verrassingen. We communiceren graag met onze klanten in heldere taal en vragen een eerlijke, betaalbare prijs voor onze producten.</p>
-                    <a href="@LinkList.GetLink(Link.pijzenljst)">Benieuwd naar de prijzen? Download prijslijst</a>
+                    <a href="@LinkList.GetLink(Link.prijzenlijst)">Benieuwd naar de prijzen? Download prijslijst</a>
                 </div>
                 <div class="clear"></div>
 
-                <a href="#"><span>Wat krijg je als je aan de slag gaat met Tickets &amp; Facturatie</span> </a>
-                <a href="#"><span>Welke functionaliteiten biedt Tickets & Facturatie</span> </a>
+                <a href=""><span>Wat krijg je als je aan de slag gaat met @LinkList.GetLinkName(Link.PakketTicketsFacturatie)?</span> </a>
+                <a href=""><span>Welke functionaliteiten biedt @LinkList.GetLinkName(Link.PakketTicketsFacturatie)?</span> </a>
             </div>
         </div>
         <!-- start ticketsen bar-->
         <!-- start voordelen-->
         <div class="voordelen">
             <div class="centering">
-                <h3>De unieke voordelen van Tickets &amp; Facturatie</h3>
+                <h3>De unieke voordelen van @LinkList.GetLinkName(Link.PakketTicketsFacturatie)</h3>
 
                 <div class="servicebox">
                     <div class="pannel">
@@ -100,19 +107,19 @@
         <!-- start nieuws bar -->
         <div class="nieuws-bar">
             <h2>Nieuwsgierig geworden wat wij voor jou kunnen betekenen? Vraag nu onze live demo aan</h2>
-            <h3>Wat krijg je als je aan de slag gaat met Tickets & Facturatie? </h3>
+            <h3>Wat krijg je als je aan de slag gaat met @LinkList.GetLinkName(Link.PakketTicketsFacturatie)? </h3>
             <ul class="support">
                 <li>
-                    <img alt="" src="images/support_img5.png">
-                    <a href="#">Ticketsysteem</a>
+                    <img src="@LinkList.GetBigImages(Link.TicketSysteem)" title="@LinkList.GetLinkName(Link.TicketSysteem)" />
+                    <a href="@LinkList.GetLink(Link.TicketSysteem)" title="@LinkList.GetTitle(Link.TicketSysteem)">@LinkList.GetLinkName(Link.TicketSysteem)</a>
                 </li>
                 <li>
-                    <img alt="" src="images/support_img6.png">
-                    <a href="#">Tijdregistratie</a>
+                    <img src="@LinkList.GetBigImages(Link.Tijdregistratie)" title="@LinkList.GetLinkName(Link.Tijdregistratie)" />
+                    <a href="@LinkList.GetLink(Link.Tijdregistratie)" title="@LinkList.GetTitle(Link.Tijdregistratie)">@LinkList.GetLinkName(Link.Tijdregistratie)</a>
                 </li>
                 <li>
-                    <img alt="" src="images/support_img7.png">
-                    <a href="#">Facturatie</a>
+                    <img src="@LinkList.GetBigImages(Link.Facturatie)" title="@LinkList.GetLinkName(Link.Facturatie)" />
+                    <a href="@LinkList.GetLink(Link.Facturatie)" title="@LinkList.GetTitle(Link.Facturatie)">@LinkList.GetLinkName(Link.Facturatie)</a>
                 </li>
             </ul>
           </div>
@@ -127,31 +134,28 @@
                                 <h4>Standaard inbegrepen:</h4>
                              <div class="stand">
                                     <ul>
-                                        <li><div class="imgs">@LinkList.GetImages(Link.Relatiebeheer)</div><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)">Relatiebeheer</a></li>
-                                        <li><div class="imgs">@LinkList.GetImages(Link.TicketSysteem)</div><a href="@LinkList.GetLink(Link.TicketSysteem)" title="@LinkList.GetTitle(Link.TicketSysteem)">Ticketsysteem</a></li>
-                                        <li><div class="imgs">@LinkList.GetImages(Link.Tijdregistratie)</div><a href="@LinkList.GetLink(Link.Tijdregistratie)" title="@LinkList.GetTitle(Link.Tijdregistratie)">Tijdregistratie </a></li>
-                                        <li><div class="imgs">@LinkList.GetImages(Link.Facturatie)</div><a href="@LinkList.GetLink(Link.Facturatie)" title="@LinkList.GetTitle(Link.Facturatie)">Facturatie</a></li>
-                                        <li><div class="imgs">@LinkList.GetImages(Link.Projectbeheer)</div><a href="@LinkList.GetLink(Link.Projectbeheer)" title="@LinkList.GetTitle(Link.Projectbeheer)">Projectbeheer</a></li>
-                                        <li><div class="imgs">@LinkList.GetImages(Link.Prepaidkaarten)</div><a href="@LinkList.GetLink(Link.Prepaidkaarten)" title="@LinkList.GetTitle(Link.Prepaidkaarten)">Prepaidkaarten</a></li>
-                                        <li><div class="imgs">@LinkList.GetImages(Link.Wachtwoordbeheer)</div><a href="@LinkList.GetLink(Link.Wachtwoordbeheer)" title="@LinkList.GetTitle(Link.Wachtwoordbeheer)">Wachtwoordbeheer</a></li>
-                                        <li><div class="imgs">@LinkList.GetImages(Link.Notities)</div><a href="@LinkList.GetLink(Link.Notities)" title="@LinkList.GetTitle(Link.Notities)">Notities</a></li>
+                                        <li><img src="@LinkList.GetImages(Link.Relatiebeheer)" title=" @LinkList.GetTitle(Link.Relatiebeheer) " /><a href=" @LinkList.GetLink(Link.Relatiebeheer) " title=" @LinkList.GetTitle(Link.Relatiebeheer) ">@LinkList.GetLinkName(Link.Relatiebeheer)</a></li>
+                                        <li><img src="@LinkList.GetImages(Link.TicketSysteem)" title=" @LinkList.GetTitle(Link.TicketSysteem) " /><a href="@LinkList.GetLink(Link.TicketSysteem)" title="@LinkList.GetTitle(Link.TicketSysteem)">@LinkList.GetLinkName(Link.TicketSysteem)</a></li>
+                                        <li><img src="@LinkList.GetImages(Link.Tijdregistratie)" title=" @LinkList.GetTitle(Link.Tijdregistratie) " /><a href="@LinkList.GetLink(Link.Tijdregistratie)" title="@LinkList.GetTitle(Link.Tijdregistratie)">@LinkList.GetLinkName(Link.Tijdregistratie)</a></li>
+                                        <li><img src="@LinkList.GetImages(Link.Facturatie)" title=" @LinkList.GetTitle(Link.Facturatie) " /><a href="@LinkList.GetLink(Link.Facturatie)" title="@LinkList.GetTitle(Link.Facturatie)">@LinkList.GetLinkName(Link.Facturatie)</a></li>
+                                        <li><img src="@LinkList.GetImages(Link.Projectbeheer)" title=" @LinkList.GetTitle(Link.Projectbeheer) " /><a href=" @LinkList.GetLink(Link.Projectbeheer) " title=" @LinkList.GetTitle(Link.Projectbeheer) ">@LinkList.GetLinkName(Link.Projectbeheer)</a></li>
+                                        <li><img src="@LinkList.GetImages(Link.Prepaidkaarten)" title=" @LinkList.GetTitle(Link.Prepaidkaarten) " /><a href="@LinkList.GetLink(Link.Prepaidkaarten)" title="@LinkList.GetTitle(Link.Prepaidkaarten)">@LinkList.GetLinkName(Link.Prepaidkaarten)</a></li>
+                                        <li><img src="@LinkList.GetImages(Link.Wachtwoordbeheer)" title=" @LinkList.GetTitle(Link.Wachtwoordbeheer) " /><a href="@LinkList.GetLink(Link.Wachtwoordbeheer)" title="@LinkList.GetTitle(Link.Wachtwoordbeheer)">@LinkList.GetLinkName(Link.Wachtwoordbeheer)</a></li>
+                                        <li><img src="@LinkList.GetImages(Link.Notities)" title=" @LinkList.GetTitle(Link.Notities) " /><a href="@LinkList.GetLink(Link.Notities)" title="@LinkList.GetTitle(Link.Notities)">@LinkList.GetLinkName(Link.Notities)</a></li>
                                     </ul>
-
                                     <ul>
-                                        <li><div class="imgs">@LinkList.GetImages(Link.Crm)</div><a href="@LinkList.GetLink(Link.Crm)" title="@LinkList.GetTitle(Link.Crm)">CRM</a></li>
-                                        <li><div class="imgs">@LinkList.GetImages(Link.ExportExternPakket)</div><a href="@LinkList.GetLink(Link.ExportExternPakket)" title="@LinkList.GetTitle(Link.ExportExternPakket)">Financiele export naar extern pakket</a></li>
-                                        <li><div class="imgs">@LinkList.GetImages(Link.ExportBoekhouding)</div><a href="@LinkList.GetLink(Link.ExportBoekhouding)" title="@LinkList.GetTitle(Link.ExportBoekhouding)">Export naar externe boekhouding</a></li>
-                                        <li><div class="imgs">@LinkList.GetImages(Link.ExportExcel)</div><a href="@LinkList.GetLink(Link.ExportExcel)" title="@LinkList.GetTitle(Link.ExportExcel)">Export naar Excel</a></li>
-
-                                    </ul>
-
-                                    <ul>
-                                        <li><div class="imgs">@LinkList.GetImages(Link.OutlookAddIn)<a href="@LinkList.GetLink(Link.OutlookAddIn)" title="@LinkList.GetTitle(Link.OutlookAddIn)">Outlook add-in</a></li>
-                                        <li><div class="imgs">@LinkList.GetImages(Link.Extranet)</div><a href="@LinkList.GetLink(Link.Extranet)" title="@LinkList.GetTitle(Link.Extranet)">Extranet</a></li>
-                                        <li><div class="imgs">@LinkList.GetImages(Link.GebruikerIntern)</div><a href="@LinkList.GetLink(Link.GebruikerIntern)" title="@LinkList.GetTitle(Link.GebruikerIntern)">1 Gebruiker</a></li>
-                                        <li><div class="imgs">@LinkList.GetImages(Link.Dataopslag)<a href="@LinkList.GetLink(Link.Dataopslag)" title="@LinkList.GetTitle(Link.Dataopslag)">10 GB dataopslag</a></li>
-                                    </ul>
-                                    <cite>&euro; 250,- per maand</cite>
+                                        <li><img src="@LinkList.GetImages(Link.Crm)" title=" @LinkList.GetTitle(Link.Crm) " /><a href=" @LinkList.GetLink(Link.Crm) " title=" @LinkList.GetTitle(Link.Crm) ">@LinkList.GetLinkName(Link.Crm)</a></li>
+                                        <li><img src="@LinkList.GetImages(Link.ExportExternPakket)" title=" @LinkList.GetTitle(Link.ExportExternPakket) " /><a href="@LinkList.GetLink(Link.ExportExternPakket)" title="@LinkList.GetTitle(Link.ExportExternPakket)">@LinkList.GetLinkName(Link.ExportExternPakket)</a></li>
+                                        <li><img src="@LinkList.GetImages(Link.ExportBoekhouding)" title=" @LinkList.GetTitle(Link.ExportBoekhouding) " /><a href="@LinkList.GetLink(Link.ExportBoekhouding)" title="@LinkList.GetTitle(Link.ExportBoekhouding)">@LinkList.GetLinkName(Link.ExportBoekhouding)</a></li>
+                                        <li><img src="@LinkList.GetImages(Link.ExportExcel)" title=" @LinkList.GetTitle(Link.ExportExcel) " /><a href="@LinkList.GetLink(Link.ExportExcel)" title="@LinkList.GetTitle(Link.ExportExcel)">@LinkList.GetLinkName(Link.ExportExcel)</a></li>
+                                 </ul>
+                                 <ul>
+                                        <li><img src="@LinkList.GetImages(Link.OutlookAddIn)" title=" @LinkList.GetTitle(Link.OutlookAddIn) " /><a href=" @LinkList.GetLink(Link.OutlookAddIn) " title=" @LinkList.GetTitle(Link.OutlookAddIn) ">@LinkList.GetLinkName(Link.OutlookAddIn)</a></li>
+                                        <li><img src="@LinkList.GetImages(Link.Extranet)" title=" @LinkList.GetTitle(Link.Extranet) " /><a href="@LinkList.GetLink(Link.Extranet)" title="@LinkList.GetTitle(Link.Extranet)">@LinkList.GetLinkName(Link.Extranet)</a></li>
+                                        <li><img src="@LinkList.GetImages(Link.GebruikerIntern)" title=" @LinkList.GetTitle(Link.GebruikerIntern) " /><a href="@LinkList.GetLink(Link.GebruikerIntern)" title="@LinkList.GetTitle(Link.GebruikerIntern)">@LinkList.GetLinkName(Link.GebruikerIntern)</a></li>
+                                        <li><img src="@LinkList.GetImages(Link.Dataopslag)" title=" @LinkList.GetTitle(Link.Dataopslag) " /><a href="@LinkList.GetLink(Link.Dataopslag)" title="@LinkList.GetTitle(Link.Dataopslag)">@LinkList.GetLinkName(Link.Dataopslag)</a></li>
+                                </ul>
+                                    <cite>@LinkList.GetPrice(Link.PakketTicketsFacturatie)</cite>
                                 </div>
                             </div>
                         </aside>
@@ -166,7 +170,7 @@
                             <!-- start welke-bar -->
                             <div class="welke-bar">
                                 <div class="centering">
-                                    <h3>Welke functionaliteiten biedt Pakket Tickets &amp; Facturatie?</h3>
+                                    <h3>Welke functionaliteiten biedt @LinkList.GetLinkName(Link.PakketTicketsFacturatie)?</h3>
 
                                     <h5>Weet alles over je relaties</h5>
                                     <p>Leg alle gegevens van klanten, leveranciers en partners vast. Weet precies wat er bij je relaties speelt. Of het nu gaat om het aantal openstaande tickets of de verjaardag van je beste klant, jij hebt inzicht.</p>
@@ -237,32 +241,24 @@
                         <div class="pakket">
                             <ul>
                                 <li>
-                                    @LinkList.GetImages(Link.Commissiebeheer)
-                                    <h5>Commissie<br>beheer</h5>
-                                    <a href=" @LinkList.GetLink(Link.pakketCommisiebeheer)">Meer info</a>
+                                    <img src="@LinkList.GetImages(Link.Commissiebeheer)" title="@LinkList.GetLinkName(Link.Commissiebeheer)" />
+                                    <h5>@LinkList.GetLinkName(Link.Commissiebeheer)</h5>
+                                    <a href="@LinkList.GetLink(Link.Commissiebeheer)">Meer info</a>
                                 </li>
                                 <li>
-                                    @LinkList.GetImages(Link.Contractenbeheer)
-                                    <h5>Contract<br>Beheer</h5>
+                                    <img src="@LinkList.GetImages(Link.Contractenbeheer)" title="@LinkList.GetLinkName(Link.Contractenbeheer)" />
+                                    <h5>@LinkList.GetLinkName(Link.Contractenbeheer)</h5>
                                     <a href="@LinkList.GetLink(Link.Contractenbeheer)">Meer info</a>
                                 </li>
                                 <li>
-                                    @LinkList.GetImages(Link.Financieel)
-                                    <h5>Financieel</h5>
-                                    <a href="@LinkList.GetLink(Link.PakketAanvullendFinancieel)">Meer info</a>
+                                    <img src="@LinkList.GetImages(Link.Financieel)" title="@LinkList.GetLinkName(Link.Financieel)" />
+                                    <h5>@LinkList.GetLinkName(Link.Financieel)</h5>
+                                    <a href="@LinkList.GetLink(Link.Financieel)">Meer info</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-            <div class="form">
-                <h4>Interesse in deze module of een opmerking? Stuur ons een bericht.</h4>
-                <form action="#">
-                    <input type="text" value="Naam" onFocus="if(this.value=='Naam')this.value='';" onBlur="if(this.value=='')this.value='Naam';" />
-                    <input type="text" value="E-mail" onFocus="if(this.value=='E-mail')this.value='';" onBlur="if(this.value=='')this.value='E-mail';" />
-                    <textarea cols="15" rows="5" onFocus="if(this.value=='Bericht')this.value='';" onBlur="if(this.value=='')this.value='Bericht';">Bericht</textarea>
-                    <input class="submt" type="submit" value="VERSTUur" />
-                </form>
-            </div>
+            @Content.ContactFormDemo();
         </div>
     </div>
 </article>

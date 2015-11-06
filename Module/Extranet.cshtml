@@ -1,4 +1,5 @@
-﻿@{
+﻿@using Hybrid_SaaS
+@{
     Layout = "/Layouts/_SiteLayout.cshtml";
 }
 
@@ -11,12 +12,19 @@
             <div class="centering">
                 <div class="management">
                     <div class="merge">
-                        <img alt="" src="/images/modules_img5.png">
-                        <h4>Extranet</h4> <!--Header!-->
+                        <table>
+                                <tr>
+                                    <td><img alt="" src="@LinkList.GetImages(Link.Extranet)"></td>
+                                </tr>
+                                <tr>
+                                    <td><h4>Extranet</h4></td>
+                                </tr>
+                        </table> 
+                        <!--Header!-->
                         <div class="para">
                             <p>
                                 <!--Header content-->
-                                Wil jij ook in één oogopslag kunnen zien wanneer een leasecontract afloopt en wanneer een telefoonabonnement of verzekering dient te worden verlengd? Hybrid SaaS maakt het mogelijk! De module Hybrid SaaS Extranetbeheer schept orde in de chaos en plaatst alle behaalde certificaten en afgesloten contracten overzichtelijk bij elkaar.Wanneer een certificaat of overeenkomst tegen de einddatum aanloopt word je hier automatisch van op de hoogte gesteld. Op deze manier voorkom je eenvoudig dat certificaten verlopen en je kosten moet betalen voor onnodige Extranet. Met Hybrid SaaS Extranetbeheer loop je nooit meer achter de feiten aan.
+                                <li><a>@LinkList.GetTitle(Link.Abonnementen)@LinkList.GetDescription(Link.Abonnementen) </a></li>
                             </p>
                         </div>
                     </div>

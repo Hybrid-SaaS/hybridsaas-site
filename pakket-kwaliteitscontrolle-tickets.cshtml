@@ -40,7 +40,7 @@
 
         <div class="Right parah">
             <p>Pakket Kwaliteitscontrolle & Tickets</p>
-            <a href="@LinkList.GetLink(Link.pijzenljst)">Benieuwd naar de prijzen? Download prijslijst</a>
+            <a href="@LinkList.GetLink(Link.prijzenlijst)">Benieuwd naar de prijzen? Download prijslijst</a>
         </div>
         <div class="clear"></div>
 
@@ -55,7 +55,7 @@
 
         <div class="servicebox">
             <div class="pannel">
-                <img alt="" src="images/advantage_img7.png" />
+                <img alt="" src="images/images/advantage_img7.png" />
                 <h6>alles in een</h6>
                 <p>Kwaliteitscontrolle & Tickets</p>
             </div>
@@ -185,15 +185,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="form">
-                <h4>Interesse in deze module of een opmerking? Stuur ons een bericht.</h4>
-                <form action="#">
-                    <input type="text" value="Naam" onFocus="if(this.value=='Naam')this.value='';" onBlur="if(this.value=='')this.value='Naam';" />
-                    <input type="text" value="E-mail" onFocus="if(this.value=='E-mail')this.value='';" onBlur="if(this.value=='')this.value='E-mail';" />
-                    <textarea cols="15" rows="5" onFocus="if(this.value=='Bericht')this.value='';" onBlur="if(this.value=='')this.value='Bericht';">Bericht</textarea>
-                    <input class="submt" type="submit" value="VERSTUur" />
-                </form>
-            </div>
+            @Content.ContactFormDemo();
         </div>
     </div>
 </article>

@@ -44,7 +44,7 @@
                                 <div class="boxcontent1">
                                     <div class="common pak1">
                                         <img src="@LinkList.GetImages(Link.PakketContractbeheer)" />
-                                        <h3>Pakket CONTRACTBEHEER</h3>
+                                        <h3>@LinkList.GetLinkName(Link.PakketContractbeheer)</h3>
                                         <ul>
                                             <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)">@LinkList.GetLinkName(Link.Relatiebeheer)</a></li>
                                             <li><a href="@LinkList.GetLink(Link.Facturatie)" title="@LinkList.GetTitle(Link.Facturatie)">@LinkList.GetLinkName(Link.Facturatie)</a></li>
@@ -69,25 +69,28 @@
                                 <div class="boxcontent2">
                                     <div class="common pak2">
                                         <img src="@LinkList.GetImages(Link.PakketTicketsFacturatie)" />
-                                        <h3>Pakket TICKETS + FACTURATIE</h3>
+                                        <h3>@LinkList.GetLinkName(Link.PakketTicketsFacturatie)</h3>
                                         <ul>
                                             <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)">@LinkList.GetLinkName(Link.Relatiebeheer)</a></li>
                                             <li><a href="@LinkList.GetLink(Link.TicketSysteem)" title="@LinkList.GetTitle(Link.TicketSysteem)">@LinkList.GetLinkName(Link.TicketSysteem)</a></li>
                                             <li><a href="@LinkList.GetLink(Link.Tijdregistratie)" title="@LinkList.GetTitle(Link.Tijdregistratie)">@LinkList.GetLinkName(Link.Tijdregistratie)</a></li>
                                             <li><a href="@LinkList.GetLink(Link.Facturatie)" title="@LinkList.GetTitle(Link.Facturatie)">@LinkList.GetLinkName(Link.Facturatie)</a></li>
                                         </ul>
+                                        <div class="clear"></div>
                                         <ul>
                                             <li><a href="@LinkList.GetLink(Link.Projectbeheer)" title="@LinkList.GetTitle(Link.Projectbeheer)">@LinkList.GetLinkName(Link.Projectbeheer)</a></li>
                                             <li><a href="@LinkList.GetLink(Link.Prepaidkaarten)" title="@LinkList.GetTitle(Link.Prepaidkaarten)">@LinkList.GetLinkName(Link.Prepaidkaarten)</a></li>
                                             <li><a href="@LinkList.GetLink(Link.Wachtwoordbeheer)" title="@LinkList.GetTitle(Link.Wachtwoordbeheer)">@LinkList.GetLinkName(Link.Wachtwoordbeheer)</a></li>
                                             <li><a href="@LinkList.GetLink(Link.Notities)" title="@LinkList.GetTitle(Link.Notities)">@LinkList.GetLinkName(Link.Notities)</a></li>
                                         </ul>
+                                        <div class="clear"></div>
                                         <ul>
-                                            <li><a href="@LinkList.GetLink(Link.OutlookAddIn)" title="@LinkList.GetTitle(Link.OutlookAddIn)">@LinkList.GetLinkName(Link.OutlookAddIn)</a></li>
-                                            <li><a href="@LinkList.GetLink(Link.Extranet)" title="@LinkList.GetTitle(Link.Extranet)">@LinkList.GetLinkName(Link.Extranet)</a></li>
                                             <li><a href="@LinkList.GetLink(Link.ExportBoekhouding)" title="@LinkList.GetTitle(Link.ExportBoekhouding)">@LinkList.GetLinkName(Link.ExportBoekhouding)</a></li>
+                                            <li><a href="@LinkList.GetLink(Link.OutlookAddIn)" title="@LinkList.GetTitle(Link.OutlookAddIn)">@LinkList.GetLinkName(Link.OutlookAddIn)</a></li>
                                         </ul>
+                                        <div class="clear"></div>
                                         <ul>
+                                            <li><a href="@LinkList.GetLink(Link.Extranet)" title="@LinkList.GetTitle(Link.Extranet)">@LinkList.GetLinkName(Link.Extranet)</a></li>
                                             <li><a href="@LinkList.GetLink(Link.GebruikerIntern)" title="@LinkList.GetTitle(Link.GebruikerIntern)">@LinkList.GetLinkName(Link.GebruikerIntern)</a></li>
                                             <li><a href="@LinkList.GetLink(Link.Dataopslag)" title="@LinkList.GetTitle(Link.Dataopslag)">@LinkList.GetLinkName(Link.Dataopslag)</a></li>
                                         </ul>
@@ -99,7 +102,7 @@
                                 <div class="boxcontent3">
                                     <div class="common pak3">
                                         <img src=" @LinkList.GetImages(Link.PakketKwaliteitsControle)" />
-                                        <h3>Pakket Kwaliteitscontrolle</h3>
+                                        <h3>@LinkList.GetLinkName(Link.PakketKwaliteitsControle)</h3>
                                         <ul>
                                             <li><a href="@LinkList.GetLink(Link.Relatiebeheer)" title="@LinkList.GetTitle(Link.Relatiebeheer)">@LinkList.GetLinkName(Link.Relatiebeheer)</a></li>
                                             <li><a href="@LinkList.GetLink(Link.VragenlijstenEquettes)" title="@LinkList.GetTitle(Link.VragenlijstenEquettes)">@LinkList.GetLinkName(Link.VragenlijstenEquettes)</a></li>
@@ -115,7 +118,7 @@
                                             <li><a href="@LinkList.GetLink(Link.Dataopslag)" title="@LinkList.GetTitle(Link.Dataopslag)">@LinkList.GetLinkName(Link.Dataopslag)</a></li>
                                         </ul>
                                         <div class="clear"></div>
-                                        <cite>@LinkList.GetLinkName(Link.PakketKwaliteitsControle)</cite>
+                                        <cite>@LinkList.GetPrice(Link.PakketKwaliteitsControle)</cite>
                                         <div class="clear"></div>
                                         <a href="@LinkList.GetLink(Link.PakketKwaliteitsControle)" class="detail">DETAILs</a>
                                     </div>
@@ -142,7 +145,7 @@
                                 <div class="common pak1" style="margin:0px 10px 10px 10px; width:22% ">
                                     <img src="@LinkList.GetImages(Link.MenuModules)" title="@LinkList.GetLinkName(Link.MenuModules)" />
                                     <h3>@LinkList.GetLinkName(Link.MenuModules)</h3>
-                                    <cite>@LinkList.GetPrice(Link.MenuModules)</cite>
+                                    <br /><br /><br /><cite>@LinkList.GetPrice(Link.MenuModules)</cite>
                                     <a href="@LinkList.GetLink(Link.MenuModules)" class="detail">Over Pakket</a>
                                     <ul>
                                         <li> Hybrid SaaS modules</li>
@@ -150,27 +153,27 @@
                                 </div>
                                 <div class="common pak1" style="margin:0px 10px 10px 10px; width:22% ">
                                     <img src="@LinkList.GetImages(Link.GebruikerIntern)" title="@LinkList.GetLinkName(Link.GebruikerIntern)" />
-                                    <h3><span>@LinkList.GetLinkName(Link.GebruikerIntern)</span></h3>
-                                    <cite>@LinkList.GetPrice(Link.GebruikerIntern)</cite>
-                                    <a href="@LinkList.GetLink(Link.GebruikerIntern)" class="detail" style="margin-top:60px;">Over Pakket</a>
+                                    <h3>@LinkList.GetLinkName(Link.GebruikerIntern)</h3>
+                                    <br /><br /><br /><cite>@LinkList.GetPrice(Link.GebruikerIntern)</cite>
+                                    <a href="@LinkList.GetLink(Link.GebruikerIntern)" class="detail">Over Pakket</a>
                                     <ul>
                                         <li> Hybrid SaaS gebruikers</li>
                                     </ul>
                                 </div>
                                 <div class="common pak1" style="margin:0px 10px 10px 10px; width:22% ">
                                     <img src="@LinkList.GetImages(Link.GebruikerExtern)" title="@LinkList.GetLinkName(Link.GebruikerExtern)" />
-                                    <h3><span>@LinkList.GetLinkName(Link.GebruikerExtern)</span></h3>
+                                    <h3>@LinkList.GetLinkName(Link.GebruikerExtern)</h3>
                                     <cite>@LinkList.GetPrice(Link.GebruikerExtern)</cite>
-                                    <a href="@LinkList.GetLink(Link.GebruikerExtern)" class="detail" style="margin-top:60px;">Over Pakket</a>
+                                    <a href="@LinkList.GetLink(Link.GebruikerExtern)" class="detail">Over Pakket</a>
                                     <ul>
                                         <li> Hybrid SaaS buitendienst medewerkers</li>
                                     </ul>
                                 </div>
                                 <div class="common pak1" style="margin:0px 10px 10px 10px; width:22%">
                                     <img src="@LinkList.GetImages(Link.Dataopslag)" title="@LinkList.GetLinkName(Link.Dataopslag)" />
-                                    <h3><span>@LinkList.GetLinkName(Link.Dataopslag)</span></h3>
-                                    <cite>@LinkList.GetPrice(Link.Dataopslag)</cite>
-                                    <a href="@LinkList.GetLink(Link.Dataopslag)" class="detail" style="margin-top:55px;">Over Pakket</a>
+                                    <h3>@LinkList.GetLinkName(Link.Dataopslag)</h3>
+                                    <br /><br /><br /><cite>@LinkList.GetPrice(Link.Dataopslag)</cite>
+                                    <a href="@LinkList.GetLink(Link.Dataopslag)" class="detail">Over Pakket</a>
                                     <ul>
                                         <li> Hybrid SaaS dataopslag</li>
                                     </ul>

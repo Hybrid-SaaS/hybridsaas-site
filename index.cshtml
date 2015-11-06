@@ -137,33 +137,33 @@
                     <aside class="ticket">
 
                         <div class="common pak2">
-                            <img src="images/ticket_icon2.png" alt="" />
-                            <h3>Pakket <span>TICKETS + FACTURATIE</span></h3>
-                            <cite>&euro; 250,- per maand</cite>
+                            <img src="@LinkList.GetImages(Link.PakketTicketsFacturatie)" title="@LinkList.GetLinkName(Link.PakketTicketsFacturatie)" />
+                            <h3>@LinkList.GetLinkName(Link.PakketTicketsFacturatie)</h3>
+                            <cite>@LinkList.GetPrice(Link.PakketTicketsFacturatie)</cite>
                             <a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)" class="detail">Over Pakket</a>
                             <ul>
-                                <li><a> Hybrid SaaS Eén overzichtelijk dashboard. Voor alles.</a></li>
+                                <li><a> Voor het bijhouden van alle acties in het bedrijf en het doorbelasten van de gewerkte tijd</a></li>
                             </ul>
                         </div>
 
                         <div class="common pak1">
-                            <img src="images/ticket_icon1.png" alt="" />
-                            <h3>Pakket <span>CONTRACTBEHEER</span></h3>
-                            <cite>&euro; 125,- per maand</cite>
+                            <img src="@LinkList.GetImages(Link.PakketContractbeheer)" title="@LinkList.GetLinkName(Link.PakketContractbeheer)" />
+                            <h3>@LinkList.GetLinkName(Link.PakketContractbeheer)</h3>
+                            <cite>@LinkList.GetPrice(Link.PakketContractbeheer)</cite>
                             <a href="@LinkList.GetLink(Link.PakketContractbeheer)" class="detail">Over Pakket</a>
                             <ul>
-                                <li><a> Hybrid SaaS Eén overzichtelijk dashboard. Voor alles.</a></li>
+                                <li><a> Voor het periodiek factureren van (cloud) diensten</a></li>
                             </ul>
                         </div>
 
 
                         <div class="common pak2">
-                            <img src="images/ticket_icon3.png" alt="" />
-                            <h3>Pakket <span>KWALITEITSCONTROLLE</span></h3>
-                            <cite>&euro; 100,- per maand</cite>
+                            <img src="@LinkList.GetImages(Link.PakketKwaliteitsControle)" title="@LinkList.GetLinkName(Link.PakketKwaliteitsControle)" />
+                            <h3>@LinkList.GetLinkName(Link.PakketKwaliteitsControle)</h3>
+                            <cite>@LinkList.GetPrice(Link.PakketKwaliteitsControle)</cite>
                             <a href="@LinkList.GetLink(Link.PakketKwaliteitsControle)" class="detail">Over Pakket</a>
                             <ul>
-                                <li><a> Hybrid SaaS Eén overzichtelijk dashboard. Voor alles.</a></li>
+                                <li><a> Voor het vroegtijdig signaleren en rapporteren van afwijkingen in het proces.</a></li>
                             </ul>
                         </div>
 
@@ -181,34 +181,8 @@
             <div class="centering">
                 <div class="text">
                     <h2>Implementatie & Inrichting (eenmalig)</h2>
-                    <div class="implement">
-                        <h4>De onderstaande implementatiepakketten zijn samengesteld op basis van bovengenoemde pakketten</h4>
-                        <ul>
-                            <li>
-                                <span>- 2 Word sjablonen</span>
-                                <span>- 2 e-mail sjablonen</span>
-                                <span>- 1 Documentschema</span>
-                                <span>- Importeren relatiegegevens</span>
-                                <span>- 1 dagdeel training op locatie</span>
-                            </li>
-
-                            <li>
-                                <span>- 1 Word sjablonen </span>
-                                <span>- 2 e-mail sjablonen</span>
-                                <span>- 2 Documentschema</span>
-                                <span>- Importeren relatiegegevens</span>
-                                <span>- 3 dagdeel training op locatie</span>
-                            </li>
-
-                            <li>
-                                <span>- 3 Word sjablonen</span>
-                                <span>- 3 e-mail sjablonen</span>
-                                <span>- 1 Documentschema</span>
-                                <span>- Importeren relatiegegevens</span>
-                                <span>- 6 dagdeel training op locatie</span>
-                            </li>
-                        </ul>
-                    </div>
+                    <p>Alle pakketten worden kant en klaar opgeleverd bij u op locatie, Uw huisstijl wordt geïntegreerd in de uitvoer documenten en e-mails, uw medewerkers worden getraind voor het gebruik van de software, dit zal per gekozen pakket / aanvullende module en bedrijfsgrootte variëren, u krijgt hiervoor een aparte offerte.</p>
+                    
                     </div>
                 </div>
             </article>
@@ -228,23 +202,23 @@
                                     <div class="pakket">
                                         <ul>
                                             <li>
-                                                <img src="images/connencting_img1.png" alt="" />
-                                                <h5>Alle<span>Modules</span></h5>
+                                                <img src="@LinkList.GetImages(Link.MenuModules)" title="@LinkList.GetLinkName(Link.MenuModules)" />
+                                                <h5>Alle<span>@LinkList.GetLinkName(Link.MenuModules)</span></h5>
                                                 <a href="@LinkList.GetLink(Link.MenuModules)">Ga naar</a>
                                             </li>
                                             <li>
-                                                <img src="images/connencting_img2.png" alt="" />
-                                                <h5>Certificaten<span>beheer</span></h5>
-                                                <a href="@LinkList.GetLink(Link.Certificatenbeheer)">Meer info</a>
+                                                <img src="@LinkList.GetImages(Link.GebruikerIntern)" title="@LinkList.GetLinkName(Link.GebruikerIntern)" />
+                                                <h5>@LinkList.GetLinkName(Link.GebruikerIntern)</h5>
+                                                <a href="@LinkList.GetLink(Link.GebruikerIntern)">Meer info</a>
                                             </li>
                                             <li>
-                                                <img src="images/connencting_img3.png" alt="" />
-                                                <h5>Facturatie</h5>
+                                                <img src="@LinkList.GetImages(Link.Facturatie)" title="@LinkList.GetLinkName(Link.Facturatie)" />
+                                                <h5>@LinkList.GetLinkName(Link.Facturatie)</h5>
                                                 <a href="@LinkList.GetLink(Link.Facturatie)">Meer info</a>
                                             </li>
                                             <li>
-                                                <img src="images/connencting_img5.png" alt="" />
-                                                <h5>Ticketsysteem</h5>
+                                                <img src="@LinkList.GetImages(Link.TicketSysteem)" title="@LinkList.GetLinkName(Link.TicketSysteem)" />
+                                                <h5>@LinkList.GetLinkName(Link.TicketSysteem)</h5>
                                                 <a href="@LinkList.GetLink(Link.TicketSysteem)">Meer info</a>
                                             </li>
                                         </ul>
@@ -274,20 +248,20 @@
                                             <li>
                                                 <div class="image"><img src="images/hybrid_img1.png" alt="" /></div>
                                                 <div class="text">
-                                                    <p>“Nullam dapibus blandit orci, viverra gravida dui tis eget. Maecenas fringilla urna eu nisl scelerisque.”</p>
+                                                    <p>“”</p>
                                                     <div class="owner">
-                                                        <span>Chanel Iman</span>
-                                                        <cite>CEO of Pinterest</cite>
+                                                        <span></span>
+                                                        <cite></cite>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="image"><img src="images/hybrid_img3.png" alt="" /></div>
                                                 <div class="text">
-                                                    <p>“Nullam dapibus blandit orci, viverra gravida dui tis eget. Maecenas fringilla urna eu nisl scelerisque.”</p>
+                                                    <p>“”</p>
                                                     <div class="owner">
-                                                        <span>Adriana Lima</span>
-                                                        <cite>Founder of Instagram</cite>
+                                                        <span></span>
+                                                        <cite></cite>
                                                     </div>
                                                 </div>
                                             </li>
@@ -298,20 +272,20 @@
                                             <li>
                                                 <div class="image"><img src="images/hybrid_img2.png" alt="" /></div>
                                                 <div class="text">
-                                                    <p>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</p>
+                                                    <p>“”</p>
                                                     <div class="owner">
-                                                        <span>Chanel Iman</span>
-                                                        <cite>CEO of Pinterest</cite>
+                                                        <span></span>
+                                                        <cite></cite>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="image"><img src="images/hybrid_img4.png" alt="" /></div>
                                                 <div class="text">
-                                                    <p>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</p>
+                                                    <p>“”</p>
                                                     <div class="owner">
-                                                        <span>Adriana Lima</span>
-                                                        <cite>Founder of Instagram</cite>
+                                                        <span></span>
+                                                        <cite></cite>
                                                     </div>
                                                 </div>
                                             </li>
@@ -346,28 +320,28 @@
                                     <div class="left">
                                         <ul>
                                             <li>
-                                                <div class="image"><img src="images/support_img1.png" alt="" /></div>
+                                                <div class="image"><img src="@LinkList.GetImages(Link.Download)" title="@LinkList.GetLinkName(Link.Download)" /></div>
+                                                    <div class="text">
+                                                        <h3>@LinkList.GetLinkName(Link.Download)</h3>
+                                                        <p>
+                                                            <a href="@LinkList.GetLink(Link.BrowserDownload)">@LinkList.GetLinkName(Link.BrowserDownload)</a><br />
+                                                            <a href="@LinkList.GetLink(Link.WordAddDownload)">@LinkList.GetLinkName(Link.WordAddDownload)</a><br />
+                                                            <a href="@LinkList.GetLink(Link.OutlookAddDownload)">@LinkList.GetLinkName(Link.OutlookAddDownload)</a>
+                                                        </p>
+                                                    </div>
+                                             </li>
+                                            <li>
+                                                <div class="image"><img src="@LinkList.GetImages(Link.Handleiding)" title="@LinkList.GetLinkName(Link.Handleiding)" /></div>
                                                 <div class="text">
-                                                    <h3>downloads</h3>
-                                                    <p>
-                                                        <a href="@LinkList.GetLink(Link.BrowserDownload)">Hybrid SaaS Browser </a><br />
-                                                        <a href="@LinkList.GetLink(Link.WordAddDownload)">Hybrid SaaS Word add-in</a><br />
-                                                        <a href="@LinkList.GetLink(Link.OutlookAddDownload)">Hybrid SaaS Outlook add-in </a>
-                                                    </p>
+                                                    <a target="_blank" href="@LinkList.GetLink(Link.Handleiding)"><h3>@LinkList.GetLinkName(Link.Handleiding)</h3></a>
+                                                    <p>@LinkList.GetDescription(Link.Handleiding)</p>
                                                 </div>
                                             </li>
                                             <li>
-                                                <div class="image"><img src="images/support_img3.png" alt="" /></div>
+                                                <div class="image"><img src="@LinkList.GetImages(Link.KijkMetMijMee)" title="@LinkList.GetLinkName(Link.KijkMetMijMee)" /></div>
                                                 <div class="text">
-                                                    <a href="@LinkList.GetLink(Link.Handleiding)"><h3>handleiding</h3></a>
-                                                    <p>Onze uitgebreide handleiding geeft inzicht in de werking van onze software.</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="image"><img src="images/support_img3.png" alt="" /></div>
-                                                <div class="text">
-                                                    <a href="@LinkList.GetLink(Link.KijkMetMijMee)"><h3>Kijk met mij mee</h3></a>
-                                                    <p>Wij kunnen op afstand meekijken op uw computer, gebruik deze optie om onze medewerkers toegang te geven tot uw pc.</p>
+                                                    <a href="@LinkList.GetLink(Link.KijkMetMijMee)"><h3>@LinkList.GetLinkName(Link.KijkMetMijMee)</h3></a>
+                                                    <p>@LinkList.GetDescription(Link.KijkMetMijMee)</p>
                                                 </div>
                                             </li>
 
@@ -376,24 +350,24 @@
                                     <div class="right">
                                         <ul>
                                             <li>
-                                                <div class="image"><img src="images/support_img2.png" alt="" /></div>
+                                                <div class="image"><img src="@LinkList.GetImages(Link.InvoerTicket)" title="@LinkList.GetLinkName(Link.InvoerTicket)" /></div>
                                                 <div class="text">
-                                                    <a href="@LinkList.GetLink(Link.InvoerTicket)"><h3>ticket systemen</h3></a>
-                                                    <p>Stel snel en gemakkelijk uw vraag online aan onze organisatie.</p>
+                                                    <a target="_blank" href="@LinkList.GetLink(Link.InvoerTicket)"><h3>@LinkList.GetLinkName(Link.InvoerTicket)</h3></a>
+                                                    <p>@LinkList.GetDescription(Link.InvoerTicket)</p>
                                                 </div>
                                             </li>
                                             <li>
-                                                <div class="image"><img src="images/support_img3.png" alt="" /></div>
+                                                <div class="image"><img src="@LinkList.GetImages(Link.HelpDesk)" title="@LinkList.GetLinkName(Link.HelpDesk)" /></div>
                                                 <div class="text">
-                                                    <a href="@LinkList.GetLink(Link.MenuContact)"><h3>helpdesk</h3></a>
-                                                    <p>Onze contact gegevens.</p>
+                                                    <a href="@LinkList.GetLink(Link.MenuContact)"><h3>@LinkList.GetLinkName(Link.HelpDesk)</h3></a>
+                                                    <p>@LinkList.GetDescription(Link.HelpDesk)</p>
                                                 </div>
                                             </li>
                                             <li>
-                                                <div class="image"><img src="images/support_img3.png" alt="" /></div>
+                                                <div class="image"><img src="@LinkList.GetImages(Link.Consultancy)" title="@LinkList.GetLinkName(Link.Consultancy)" /></div>
                                                 <div class="text">
-                                                    <a href="@LinkList.GetLink(Link.Handleiding)"><h3>Consultancy</h3></a>
-                                                    <p>Maak gebruik van onze jarenlange kennis als systeembeheerder, softwareontwikkelaar & bedrijfsautomatiseerder.</p>
+                                                    <h3>@LinkList.GetLinkName(Link.Consultancy)</h3>
+                                                    <p>@LinkList.GetDescription(Link.Consultancy)</p>
                                                 </div>
                                             </li>
                                         </ul>
