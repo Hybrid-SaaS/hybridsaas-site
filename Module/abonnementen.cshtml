@@ -5,30 +5,39 @@
 
 <!-- start content -->
 <section id="content-part">
-	<!-- start centerpart -->
-	<section id="center-part">
-		<!-- start commission bar -->
+    <!-- start centerpart -->
+    <section id="center-part">
+        <!-- start commission bar -->
         <article class="commission-bar">
             <div class="centering">
                 <div class="management">
                     <div class="merge">
-                        <h4>Abonnementen</h4> <!--Header!-->
+                        <table>
+                            <tr>
+                                <td><img alt="" src="@LinkList.GetImages(Link.Abonnementen)"></td>
+                            </tr>
+                            <tr>
+                                <td><h4>@LinkList.GetLinkName(Link.BalansWinstVerliesrekening)</h4></td>
+                            </tr>
+                        </table>
+                        <!--Header!-->
                         <div class="para">
-                            <p> <!--Header content-->
-                                @LinkList.GetTitle(Link.Abonnementen) @LinkList.GetDescription(Link.Abonnementen)
-                            </p>
+
+                            <!--Header content-->
+                            <p>@LinkList.GetTitle(Link.Abonnementen)@LinkList.GetDescription(Link.Abonnementen)</p>
+
                         </div>
                     </div>
                 </div>
             </div>
         </article>
         <!-- end commission bar -->
-		<!-- start advantage bar -->
+        <!-- start advantage bar -->
         <article class="advantage-bar">
             <div class="centering">
-                <h3>Wat heeft de module Abonnementen te bieden?</h3>
+                <h3>Wat heeft de module @LinkList.GetLinkName(Link.Abonnementen) te bieden?</h3>
                 <!--Start Item Content on the right-->
-				<div class="merge">
+                <div class="merge">
                     <div class="image"><img src="/images/foto_img.jpg" alt="" /></div>
                     <div class="para">
                         <h4>Abonnementen</h4>
@@ -49,7 +58,7 @@
             </div>
         </article>
         <!-- end advantage bar -->
-		<!-- start connecting bar -->
+        <!-- start connecting bar -->
         <article class="connecting-bar" style="margin:auto;">
             <article class="advantage-bar" style="margin: auto;">
                 <div class="centering">
@@ -63,7 +72,7 @@
                                     Hieronder zijn alle mogelijkheden binnen de verschillende online modules weergegeven.Het kan voorkomen dat het beschreven functionaliteiten aanvullende modules nodig te hebben.Mocht u vragen hebben, neem dan contact met ons op.
                                 </p>
                                 <div class="para2">
-                                    <h2>Abonnementen</h2>
+                                    <h2>@LinkList.GetLinkName(Link.BalansWinstVerliesrekening)</h2>
                                     <ul>
                                         <li>Periodieke facturen/ contracten instellen</li>
                                     </ul>
@@ -77,8 +86,7 @@
             @Content.ContactFormDemo()
         </article>
         <!-- end connecting bar -->
-	</section>
-	<!-- end center part -->		
+    </section>
+    <!-- end center part -->
 </section>
 <!-- end content -->
-		

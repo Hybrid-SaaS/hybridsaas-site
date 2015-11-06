@@ -383,8 +383,8 @@ namespace Hybrid_SaaS
             LinkDictionary[Link.OutlookAddIn] = new LinkInfo
             {
                 Url = "/Module/Outlook-Add-in",
-                Title = "Door middel van de Outlook add-in krijg je de mogelijkheid om e-mails vanuit Microsoft Outlook mailbox om te zetten in tickets. Op deze manier kan je je mailbox leeg houden en sla je e-mails netjes op bij de juiste relaties en/ of projecten.",
-                Description = "",
+                Title = "Door middel van de Outlook add-in krijg je de mogelijkheid om e-mails vanuit Microsoft Outlook mailbox om te zetten in tickets. ",
+                Description = "Op deze manier kan je je mailbox leeg houden en sla je e-mails netjes op bij de juiste relaties en/ of projecten.",
                 Images = "/images/why_arrow.png",
                 Price = "€ 30,- per maand",
                 LinkName = "Outlook Add-In",

@@ -12,12 +12,20 @@
             <div class="centering">
                 <div class="management">
                     <div class="merge">
-                        <h4>Facturatie</h4> <!--Header!-->
+                        <table>
+                            <tr>
+                                <td><img alt="" src="@LinkList.GetImages(Link.Facturatie)"></td>
+                            </tr>
+                            <tr>
+                                <td><h4>@LinkList.GetLinkName(Link.Facturatie)</h4></td>
+                            </tr>
+                        </table>
+                        <!--Header!-->
                         <div class="para">
-                            <p>
-                                <!--Header content-->
-                                @LinkList.GetTitle(Link.Facturatie) @LinkList.GetDescription(Link.Facturatie)
-                            </p>
+
+                            <!--Header content-->
+                            <p>@LinkList.GetTitle(Link.Facturatie)@LinkList.GetDescription(Link.Facturatie)</p>
+
                         </div>
                     </div>
                 </div>
@@ -27,7 +35,7 @@
         <!-- start advantage bar -->
         <article class="advantage-bar">
             <div class="centering">
-                <h3>Wat heeft de module Facturatie te bieden?</h3>
+                <h3>Wat heeft de module @LinkList.GetLinkName(Link.Facturatie) te bieden?</h3>
                 <!--Start Item Content on the right-->
                 <div class="merge">
                     <div class="image"><img src="/images/foto_img.jpg" alt="" /></div>
@@ -64,7 +72,7 @@
                                     Hieronder zijn alle mogelijkheden binnen de verschillende online modules weergegeven.Het kan voorkomen dat het beschreven functionaliteiten aanvullende modules nodig te hebben.Mocht u vragen hebben, neem dan contact met ons op.
                                 </p>
                                 <div class="para2">
-                                    <h2>Facturatie</h2>
+                                    <h2>@LinkList.GetLinkName(Link.Facturatie)</h2>
                                     <ul>
                                         <li>Facturatie</li>
                                     </ul>
