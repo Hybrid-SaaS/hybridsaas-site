@@ -102,6 +102,8 @@ namespace Hybrid_SaaS
         Consultancy,
         Correspondentie,
         Onderaannemer,
+        Voortgang,
+
 
     }
 
@@ -431,7 +433,7 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.Prepaidkaarten] = new LinkInfo
             {
-                Url = "/Module/Prepaid-kaarten",
+                Url = "/Module/Prepaidkaarten",
                 Title = "",
                 Description = "",
                 Images = "/images/why_arrow.png",
@@ -450,6 +452,18 @@ namespace Hybrid_SaaS
                 Price = "€ 30,- per maand",
                 LinkName = "Productenbeheer",
                 BigImages = "/images/advantage_img7.png",
+
+            };
+            LinkDictionary[Link.Prognosebeheer] = new LinkInfo
+            {
+                Url = "/Module/prognosebeheer",
+                Title = "",
+                Description = "",
+                Images = "/images/why_arrow.png",
+                Price = "€ 30,- per maand",
+                LinkName = "Prognosebeheer",
+                BigImages = "/images/advantage_img7.png",
+
 
             };
             LinkDictionary[Link.Projectbeheer] = new LinkInfo
@@ -504,6 +518,17 @@ namespace Hybrid_SaaS
                 Images = "/images/why_arrow.png",
                 Price = "€ 30,- per maand",
                 LinkName = "Voorraadbeheer",
+                BigImages = "/images/advantage_img7.png",
+
+            };
+            LinkDictionary[Link.Voortgang] = new LinkInfo
+            {
+                Url = "/Module/voortgang",
+                Title = "",
+                Description = "",
+                Images = "/images/why_arrow.png",
+                Price = "€ 30,- per maand",
+                LinkName = "Voortgang",
                 BigImages = "/images/advantage_img7.png",
 
             };
@@ -653,18 +678,7 @@ namespace Hybrid_SaaS
 
 
             };
-            LinkDictionary[Link.Prognosebeheer] = new LinkInfo
-            {
-                Url = "/Module/Prognosebeheer",
-                Title = "",
-                Description = "",
-                Images = "/images/why_arrow.png",
-                Price = "",
-                LinkName = "Prognosebeheer",
-                BigImages = "/images/advantage_img7.png",
-
-
-            };
+            
             LinkDictionary[Link.Termijnstatenbeheer] = new LinkInfo
             {
                 Url = "/Module/Termijnstatenbeheer",
