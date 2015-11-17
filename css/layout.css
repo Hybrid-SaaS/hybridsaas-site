@@ -530,6 +530,8 @@ a:hover { text-decoration: underline; }
 			.nieuws-bar .modules li a { font-size: 17px;}
 			.welke-bar { width: 100%; overflow:hidden; margin-top: 85px;  }
 			.welke-bar .centering{ padding-bottom: 130px; border-bottom: dashed 1px #ccc; }
+                .noborder{ padding-bottom: 130px; border-bottom: none !important;}
+
 			.welke-bar h3 { margin-bottom: 85px; font-size: 40px; line-height: 47px; color: #777; text-align: center; }
 			.welke-bar h5 { padding: 0px 8px; margin-top: 25px; font-size: 22px; color: #777; font-family: 'ralewaysemibold'; }
 			.welke-bar p { padding: 0px 8px; font-size: 17px; color: #777; font-family: 'ralewaylight'; line-height: 25px; }

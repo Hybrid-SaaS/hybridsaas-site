@@ -1,4 +1,5 @@
-﻿@{
+﻿@using Hybrid_SaaS
+@{
     Layout = "/Layouts/_SiteLayout.cshtml";
 }
 
@@ -11,12 +12,20 @@
             <div class="centering">
                 <div class="management">
                     <div class="merge">
-                        <h4>Debiteurbeheer</h4> <!--Header!-->
+                        <table>
+                            <tr>
+                                <td><img alt="" src="@LinkList.GetImages(Link.FacturatieDebiteurbeheer)"></td>
+                            </tr>
+                            <tr>
+                                <td><h4>@LinkList.GetLinkName(Link.FacturatieDebiteurbeheer)</h4></td>
+                            </tr>
+                        </table>
+                        <!--Header!-->
                         <div class="para">
-                            <p>
-                                <!--Header content-->
-                                Wil jij ook in één oogopslag kunnen zien wanneer een leasecontract afloopt en wanneer een telefoonabonnement of verzekering dient te worden verlengd? Hybrid SaaS maakt het mogelijk! De module Hybrid SaaS debiteurbeheerbeheer schept orde in de chaos en plaatst alle behaalde certificaten en afgesloten contracten overzichtelijk bij elkaar.Wanneer een certificaat of overeenkomst tegen de einddatum aanloopt word je hier automatisch van op de hoogte gesteld. Op deze manier voorkom je eenvoudig dat certificaten verlopen en je kosten moet betalen voor onnodige debiteurbeheer. Met Hybrid SaaS debiteurbeheerbeheer loop je nooit meer achter de feiten aan.
-                            </p>
+
+                            <!--Header content-->
+                            <p>@LinkList.GetTitle(Link.FacturatieDebiteurbeheer)@LinkList.GetDescription(Link.FacturatieDebiteurbeheer)</p>
+
                         </div>
                     </div>
                 </div>
@@ -26,7 +35,7 @@
         <!-- start advantage bar -->
         <article class="advantage-bar">
             <div class="centering">
-                <h3>Wat heeft de module Debiteurbeheer te bieden?</h3>
+                <h3>Wat heeft de module @LinkList.GetLinkName(Link.FacturatieDebiteurbeheer) te bieden?</h3>
                 <!--Start Item Content on the right-->
                 <div class="merge">
                     <div class="image"><img src="/images/foto_img.jpg" alt="" /></div>
@@ -63,7 +72,7 @@
                                     Hieronder zijn alle mogelijkheden binnen de verschillende online modules weergegeven.Het kan voorkomen dat het beschreven functionaliteiten aanvullende modules nodig te hebben.Mocht u vragen hebben, neem dan contact met ons op.
                                 </p>
                                 <div class="para2">
-                                    <h2>Automatische facturen (contracten)</h2>
+                                    <h2>@LinkList.GetLinkName(Link.FacturatieDebiteurbeheer)</h2>
                                     <ul>
                                         <li>Periodieke facturen/ contracten instellen</li>
                                     </ul>

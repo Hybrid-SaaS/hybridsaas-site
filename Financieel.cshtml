@@ -1,3 +1,125 @@
+@using Hybrid_SaaS
 @{
     Layout = "/Layouts/_SiteLayout.cshtml";
 }
+
+<!-- start content -->
+<section id="content-part">
+    <!-- start centerpart -->
+    <section id="center-part">
+        <!-- start commission bar -->
+        <article class="commission-bar">
+            <div class="centering">
+                <div class="management">
+                    <div class="merge">
+                        <table>
+                            <tr>
+                                <td><img alt="" src="@LinkList.GetImages(Link.Financieel)"></td>
+                            </tr>
+                            <tr>
+                                <td><h4>@LinkList.GetLinkName(Link.Financieel)</h4></td>
+                            </tr>
+                        </table>
+                        <!--Header!-->
+                        <div class="para">
+
+                            <!--Header content-->
+                            <p>@LinkList.GetTitle(Link.Financieel)@LinkList.GetDescription(Link.Financieel)</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- end commission bar -->
+        <!-- start welke-bar -->
+        <div class="welke-bar">
+            <div class="centering">
+                <h3>Welke functionaliteiten biedt @LinkList.GetLinkName(Link.Financieel)?</h3>
+                <h5>Houd debiteuren- en crediteurenbeheer overzichtelijk</h5>
+                <p>Zie in één oogopslag de status van facturen en onderneem direct actie als dat nodig is. Sorteer de facturen op de manier die jij zelf handig vindt. Dit kan bijvoorbeeld op klant, maar ook op vervaldatum of aantal herinneringen. Hoe vaak en hoe snel een klant een herinnering moet ontvangen, leg je zelf vast in het systeem. </p><br />
+
+                <h5>Banktransacties inlezen</h5>
+                <p>Lees de banktransacties in en koppel ze eenvoudig aan openstaande verkoop- en inkoopfacturen. Maak incassobatches aan en dien deze in bij de bank. Zo kun je afschrijvingen direct koppelen aan de grootboekrekening of gegevens van inkoopfacturen automatisch gebruiken voor betalingen en incasso's. Je hoeft de gegevens maar 1 keer in te vullen, dus je hebt nooit meer dubbel werk. </p><br />
+
+                <h5>Stuur meerdere herinneringen tegelijk</h5>
+                <p>Zie je dat er meerdere facturen te lang openstaan? Stuur alle betrokkenen gemakkelijk een herinnering. Dat scheelt je veel tijd en is voor klanten zeer overzichtelijk. </p><br />
+
+                <h5>Weet altijd alles over de financiële positie van je organisatie</h5>
+                <p>Met het Hybrid SaaS boekhoudpakket weet je zeker dat jou geen financiële verrassingen te wachten staan. Je kunt altijd zien hoe je ervoor staat door de balans, winst- en verliesrekening te openen. Zo kun je dit zelf aanpassen. Door op de verschillende posten van de rekeningen te klikken, krijg je alle informatie tot in detail te zien. Dit kan duidelijkheid scheppen of fouten aan het licht brengen. Is het tijd om de administratie naar de belasting te brengen? Dan kan jouw boekhouder met een eigen inlogcode de rekeningen controleren. Correcties aanbrengen kan direct in de rekening als dat nodig is. Daarna exporteer je het bestand naar Excel. </p><br />
+            </div>
+        </div>
+        <!-- ends welke-bar -->
+        <!-- start boxdetail bar -->
+        <article class="boxdetail-bar" style="margin: initial">
+            <div class="centering">
+                <aside class="ticket">
+                    <div class="common pak3" style="padding:0px 0 57px">
+                        <h4>Welke modules zitten bij @LinkList.GetLinkName(Link.Financieel) inbegrepen:</h4>
+                        <div class="stand">
+                            <ul>
+                                <li><img src="@LinkList.GetImages(Link.Relatiebeheer)" title=" @LinkList.GetTitle(Link.Relatiebeheer) " /><a href=" @LinkList.GetLink(Link.Relatiebeheer) " title=" @LinkList.GetTitle(Link.Relatiebeheer) ">@LinkList.GetLinkName(Link.Relatiebeheer)</a></li>
+                                <li><img src="@LinkList.GetImages(Link.Facturatie)" title=" @LinkList.GetTitle(Link.Facturatie) " /><a href="@LinkList.GetLink(Link.Facturatie)" title="@LinkList.GetTitle(Link.Facturatie)">@LinkList.GetLinkName(Link.Facturatie)</a></li>
+                                <li><img src="@LinkList.GetImages(Link.Wachtwoordbeheer)" title=" @LinkList.GetTitle(Link.Wachtwoordbeheer) " /><a href="@LinkList.GetLink(Link.Wachtwoordbeheer)" title="@LinkList.GetTitle(Link.Wachtwoordbeheer)">@LinkList.GetLinkName(Link.Wachtwoordbeheer)</a></li>
+                                <li><img src="@LinkList.GetImages(Link.Notities)" title=" @LinkList.GetTitle(Link.Notities) " /><a href="@LinkList.GetLink(Link.Notities)" title="@LinkList.GetTitle(Link.Notities)">@LinkList.GetLinkName(Link.Notities)</a></li>
+                                <li><img src="@LinkList.GetImages(Link.Crm)" title=" @LinkList.GetTitle(Link.Crm) " /><a href="@LinkList.GetLink(Link.Crm)" title="@LinkList.GetTitle(Link.Crm)">@LinkList.GetLinkName(Link.Crm)</a></li>
+                            </ul>
+
+                            <ul>
+                                <li><img src="@LinkList.GetImages(Link.ExportExternPakket)" title=" @LinkList.GetTitle(Link.ExportExternPakket) " /><a href="@LinkList.GetLink(Link.ExportExternPakket)" title="@LinkList.GetTitle(Link.ExportExternPakket)">@LinkList.GetLinkName(Link.ExportExternPakket)</a></li>
+                                <li><img src="@LinkList.GetImages(Link.ExportBoekhouding)" title=" @LinkList.GetTitle(Link.ExportBoekhouding) " /><a href="@LinkList.GetLink(Link.ExportBoekhouding)" title="@LinkList.GetTitle(Link.ExportBoekhouding)">@LinkList.GetLinkName(Link.ExportBoekhouding)</a></li>
+                                <li><img src="@LinkList.GetImages(Link.ExportExcel)" title=" @LinkList.GetTitle(Link.ExportExcel) " /><a href="@LinkList.GetLink(Link.ExportExcel)" title="@LinkList.GetTitle(Link.ExportExcel)">@LinkList.GetLinkName(Link.ExportExcel)</a></li>
+                            </ul>
+
+                            <ul>
+                                <li><img src="@LinkList.GetImages(Link.Extranet)" title=" @LinkList.GetTitle(Link.Extranet) " /><a href=" @LinkList.GetLink(Link.Extranet) " title=" @LinkList.GetTitle(Link.Extranet) ">@LinkList.GetLinkName(Link.Extranet)</a></li>
+                                <li><img src="@LinkList.GetImages(Link.OutlookAddIn)" title=" @LinkList.GetTitle(Link.OutlookAddIn) " /><a href="@LinkList.GetLink(Link.OutlookAddIn)" title="@LinkList.GetTitle(Link.OutlookAddDownload)">@LinkList.GetLinkName(Link.OutlookAddIn)</a></li>
+                                <li><img src="@LinkList.GetImages(Link.GebruikerIntern)" title=" @LinkList.GetTitle(Link.GebruikerIntern) " /><a href="@LinkList.GetLink(Link.GebruikerIntern)" title="@LinkList.GetTitle(Link.GebruikerIntern)">@LinkList.GetLinkName(Link.GebruikerIntern)</a></li>
+                                <li><img src="@LinkList.GetImages(Link.Dataopslag)" title=" @LinkList.GetTitle(Link.Dataopslag) " /><a href="@LinkList.GetLink(Link.Dataopslag)" title="@LinkList.GetTitle(Link.Dataopslag)">@LinkList.GetLinkName(Link.Dataopslag)</a></li>
+                            </ul>
+                            <cite>@LinkList.GetPrice(Link.Financieel)</cite>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </article>
+        <!-- end boxdetail bar -->
+        <!-- start connecting bar -->
+        <article class="connecting-bar" style="margin:auto;">
+            <article class="advantage-bar" style="margin:auto;">
+                <div class="centering">
+                    <!--End Item Content on the right-->
+                    <!--Start Item Content on the Left-->
+                    <div class="merge fourth" style="margin:initial;">
+                        <div class="para facts">
+                            <div class="module" style="width: auto; margin-top:35px;">
+                                <h4>Factsheet</h4>
+                                <p>
+                                    Hieronder zijn alle mogelijkheden van aanvullend pakket Financieel weergegeven. Heb je vragen? Neem dan gerust contact met ons op.
+                                </p>
+                                <div class="para2">
+                                    <h2>@LinkList.GetLinkName(Link.Financieel)</h2>
+                                    <ul> 
+                                        <li>Bespaar op accountantkosten
+                                        <li>Altijd inzicht in de actuele betaalstatus
+                                        <li>Informatie op verschillende plekken raadplegen
+                                        <li>Koppeling met de Nederlandse bank
+                                        <li>Beschikking over realtime informatie
+                                        <li>Budgetten vaststellen en bewaken
+                                        <li>Makkelijk en snel wijzigingen doorgeven
+                                        <li>Eenvoudig facturen opzoeken voor eventuele garantievraagstukken</li> 
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Item Content on the Left-->
+                </div>
+            </article>
+            @Content.ContactFormDemo()
+        </article>
+        <!-- end connecting bar -->
+    </section>
+    <!-- end center part -->
+</section>
+<!-- end content -->

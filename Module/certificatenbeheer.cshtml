@@ -12,12 +12,20 @@
             <div class="centering">
                 <div class="management">
                     <div class="merge">
-                        <h4>Certificatenbeheer</h4> <!--Header!-->
+                        <table>
+                            <tr>
+                                <td><img alt="" src="@LinkList.GetImages(Link.Certificatenbeheer)"></td>
+                            </tr>
+                            <tr>
+                                <td><h4>@LinkList.GetLinkName(Link.Certificatenbeheer)</h4></td>
+                            </tr>
+                        </table>
+                        <!--Header!-->
                         <div class="para">
-                            <p>
-                                <!--Header content-->
-                                Eenvoudig kunnen zien wanneer een het rijbewijs of paspoort verloopt van je persooneel verloopt? Hybrid SaaS maakt het mogelijk! De module Certificatenbeheer schept orde in de chaos en plaatst alle certificaten overzichtelijk bij elkaar.Wanneer een certificaat tegen de einddatum aanloopt word je hier automatisch van op de hoogte gesteld. Zodat je gegevens altijd op orde zijn.
-                            </p>
+
+                            <!--Header content-->
+                            <p>@LinkList.GetTitle(Link.Certificatenbeheer)@LinkList.GetDescription(Link.Certificatenbeheer)</p>
+
                         </div>
                     </div>
                 </div>
@@ -27,7 +35,7 @@
         <!-- start advantage bar -->
         <article class="advantage-bar">
             <div class="centering">
-                <h3>Wat heeft de module Abonnementen te bieden?</h3>
+                <h3>Wat heeft de module @LinkList.GetLinkName(Link.Certificatenbeheer) te bieden?</h3>
                 <!--Start Item Content on the right-->
                 <div class="merge">
                     <div class="image"><img src="/images/foto_img.jpg" alt="" /></div>
@@ -64,7 +72,7 @@
                                     Hieronder zijn alle mogelijkheden binnen de verschillende online modules weergegeven.Het kan voorkomen dat het beschreven functionaliteiten aanvullende modules nodig te hebben.Mocht u vragen hebben, neem dan contact met ons op.
                                 </p>
                                 <div class="para2">
-                                    <h2>Certificatenbeheer</h2>
+                                    <h2>@LinkList.GetLinkName(Link.Certificatenbeheer)</h2>
                                     <ul>
                                         <li>Certificaat type ingeven</li>
                                         <li>Certificaat gegevens vastleggen </li>

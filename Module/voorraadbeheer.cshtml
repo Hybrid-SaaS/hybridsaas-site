@@ -1,4 +1,5 @@
-﻿@{
+﻿@using Hybrid_SaaS
+@{
     Layout = "/Layouts/_SiteLayout.cshtml";
 }
 
@@ -11,12 +12,20 @@
             <div class="centering">
                 <div class="management">
                     <div class="merge">
-                        <h4>Voorraadbeheer</h4> <!--Header!-->
+                        <table>
+                            <tr>
+                                <td><img alt="" src="@LinkList.GetImages(Link.Voorraadbeheer)"></td>
+                            </tr>
+                            <tr>
+                                <td><h4>@LinkList.GetLinkName(Link.Voorraadbeheer)</h4></td>
+                            </tr>
+                        </table>
+                        <!--Header!-->
                         <div class="para">
-                            <p>
-                                <!--Header content-->
-                                Overal ter wereld je complete productenbestand snel en eenvoudig beheren? Hybrid SaaS Productbeheer maakt het mogelijk. Producten worden voorzien van een duidelijke omschrijving en zijn op deze manier altijd gemakkelijk terug te vinden. Ook is het mogelijk om producten naar eigen inzicht onder te verdelen aan de hand van verschillende eigenschappen, zoals productkenmerken, product- of barcodes en leveranciers. Hybrid SaaS Productbeheer helpt je een goed overzicht te houden over je producten en maakt het gemakkelijk om gegevens aan te passen of een productafbeelding toe te voegen. Wanneer een product niet meer op voorraad is, word je hier automatisch van op de hoogte gesteld. Wel zo gemakkelijk!
-                            </p>
+
+                            <!--Header content-->
+                            <p>@LinkList.GetTitle(Link.Voorraadbeheer)@LinkList.GetDescription(Link.Voorraadbeheer)</p>
+
                         </div>
                     </div>
                 </div>
@@ -26,7 +35,7 @@
         <!-- start advantage bar -->
         <article class="advantage-bar">
             <div class="centering">
-                <h3>Wat heeft de module Voorraadbeheer te bieden?</h3>
+                <h3>Wat heeft de module @LinkList.GetLinkName(Link.Voorraadbeheer) te bieden?</h3>
                 <!--Start Item Content on the right-->
                 <div class="merge">
                     <div class="image"><img src="/images/foto_img.jpg" alt="" /></div>
@@ -63,52 +72,138 @@
                                     Hieronder zijn alle mogelijkheden binnen de verschillende online modules weergegeven.Het kan voorkomen dat het beschreven functionaliteiten aanvullende modules nodig te hebben.Mocht u vragen hebben, neem dan contact met ons op.
                                 </p>
                                 <div class="para2">
-                                    <h2>Voorraadbeheer</h2>
+                                    <h2>@LinkList.GetLinkName(Link.Voorraadbeheer)</h2>
                                     <ul>
-                                        <li>Producten categoriseren in hoofd- en subgroepen
-                                        </li><li>Productgroepen koppelen aan grootboekrekeningen en werkcodes
-                                        </li><li>Productdetails en –informatie vastleggen
-                                        </li><li>Beschrijving
-                                        </li><li>Barcode
-                                        </li><li>Productcode
-                                        </li><li>Leverancierscode
-                                        </li><li>Eenheid
-                                        </li><li>Afmetingen
-                                        </li><li>Materialen
-                                        </li><li>Kleur
-                                        </li><li>Gewicht
-                                        </li><li>Verkoopprijs inclusief of exclusief BTW (eventueel variabel)
-                                        </li><li>Inkoopprijs (eventueel variabel)
-                                        </li><li>Basis verkoopprijs (eventueel variabel)
-                                        </li><li>Basis inkoopprijs (eventueel variabel)
-                                        </li><li>Verpakkingseenheid
-                                        </li><li>Productafbeelding opslaan
-                                        </li><li>Opmerkingen aanmaken
-                                        </li><li>Producten onderverdelen in subproducten (productonderdelen)
-                                        </li><li>Gerelateerde producten vastleggen
-                                        </li><li>Producten dupliceren
-                                        </li><li>Productlabels en barcodes aanmaken
-                                        </li><li>Gekoppelde orders inzien bij producten
-                                        </li><li>Overzichten exporten naar Microsoft Excel
-                                        </li><li>Producten importen via Microsoft Excel
-                                        </li><li>Producten weergeven op de webshop
-                                        </li><li>Multi talig CMS teksten voor webshop vastleggen
-                                        </li><li>Kenmerken (tags) vastleggen
-                                        </li><li>Actuele voorraad van producten inzien
-                                        </li><li>Laatste inkoopprijs (LIP) per product
-                                        </li><li>Gemiddelde inkoopprijs (GIP) van actuele voorraad
-                                        </li><li>Voorraadlocaties vastleggen
-                                        </li><li>Productielocaties vastleggen
-                                        </li><li>Actuele voorraad inzien
-                                        </li><li>Actuele gereserveerde voorraad inzien
-                                        </li><li>Actuele voorraad in backorder
-                                        </li><li>Actuele producten gereserveerd voor bestelling
-                                        </li><li>Actuele vrije voorraad
-                                        </li><li>Leveringsaanvragen via Extranet maken
-                                        </li><li>Openstaande voorraad verplaatsingen inzien
-                                        </li><li>Voorraad inboeken (op locaties)
-                                        </li><li>Voorraad muteren
-                                        </li><li>Voorraad historie raadplegen</li>
+                                        <li>
+                                            Producten categoriseren in hoofd- en subgroepen
+                                        </li>
+                                        <li>
+                                            Productgroepen koppelen aan grootboekrekeningen en werkcodes
+                                        </li>
+                                        <li>
+                                            Productdetails en –informatie vastleggen
+                                        </li>
+                                        <li>
+                                            Beschrijving
+                                        </li>
+                                        <li>
+                                            Barcode
+                                        </li>
+                                        <li>
+                                            Productcode
+                                        </li>
+                                        <li>
+                                            Leverancierscode
+                                        </li>
+                                        <li>
+                                            Eenheid
+                                        </li>
+                                        <li>
+                                            Afmetingen
+                                        </li>
+                                        <li>
+                                            Materialen
+                                        </li>
+                                        <li>
+                                            Kleur
+                                        </li>
+                                        <li>
+                                            Gewicht
+                                        </li>
+                                        <li>
+                                            Verkoopprijs inclusief of exclusief BTW (eventueel variabel)
+                                        </li>
+                                        <li>
+                                            Inkoopprijs (eventueel variabel)
+                                        </li>
+                                        <li>
+                                            Basis verkoopprijs (eventueel variabel)
+                                        </li>
+                                        <li>
+                                            Basis inkoopprijs (eventueel variabel)
+                                        </li>
+                                        <li>
+                                            Verpakkingseenheid
+                                        </li>
+                                        <li>
+                                            Productafbeelding opslaan
+                                        </li>
+                                        <li>
+                                            Opmerkingen aanmaken
+                                        </li>
+                                        <li>
+                                            Producten onderverdelen in subproducten (productonderdelen)
+                                        </li>
+                                        <li>
+                                            Gerelateerde producten vastleggen
+                                        </li>
+                                        <li>
+                                            Producten dupliceren
+                                        </li>
+                                        <li>
+                                            Productlabels en barcodes aanmaken
+                                        </li>
+                                        <li>
+                                            Gekoppelde orders inzien bij producten
+                                        </li>
+                                        <li>
+                                            Overzichten exporten naar Microsoft Excel
+                                        </li>
+                                        <li>
+                                            Producten importen via Microsoft Excel
+                                        </li>
+                                        <li>
+                                            Producten weergeven op de webshop
+                                        </li>
+                                        <li>
+                                            Multi talig CMS teksten voor webshop vastleggen
+                                        </li>
+                                        <li>
+                                            Kenmerken (tags) vastleggen
+                                        </li>
+                                        <li>
+                                            Actuele voorraad van producten inzien
+                                        </li>
+                                        <li>
+                                            Laatste inkoopprijs (LIP) per product
+                                        </li>
+                                        <li>
+                                            Gemiddelde inkoopprijs (GIP) van actuele voorraad
+                                        </li>
+                                        <li>
+                                            Voorraadlocaties vastleggen
+                                        </li>
+                                        <li>
+                                            Productielocaties vastleggen
+                                        </li>
+                                        <li>
+                                            Actuele voorraad inzien
+                                        </li>
+                                        <li>
+                                            Actuele gereserveerde voorraad inzien
+                                        </li>
+                                        <li>
+                                            Actuele voorraad in backorder
+                                        </li>
+                                        <li>
+                                            Actuele producten gereserveerd voor bestelling
+                                        </li>
+                                        <li>
+                                            Actuele vrije voorraad
+                                        </li>
+                                        <li>
+                                            Leveringsaanvragen via Extranet maken
+                                        </li>
+                                        <li>
+                                            Openstaande voorraad verplaatsingen inzien
+                                        </li>
+                                        <li>
+                                            Voorraad inboeken (op locaties)
+                                        </li>
+                                        <li>
+                                            Voorraad muteren
+                                        </li>
+                                        <li>Voorraad historie raadplegen</li>
                                     </ul>
                                 </div>
                             </div>
@@ -117,23 +212,7 @@
                     <!--End Item Content on the Left-->
                 </div>
             </article>
-            <div class="centering">
-                <div class="merge">
-                    <div class="module">
-                        <h4 style="margin-top:35px;">Nieuwsgierig geworden wat wij nog meer voor jou kunnen betekenen?<br>Vraag onze vrijblijvende Live Demo aan!</h4>
-                        <div class="image"><img src="/images/connecting_img.JPG" alt="" style="width:760px; margin-top:35px" /></div>
-                    </div>
-                    <div class="form">
-                        <h4>Interesse in deze module of een opmerking? Stuur ons een bericht.</h4>
-                        <form action="#">
-                            <input type="text" value="Naam" onFocus="if(this.value=='Naam')this.value='';" onBlur="if(this.value=='')this.value='Naam';" />
-                            <input type="text" value="E-mail" onFocus="if(this.value=='E-mail')this.value='';" onBlur="if(this.value=='')this.value='E-mail';" />
-                            <textarea cols="15" rows="5" onFocus="if(this.value=='Bericht')this.value='';" onBlur="if(this.value=='')this.value='Bericht';">Bericht</textarea>
-                            <input type="submit" value="VERSTUur" />
-                        </form>
-                    </div>
-                </div>
-            </div>
+            @Content.ContactFormDemo()
         </article>
         <!-- end connecting bar -->
     </section>

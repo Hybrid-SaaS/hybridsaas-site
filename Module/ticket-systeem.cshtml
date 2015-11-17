@@ -1,4 +1,5 @@
-﻿@{
+﻿@using Hybrid_SaaS
+@{
     Layout = "/Layouts/_SiteLayout.cshtml";
 }
 
@@ -11,12 +12,20 @@
             <div class="centering">
                 <div class="management">
                     <div class="merge">
-                        <h4>Ticketsysteem</h4> <!--Header!-->
+                        <table>
+                            <tr>
+                                <td><img alt="" src="@LinkList.GetImages(Link.TicketSysteem)"></td>
+                            </tr>
+                            <tr>
+                                <td><h4>@LinkList.GetLinkName(Link.TicketSysteem)</h4></td>
+                            </tr>
+                        </table>
+                        <!--Header!-->
                         <div class="para">
-                            <p>
-                                <!--Header content-->
-                                Met het ticketsysteem krijg je de mogelijkheid om al je klantvragen te organiseren en op te volgen. Weet precies wat er speelt bij je relaties, projecten en je eigen organisatie. Met behulp van de juiste categorieën en urgentie bepaal je zelf waar de prioriteiten liggen en heb je altijd een actueel overzicht. Op deze manier krijg je een beter inzicht in openstaande acties en verhoog je de efficiëntie en servicegerichtheid naar je (klant) relaties. Communicatie is misschien wel het belangrijkste element voor een goede samenwerking. Ons doel is bedrijven en hun relaties dichter bij elkaar te brengen om op deze manier een optimale samenwerking te realiseren. Klantvragen komen via verschillende kanalen binnen en worden vaak op verschillende plaatsen opgeslagen. Door de inefficiënte gaat veel tijd verloren en gooi je onnodig geld weg. Het ticketsysteem van Hybrid SaaS biedt veel mogelijkheden om dit te voorkomen en is vrijwel door ieder bedrijf te gebruiken.
-                            </p>
+
+                            <!--Header content-->
+                            <p>@LinkList.GetTitle(Link.TicketSysteem)@LinkList.GetDescription(Link.TicketSysteem)</p>
+
                         </div>
                     </div>
                 </div>
@@ -26,7 +35,7 @@
         <!-- start advantage bar -->
         <article class="advantage-bar">
             <div class="centering">
-                <h3>Wat heeft de module Abonnementen te bieden?</h3>
+                <h3>Wat heeft de module @LinkList.GetLinkName(Link.TicketSysteem) te bieden?</h3>
                 <!--Start Item Content on the right-->
                 <div class="merge">
                     <div class="image"><img src="/images/foto_img.jpg" alt="" /></div>
@@ -63,31 +72,75 @@
                                     Hieronder zijn alle mogelijkheden binnen de verschillende online modules weergegeven.Het kan voorkomen dat het beschreven functionaliteiten aanvullende modules nodig te hebben.Mocht u vragen hebben, neem dan contact met ons op.
                                 </p>
                                 <div class="para2">
-                                    <h2>Ticketsysteem</h2>
+                                    <h2>@LinkList.GetLinkName(Link.TicketSysteem)</h2>
                                     <ul>
-                                        <li>Tickets aanmaken via Extranet anoniem
-                                        </li><li>Tickets aanmaken via Extranet met logingegevens
-                                        </li><li>Tickets koppelen aan bedrijven, personen, projecten en werklocaties
-                                        </li><li>Ticketstatus aanmaken
-                                        </li><li>Tickets categoriseren
-                                        </li><li>Tickets toewijzen aan afdelingen en medewerkers
-                                        </li><li>Opmerkingen toevoegen aan tickets
-                                        </li><li>Tickets uitstellen en parkeren
-                                        </li><li>Vervolgtickets aanmaken
-                                        </li><li>Log en tickethistorie bijhouden
-                                        </li><li>Statusupdates versturen naar betrokkenen
-                                        </li><li>Digitale bijlagen opslaan bij tickets
-                                        </li><li>Online bestanden toevoegen aan tickets
-                                        </li><li>Milestones toekennen aan tickets
-                                        </li><li>Prognose start- en eindtijd ingeven
-                                        </li><li>Daadwerkelijke start- en eindtijd ingeven
-                                        </li><li>Tijd registreren op tickets
-                                        </li><li>Documenten opmaken op een ticket
-                                        </li><li>Overzicht van tickets op verschillende dagen
-                                        </li><li>Overzicht tickets per afdeling of gebruiker
-                                        </li><li>Overzicht exporten naar Microsoft Excel
-                                        </li><li>Ticketdocument digitaal versturen
-                                        </li><li>Ticketdocument uitprinten</li>
+                                        <li>
+                                            Tickets aanmaken via Extranet anoniem
+                                        </li>
+                                        <li>
+                                            Tickets aanmaken via Extranet met logingegevens
+                                        </li>
+                                        <li>
+                                            Tickets koppelen aan bedrijven, personen, projecten en werklocaties
+                                        </li>
+                                        <li>
+                                            Ticketstatus aanmaken
+                                        </li>
+                                        <li>
+                                            Tickets categoriseren
+                                        </li>
+                                        <li>
+                                            Tickets toewijzen aan afdelingen en medewerkers
+                                        </li>
+                                        <li>
+                                            Opmerkingen toevoegen aan tickets
+                                        </li>
+                                        <li>
+                                            Tickets uitstellen en parkeren
+                                        </li>
+                                        <li>
+                                            Vervolgtickets aanmaken
+                                        </li>
+                                        <li>
+                                            Log en tickethistorie bijhouden
+                                        </li>
+                                        <li>
+                                            Statusupdates versturen naar betrokkenen
+                                        </li>
+                                        <li>
+                                            Digitale bijlagen opslaan bij tickets
+                                        </li>
+                                        <li>
+                                            Online bestanden toevoegen aan tickets
+                                        </li>
+                                        <li>
+                                            Milestones toekennen aan tickets
+                                        </li>
+                                        <li>
+                                            Prognose start- en eindtijd ingeven
+                                        </li>
+                                        <li>
+                                            Daadwerkelijke start- en eindtijd ingeven
+                                        </li>
+                                        <li>
+                                            Tijd registreren op tickets
+                                        </li>
+                                        <li>
+                                            Documenten opmaken op een ticket
+                                        </li>
+                                        <li>
+                                            Overzicht van tickets op verschillende dagen
+                                        </li>
+                                        <li>
+                                            Overzicht tickets per afdeling of gebruiker
+                                        </li>
+                                        <li>
+                                            Overzicht exporten naar Microsoft Excel
+                                        </li>
+                                        <li>
+                                            Ticketdocument digitaal versturen
+                                        </li>
+                                        <li>Ticketdocument uitprinten</li>
                                     </ul>
                                 </div>
                             </div>

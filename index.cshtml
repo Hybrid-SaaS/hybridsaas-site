@@ -61,7 +61,7 @@
         <article class="choose-bar">
             <div class="centering">
                 <center><iframe width="640" height="360" src="https://www.youtube.com/embed/tu0xv-PvKXU?loop=1&autoplay=1&rel=0&showinfo=0&controls=0&autohide=1" frameborder="0" allowfullscreen></iframe></center>
-            </div>  
+            </div>
             <div class="centering">
                 <div class="text">
 
@@ -137,35 +137,35 @@
                     <aside class="ticket">
 
                         <div class="common pak2">
-                            <img src="images/ticket_icon2.png" alt="" />
-                            <h3>Pakket <span>TICKETS + FACTURATIE</span></h3>
-                            <cite>&euro; 250,- per maand</cite>
+                            <img src="@LinkList.GetImages(Link.PakketTicketsFacturatie)" title="@LinkList.GetLinkName(Link.PakketTicketsFacturatie)" />
+                            <h3>@LinkList.GetLinkName(Link.PakketTicketsFacturatie)</h3>
+                            <cite>@LinkList.GetPrice(Link.PakketTicketsFacturatie)</cite>
                             <a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)" class="detail">Over Pakket</a>
                             <ul>
-                                <li><a> Hybrid SaaS Ticketsysteem, tijdregistratie en facturatie Eén overzichtelijk dashboard. Voor alles.</a></li>
+                                <li><a> Voor het bijhouden van alle acties in het bedrijf en het doorbelasten van de gewerkte tijd</a></li>
                             </ul>
                         </div>
 
                         <div class="common pak1">
-                            <img src="images/ticket_icon1.png" alt="" />
-                            <h3>Pakket <span>CONTRACTBEHEER</span></h3>
-                            <cite>&euro; 125,- per maand</cite>
+                            <img src="@LinkList.GetImages(Link.PakketContractbeheer)" title="@LinkList.GetLinkName(Link.PakketContractbeheer)" />
+                            <h3>@LinkList.GetLinkName(Link.PakketContractbeheer)</h3>
+                            <cite>@LinkList.GetPrice(Link.PakketContractbeheer)</cite>
                             <a href="@LinkList.GetLink(Link.PakketContractbeheer)" class="detail">Over Pakket</a>
                             <ul>
-                                <li><a> Hybrid SaaS Contractbeheer, Eén overzichtelijk dashboard. Voor alles.</a></li>
+                                <li><a> Voor het periodiek factureren van (cloud) diensten</a></li>
                             </ul>
                         </div>
 
 
                         <div class="common pak2">
-                            <img src="images/ticket_icon3.png" alt="" />
-                            <h3>Pakket <span>OFFERTE + VOORRAAD</span></h3>
-                            <cite>&euro; 300,- per maand</cite>
-                            <a href="@LinkList.GetLink(Link.PakketOfferteVoorraad)" class="detail">Over Pakket</a>
+                            <img src="@LinkList.GetImages(Link.PakketKwaliteitsControle)" title="@LinkList.GetLinkName(Link.PakketKwaliteitsControle)" />
+                            <h3>@LinkList.GetLinkName(Link.PakketKwaliteitsControle)</h3>
+                            <cite>@LinkList.GetPrice(Link.PakketKwaliteitsControle)</cite>
+                            <a href="@LinkList.GetLink(Link.PakketKwaliteitsControle)" class="detail">Over Pakket</a>
                             <ul>
-                                <li><a> Hybrid SaaS Offerte & Voorraad Eén overzichtelijk dashboard. Voor alles.</a></li>
+                                <li><a> Voor het vroegtijdig signaleren en rapporteren van afwijkingen in het proces.</a></li>
                             </ul>
-                          </div>
+                        </div>
 
                     </aside>
 
@@ -175,245 +175,211 @@
             </div>
         </article>
         <!-- end paket bar -->
-        <!-- start solution bar -->
+        <!-- start implementatie bar -->
         <article class="solution-bar" id="module">
 
             <div class="centering">
                 <div class="text">
-
-                    <h2>DE TOTAALOPLOSSING VAN Hybrid SaaS</h2>
-
-                    <p>Hybrid SaaS biedt de een totaaloplossing voor dienstverlenende organisaties in de ICT branche. Met ons Online Business Software pakket automatiseer je eenvoudig alle bedrijfsprocessen via één systeem. </p>
-                    <p>Organiseer alles: van het eerste klantcontact tot en met de nazorg, van administratie tot voorraadbeheer. Overzichtelijk gepresenteerd in een dashboard en met een flexibiliteit die past bij deze tijd.</p>
-                    <aside class="fill">
-                        <h3>Vul je pakket aan met behulp van onderstaande modules</h3>
-                        <div class="pakket">
-                            <h4>Aanvullend pakket (maandelijks)</h4>
-                            <ul>
-                                <li>
-                                    <img src="images/connencting_img1.png" alt="" />
-                                    <h5>Commissie<span>beheer</span></h5>
-                                    <a href="@LinkList.GetLink(Link.Commissiebeheer)">Meer info</a>
-                                </li>
-                                <li>
-                                    <img src="images/connencting_img2.png" alt="" />
-                                    <h5>CONTRACT<span>beheer</span></h5>
-                                    <a href="@LinkList.GetLink(Link.Contractenbeheer)">Meer info</a>
-                                </li>
-                                <li>
-                                    <img src="images/connencting_img3.png" alt="" />
-                                    <h5>FINANCIEEL</h5>
-                                    <a href="@LinkList.GetLink(Link.Financieel)">Meer info</a>
-                                </li>
-                                <li>
-                                    <img src="images/connencting_img5.png" alt="" />
-                                    <h5>extra<span>gebruiker</span></h5>
-                                    <a href="@LinkList.GetLink(Link.GebruikerIntern)">Meer info</a>
-                                </li>
-                                <li>
-                                    <img src="images/connencting_img4.png" alt="" />
-                                    <h5>Extra<span>dataopslag</span></h5>
-                                    <a href="@LinkList.GetLink(Link.Dataopslag)">Meer info</a>
-                                </li>
-                            </ul>
-                            <div class="clear"></div>
-                        </div>
-                        <div class="implement">
-                            <h4>Implementatie & Inrichting (eenmalig)<span>De onderstaande implementatiepakketten zijn samengesteld op basis van bovengenoemde pakketten</span></h4>
-                            <ul>
-                                <li>
-                                    <span>- 2 Word sjablonen</span>
-                                    <span>- 2 e-mail sjablonen</span>
-                                    <span>- 1 Documentschema</span>
-                                    <span>- Importeren relatiegegevens</span>
-                                    <span>- 1 dagdeel training op locatie</span>
-                                </li>
-
-                                <li>
-                                    <span>- 1 Word sjablonen </span>
-                                    <span>- 2 e-mail sjablonen</span>
-                                    <span>- 2 Documentschema</span>
-                                    <span>- Importeren relatiegegevens</span>
-                                    <span>- 3 dagdeel training op locatie</span>
-                                </li>
-
-                                <li>
-                                    <span>- 3 Word sjablonen</span>
-                                    <span>- 3 e-mail sjablonen</span>
-                                    <span>- 1 Documentschema</span>
-                                    <span>- Importeren relatiegegevens</span>
-                                    <span>- 6 dagdeel training op locatie</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="furnishing" hidden="hidden">
-                            <h4>Aanvullende Implementatie & Inrichting (eenmalig)<span>De onderstaande werkzaamheden kunnen als aanvulling worden gekozen op de bovengenoemde implementatiepakketten</span></h4>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div>
-                        <div class="satisfy">
-                            <span>Ben je tevreden over je huidige administratiesoftware? </span>
-                            <span>Je kunt je eigen administratie eenvoudig koppelen met onze modules, bijvoorbeeld met het Ticketsysteem of de module Werkbonnen.</span>
-                        </div>
-
-                    </aside>
-
-                    <a href=" @LinkList.GetLink(Link.MenuModules)" class="moreinfo">MEER INFORMATIE  OVER DE MODULES</a>
-                    <span class="border"></span>
-                </div>
-            </div>
-        </article>
-        <!-- end solution bar -->
-        <!-- start hybrid bar -->
-        <article class="hybrid-bar" id="over">
-
-            <div class="centering">
-                <div class="orhybrid" hidden="hidden">
-
-                    <h2>DIT ZEGGEN KLANTEN OVER Hybrid SaaS</h2>
-                    <aside class="hybrid">
-                        <div class="left">
-                            <ul>
-                                <li>
-                                    <div class="image"><img src="images/hybrid_img1.png" alt="" /></div>
-                                    <div class="text">
-                                        <p>“Nullam dapibus blandit orci, viverra gravida dui tis eget. Maecenas fringilla urna eu nisl scelerisque.”</p>
-                                        <div class="owner">
-                                            <span>Chanel Iman</span>
-                                            <cite>CEO of Pinterest</cite>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="image"><img src="images/hybrid_img3.png" alt="" /></div>
-                                    <div class="text">
-                                        <p>“Nullam dapibus blandit orci, viverra gravida dui tis eget. Maecenas fringilla urna eu nisl scelerisque.”</p>
-                                        <div class="owner">
-                                            <span>Adriana Lima</span>
-                                            <cite>Founder of Instagram</cite>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="right">
-                            <ul>
-                                <li>
-                                    <div class="image"><img src="images/hybrid_img2.png" alt="" /></div>
-                                    <div class="text">
-                                        <p>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</p>
-                                        <div class="owner">
-                                            <span>Chanel Iman</span>
-                                            <cite>CEO of Pinterest</cite>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="image"><img src="images/hybrid_img4.png" alt="" /></div>
-                                    <div class="text">
-                                        <p>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</p>
-                                        <div class="owner">
-                                            <span>Adriana Lima</span>
-                                            <cite>Founder of Instagram</cite>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </aside>
-
-                    <div class="flexslider2 carasoule">
-                        <ul class="slides">
-                            <!--Add companys-->
-                            <li><a href="http://www.vriedak.nl/" target="_blank"><img src="images/broadby_img1.png" alt="" /></a></li>
-                            <li><a href="http://www.groenenboom.nl/" target="_blank"><img src="images/broadby_img2.png" alt="" /></a></li>
-                            <li><a href="http://www.renedon.nl/" target="_blank"><img src="images/broadby_img3.png" alt="" /></a></li>
-                            <li><a href="http://www.bamtechniek.nl/" target="_blank"><img src="images/broadby_img4.png" alt="" /></a></li>
-                            <li><a href="http://www.fws.nl/" target="_blank"><img src="images/broadby_img5.png" alt="" /></a></li>
-                        </ul>
+                    <h2>Implementatie & Inrichting (eenmalig)</h2>
+                    <p>Alle pakketten worden kant en klaar opgeleverd bij u op locatie, Uw huisstijl wordt geïntegreerd in de uitvoer documenten en e-mails, uw medewerkers worden getraind voor het gebruik van de software, dit zal per gekozen pakket / aanvullende module en bedrijfsgrootte variëren, u krijgt hiervoor een aparte offerte.</p>
+                    
                     </div>
-
-                    <span class="border"></span>
                 </div>
-            </div>
-        </article>
-        <!-- end hybrid bar -->
-        <!-- start support bar -->
-                <article class="support-bar" id="support">
-                	
-                	<div class="centering">
-                        <div class="supportive">
+            </article>
+        <!-- end implementatie bar -->
+                    <!-- start solution bar -->
+                    <article class="solution-bar" id="module">
 
-                            <h2>onze support<span></span></h2>
-                            <aside class="support">
-                                <div class="left">
-                                    <ul>
-                                        <li>
-                                            <div class="image"><img src="images/support_img1.png" alt="" /></div>
-                                            <div class="text">
-                                                <h3>downloads</h3>
-                                                <p>
-                                                    <a href="@LinkList.GetLink(Link.BrowserDownload)">Hybrid SaaS Browser </a><br />
-                                                    <a href="@LinkList.GetLink(Link.WordAddDownload)">Hybrid SaaS Word add-in</a><br />
-                                                    <a href="@LinkList.GetLink(Link.OutlookAddDownload)">Hybrid SaaS Outlook add-in </a>
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="image"><img src="images/support_img3.png" alt="" /></div>
-                                            <div class="text">
-                                                <a href="@LinkList.GetLink(Link.Handleiding)"><h3>handleiding</h3></a>
-                                                <p>Onze uitgebreide handleiding geeft inzicht in de werking van onze software.</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="image"><img src="images/support_img3.png" alt="" /></div>
-                                            <div class="text">
-                                                <a href="@LinkList.GetLink(Link.KijkMetMijMee)"><h3>Kijk met mij mee</h3></a>
-                                                <p>Wij kunnen op afstand meekijken op uw computer, gebruik deze optie om onze medewerkers toegang te geven tot uw pc.</p>
-                                            </div>
-                                        </li>
+                        <div class="centering">
+                            <div class="text">
 
-                                    </ul>
-                                </div>
-                                <div class="right">
-                                    <ul>
-                                        <li>
-                                            <div class="image"><img src="images/support_img2.png" alt="" /></div>
-                                            <div class="text">
-                                                <a href="@LinkList.GetLink(Link.InvoerTicket)"><h3>ticket systemen</h3></a>
-                                                <p>Stel snel en gemakkelijk uw vraag online aan onze organisatie.</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="image"><img src="images/support_img3.png" alt="" /></div>
-                                            <div class="text">
-                                                <a href="@LinkList.GetLink(Link.MenuContact)"><h3>helpdesk</h3></a>
-                                                <p>Onze contact gegevens.</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="image"><img src="images/support_img3.png" alt="" /></div>
-                                            <div class="text">
-                                                <a href="@LinkList.GetLink(Link.Handleiding)"><h3>Consultancy</h3></a>
-                                                <p>Maak gebruik van onze jarenlange kennis als systeembeheerder, softwareontwikkelaar & bedrijfsautomatiseerder.</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </aside>
-                            <span class="border"></span>
+                                <h2>DE TOTAALOPLOSSING VAN Hybrid SaaS</h2>
+
+                                <p>Hybrid SaaS biedt de een totaaloplossing voor dienstverlenende organisaties in de ICT branche. Met ons Online Business Software pakket automatiseer je eenvoudig alle bedrijfsprocessen via één systeem. </p>
+                                <p>Organiseer alles: van het eerste klantcontact tot en met de nazorg, van administratie tot voorraadbeheer. Overzichtelijk gepresenteerd in een dashboard en met een flexibiliteit die past bij deze tijd.</p>
+                                <aside class="fill">
+                                    <h3>Vul je pakket aan met behulp van de modules</h3>
+                                    <div class="pakket">
+                                        <ul>
+                                            <li>
+                                                <img src="@LinkList.GetImages(Link.MenuModules)" title="@LinkList.GetLinkName(Link.MenuModules)" />
+                                                <h5>Alle<span>@LinkList.GetLinkName(Link.MenuModules)</span></h5>
+                                                <a href="@LinkList.GetLink(Link.MenuModules)">Ga naar</a>
+                                            </li>
+                                            <li>
+                                                <img src="@LinkList.GetImages(Link.GebruikerIntern)" title="@LinkList.GetLinkName(Link.GebruikerIntern)" />
+                                                <h5>@LinkList.GetLinkName(Link.GebruikerIntern)</h5>
+                                                <a href="@LinkList.GetLink(Link.GebruikerIntern)">Meer info</a>
+                                            </li>
+                                            <li>
+                                                <img src="@LinkList.GetImages(Link.Facturatie)" title="@LinkList.GetLinkName(Link.Facturatie)" />
+                                                <h5>@LinkList.GetLinkName(Link.Facturatie)</h5>
+                                                <a href="@LinkList.GetLink(Link.Facturatie)">Meer info</a>
+                                            </li>
+                                            <li>
+                                                <img src="@LinkList.GetImages(Link.TicketSysteem)" title="@LinkList.GetLinkName(Link.TicketSysteem)" />
+                                                <h5>@LinkList.GetLinkName(Link.TicketSysteem)</h5>
+                                                <a href="@LinkList.GetLink(Link.TicketSysteem)">Meer info</a>
+                                            </li>
+                                        </ul>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="satisfy">
+                                        <span>Ben je tevreden over je huidige administratiesoftware? </span>
+                                        <span>Je kunt je eigen administratie eenvoudig koppelen met onze modules, bijvoorbeeld met het Ticketsysteem of de module Werkbonnen.</span>
+                                    </div>
+
+                                </aside>
+                                <span class="border"></span>
+                            </div>
                         </div>
-	                </div>
-                </article>
-                <!-- end support bar -->
-    
-        @Content.ContactForm()
+                    </article>
+                    <!-- end solution bar -->
+                    <!-- start hybrid bar -->
+                    <article class="hybrid-bar" id="over">
+
+                        <div class="centering">
+                            <div class="orhybrid" hidden="hidden">
+
+                                <h2>DIT ZEGGEN KLANTEN OVER Hybrid SaaS</h2>
+                                <aside class="hybrid">
+                                    <div class="left">
+                                        <ul>
+                                            <li>
+                                                <div class="image"><img src="images/hybrid_img1.png" alt="" /></div>
+                                                <div class="text">
+                                                    <p>“”</p>
+                                                    <div class="owner">
+                                                        <span></span>
+                                                        <cite></cite>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="image"><img src="images/hybrid_img3.png" alt="" /></div>
+                                                <div class="text">
+                                                    <p>“”</p>
+                                                    <div class="owner">
+                                                        <span></span>
+                                                        <cite></cite>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="right">
+                                        <ul>
+                                            <li>
+                                                <div class="image"><img src="images/hybrid_img2.png" alt="" /></div>
+                                                <div class="text">
+                                                    <p>“”</p>
+                                                    <div class="owner">
+                                                        <span></span>
+                                                        <cite></cite>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="image"><img src="images/hybrid_img4.png" alt="" /></div>
+                                                <div class="text">
+                                                    <p>“”</p>
+                                                    <div class="owner">
+                                                        <span></span>
+                                                        <cite></cite>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </aside>
+
+                                <div class="flexslider2 carasoule">
+                                    <ul class="slides">
+                                        <!--Add companys-->
+                                        <li><a href="http://www.vriedak.nl/" target="_blank"><img src="images/broadby_img1.png" alt="" /></a></li>
+                                        <li><a href="http://www.groenenboom.nl/" target="_blank"><img src="images/broadby_img2.png" alt="" /></a></li>
+                                        <li><a href="http://www.renedon.nl/" target="_blank"><img src="images/broadby_img3.png" alt="" /></a></li>
+                                        <li><a href="http://www.bamtechniek.nl/" target="_blank"><img src="images/broadby_img4.png" alt="" /></a></li>
+                                        <li><a href="http://www.fws.nl/" target="_blank"><img src="images/broadby_img5.png" alt="" /></a></li>
+                                    </ul>
+                                </div>
+
+                                <span class="border"></span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- end hybrid bar -->
+                    <!-- start support bar -->
+                    <article class="support-bar" id="support">
+
+                        <div class="centering">
+                            <div class="supportive">
+
+                                <h2>onze support<span></span></h2>
+                                <aside class="support">
+                                    <div class="left">
+                                        <ul>
+                                            <li>
+                                                <div class="image"><img src="@LinkList.GetImages(Link.Download)" title="@LinkList.GetLinkName(Link.Download)" /></div>
+                                                    <div class="text">
+                                                        <h3>@LinkList.GetLinkName(Link.Download)</h3>
+                                                        <p>
+                                                            <a href="@LinkList.GetLink(Link.BrowserDownload)">@LinkList.GetLinkName(Link.BrowserDownload)</a><br />
+                                                            <a href="@LinkList.GetLink(Link.WordAddDownload)">@LinkList.GetLinkName(Link.WordAddDownload)</a><br />
+                                                            <a href="@LinkList.GetLink(Link.OutlookAddDownload)">@LinkList.GetLinkName(Link.OutlookAddDownload)</a>
+                                                        </p>
+                                                    </div>
+                                             </li>
+                                            <li>
+                                                <div class="image"><img src="@LinkList.GetImages(Link.Handleiding)" title="@LinkList.GetLinkName(Link.Handleiding)" /></div>
+                                                <div class="text">
+                                                    <a target="_blank" href="@LinkList.GetLink(Link.Handleiding)"><h3>@LinkList.GetLinkName(Link.Handleiding)</h3></a>
+                                                    <p>@LinkList.GetDescription(Link.Handleiding)</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="image"><img src="@LinkList.GetImages(Link.KijkMetMijMee)" title="@LinkList.GetLinkName(Link.KijkMetMijMee)" /></div>
+                                                <div class="text">
+                                                    <a href="@LinkList.GetLink(Link.KijkMetMijMee)"><h3>@LinkList.GetLinkName(Link.KijkMetMijMee)</h3></a>
+                                                    <p>@LinkList.GetDescription(Link.KijkMetMijMee)</p>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="right">
+                                        <ul>
+                                            <li>
+                                                <div class="image"><img src="@LinkList.GetImages(Link.InvoerTicket)" title="@LinkList.GetLinkName(Link.InvoerTicket)" /></div>
+                                                <div class="text">
+                                                    <a target="_blank" href="@LinkList.GetLink(Link.InvoerTicket)"><h3>@LinkList.GetLinkName(Link.InvoerTicket)</h3></a>
+                                                    <p>@LinkList.GetDescription(Link.InvoerTicket)</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="image"><img src="@LinkList.GetImages(Link.HelpDesk)" title="@LinkList.GetLinkName(Link.HelpDesk)" /></div>
+                                                <div class="text">
+                                                    <a href="@LinkList.GetLink(Link.MenuContact)"><h3>@LinkList.GetLinkName(Link.HelpDesk)</h3></a>
+                                                    <p>@LinkList.GetDescription(Link.HelpDesk)</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="image"><img src="@LinkList.GetImages(Link.Consultancy)" title="@LinkList.GetLinkName(Link.Consultancy)" /></div>
+                                                <div class="text">
+                                                    <h3>@LinkList.GetLinkName(Link.Consultancy)</h3>
+                                                    <p>@LinkList.GetDescription(Link.Consultancy)</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </aside>
+                                <span class="border"></span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- end support bar -->
+
+                    @Content.ContactForm()
 
     </section>
     <!-- end center part -->

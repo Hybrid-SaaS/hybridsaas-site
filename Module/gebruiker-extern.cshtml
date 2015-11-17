@@ -1,4 +1,5 @@
-﻿@{
+﻿@using Hybrid_SaaS
+@{
     Layout = "/Layouts/_SiteLayout.cshtml";
 }
 
@@ -11,12 +12,20 @@
             <div class="centering">
                 <div class="management">
                     <div class="merge">
-                        <h4>Gebruiker Extern</h4> <!--Header!-->
+                        <table>
+                            <tr>
+                                <td><img alt="" src="@LinkList.GetImages(Link.GebruikerExtern)"></td>
+                            </tr>
+                            <tr>
+                                <td><h4>@LinkList.GetLinkName(Link.GebruikerExtern)</h4></td>
+                            </tr>
+                        </table>
+                        <!--Header!-->
                         <div class="para">
-                            <p>
-                                <!--Header content-->
-                                .
-                            </p>
+
+                            <!--Header content-->
+                            <p>@LinkList.GetTitle(Link.GebruikerExtern)@LinkList.GetDescription(Link.GebruikerExtern)</p>
+
                         </div>
                     </div>
                 </div>
@@ -26,7 +35,7 @@
         <!-- start advantage bar -->
         <article class="advantage-bar">
             <div class="centering">
-                <h3>Wat heeft de module Gebruiker Extern te bieden?</h3>
+                <h3>Wat kan je als @LinkList.GetLinkName(Link.GebruikerExtern)?</h3>
                 <!--Start Item Content on the right-->
                 <div class="merge">
                     <div class="image"><img src="/images/foto_img.jpg" alt="" /></div>
@@ -63,7 +72,7 @@
                                     Hieronder zijn alle mogelijkheden binnen de verschillende online modules weergegeven.Het kan voorkomen dat het beschreven functionaliteiten aanvullende modules nodig te hebben.Mocht u vragen hebben, neem dan contact met ons op.
                                 </p>
                                 <div class="para2">
-                                    <h2>Automatische facturen (contracten)</h2>
+                                    <h2>@LinkList.GetLinkName(Link.GebruikerExtern)</h2>
                                     <ul>
                                         <li>Periodieke facturen/ contracten instellen</li>
                                     </ul>

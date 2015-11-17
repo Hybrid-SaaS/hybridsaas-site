@@ -273,6 +273,7 @@
     <Content Include="js\jquery.flexslider.js" />
     <Content Include="js\respond.src.js" />
     <Content Include="js\smooth-scroll.js" />
+    <Content Include="robots.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -332,12 +333,11 @@
     <Content Include="Module\gebouwbeheer.cshtml" />
     <Content Include="Module\exportboekhouding.cshtml" />
     <Content Include="Module\opslag.cshtml" />
-    <Content Include="Module\prepaidkaarten.cshtml" />
     <Content Include="Module\Inkoopbeheer.cshtml" />
     <Content Include="Module\Temp.cshtml" />
     <Content Include="Module\productenbeheer.cshtml" />
     <Content Include="pakket-aanvullend-financieel.cshtml" />
-    <Content Include="Module\Prepaid-kaarten.cshtml" />
+    <Content Include="Module\Prepaidkaarten.cshtml" />
     <Content Include="Module\outlook-add-in.cshtml" />
     <Content Include="Module\dataopslag.cshtml" />
     <Content Include="Module\gebruiker-extern.cshtml" />
@@ -438,6 +438,12 @@
     <Content Include="fonts\webfontkit-20150608-014249\titilliumweb-semibold-webfont.woff" />
     <Content Include="fonts\webfontkit-20150608-014249\titilliumweb-semibold-webfont.woff2" />
     <Content Include="App_Code\Links.cshtml" />
+    <Content Include="Module\Crm.cshtml" />
+    <Content Include="Module\Correspondentie.cshtml" />
+    <Content Include="Module\Onderaannemer.cshtml" />
+    <Content Include="Module\Externpakket.cshtml" />
+    <Content Include="Module\voortgang.cshtml" />
+    <Content Include="Module\prognosebeheer.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

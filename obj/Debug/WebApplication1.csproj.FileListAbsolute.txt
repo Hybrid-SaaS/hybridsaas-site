@@ -56,3 +56,16 @@ C:\Workspace\Ontwikkeling\GitHub\hybridsaas-site\bin\System.Web.Webpages.Razor.x
 C:\Workspace\Ontwikkeling\GitHub\hybridsaas-site\bin\System.Web.Helpers.xml
 C:\Workspace\Ontwikkeling\GitHub\hybridsaas-site\bin\System.Web.Mvc.xml
 C:\Workspace\Ontwikkeling\GitHub\hybridsaas-site\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+\\192.168.33.33\hybridsaas-site\bin\Microsoft.Web.Infrastructure.dll
+\\192.168.33.33\hybridsaas-site\bin\System.Web.Helpers.dll
+\\192.168.33.33\hybridsaas-site\bin\System.Web.Mvc.dll
+\\192.168.33.33\hybridsaas-site\bin\System.Web.Razor.dll
+\\192.168.33.33\hybridsaas-site\bin\System.Web.WebPages.Deployment.dll
+\\192.168.33.33\hybridsaas-site\bin\System.Web.WebPages.dll
+\\192.168.33.33\hybridsaas-site\bin\System.Web.WebPages.Razor.dll
+\\192.168.33.33\hybridsaas-site\bin\System.Web.Helpers.xml
+\\192.168.33.33\hybridsaas-site\bin\System.Web.Mvc.xml
+\\192.168.33.33\hybridsaas-site\bin\System.Web.Razor.xml
+\\192.168.33.33\hybridsaas-site\bin\System.Web.WebPages.xml
+\\192.168.33.33\hybridsaas-site\bin\System.Web.WebPages.Deployment.xml
+\\192.168.33.33\hybridsaas-site\bin\System.Web.WebPages.Razor.xml
