@@ -875,7 +875,7 @@ namespace Hybrid_SaaS
                 Images = "/images/why_arrow.png",
                 Price = "",
                 LinkName = "Handleiding",
-                BigImages = "/images/advantage_img7.png",
+                BigImages = "/images/handleidinghs.png",
 
 
             };
