@@ -313,7 +313,7 @@
     <Content Include="site-map.cshtml" />
     <Content Include="Layouts\_SiteLayout.cshtml" />
     <Content Include="support.cshtml" />
-    <Content Include="Module\ticket-systeem.cshtml" />
+    <Content Include="Module\_ticket-systeem.cshtml" />
     <Content Include="Module\_projectbeheer.cshtml" />
     <Content Include="Module\_relatiebeheer.cshtml" />
     <Content Include="ticketsysteem.cshtml" />
@@ -454,6 +454,7 @@
     <Content Include="Module\prognosebeheer.cshtml" />
     <Content Include="Module\projectbeheer.cshtml" />
     <Content Include="Module\relatiebeheer.cshtml" />
+    <Content Include="Module\ticket-systeem.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

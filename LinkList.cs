@@ -634,15 +634,17 @@ namespace Hybrid_SaaS
 
             LinkDictionary[Link.TicketSysteem] = new LinkInfo
             {
+                Name = "Ticketsysteem",
+
                 Url = "/Module/ticket-systeem",
                 IntroText = "Met het ticketsysteem krijg je de mogelijkheid om al je klantvragen te organiseren en op te volgen. Weet precies wat er speelt bij je relaties, projecten en je eigen organisatie. Met behulp van de juiste categorieën en urgentie bepaal je zelf waar de prioriteiten liggen en heb je altijd een actueel overzicht. ",
                 Description = "Op deze manier krijg je een beter inzicht in openstaande acties en verhoog je de efficiëntie en servicegerichtheid naar je (klant) relaties. Communicatie is misschien wel het belangrijkste element voor een goede samenwerking. Ons doel is bedrijven en hun relaties dichter bij elkaar te brengen om op deze manier een optimale samenwerking te realiseren. Klantvragen komen via verschillende kanalen binnen en worden vaak op verschillende plaatsen opgeslagen. Door de inefficiënte gaat veel tijd verloren en gooi je onnodig geld weg. Het ticketsysteem van Hybrid SaaS biedt veel mogelijkheden om dit te voorkomen en is vrijwel door ieder bedrijf te gebruiken.",
                 Image = "/images/why_arrow.png",
                 Price = "€ 40,- per maand",
                 LinkName = "Ticketsysteem",
-                ImageBig = "/images/advantage_img7.png",
-
+                ImageBig = "/images/advantage_img7.png"
             };
+
             LinkDictionary[Link.Tijdregistratie] = new LinkInfo
             {
                 Url = "/Module/tijdregistratie",
