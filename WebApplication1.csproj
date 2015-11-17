@@ -91,7 +91,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\layout.css.map">
+      <DependentUpon>layout.css</DependentUpon>
+    </Content>
+    <None Include="css\layout.less" />
     <Content Include="css\layout.css" />
+    <Content Include="css\layout.min.css">
+      <DependentUpon>layout.css</DependentUpon>
+    </Content>
     <Content Include="fonts\archivonarrow-bold-webfont.svg" />
     <Content Include="fonts\archivonarrow-regular-webfont.svg" />
     <Content Include="fonts\raleway-bold-webfont.svg" />
@@ -273,6 +280,7 @@
     <Content Include="js\jquery.flexslider.js" />
     <Content Include="js\respond.src.js" />
     <Content Include="js\smooth-scroll.js" />
+    <Content Include="Layouts\_Module.cshtml" />
     <Content Include="robots.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -306,8 +314,8 @@
     <Content Include="Layouts\_SiteLayout.cshtml" />
     <Content Include="support.cshtml" />
     <Content Include="Module\ticket-systeem.cshtml" />
-    <Content Include="Module\projectbeheer.cshtml" />
-    <Content Include="Module\relatiebeheer.cshtml" />
+    <Content Include="Module\_projectbeheer.cshtml" />
+    <Content Include="Module\_relatiebeheer.cshtml" />
     <Content Include="ticketsysteem.cshtml" />
     <Content Include="Module\tijdregistratie.cshtml" />
     <Content Include="Module\voorraadbeheer.cshtml" />
@@ -444,6 +452,8 @@
     <Content Include="Module\Externpakket.cshtml" />
     <Content Include="Module\voortgang.cshtml" />
     <Content Include="Module\prognosebeheer.cshtml" />
+    <Content Include="Module\projectbeheer.cshtml" />
+    <Content Include="Module\relatiebeheer.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

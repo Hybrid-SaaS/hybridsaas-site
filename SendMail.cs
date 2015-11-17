@@ -10,8 +10,8 @@ namespace Hybrid_SaaS
             SmtpClient SmtpServer = new SmtpClient(WebConfigurationManager.AppSettings["Mail smtpserver"]);
             var mail = new MailMessage();
             mail.From = new MailAddress(email,name);
-            mail.To.Add(WebConfigurationManager.AppSettings["EmailTo"]);
-            mail.Subject = WebConfigurationManager.AppSettings["EmailSubject"];
+            mail.To.Add(WebConfigurationManager.AppSettings["Mail recipient"]);
+            mail.Subject = WebConfigurationManager.AppSettings["Mail subject"];
             mail.IsBodyHtml = true;
             
             mail.Body = message;
