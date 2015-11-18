@@ -91,7 +91,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\layout.css.map">
+      <DependentUpon>layout.css</DependentUpon>
+    </Content>
+    <None Include="css\layout.less" />
     <Content Include="css\layout.css" />
+    <Content Include="css\layout.min.css">
+      <DependentUpon>layout.css</DependentUpon>
+    </Content>
     <Content Include="fonts\archivonarrow-bold-webfont.svg" />
     <Content Include="fonts\archivonarrow-regular-webfont.svg" />
     <Content Include="fonts\raleway-bold-webfont.svg" />
@@ -273,6 +280,7 @@
     <Content Include="js\jquery.flexslider.js" />
     <Content Include="js\respond.src.js" />
     <Content Include="js\smooth-scroll.js" />
+    <Content Include="Layouts\_Module.cshtml" />
     <Content Include="robots.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -292,7 +300,7 @@
     <Content Include="commissie.cshtml" />
     <Content Include="contact.cshtml" />
     <Content Include="factsheet.cshtml" />
-    <Content Include="financieel.cshtml" />
+    <Content Include="Module\_financieel.cshtml" />
     <Content Include="index.cshtml" />
     <Content Include="module.cshtml" />
     <Content Include="modules.cshtml" />
@@ -305,44 +313,44 @@
     <Content Include="site-map.cshtml" />
     <Content Include="Layouts\_SiteLayout.cshtml" />
     <Content Include="support.cshtml" />
-    <Content Include="Module\ticket-systeem.cshtml" />
-    <Content Include="Module\projectbeheer.cshtml" />
-    <Content Include="Module\relatiebeheer.cshtml" />
+    <Content Include="Module\_ticket-systeem.cshtml" />
+    <Content Include="Module\_projectbeheer.cshtml" />
+    <Content Include="Module\_relatiebeheer.cshtml" />
     <Content Include="ticketsysteem.cshtml" />
-    <Content Include="Module\tijdregistratie.cshtml" />
-    <Content Include="Module\voorraadbeheer.cshtml" />
-    <Content Include="Module\vragenlijsten.cshtml" />
-    <Content Include="Module\wachtwoordbeheer.cshtml" />
-    <Content Include="Module\abonnementen.cshtml" />
-    <Content Include="Module\balans-winst-verliesrekening.cshtml" />
-    <Content Include="Module\bankrekening.cshtml" />
-    <Content Include="Module\bedrijfsagenda.cshtml" />
-    <Content Include="Module\certificatenbeheer.cshtml" />
-    <Content Include="Module\commissciebeheer.cshtml" />
-    <Content Include="Module\contractenbeheer.cshtml" />
-    <Content Include="Module\debiteuren-crediteurenbeheerr.cshtml" />
-    <Content Include="Module\facturatie.cshtml" />
-    <Content Include="Module\human-resource-management.cshtml" />
-    <Content Include="Module\inventarisbeheer.cshtml" />
-    <Content Include="Module\notities.cshtml" />
-    <Content Include="Module\Extranet.cshtml" />
-    <Content Include="Module\Excel-export.cshtml" />
+    <Content Include="Module\_tijdregistratie.cshtml" />
+    <Content Include="Module\_voorraadbeheer.cshtml" />
+    <Content Include="Module\_vragenlijsten.cshtml" />
+    <Content Include="Module\_wachtwoordbeheer.cshtml" />
+    <Content Include="Module\_abonnementen.cshtml" />
+    <Content Include="Module\_balans-winst-verliesrekening.cshtml" />
+    <Content Include="Module\_bankrekening.cshtml" />
+    <Content Include="Module\_bedrijfsagenda.cshtml" />
+    <Content Include="Module\_certificatenbeheer.cshtml" />
+    <Content Include="Module\_commissciebeheer.cshtml" />
+    <Content Include="Module\_contractenbeheer.cshtml" />
+    <Content Include="Module\_debiteuren-crediteurenbeheerr.cshtml" />
+    <Content Include="Module\_facturatie.cshtml" />
+    <Content Include="Module\_human-resource-management.cshtml" />
+    <Content Include="Module\_inventarisbeheer.cshtml" />
+    <Content Include="Module\_notities.cshtml" />
+    <Content Include="Module\_Extranet.cshtml" />
+    <Content Include="Module\_Excel-export.cshtml" />
     <Content Include="Meest-gestelde-vragen.cshtml" />
-    <Content Include="Module\offertes-orders.cshtml" />
-    <Content Include="Module\km-registratie.cshtml" />
-    <Content Include="Module\gebouwbeheer.cshtml" />
-    <Content Include="Module\exportboekhouding.cshtml" />
-    <Content Include="Module\opslag.cshtml" />
-    <Content Include="Module\Inkoopbeheer.cshtml" />
-    <Content Include="Module\Temp.cshtml" />
-    <Content Include="Module\productenbeheer.cshtml" />
+    <Content Include="Module\_offertes-orders.cshtml" />
+    <Content Include="Module\_km-registratie.cshtml" />
+    <Content Include="Module\_gebouwbeheer.cshtml" />
+    <Content Include="Module\_exportboekhouding.cshtml" />
+    <Content Include="Module\_opslag.cshtml" />
+    <Content Include="Module\_Inkoopbeheer.cshtml" />
+    <Content Include="Module\_Temp.cshtml" />
+    <Content Include="Module\_productenbeheer.cshtml" />
     <Content Include="pakket-aanvullend-financieel.cshtml" />
-    <Content Include="Module\Prepaidkaarten.cshtml" />
-    <Content Include="Module\outlook-add-in.cshtml" />
-    <Content Include="Module\dataopslag.cshtml" />
-    <Content Include="Module\gebruiker-extern.cshtml" />
-    <Content Include="Module\gebruiker-intern.cshtml" />
-    <Content Include="Module\debiteurbeheer.cshtml" />
+    <Content Include="Module\_Prepaidkaarten.cshtml" />
+    <Content Include="Module\_outlook-add-in.cshtml" />
+    <Content Include="Module\_dataopslag.cshtml" />
+    <Content Include="Module\_gebruiker-extern.cshtml" />
+    <Content Include="Module\_gebruiker-intern.cshtml" />
+    <Content Include="Module\_debiteurbeheer.cshtml" />
     <Content Include="bouw.cshtml" />
     <Content Include="groothandel.cshtml" />
     <Content Include="pakket-erp.cshtml" />
@@ -438,20 +446,60 @@
     <Content Include="fonts\webfontkit-20150608-014249\titilliumweb-semibold-webfont.woff" />
     <Content Include="fonts\webfontkit-20150608-014249\titilliumweb-semibold-webfont.woff2" />
     <Content Include="App_Code\Links.cshtml" />
-    <Content Include="Module\Crm.cshtml" />
-    <Content Include="Module\Correspondentie.cshtml" />
-    <Content Include="Module\Onderaannemer.cshtml" />
-    <Content Include="Module\Externpakket.cshtml" />
-    <Content Include="Module\voortgang.cshtml" />
+    <Content Include="Module\_Crm.cshtml" />
+    <Content Include="Module\_Correspondentie.cshtml" />
+    <Content Include="Module\_Onderaannemer.cshtml" />
+    <Content Include="Module\_Externpakket.cshtml" />
+    <Content Include="Module\_voortgang.cshtml" />
+    <Content Include="Module\_prognosebeheer.cshtml" />
+    <Content Include="Module\projectbeheer.cshtml" />
+    <Content Include="Module\relatiebeheer.cshtml" />
+    <Content Include="Module\ticket-systeem.cshtml" />
+    <Content Include="Module\abonnementen.cshtml" />
+    <Content Include="Module\balans-winst-verliesrekening.cshtml" />
+    <Content Include="Module\bankrekening.cshtml" />
+    <Content Include="Module\bedrijfsagenda.cshtml" />
+    <Content Include="Module\werkbonnen.cshtml" />
+    <Content Include="Module\webshop.cshtml" />
+    <Content Include="Module\wachtwoordbeheer.cshtml" />
+    <Content Include="Module\vragenlijsten.cshtml" />
+    <Content Include="Module\voorraadbeheer.cshtml" />
+    <Content Include="Module\notities.cshtml" />
+    <Content Include="Module\onderaannemer.cshtml" />
+    <Content Include="Module\offertes-orders.cshtml" />
+    <Content Include="Module\outlook-add-in.cshtml" />
+    <Content Include="Module\prepaidkaarten.cshtml" />
+    <Content Include="Module\productenbeheer.cshtml" />
     <Content Include="Module\prognosebeheer.cshtml" />
+    <Content Include="Module\tijdregistratie.cshtml" />
+    <Content Include="Module\voortgang.cshtml" />
+    <Content Include="Module\inventarisbeheer.cshtml" />
+    <Content Include="Module\km-registratie.cshtml" />
+    <Content Include="Module\human-resource-management.cshtml" />
+    <Content Include="Module\excel-export.cshtml" />
+    <Content Include="Module\exportboekhouding.cshtml" />
+    <Content Include="Module\externpakket.cshtml" />
+    <Content Include="Module\extranet.cshtml" />
+    <Content Include="Module\facturatie.cshtml" />
+    <Content Include="Module\gebouwbeheer.cshtml" />
+    <Content Include="Module\gebruiker-extern.cshtml" />
+    <Content Include="Module\gebruiker-intern.cshtml" />
+    <Content Include="Module\dataopslag.cshtml" />
+    <Content Include="Module\crm.cshtml" />
+    <Content Include="Module\debiteurbeheer.cshtml" />
+    <Content Include="Module\correspondentie.cshtml" />
+    <Content Include="Module\certificatenbeheer.cshtml" />
+    <Content Include="Module\commissiebeheer.cshtml" />
+    <Content Include="Module\contractenbeheer.cshtml" />
+    <Content Include="Module\financieel.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="Module\Webshop.cshtml" />
-    <Content Include="Module\werkbonnen.cshtml" />
+    <Content Include="Module\_Webshop.cshtml" />
+    <Content Include="Module\_werkbonnen.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

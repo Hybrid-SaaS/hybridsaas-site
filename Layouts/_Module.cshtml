@@ -1,0 +1,130 @@
+﻿@using Hybrid_SaaS
+@{
+    Layout = "/Layouts/_SiteLayout.cshtml";
+	var module = LinkList.LinkDictionary[(Link) Context.Items["Module"]];
+}
+
+<!-- start content -->
+<section id="content-part">
+	<!-- start centerpart -->
+	<section id="center-part">
+		<!-- start commission bar -->
+		<article class="commission-bar">
+			<div class="centering">
+				<div class="management">
+					<div class="merge">
+						<table>
+							<tr>
+								<td><img alt="" src="@module.Image"></td>
+							</tr>
+							<tr>
+								<td><h4>@module.Name</h4></td>
+							</tr>
+						</table>
+						<!--Header!-->
+						<div class="para">
+
+							<!--Header content-->
+							<p>@module.IntroText@module.Description</p>
+							
+							@RenderBody()
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		<!-- end commission bar -->
+		<!-- start advantage bar -->
+		<article class="advantage-bar">
+			<div class="centering">
+				<h3>Wat heeft de module @module.Name te bieden?</h3>
+				
+				@{
+					var count = 0;
+					foreach (var photoItem in module.PhotoItems )
+					{
+				<div class="merge@(count++ % 2 == 1 ? " second" : "")">
+					<div class="image"><img src="@photoItem.Image" alt="" /></div>
+					<div class="para">
+						<h4>@photoItem.Title</h4>
+						<p>@photoItem.Description</p>
+					</div>
+				</div>
+					}
+				}
+				
+				<!--Start Item Content on the Left-->
+				@{
+				if ( module.ManualItems.Count > 0 )
+				{
+
+				<div class="merge fourth" style="margin: initial;">
+					<div class="para">
+						<div class="module" style="width: auto; padding-left: 30px; margin-top: 35px;">
+							<h4>Handleiding</h4>
+							<p>
+								Hieronder bevinden zich diverse pagina's met een uitleg over deze module
+							</p>
+							<div class="para2" style="margin-top: 20px">
+								<ul>
+									@foreach ( var manual in module.ManualItems )
+									{
+									<li><a style="font-size: 17px;" href="@manual.Link" target="_new">@manual.Name</a></li>
+									}
+								</ul>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				}}
+
+				<!--End Item Content on the Left-->
+			</div>
+		</article>
+		<!-- end advantage bar -->
+		<!-- start connecting bar -->
+		<article class="connecting-bar" style="margin:auto;">
+
+			@{
+				if ( module.FactSheet.Count > 0 )
+				{
+					<article class="advantage-bar" style="margin: auto;">
+						<div class="centering">
+							<!--End Item Content on the right-->
+							<!--Start Item Content on the Left-->
+							<div class="merge fourth" style="margin: initial;">
+								<div class="para facts">
+									<div class="module" style="width: auto; margin-top: 35px;">
+										<h4>Factsheet</h4>
+										<p>
+											Hieronder zijn alle mogelijkheden binnen de verschillende online modules weergegeven.Het kan voorkomen dat het beschreven functionaliteiten aanvullende modules nodig te hebben.Mocht u vragen hebben, neem dan contact met ons op.
+										</p>
+										<div class="para2">
+											<h2>@module.Name</h2>
+											<ul>
+												@{
+													foreach ( var item in module.FactSheet )
+													{
+														<li>@item</li>
+													}
+												}
+												
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--End Item Content on the Left-->
+						</div>
+					</article>
+				}
+			}
+				@Content.ContactFormDemo()
+		</article>
+		<!-- end connecting bar -->
+	</section>
+	<!-- end center part -->
+</section>
+<!-- end content -->

@@ -33,7 +33,7 @@
                    }
                    else
                    {
-                       @currentPage.Title
+                       @currentPage.IntroText
                    }
                    <text> - </text>
                }
@@ -65,113 +65,118 @@
 
 </head>
 
-<body>
+	<body>
+		<div class="work-in-progress">
+			
+			Wij zijn op dit moment onze site aan het verbouwen. 
 
-    <!-- start template -->
-    <section id="template">
+		</div>
 
-        <!-- start layout -->
-        <section id="layout">
+		<!-- start template -->
+		<section id="template">
 
-            <!-- start header -->
-            <header id="header-part">
-                <div class="centering">
+			<!-- start layout -->
+			<section id="layout">
 
-                    <div class="logo"><a href="@LinkList.GetLink(Link.MenuHome)"><img alt="Hybrid SaaS" src="/images/logo.png" /></a></div>
-                    <a class="menu"><span></span><span></span><span></span></a>
-                    <!-- start nav -->
-                    <nav class="nav-bar">
-                        <div class="leftmenu">
-                            <ul class="dropdown">
-                                <li>@Links.Write( Link.MenuHome )</li>
-                                <li>@Links.Write( Link.MenuPakketten )</li>
-                                <li>@Links.Write( Link.MenuModules )</li>
-                            </ul>
-                        </div>
-                        <div class="rightmenu">
-                            <ul>
-                                <li>@Links.Write( Link.MenuOver )</li>
-                                <li>@Links.Write( Link.MenuSupport )</li>
-                                <li>@Links.Write( Link.MenuContact )</li>
-                            </ul>
-                        </div>
-                    </nav>
-                    <!-- end nav -->
+				<!-- start header -->
+				<header id="header-part">
+					<div class="centering">
 
-                </div>
-            </header>
-            <!-- end header -->
+						<div class="logo"><a href="@LinkList.GetLink(Link.MenuHome)"><img alt="Hybrid SaaS" src="/images/logo.png" /></a></div>
+						<a class="menu"><span></span><span></span><span></span></a>
+						<!-- start nav -->
+						<nav class="nav-bar">
+							<div class="leftmenu">
+								<ul class="dropdown">
+									<li>@Links.Write( Link.MenuHome )</li>
+									<li>@Links.Write( Link.MenuPakketten )</li>
+									<li>@Links.Write( Link.MenuModules )</li>
+								</ul>
+							</div>
+							<div class="rightmenu">
+								<ul>
+									<li>@Links.Write( Link.MenuOver )</li>
+									<li>@Links.Write( Link.MenuSupport )</li>
+									<li>@Links.Write( Link.MenuContact )</li>
+								</ul>
+							</div>
+						</nav>
+						<!-- end nav -->
 
-            @RenderBody()
+					</div>
+				</header>
+				<!-- end header -->
 
-            <!-- start footer -->
-            <footer id="footer-part">
+				@RenderBody()
 
-                <!-- start footer bar -->
-                <article class="footer-bar">
-                    <div class="centering">
+				<!-- start footer -->
+				<footer id="footer-part">
 
-                        <aside class="about">
-                            <a href="@LinkList.GetLink(Link.MenuOver)" class="footlogo"><img src="/images/footer_logo.png" alt="" /></a>
-                            <p>Hybrid SaaS is sinds 2006 gespecialiseerd in systeembeheer en software ontwikkeling. Hybrid SaaS heeft een grote en zeer diverse relatiekring in tal van bedrijfsbranches. Ondanks dat elke organisatie verschilt en een unieke aanpak vereist, zijn veel basis processen praktisch hetzelfde. Het is daarom niet verwonderlijk dat vraagstukken over het optimaliseren van deze basisprocessen veel gelijkenissen vertonen.</p>
-                        </aside>
+					<!-- start footer bar -->
+					<article class="footer-bar">
+						<div class="centering">
 
-                        <aside class="common contact">
-                            <h3>Contact info</h3>
-                            <address>
-                                Hybrid SaaS | Online Business Software <br /> Postbus 31 | 2870 AA Schoonhoven <br /> +3185 002 1940 <br /> <a href="mailto:support@hybridsaas.com">support@hybridsaas.com</a> <br /> Hybrid SaaS ICT BV <br /> KvK Rotterdam 54528283
-                            </address>
-                        </aside>
+							<aside class="about">
+								<a href="@LinkList.GetLink(Link.MenuOver)" class="footlogo"><img src="/images/footer_logo.png" alt="" /></a>
+								<p>Hybrid SaaS is sinds 2006 gespecialiseerd in systeembeheer en software ontwikkeling. Hybrid SaaS heeft een grote en zeer diverse relatiekring in tal van bedrijfsbranches. Ondanks dat elke organisatie verschilt en een unieke aanpak vereist, zijn veel basis processen praktisch hetzelfde. Het is daarom niet verwonderlijk dat vraagstukken over het optimaliseren van deze basisprocessen veel gelijkenissen vertonen.</p>
+							</aside>
 
-                        <aside class="common link">
-                            <h3>Quick Links</h3>
-                            <ul>
-                                <li>@Links.Write( Link.MenuSupport )</li>
-                                <li>@Links.Write( Link.MenuOver )</li>
-                                <li>@Links.Write( Link.Youtube )</li>
-                                <li>@Links.Write( Link.SiteMap )</li>
-                                <li>@Links.Write( Link.MenuContact )</li>
-                            </ul>
-                        </aside>
+							<aside class="common contact">
+								<h3>Contact info</h3>
+								<address>
+									Hybrid SaaS | Online Business Software <br /> Postbus 31 | 2870 AA Schoonhoven <br /> +3185 002 1940 <br /> <a href="mailto:support@hybridsaas.com">support@hybridsaas.com</a> <br /> Hybrid SaaS ICT BV <br /> KvK Rotterdam 54528283
+								</address>
+							</aside>
 
-                        <aside class="common news">
-                            <!--<h3>Nieuwsbrief</h3>
-                            <p></p>
-                            <form action="#">
-                                <input type="text" value="E-mail" onFocus="if(this.value=='E-mail')this.value='';" onBlur="if(this.value=='')this.value='E-mail';" />
-                                <input type="submit" value="Ok">
-                            </form>-->
-                        </aside>
+							<aside class="common link">
+								<h3>Quick Links</h3>
+								<ul>
+									<li>@Links.Write( Link.MenuSupport )</li>
+									<li>@Links.Write( Link.MenuOver )</li>
+									<li>@Links.Write( Link.Youtube )</li>
+									<li>@Links.Write( Link.SiteMap )</li>
+									<li>@Links.Write( Link.MenuContact )</li>
+								</ul>
+							</aside>
 
-                        <div class="clear"></div>
+							<aside class="common news">
+								<!--<h3>Nieuwsbrief</h3>
+									<p></p>
+									<form action="#">
+										<input type="text" value="E-mail" onFocus="if(this.value=='E-mail')this.value='';" onBlur="if(this.value=='')this.value='E-mail';" />
+										<input type="submit" value="Ok">
+									</form>-->
+							</aside>
 
-                        <aside class="copy">
-                            <span>Copyright 2015 Hybrid SaaS. All Rights Reserved.</span>
-                            <ul>
-                                <li>@Links.Write( Link.AlgemeneVoorwaarden )</li>
-                                <li>@Links.Write( Link.ReleaseNotes )</li>
-                            </ul>
-                        </aside>
+							<div class="clear"></div>
 
-                    </div>
-                </article>
-                <!-- end footer bar -->
+							<aside class="copy">
+								<span>Copyright 2015 Hybrid SaaS. All Rights Reserved.</span>
+								<ul>
+									<li>@Links.Write( Link.AlgemeneVoorwaarden )</li>
+									<li>@Links.Write( Link.ReleaseNotes )</li>
+								</ul>
+							</aside>
 
-            </footer>
-            <!-- end footer -->
+						</div>
+					</article>
+					<!-- end footer bar -->
 
-        </section>
-        <!-- end layout -->
+				</footer>
+				<!-- end footer -->
 
-    </section>
-    <!-- end template -->
+			</section>
+			<!-- end layout -->
+
+		</section>
+		<!-- end template -->
 
 
-    <script type="text/javascript" src="/js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="/js/respond.src.js"></script>
-    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
-    <script type="text/javascript" src="/js/custom.js"></script>
+		<script type="text/javascript" src="/js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="/js/respond.src.js"></script>
+		<script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+		<script type="text/javascript" src="/js/custom.js"></script>
 
-</body>
+	</body>
 
 </html>

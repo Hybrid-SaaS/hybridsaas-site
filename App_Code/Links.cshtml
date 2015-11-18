@@ -3,9 +3,9 @@
 {
     var linkInfo = LinkList.LinkDictionary[link];
     var title = "";
-    if ( !String.IsNullOrEmpty( linkInfo.Title ) )
+    if ( !String.IsNullOrEmpty( linkInfo.IntroText ) )
     {
-        title = String.Format( " title=\"{0}\"", HttpUtility.HtmlAttributeEncode( linkInfo.Title ) );
+        title = String.Format( " title=\"{0}\"", HttpUtility.HtmlAttributeEncode( linkInfo.IntroText ) );
     }
     var target = "";
     if ( linkInfo.OpenInNewWindow )

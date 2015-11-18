@@ -1,0 +1,145 @@
+﻿@using Hybrid_SaaS
+@{
+    Layout = "/Layouts/_SiteLayout.cshtml";
+}
+
+<!-- start content -->
+<section id="content-part">
+    <!-- start centerpart -->
+    <section id="center-part">
+        <!-- start commission bar -->
+        <article class="commission-bar">
+            <div class="centering">
+                <div class="management">
+                    <div class="merge">
+                        <table>
+                            <tr>
+                                <td><img alt="" src="@LinkList.GetImage(Link.Notities)"></td>
+                            </tr>
+                            <tr>
+                                <td><h4>@LinkList.GetLinkName(Link.Notities)</h4></td>
+                            </tr>
+                        </table>
+                        <!--Header!-->
+                        <div class="para">
+
+                            <!--Header content-->
+                            <p>@LinkList.GetTitle(Link.Notities)@LinkList.GetDescription(Link.Notities)</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- end commission bar -->
+        <!-- start advantage bar -->
+        <article class="advantage-bar">
+            <div class="centering">
+                <h3>Wat heeft de module @LinkList.GetLinkName(Link.Notities) te bieden?</h3>
+                <!--Start Item Content on the right-->
+                <div class="merge">
+                    <div class="image"><img src="/images/foto_img.jpg" alt="" /></div>
+                    <div class="para">
+                        <h4>Notities</h4>
+                        <p>Notities</p>
+                    </div>
+                </div>
+                <!--End Item Content on the right-->
+                <!--Start Item Content on the Left-->
+                <div class="merge second">
+                    <div class="image"><img src="/images/foto_img1.jpg" alt="" /></div>
+                    <div class="para">
+                        <h4>Notities</h4>
+                        <p>Notities</p>
+
+                    </div>
+                </div>
+                <!--End Item Content on the Left-->
+            </div>
+        </article>
+        <!-- end advantage bar -->
+        <!-- start connecting bar -->
+        <article class="connecting-bar" style="margin:auto;">
+            <article class="advantage-bar" style="margin:auto;">
+                <div class="centering">
+                    <!--End Item Content on the right-->
+                    <!--Start Item Content on the Left-->
+                    <div class="merge fourth" style="margin:initial;">
+                        <div class="para facts">
+                            <div class="module" style="width: auto; margin-top:35px;">
+                                <h4>Factsheet</h4>
+                                <p>
+                                    Hieronder zijn alle mogelijkheden binnen de verschillende online modules weergegeven.Het kan voorkomen dat het beschreven functionaliteiten aanvullende modules nodig te hebben.Mocht u vragen hebben, neem dan contact met ons op.
+                                </p>
+                                <div class="para2">
+                                    <h2>@LinkList.GetLinkName(Link.Notities)</h2>
+                                    <ul>
+                                        <li>
+                                            Notities aanmaken op bedrijven
+                                        </li>
+                                        <li>
+                                            Notities aanmaken op personen
+                                        </li>
+                                        <li>
+                                            Notities aanmaken op projecten
+                                        </li>
+                                        <li>
+                                            Actiedatum toekennen (incl herinneringsdatum)
+                                        </li>
+                                        <li>
+                                            Begin- en eindtijd vastleggen
+                                        </li>
+                                        <li>
+                                            Notitie toewijzen aan medewerker
+                                        </li>
+                                        <li>
+                                            Notities afhandelen
+                                        </li>
+                                        <li>
+                                            Digitale bijlagen opslaan
+                                        </li>
+                                        <li>
+                                            Datumstempel toevoegen aan notitie
+                                        </li>
+                                        <li>
+                                            Bestanden toevoegen aan een notitie
+                                        </li>
+                                        <li>
+                                            Notities exporteren naar Microsoft Excel
+                                        </li>
+                                        <li>
+                                            Notities omzetten naar agenda items in Microsoft Outlook
+                                        </li>
+                                        <li>
+                                            Notities mailen via Microsoft Outlook
+                                        </li>
+                                        <li>
+                                            Notities omzetten in tijdregistraties
+                                        </li>
+                                        <li>
+                                            Notities koppelen aan categorieën
+                                        </li>
+                                        <li>Document opmaken van een notitie</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Item Content on the Left-->
+                </div>
+            </article>
+            <div class="centering">
+                <div class="merge">
+                    <div class="module">
+                        <h4 style="margin-top:35px;">Nieuwsgierig geworden wat wij nog meer voor jou kunnen betekenen?<br>Vraag onze vrijblijvende Live Demo aan!</h4>
+                        <div class="image"><img src="/images/connecting_img.JPG" alt="" style="width:760px; margin-top:35px" /></div>
+                    </div>
+                    @Content.ContactFormDemo()
+                </div>
+            </div>
+        </article>
+        <!-- end connecting bar -->
+    </section>
+    <!-- end center part -->
+</section>
+<!-- end content -->

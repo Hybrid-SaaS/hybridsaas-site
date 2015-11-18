@@ -1,0 +1,105 @@
+﻿@using Hybrid_SaaS
+@{
+    Layout = "/Layouts/_SiteLayout.cshtml";
+}
+
+<!-- start content -->
+<section id="content-part">
+    <!-- start centerpart -->
+    <section id="center-part">
+        <!-- start commission bar -->
+        <article class="commission-bar">
+            <div class="centering">
+                <div class="management">
+                    <div class="merge">
+                        <table>
+                            <tr>
+                                <td><img alt="" src="@LinkList.GetImage(Link.Werkbonnen)"></td>
+                            </tr>
+                            <tr>
+                                <td><h4>@LinkList.GetLinkName(Link.Werkbonnen)</h4></td>
+                            </tr>
+                        </table>
+                        <!--Header!-->
+                        <div class="para">
+
+                            <!--Header content-->
+                            <p>@LinkList.GetTitle(Link.Werkbonnen)@LinkList.GetDescription(Link.Werkbonnen)</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- end commission bar -->
+        <!-- start advantage bar -->
+        <article class="advantage-bar">
+            <div class="centering">
+                <h3>Wat heeft de module @LinkList.GetLinkName(Link.Werkbonnen) te bieden?</h3>
+                <!--Start Item Content on the right-->
+                <div class="merge">
+                    <div class="image"><img src="/images/foto_img.jpg" alt="" /></div>
+                    <div class="para">
+                        <h4>Werkbonnen</h4>
+                        <p>Werkbonnen</p>
+                    </div>
+                </div>
+                <!--End Item Content on the right-->
+                <!--Start Item Content on the Left-->
+                <div class="merge second">
+                    <div class="image"><img src="/images/foto_img1.jpg" alt="" /></div>
+                    <div class="para">
+                        <h4>Werkbonnen</h4>
+                        <p>Werkbonnen</p>
+
+                    </div>
+                </div>
+                <!--End Item Content on the Left-->
+            </div>
+        </article>
+        <!-- end advantage bar -->
+        <!-- start connecting bar -->
+        <article class="connecting-bar" style="margin:auto;">
+            <article class="advantage-bar" style="margin:auto;">
+                <div class="centering">
+                    <!--End Item Content on the right-->
+                    <!--Start Item Content on the Left-->
+                    <div class="merge fourth" style="margin:initial;">
+                        <div class="para facts">
+                            <div class="module" style="width: auto; margin-top:35px;">
+                                <h4>Factsheet</h4>
+                                <p>
+                                    Hieronder zijn alle mogelijkheden binnen de verschillende online modules weergegeven.Het kan voorkomen dat het beschreven functionaliteiten aanvullende modules nodig te hebben.Mocht u vragen hebben, neem dan contact met ons op.
+                                </p>
+                                <div class="para2">
+                                    <h2>@LinkList.GetLinkName(Link.Werkbonnen)</h2>
+                                    <ul>
+                                        <li>Werkbonnen aanmaken via extranet (bijv telefoon of tablet)</li>
+                                        <li>Werkbonnen koppelen aan projecten en medewerkers</li>
+                                        <li>Werktijd registreren op werkbon (zie tijdregistratie)</li>
+                                        <li>Kosten registreren</li>
+                                        <li>Kosten registreren op basis van producten uit productenlijst</li>
+                                        <li> Marge op basis van kosten en opbrengsten visualiseren</li>
+                                        <li>Werkbeschrijving ingeven</li>
+                                        <li>Werkbonnen goedkeuren door diverse afdelingen</li>
+                                        <li>Werkbonnen factureren (direct, per maand, kwartaal of jaar)</li>
+                                        <li>Digitaal document opstellen</li>
+                                        <li>Tickets aanmaken bij werkbonnen</li>
+                                        <li>Werkbon (bezoekrapport) versturen per email</li>
+                                        <li>Actiehistorie inzien per werkbon</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Item Content on the Left-->
+                </div>
+            </article>
+
+            @Content.ContactFormDemo();
+        </article>
+        <!-- end connecting bar -->
+    </section>
+    <!-- end center part -->
+</section>
+<!-- end content -->
