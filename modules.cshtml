@@ -275,6 +275,24 @@
                                 </div>
                             </div>
                             <div class="management">
+                                <img src="@LinkList.GetImage(Link.Inkoopbeheer)" title="@LinkList.GetLinkName(Link.Inkoopbeheer)" />
+
+                                <h4>@LinkList.GetLinkName(Link.Inkoopbeheer)</h4>
+                                <div>
+                                    <span>@LinkList.GetPrice(Link.Inkoopbeheer)</span>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li><a>@LinkList.GetTitle(Link.Inkoopbeheer) @LinkList.GetDescription(Link.Inkoopbeheer) </a></li>
+                                    </ul>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="outlook">
+
+                                    <a href="@LinkList.GetLink(Link.Abonnementen)" class="detail">detail overzicht</a>
+                                </div>
+                            </div>
+                            <div class="management">
                                 <img src="@LinkList.GetImage(Link.Inventarisbeheer)" title="@LinkList.GetLinkName(Link.Inventarisbeheer)" />
                                 <h4>@LinkList.GetLinkName(Link.Inventarisbeheer)</h4>
                                 <div>
