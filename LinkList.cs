@@ -276,25 +276,21 @@ namespace Hybrid_SaaS
                 Price = "€ 30,- per maand",
                 LinkName = "Abonnementen",
                 ImageBig = "/images/advantage_img7.png",
-                FactSheet = new List<string>
-                {
-                    "bla bla bla",
-            "bla bla bla",
-                },
+                
 
                 PhotoItems = new List<PhotoItem>
                 {
                     new PhotoItem
                     {
-                        Image = "/images/foto_img.jpg",
-                        Title = ".",
-                        Description = "."
+                        Image = "/images/abonnement1.JPG",
+                        Title = "Abonnementen",
+                        Description = "Abonnementen"
                     },
                     new PhotoItem
                     {
                         Image = "/images/foto_img1.jpg",
-                        Title = ".r",
-                        Description = "."
+                        Title = "Abonnementen",
+                        Description = "Abonnementen"
                     }
                 },
 
