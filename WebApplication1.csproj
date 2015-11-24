@@ -492,6 +492,7 @@
     <Content Include="Module\commissiebeheer.cshtml" />
     <Content Include="Module\contractenbeheer.cshtml" />
     <Content Include="Module\financieel.cshtml" />
+    <Content Include="Module\inkoopbeheer.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

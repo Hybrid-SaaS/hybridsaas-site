@@ -101,6 +101,7 @@ namespace Hybrid_SaaS
         Correspondentie,
         Onderaannemer,
         Voortgang,
+        Inkoopbeheer,
 
 
     }
@@ -361,22 +362,27 @@ namespace Hybrid_SaaS
                     new ManualItem
                     {
                         Name = "Automatische incasso limieten instellen",
-                        Link = "http://hybridsaas.support/pages/handleiding/modules/A-E/bankrekeningen/automatische-incasso"
+                        Link = "http://hybridsaas.support/pages/support-site/modules/bankrekening/limiet-instellen/limiet-instellen"
                     },
                     new ManualItem
                     {
-                        Name = "Verwijderen van de bankrekening import",
-                        Link = "http://hybridsaas.support/pages/handleiding/modules/A-E/bankrekeningen/bankrekening-import-verwijderen"
+                        Name = "Verwijderen van de bankrekeningimport",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/bankrekening/import-verwijderen/import-verwijderen"
+                    },
+                    new ManualItem
+                    {
+                        Name = "Btw aanpassen",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/balans-winst-verliesrekening/BTW-aanpassen/BTW-aanpassen"
                     },
                     new ManualItem
                     {
                         Name = "Banktransacties importeren (MT940)",
-                        Link = "http://hybridsaas.support/pages/handleiding/modules/A-E/bankrekeningen/banktransacties-importeren-mt940"
+                        Link = "http://hybridsaas.support/pages/support-site/modules/bankrekening/importeren-mt940/banktransacties-importeren-mt940"
                     },
                     new ManualItem
                     {
-                        Name = "Handmatige transacties inboeken",
-                        Link = "http://hybridsaas.support/pages/handleiding/modules/A-E/bankrekeningen/handmatige-transacties-inboeken"
+                        Name = "De kas als bankrekening aanmaken",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/bankrekening/kas-als-bankrekening/de-kas-als-bankrekening-aanmaken"
                     }
                 }
             };
@@ -525,7 +531,7 @@ namespace Hybrid_SaaS
                     new ManualItem
                     {
                         Name = "Commissie toepassen",
-                        Link = "http://hybridsaas.support/pages/handleiding/modules/A-E/commissiebeheer/commissie"
+                        Link = "http://hybridsaas.support/pages/support-site/modules/commissiebeheer/commissie-toepassen"
                     }
                 }
             };
@@ -640,7 +646,7 @@ namespace Hybrid_SaaS
                 Name = "Debiteurbeheer",
                 Url = "/Module/debiteurbeheer",
                 IntroText = "Wil jij ook in één oogopslag kunnen zien wanneer een leasecontract afloopt en wanneer een telefoonabonnement of verzekering dient te worden verlengd? Hybrid SaaS maakt het mogelijk! ",
-                Description = "De module Hybrid SaaS facturatie-debiteurbeheerbeheer schept orde in de chaos en plaatst alle behaalde certificaten en afgesloten contracten overzichtelijk bij elkaar.Wanneer een certificaat of overeenkomst tegen de einddatum aanloopt word je hier automatisch van op de hoogte gesteld. Op deze manier voorkom je eenvoudig dat certificaten verlopen en je kosten moet betalen voor onnodige facturatie-debiteurbeheer. Met Hybrid SaaS facturatie-debiteurbeheerbeheer loop je nooit meer achter de feiten aan.",
+                Description = "De module Hybrid SaaS facturatie-debiteurbeheerbeheer schept orde in de chaos en plaatst alle behaalde certificaten en afgesloten contracten overzichtelijk bij elkaar. Wanneer een certificaat of overeenkomst tegen de einddatum aanloopt word je hier automatisch van op de hoogte gesteld. Op deze manier voorkom je eenvoudig dat certificaten verlopen en je kosten moet betalen voor onnodige facturatie-debiteurbeheer. Met Hybrid SaaS facturatie-debiteurbeheerbeheer loop je nooit meer achter de feiten aan.",
                 Image = "images/why_arrow.png",
                 Price = "€ 30,- per maand",
                 LinkName = "Debiteurbeheer",
@@ -661,25 +667,6 @@ namespace Hybrid_SaaS
                         Description = "."
                     }
                 },
-
-                ManualItems = new List<ManualItem>
-                {
-                    new ManualItem
-                    {
-                        Name = "Betalingsherinnering per factuur versturen",
-                        Link = "http://hybridsaas.support/pages/handleiding/modules/A-E/debiteurenbeheer/Introductie"
-                    },
-                    new ManualItem
-                    {
-                        Name = "Overzicht van de openstaande facturen met dagen",
-                        Link = "http://hybridsaas.support/pages/handleiding/modules/A-E/debiteurenbeheer/herinneren-per-klant"
-                    },
-                    new ManualItem
-                    {
-                        Name = "Overzicht van de facturen per status",
-                        Link = "http://hybridsaas.support/pages/handleiding/modules/A-E/debiteurenbeheer/herinneren-per-status"
-                    }
-                }
             };
             LinkDictionary[Link.Extranet] = new LinkInfo
             {
@@ -743,6 +730,20 @@ namespace Hybrid_SaaS
                         Description = "."
                     }
                 },
+
+                ManualItems = new List<ManualItem>
+                {
+                    new ManualItem
+                    {
+                        Name = "Overzicht van de facturen per status",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/facturatie/herinneren-per-status/herinneren-per-status"
+                    },
+                    new ManualItem
+                    {
+                        Name = "Overzicht van de openstaande facturen met dagen",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/facturatie/herinneren-per-klant/herinneren-per-klant"
+                    }
+                }
             };
             LinkDictionary[Link.Financieel] = new LinkInfo
             {
@@ -878,6 +879,16 @@ namespace Hybrid_SaaS
                         Description = "."
                     }
                 },
+
+
+                ManualItems = new List<ManualItem>
+                {
+                    new ManualItem
+                    {
+                        Name = "Nieuw rooster aanmaken.",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/hrm/rooster-aanmaken/rooster-aanmaken."
+                    }
+                }
             };
             LinkDictionary[Link.Inventarisbeheer] = new LinkInfo
             {
@@ -919,6 +930,33 @@ namespace Hybrid_SaaS
                         Description = "."
                     }
                 },
+            };
+            LinkDictionary[Link.Inkoopbeheer] = new LinkInfo
+            {
+                Url = "/Module/Inkoopbeheer",
+                IntroText = "Inkoopbeheer",
+                Description = "Inkoopbeheer",
+                Image = "/images/why_arrow.png",
+                Price = "€ 30,- per maand",
+                LinkName = "Inkoopbeheer",
+                ImageBig = "/images/advantage_img7.png",
+
+
+
+
+                ManualItems = new List<ManualItem>
+                {
+                    new ManualItem
+                    {
+                        Name = "Transactie inkoopfactuur verwijderen uit SEPA betaalbatch",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/inkoopbeheer/ongedaan-maken-uit-sepa-batch/inkoopfactuur-ongedaan-maken-uit-sepa-betaal-batch"
+                    },
+                    new ManualItem
+                    {
+                        Name = "Inkoopfacturen via SEPA",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/inkoopbeheer/inkoopfacturen-via-sepa/inkoopfacturen-via-sepa"
+                    }
+                }
             };
             LinkDictionary[Link.KmRegistratie] = new LinkInfo
             {
@@ -1071,13 +1109,28 @@ namespace Hybrid_SaaS
                 {
                     new ManualItem
                     {
-                        Name = "Een zicht-Consignatie factuur aanmaken",
-                        Link = "http://hybridsaas.support/pages/handleiding/modules/F-O/offerte-en-orders/zicht-consignatie-factuur-aanmaken"
+                        Name = "Een order afhandelen met voorraad",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/offertes-orders/offerte-afhandelen-met-voorraad/een-order-afhandelen-met-voorraad"
                     },
                     new ManualItem
                     {
-                        Name = "Een zicht-Consignatie factuur omzetten naar Retour/Factuur",
-                        Link = "http://hybridsaas.support/pages/handleiding/modules/F-O/offerte-en-orders/zicht-consignatie-factuur-omzetten"
+                        Name = "Een order afhandelen zonder voorraad",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/offertes-orders/order-afhandelen-zonder-voorraad/een-order-afhandelen-zonder-voorraad"
+                    },
+                    new ManualItem
+                    {
+                        Name = "Een offerte of order aanmaken",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/offertes-orders/offerte-order-aanmaken/een-offerte-of-order-aanmaken"
+                    },
+                    new ManualItem
+                    {
+                        Name = "Zicht-Consignatie factuur",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/offertes-orders/zicht-consignatie-factuur-aanmaken/zicht-consignatie-factuur-aanmaken"
+                    },
+                    new ManualItem
+                    {
+                        Name = "Zicht-Consignatie factuur omzetten naar Retour/Factuur",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/offertes-orders/zicht-consignatie-factuur-omzetten/zicht-consignatie-factuur-omzetten"
                     }
                 }
             };
@@ -1140,7 +1193,7 @@ namespace Hybrid_SaaS
                     new ManualItem
                     {
                         Name = "Outlook Add-in installeren",
-                        Link = "http://hybridsaas.support/pages/handleiding/onderdeel/outlook-add-in/outlook-add-in-installeren"
+                        Link = "http://hybridsaas.support/pages/support-site/modules/outlook-addin/installeren/outlook-add-in-installeren"
                     }
                 }
             };
@@ -1203,12 +1256,7 @@ namespace Hybrid_SaaS
                     new ManualItem
                     {
                         Name = "Importeren Producten",
-                        Link = "http://hybridsaas.support/pages/handleiding/modules/P-Z/producten/producten-importeren-cms"
-                    },
-                    new ManualItem
-                    {
-                        Name = "Product hoofdgroep aanmaken",
-                        Link = "http://hybridsaas.support/pages/handleiding/modules/P-Z/producten/Product-hoofdgroep-aanmaken"
+                        Link = "http://hybridsaas.support/pages/support-site/modules/productenbeheer/importeren/producten-importeren-cms"
                     }
                 }
             };
@@ -1255,13 +1303,8 @@ namespace Hybrid_SaaS
                 {
                     new ManualItem
                     {
-                        Name = "Projectplanning maken",
-                        Link = "http://hybridsaas.support/pages/handleiding/uitleg/projectplanning/projectplanning/projectplanning"
-                    },
-                    new ManualItem
-                    {
-                        Name = "gsfgf maken",
-                        Link = "http://hybridsaas.support/pages/handleiding/uitleg/projectplanning/projectplanning/projectplanning"
+                        Name = "Project planning maken",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/projectbeheer/projectplanning/projectplanning"
                     }
                 }
             };
@@ -1343,8 +1386,8 @@ namespace Hybrid_SaaS
                 {
                     new ManualItem
                     {
-                        Name = "Nieuw persoon aanmaken",
-                        Link = "http://hybridsaas.support/pages/handleiding/modules/P-Z/relatiebeheer/een-nieuw-persoon-aanmaken"
+                        Name = "Relatie importeren",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/relatiebeheer/importeren/relatie-import"
                     }
                 }
             };
@@ -1408,8 +1451,8 @@ namespace Hybrid_SaaS
                 {
                     new ManualItem
                     {
-                        Name = "Ticketupdate per afdeling of gebruiker instellen",
-                        Link = "http://hybridsaas.support/pages/handleiding/modules/P-Z/tickets/ticketupdate-per-gebruiker-bepalen"
+                        Name = "Ticketupdate per afdeling en/of gebruiker Instellen",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/ticketsysteem/per-gebruiker-afdeling-instellen/ticketupdate-per-gebruiker-bepalen"
                     }
                 }
             };
@@ -1459,6 +1502,31 @@ namespace Hybrid_SaaS
                         Description = "."
                     }
                 },
+
+
+                ManualItems = new List<ManualItem>
+                {
+                    new ManualItem
+                    {
+                        Name = "Overwerk",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/tijdregistratie/overwerk/overwerk"
+                    },
+                    new ManualItem
+                    {
+                        Name = "Product toevoegen aan je tijdregistratie",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/tijdregistratie/product-toevoegen/product-toevoegen"
+                    },
+                    new ManualItem
+                    {
+                        Name = "Reiskosten doorbelasten",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/tijdregistratie/reiskosten/reiskosten"
+                    },
+                    new ManualItem
+                    {
+                        Name = "Verwerking verschillende overuren",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/tijdregistratie/verwerking-verschillende-overuren/verwerking-verschillende-overuren"
+                    }
+                }
             };
             LinkDictionary[Link.Voorraadbeheer] = new LinkInfo
             {
@@ -1686,33 +1754,8 @@ namespace Hybrid_SaaS
                 {
                     new ManualItem
                     {
-                        Name = "Dns instellen",
-                        Link = "http://hybridsaas.support/pages/handleiding/modules/P-Z/website/koppelen-domein-aan-hybridsaas"
-                    },
-                    new ManualItem
-                    {
-                        Name = "Website",
-                        Link = "http://hybridsaas.support/pages/handleiding/modules/P-Z/website/Website"
-                    },
-                    new ManualItem
-                    {
-                        Name = "Website URL",
-                        Link = "http://hybridsaas.support/pages/handleiding/modules/P-Z/website/URL"
-                    },
-                    new ManualItem
-                    {
-                        Name = "Website Menu paden",
-                        Link = "http://hybridsaas.support/pages/handleiding/modules/P-Z/website/menupaden"
-                    },
-                    new ManualItem
-                    {
-                        Name = "Product CMS",
-                        Link = "http://hybridsaas.support/pages/handleiding/modules/P-Z/Producten-website-gewoon/Product-cms"
-                    },
-                    new ManualItem
-                    {
-                        Name = "Website menu",
-                        Link = "http://hybridsaas.support/pages/handleiding/modules/P-Z/website/Website-menu"
+                        Name = "Menu paden",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/webshop/menupaden/menupaden"
                     }
                 }
             };
@@ -1770,7 +1813,27 @@ namespace Hybrid_SaaS
                 Price = "€ 5,- per gebruiker",
                 LinkName = "Gebruikers",
                 ImageBig = "/images/advantage_img7.png",
-                
+
+
+
+                ManualItems = new List<ManualItem>
+                {
+                    new ManualItem
+                    {
+                        Name = "Handtekening",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/gebruikers/handtekening/handtekening"
+                    },
+                    new ManualItem
+                    {
+                        Name = "Wachtwoord vergeten",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/gebruikers/wachtwoord-vergeten/wachtwoord-vergeten"
+                    },
+                    new ManualItem
+                    {
+                        Name = "Wachtwoord versturen",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/gebruikers/wachtwoord-versturen/wachtwoord-versturen"
+                    }
+                }
             };
             LinkDictionary[Link.GebruikerExtern] = new LinkInfo
             {
@@ -1813,18 +1876,7 @@ namespace Hybrid_SaaS
 
 
             };
-            LinkDictionary[Link.Inkooporderbeheer] = new LinkInfo
-            {
-                Url = "/Module/Inkooporderbeheer",
-                IntroText = "",
-                Description = "",
-                Image = "/images/why_arrow.png",
-                Price = "",
-                LinkName = "Inkooporderbeheer",
-                ImageBig = "/images/advantage_img7.png",
-
-
-            };
+            
              
             LinkDictionary[Link.ExportExcel] = new LinkInfo
             { 
