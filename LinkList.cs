@@ -282,7 +282,7 @@ namespace Hybrid_SaaS
                 {
                     new PhotoItem
                     {
-                        Image = "/images/abonnement1.JPG",
+                        Image = "/images/foto_img1.jpg",
                         Title = "Abonnementen",
                         Description = "Abonnementen"
                     },
