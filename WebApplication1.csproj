@@ -154,6 +154,7 @@
     <Content Include="fonts\webfontkit-20150608-014249\titilliumweb-semibold-demo.html" />
     <Content Include="fonts\webfontkit-20150608-014249\titilliumweb-semibold-webfont.svg" />
     <Content Include="Global.asax" />
+    <Content Include="images\abonnement1.JPG" />
     <Content Include="images\about_img.jpg" />
     <Content Include="images\addition_bg.jpg" />
     <Content Include="images\addition_img1.png" />

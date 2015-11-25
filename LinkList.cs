@@ -694,6 +694,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.ExportExternPakket] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Url = "/Module/Externpakket",
                 IntroText = "",
                 Description = "",
@@ -900,6 +902,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.Inventarisbeheer] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Inventarisbeheer",
                 Url = "/Module/inventarisbeheer",
                 IntroText = "Uw heeft diverse objecten in uw bezit, maar geen idee waar deze zich bevinden. Laat staan dat u snel handleidingen, inkoopfacturen of serienummers kunt opzoeken. ",
@@ -986,6 +990,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.KmRegistratie] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Km -Registratie",
                 Url = "/Module/km-registratie",
                 IntroText = "",
@@ -1013,6 +1019,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.Notities] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Notities",
                 Url = "/Module/Notities",
                 IntroText = "Met de Module Notities kan je eenvoudig een verslag bijhouden wat er is afgesproken met de klant. Je kan hem inplannen zodat hij een dag van te voren als je een afspraak heb staan weer naar voren komt.",
@@ -1060,6 +1068,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.OffertesOrders] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Offertes & Orders",
                 Url = "/Module/offertes-orders",
                 IntroText = "In een handomdraai een professionele offerte opstellen en daarna vliegensvlug omzetten in een order? Dat kan! Met de module Hybrid SaaS Offertes & Orders. Eenmalig stel je een offerte lay-out op, waarna je alleen nog maar de producten of diensten als offerteregels hoeft toe te voegen. ",
@@ -1162,6 +1172,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.Onderaannemer] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Onderaannemer",
                 Url = "/Module/Onderaannemer",
                 IntroText = "",
@@ -1189,6 +1201,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.OutlookAddIn] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Outlook Add-In",
                 Url = "/Module/Outlook-Add-in",
                 IntroText = "Door middel van de Outlook add-in krijg je de mogelijkheid om e-mails vanuit Microsoft Outlook mailbox om te zetten in tickets. ",
@@ -1225,6 +1239,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.Prepaidkaarten] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Prepaidkaarten",
                 Url = "/Module/Prepaidkaarten",
                 IntroText = "",
@@ -1252,6 +1268,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.Productenbeheer] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Productenbeheer",
                 Url = "/Module/productenbeheer",
                 IntroText = "Overal ter wereld je complete productenbestand snel en eenvoudig beheren? Hybrid SaaS Productbeheer maakt het mogelijk. Producten worden voorzien van een duidelijke omschrijving en zijn op deze manier altijd gemakkelijk terug te vinden. ",
@@ -1288,6 +1306,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.Prognosebeheer] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Prognosebeheer",
                 Url = "/Module/prognosebeheer",
                 IntroText = "",
@@ -1315,6 +1335,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.Projectbeheer] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Url = "/Module/Projectbeheer",
                 Name = "Projectbeheer",
 
@@ -1338,6 +1360,8 @@ namespace Hybrid_SaaS
 
             LinkDictionary[Link.Relatiebeheer] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Relatiebeheer",
 
                 Url = "/Module/relatiebeheer",
@@ -1421,6 +1445,8 @@ namespace Hybrid_SaaS
 
             LinkDictionary[Link.TicketSysteem] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Ticketsysteem",
 
                 Url = "/Module/ticket-systeem",
@@ -1485,6 +1511,8 @@ namespace Hybrid_SaaS
 
             LinkDictionary[Link.Tijdregistratie] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Tijdregistratie",
                 Url = "/Module/tijdregistratie",
                 IntroText = "Het bijhouden van gewerkte uren wordt door medewerkers vaak als een tijdrovende klus beschouwd. Mede hierdoor wordt deze taak nogal eens uitgesteld en worden er achteraf dikwijls foutieve gegevens vastgelegd. ",
@@ -1556,6 +1584,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.Voorraadbeheer] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Voorraadbeheer",
                 Url = "/Module/voorraadbeheer",
                 IntroText = "Overal ter wereld je complete productenbestand snel en eenvoudig beheren? Hybrid SaaS Productbeheer maakt het mogelijk. Producten worden voorzien van een duidelijke omschrijving en zijn op deze manier altijd gemakkelijk terug te vinden. ",
@@ -1631,6 +1661,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.Voortgang] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Voortgang",
                 Url = "/Module/voortgang",
                 IntroText = "",
@@ -1659,6 +1691,8 @@ namespace Hybrid_SaaS
               };
             LinkDictionary[Link.VragenlijstenEquettes] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Vragenlijst & Equettes",
                 Url = "/Module/vragenlijsten",
                 IntroText = "Informatie is misschien wel het belangrijkste onderdeel binnen elke organisatie. Maar hoe zorgt u ervoor dat u de juiste informatie krijgt, zonder dat er een hele papierstroom aan vooraf gaat.",
@@ -1729,6 +1763,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.Wachtwoordbeheer] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Wachtwoordbeheer",
                 Url = "/Module/wachtwoordbeheer",
                 IntroText = "Je heb zoveel verschillende website's en zoveel verschillende inloggegevens dat je het overzicht zo kwijt ben welk wachtwoord waarbij hoort. ",
@@ -1766,6 +1802,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.Webshop] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Webshop",
                 Url = "/Module/webshop",
                 IntroText = "Met de Hybrid SaaS Webwinkel kan snel en eenvoudig een webshop worden gerealiseerd en kun je direct producten en diensten aan(potentiele) klanten aanbieden.",
@@ -1802,6 +1840,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.Werkbonnen] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Werkbonnen",
                 Url = "/Module/werkbonnen",
                 IntroText = "Buitendienstmedewerkers zijn veel tijd kwijt aan het invullen van papieren werkbonnen. Waarom zou u onnodig papier en tijd verspillen, terwijl uw werkbonnen gedigitaliseerd kunnen worden. ",
@@ -1846,6 +1886,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.GebruikerIntern] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Gebruikers",
                 Url = "/Module/Gebruiker-intern",
                 IntroText = "",
@@ -1878,6 +1920,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.GebruikerExtern] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Buitendienst medewerkers",
                 Url = "/Module/Gebruiker-extern",
                 IntroText = "",
@@ -1890,6 +1934,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.Dataopslag] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Dataopslag",
                 Url = "/Module/Dataopslag",
                 IntroText = "",
