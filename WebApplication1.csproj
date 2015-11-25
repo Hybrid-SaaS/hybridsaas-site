@@ -486,7 +486,6 @@
     <Content Include="Module\gebruiker-intern.cshtml" />
     <Content Include="Module\dataopslag.cshtml" />
     <Content Include="Module\crm.cshtml" />
-    <Content Include="Module\debiteurbeheer.cshtml" />
     <Content Include="Module\correspondentie.cshtml" />
     <Content Include="Module\certificatenbeheer.cshtml" />
     <Content Include="Module\commissiebeheer.cshtml" />

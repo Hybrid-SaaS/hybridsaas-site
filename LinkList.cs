@@ -637,33 +637,6 @@ namespace Hybrid_SaaS
                     }
                 },
             };
-            LinkDictionary[Link.FacturatieDebiteurbeheer] = new LinkInfo
-            {
-                Name = "Debiteurbeheer",
-                Url = "/Module/debiteurbeheer",
-                IntroText = "Wil jij ook in één oogopslag kunnen zien wanneer een leasecontract afloopt en wanneer een telefoonabonnement of verzekering dient te worden verlengd? Hybrid SaaS maakt het mogelijk! ",
-                Description = "De module Hybrid SaaS facturatie-debiteurbeheerbeheer schept orde in de chaos en plaatst alle behaalde certificaten en afgesloten contracten overzichtelijk bij elkaar. Wanneer een certificaat of overeenkomst tegen de einddatum aanloopt word je hier automatisch van op de hoogte gesteld. Op deze manier voorkom je eenvoudig dat certificaten verlopen en je kosten moet betalen voor onnodige facturatie-debiteurbeheer. Met Hybrid SaaS facturatie-debiteurbeheerbeheer loop je nooit meer achter de feiten aan.",
-                Image = "images/why_arrow.png",
-                Price = "€ 30,- per maand",
-                LinkName = "Debiteurbeheer",
-                ImageBig = "images/advantage_img7.png",
-
-                PhotoItems = new List<PhotoItem>
-                {
-                    new PhotoItem
-                    {
-                        Image = "/images/foto_img.jpg",
-                        Title = "Debiteurbeheer",
-                        Description = "."
-                    },
-                    new PhotoItem
-                    {
-                        Image = "/images/foto_img1.jpg",
-                        Title = "Debiteurbeheer",
-                        Description = "."
-                    }
-                },
-            };
             LinkDictionary[Link.Extranet] = new LinkInfo
             {
                 Name = "Extranet",
@@ -929,14 +902,30 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.Inkoopbeheer] = new LinkInfo
             {
+                Name = "Inkoopbeheer",
                 Url = "/Module/Inkoopbeheer",
-                IntroText = "Inkoopbeheer",
-                Description = "Inkoopbeheer",
+                IntroText = "",
+                Description = "",
                 Image = "/images/why_arrow.png",
                 Price = "€ 30,- per maand",
                 LinkName = "Inkoopbeheer",
                 ImageBig = "/images/advantage_img7.png",
 
+                PhotoItems = new List<PhotoItem>
+                {
+                    new PhotoItem
+                    {
+                        Image = "/images/foto_img.jpg",
+                        Title = "Inkoopbeheer",
+                        Description = "."
+                    },
+                    new PhotoItem
+                    {
+                        Image = "/images/foto_img1.jpg",
+                        Title = "Inkoopbeheer",
+                        Description = "."
+                    }
+                },
 
 
 
