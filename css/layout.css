@@ -1038,13 +1038,13 @@ a:hover {
 }
 .support-bar .left li {
   padding: 0;
-  height: 140px;
+  height: 170px;
   margin-left: 100px;
   width: 500px;
 }
 .support-bar .right li {
   padding: 0;
-  height: 140px;
+  height: 170px;
 }
 .support-bar .image {
   float: left;

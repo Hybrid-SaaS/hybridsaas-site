@@ -102,6 +102,7 @@ namespace Hybrid_SaaS
         Onderaannemer,
         Voortgang,
         Inkoopbeheer,
+        DataAdapter,
 
 
     }
@@ -354,13 +355,13 @@ namespace Hybrid_SaaS
                 {
                     new PhotoItem
                     {
-                        Image = "/images/foto_img.jpg",
+                        Image = "/images/modules/bankrekening1.jpg",
                         Title = "Bankrekening",
                         Description = "."
                     },
                     new PhotoItem
                     {
-                        Image = "/images/foto_img1.jpg",
+                        Image = "/images/modules/bankrekening2.jpg",
                         Title = "Bankrekening",
                         Description = "."
                     }
@@ -456,13 +457,13 @@ namespace Hybrid_SaaS
                 {
                     new PhotoItem
                     {
-                        Image = "/images/foto_img.jpg",
+                        Image = "/images/modules/bedrijfagenda1.jpg",
                         Title = "Bedrijfsagenda",
                         Description = "."
                     },
                     new PhotoItem
                     {
-                        Image = "/images/foto_img1.jpg",
+                        Image = "/images/modules/bedrijfagenda2.jpg",
                         Title = "Bedrijfsagenda",
                         Description = "."
                     }
@@ -507,13 +508,13 @@ namespace Hybrid_SaaS
                 {
                     new PhotoItem
                     {
-                        Image = "/images/foto_img.jpg",
+                        Image = "/images/modules/certificaten1.jpg",
                         Title = "Certificatenbeheer",
                         Description = "."
                     },
                     new PhotoItem
                     {
-                        Image = "/images/foto_img1.jpg",
+                        Image = "/images/modules/certificaten2.jpg",
                         Title = "Certificatenbeheer",
                         Description = "."
                     }
@@ -537,9 +538,15 @@ namespace Hybrid_SaaS
                 {
                     new PhotoItem
                     {
-                        Image = "/images/foto_img.jpg",
+                        Image = "/images/modules/commissie1.jpg",
                         Title = "Beheer commissies per relatie",
                         Description = "In een tabel leg je vast welke relatie welke commissie ontvangt. Kies meteen een begin en einddatum. Stel bijvoorbeeld in dat er voor twee jaar commissie wordt uitgekeerd. De provisie boek je meteen op de grootboekrekening. Van de uitgekeerde commissie maak je eenvoudig een inkoopstuk. Verder kun je in deze module per relatie aangeven hoeveel commissie er wordt uitgekeerd, of er sprake is van een bonus en/of een korting. Ook zorg je ervoor dat de commissie pas betaald wordt als de factuur is voldaan."
+                    },
+                    new PhotoItem
+                    {
+                        Image = "/images/modules/commissie2.jpg",
+                        Title = "Commissiebeheer",
+                        Description = "."
                     },
                 },
 
@@ -594,43 +601,14 @@ namespace Hybrid_SaaS
                 {
                     new PhotoItem
                     {
-                        Image = "/images/foto_img.jpg",
+                        Image = "/images/modules/contracten1.jpg",
                         Title = "Contractenbeheer",
                         Description = "."
                     },
                     new PhotoItem
                     {
-                        Image = "/images/foto_img1.jpg",
+                        Image = "/images/modules/contracten2.jpg",
                         Title = "Contractenbeheer",
-                        Description = "."
-                    }
-                },
-            };
-            LinkDictionary[Link.Crm] = new LinkInfo
-            {
-                Type = LinkType.Module,
-
-                Name = "Crm",
-                Url = "/Module/Crm",
-                IntroText = "",
-                Description = "",
-                Image = "/images/why_arrow.png",
-                Price = "€ 30,- per maand",
-                LinkName = "Crm",
-                ImageBig = "/images/advantage_img7.png",
-
-                PhotoItems = new List<PhotoItem>
-                {
-                    new PhotoItem
-                    {
-                        Image = "/images/foto_img.jpg",
-                        Title = "Crm",
-                        Description = "."
-                    },
-                    new PhotoItem
-                    {
-                        Image = "/images/foto_img1.jpg",
-                        Title = "Crm",
                         Description = "."
                     }
                 },
@@ -652,13 +630,13 @@ namespace Hybrid_SaaS
                 {
                     new PhotoItem
                     {
-                        Image = "/images/foto_img.jpg",
+                        Image = "/images/modules/correspondentie1.jpg",
                         Title = "Correspondentie",
                         Description = "."
                     },
                     new PhotoItem
                     {
-                        Image = "/images/foto_img1.jpg",
+                        Image = "/images/modules/correspondentie2.jpg",
                         Title = "Correspondentie",
                         Description = "."
                     }
@@ -676,36 +654,25 @@ namespace Hybrid_SaaS
                 Price = "€ 30,- per maand",
                 LinkName = "Extranet",
                 ImageBig = "/images/advantage_img7.png",
-                
-            };
-            LinkDictionary[Link.ExportBoekhouding] = new LinkInfo
-            {
-                Type = LinkType.Module,
 
-                Name = "Export externe boekhouding",
-                Url = "/Module/exportboekhouding",
-                IntroText = "",
-                Description = "",
-                Image = "/images/why_arrow.png",
-                Price = "€ 30,- per extern boekhoudpakket",
-                LinkName = "Export externe boekhouding",
-                ImageBig = "/images/advantage_img7.png",
-                
-            };
-            LinkDictionary[Link.ExportExternPakket] = new LinkInfo
-            {
-                Type = LinkType.Module,
-
-                Url = "/Module/Externpakket",
-                IntroText = "",
-                Description = "",
-                Image = "/images/why_arrow.png",
-                Price = "",
-                LinkName = "Export extern pakket",
-                ImageBig = "/images/advantage_img7.png",
-
+                PhotoItems = new List<PhotoItem>
+                {
+                    new PhotoItem
+                    {
+                        Image = "/images/modules/extranet1.jpg",
+                        Title = "Extranet",
+                        Description = "."
+                    },
+                    new PhotoItem
+                    {
+                        Image = "/images/modules/extranet2.jpg",
+                        Title = "Extranet",
+                        Description = "."
+                    }
+                },
 
             };
+            
             LinkDictionary[Link.Facturatie] = new LinkInfo
             {
                 Type = LinkType.Module,
@@ -723,13 +690,13 @@ namespace Hybrid_SaaS
                 {
                     new PhotoItem
                     {
-                        Image = "/images/foto_img.jpg",
+                        Image = "/images/modules/facturatie1.jpg",
                         Title = "Facturatie",
                         Description = "."
                     },
                     new PhotoItem
                     {
-                        Image = "/images/foto_img1.jpg",
+                        Image = "/images/modules/facturatie2.jpg",
                         Title = "Facturatie",
                         Description = "."
                     }
@@ -779,25 +746,25 @@ namespace Hybrid_SaaS
                 {
                     new PhotoItem
                     {
-                        Image = "/images/foto_img.jpg",
+                        Image = "/images/modules/financieel1.jpg",
                         Title = "Houd debiteuren- en crediteurenbeheer overzichtelijk",
                         Description = "Zie in één oogopslag de status van facturen en onderneem direct actie als dat nodig is. Sorteer de facturen op de manier die jij zelf handig vindt. Dit kan bijvoorbeeld op klant, maar ook op vervaldatum of aantal herinneringen. Hoe vaak en hoe snel een klant een herinnering moet ontvangen, leg je zelf vast in het systeem. "
                     },
                     new PhotoItem
                     {
-                        Image = "/images/foto_img1.jpg",
+                        Image = "/images/modules/financieel2.jpg",
                         Title = "Banktransacties inlezen",
                         Description = "Lees de banktransacties in en koppel ze eenvoudig aan openstaande verkoop- en inkoopfacturen. Maak incassobatches aan en dien deze in bij de bank. Zo kun je afschrijvingen direct koppelen aan de grootboekrekening of gegevens van inkoopfacturen automatisch gebruiken voor betalingen en incasso's. Je hoeft de gegevens maar 1 keer in te vullen, dus je hebt nooit meer dubbel werk."
                     },
                     new PhotoItem
                     {
-                        Image = "/images/foto_img.jpg",
+                        Image = "/images/modules/financieel3.jpg",
                         Title = "Stuur meerdere herinneringen tegelijk",
                         Description = "Zie je dat er meerdere facturen te lang openstaan? Stuur alle betrokkenen gemakkelijk een herinnering. Dat scheelt je veel tijd en is voor klanten zeer overzichtelijk."
                     },
                     new PhotoItem
                     {
-                        Image = "/images/foto_img1.jpg",
+                        Image = "/images/modules/financieel4.jpg",
                         Title = "Weet altijd alles over de financiële positie van je organisatie",
                         Description = "Met het Hybrid SaaS boekhoudpakket weet je zeker dat jou geen financiële verrassingen te wachten staan. Je kunt altijd zien hoe je ervoor staat door de balans, winst- en verliesrekening te openen. Zo kun je dit zelf aanpassen. Door op de verschillende posten van de rekeningen te klikken, krijg je alle informatie tot in detail te zien. Dit kan duidelijkheid scheppen of fouten aan het licht brengen. Is het tijd om de administratie naar de belasting te brengen? Dan kan jouw boekhouder met een eigen inlogcode de rekeningen controleren. Correcties aanbrengen kan direct in de rekening als dat nodig is. Daarna exporteer je het bestand naar Excel."
                     }
@@ -820,13 +787,13 @@ namespace Hybrid_SaaS
                 {
                     new PhotoItem
                     {
-                        Image = "/images/foto_img.jpg",
+                        Image = "/images/modules/gebouw1.jpg",
                         Title = "Gebouwbeheer",
                         Description = "."
                     },
                     new PhotoItem
                     {
-                        Image = "/images/foto_img1.jpg",
+                        Image = "/images/modules/gebouw1.jpg",
                         Title = "Gebouwbeheer",
                         Description = "."
                     }
@@ -878,13 +845,13 @@ namespace Hybrid_SaaS
                 {
                     new PhotoItem
                     {
-                        Image = "/images/foto_img.jpg",
+                        Image = "/images/modules/hrm1.jpg",
                         Title = "Human Resource Management (HRM",
                         Description = "."
                     },
                     new PhotoItem
                     {
-                        Image = "/images/foto_img1.jpg",
+                        Image = "/images/modules/hrm2.jpg",
                         Title = "Human Resource Management (HRM",
                         Description = "."
                     }
@@ -931,13 +898,13 @@ namespace Hybrid_SaaS
                 {
                     new PhotoItem
                     {
-                        Image = "/images/foto_img.jpg",
+                        Image = "/images/modules/inventaris1.jpg",
                         Title = "Inventarisbeheer",
                         Description = "."
                     },
                     new PhotoItem
                     {
-                        Image = "/images/foto_img1.jpg",
+                        Image = "/images/modules/inventaris2.jpg",
                         Title = "Inventarisbeheer",
                         Description = "."
                     }
@@ -960,13 +927,13 @@ namespace Hybrid_SaaS
                 {
                     new PhotoItem
                     {
-                        Image = "/images/foto_img.jpg",
+                        Image = "/images/modules/inkooporder1.jpg",
                         Title = "Inkoopbeheer",
                         Description = "."
                     },
                     new PhotoItem
                     {
-                        Image = "/images/foto_img1.jpg",
+                        Image = "/images/modules/inkooporder1.jpg",
                         Title = "Inkoopbeheer",
                         Description = "."
                     }
@@ -1005,13 +972,13 @@ namespace Hybrid_SaaS
                 {
                     new PhotoItem
                     {
-                        Image = "/images/foto_img.jpg",
+                        Image = "/images/modules/kmregistratie1.jpg",
                         Title = "Km -Registratie",
                         Description = "."
                     },
                     new PhotoItem
                     {
-                        Image = "/images/foto_img1.jpg",
+                        Image = "/images/modules/kmregistratie2.jpg",
                         Title = "Km -Registratie",
                         Description = "."
                     }
@@ -1886,8 +1853,6 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.GebruikerIntern] = new LinkInfo
             {
-                Type = LinkType.Module,
-
                 Name = "Gebruikers",
                 Url = "/Module/Gebruiker-intern",
                 IntroText = "",
@@ -1897,6 +1862,21 @@ namespace Hybrid_SaaS
                 LinkName = "Gebruikers",
                 ImageBig = "/images/advantage_img7.png",
 
+                PhotoItems = new List<PhotoItem>
+                {
+                    new PhotoItem
+                    {
+                        Image = "/images/foto_img.jpg",
+                        Title = "Gebruikers",
+                        Description = "."
+                    },
+                    new PhotoItem
+                    {
+                        Image = "/images/foto_img1.jpg",
+                        Title = "Gebruikers",
+                        Description = "."
+                    }
+                },
 
 
                 ManualItems = new List<ManualItem>
@@ -1920,8 +1900,6 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.GebruikerExtern] = new LinkInfo
             {
-                Type = LinkType.Module,
-
                 Name = "Buitendienst medewerkers",
                 Url = "/Module/Gebruiker-extern",
                 IntroText = "",
@@ -1930,12 +1908,25 @@ namespace Hybrid_SaaS
                 Price = "€ 10,- per 10 medewerkers",
                 LinkName = "Buitendienst medewerkers",
                 ImageBig = "/images/advantage_img7.png",
-                
+
+                PhotoItems = new List<PhotoItem>
+                {
+                    new PhotoItem
+                    {
+                        Image = "/images/modules/buitendienstmedewerker1.jpg",
+                        Title = "Buitendienst medewerkers",
+                        Description = "."
+                    },
+                    new PhotoItem
+                    {
+                        Image = "/images/modules/buitendienstmedewerker2.jpg",
+                        Title = "Buitendienst medewerkers",
+                        Description = "."
+                    }
+                },
             };
             LinkDictionary[Link.Dataopslag] = new LinkInfo
             {
-                Type = LinkType.Module,
-
                 Name = "Dataopslag",
                 Url = "/Module/Dataopslag",
                 IntroText = "",
@@ -1950,8 +1941,31 @@ namespace Hybrid_SaaS
 
             //modulles hebben nog geen pagina
 
+            LinkDictionary[Link.ExportBoekhouding] = new LinkInfo
+            {
 
-            LinkDictionary[Link.InkoopfacturatieCrediteurenbeheer] = new LinkInfo
+                Name = "Export externe boekhouding",
+                Url = "/Module/exportboekhouding",
+                IntroText = "",
+                Description = "",
+                Image = "/images/why_arrow.png",
+                Price = "€ 30,- per extern boekhoudpakket",
+                LinkName = "Export externe boekhouding",
+                ImageBig = "/images/advantage_img7.png",
+
+            };
+            LinkDictionary[Link.ExportExternPakket] = new LinkInfo
+            {
+
+                Url = "/Module/Externpakket",
+                IntroText = "",
+                Description = "",
+                Image = "/images/why_arrow.png",
+                Price = "€ 30,- per extern pakket",
+                LinkName = "Export extern pakket",
+                ImageBig = "/images/advantage_img7.png",
+            };
+           LinkDictionary[Link.InkoopfacturatieCrediteurenbeheer] = new LinkInfo
             {
                 Url = "/inkoopfacturatie-en-crediteurenbeheer",
                 IntroText = "",
@@ -2113,7 +2127,7 @@ namespace Hybrid_SaaS
                 Description = "",
                 Image = "/images/why_arrow.png",
                 Price = "",
-                LinkName = "Hybrid SaaS word add-in",
+                LinkName = "Hybrid SaaS Word add-in",
                 ImageBig = "/images/advantage_img7.png",
 
 
@@ -2125,7 +2139,7 @@ namespace Hybrid_SaaS
                 Description = "",
                 Image = "/images/why_arrow.png",
                 Price = "",
-                LinkName = "Hybrid SaaS browser",
+                LinkName = "Hybrid SaaS Browser",
                 ImageBig = "/images/advantage_img7.png",
 
 
@@ -2137,11 +2151,24 @@ namespace Hybrid_SaaS
                 Description = "",
                 Image = "/images/why_arrow.png",
                 Price = "",
-                LinkName = "Hybrid SaaS outlook add-in",
+                LinkName = "Hybrid SaaS Outlook add-in",
                 ImageBig = "/images/advantage_img7.png",
 
 
             };
+            LinkDictionary[Link.DataAdapter] = new LinkInfo
+            {
+                Url = "https://downloadsite.blob.core.windows.net/dataadapter/dataadapter.zip",
+                IntroText = "",
+                Description = "",
+                Image = "/images/why_arrow.png",
+                Price = "",
+                LinkName = "Hybrid SaaS DataAdapter",
+                ImageBig = "/images/advantage_img7.png",
+
+
+            };
+
             LinkDictionary[Link.KijkMetMijMee] = new LinkInfo
             { 
                 Url = "http://www.kijkmetmijmee.nl/Hybrid%20SaaS%20-%20Customer%20Support.exe",
