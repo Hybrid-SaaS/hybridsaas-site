@@ -426,13 +426,13 @@ namespace Hybrid_SaaS
                 {
                     new PhotoItem
                     {
-                        Image = "/images/foto_img.jpg",
+                        Image = "/images/modules/balanswinstverlies1.jpg",
                         Title = "Balans Winst & Verliesrekening",
                         Description = "."
                     },
                     new PhotoItem
                     {
-                        Image = "/images/foto_img1.jpg",
+                        Image = "/images/modules/balanswinstverlies2.jpg",
                         Title = "Balans Winst & Verliesrekening",
                         Description = "."
                     }
