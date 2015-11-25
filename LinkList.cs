@@ -106,10 +106,19 @@ namespace Hybrid_SaaS
 
     }
 
+    public enum LinkType
+    {
+        Page,
+        Module
+    }
+
+
     public static class LinkList
     {
         public class LinkInfo
         {
+            public LinkType Type = LinkType.Page;
+
             public string Name;
             public string LinkName = "";
 
@@ -268,6 +277,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.Abonnementen] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Abonnementen",
                 Url = "/Module/Abonnementen",
                 IntroText = "Wil jij ook in één oogopslag kunnen zien wanneer een leasecontract afloopt en wanneer een telefoonabonnement of verzekering dient te worden verlengd? Hybrid SaaS maakt het mogelijk!",
@@ -306,6 +317,8 @@ namespace Hybrid_SaaS
 
             LinkDictionary[Link.Bankrekening] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Bankrekening",
                 Url = "/Module/bankrekening",
                 IntroText = "De module Bankrekeningen schept orde in de chaos. U kan eenvoudig banktransacties importeren en afletteren waardoor u altijd inzicht heeft in de openstaande en betaalde facturen.",
@@ -385,6 +398,8 @@ namespace Hybrid_SaaS
 
             LinkDictionary[Link.BalansWinstVerliesrekening] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Balans Winst & Verliesrekening",
                 Url = "/Module/balans-winst-verliesrekening",
                 IntroText = "De balans & winsten verliesrekening is een kasstroomoverzicht en daarmee een onderdeel van een jaarrekening. De balans & winst en verliesrekening geeft een overzicht van de kosten en opbrengsten van de entiteit over een bepaalde periode (meestal een jaar). ",
@@ -426,6 +441,8 @@ namespace Hybrid_SaaS
 
             LinkDictionary[Link.Bedrijfsagenda] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Bedrijfsagenda",
                 Url = "/Module/bedrijfsagenda",
                 IntroText = "Met de bedrijfsagenda kan je heel eenvoudig het rooster van je mederwerkers bijhouden, je kan in één opslag zien hoeveel uur een mederwerker nog heeft staan of al heeft opgenomen. ",
@@ -453,6 +470,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.Certificatenbeheer] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Certificatenbeheer",
                 Url = "/Module/certificatenbeheer",
                 IntroText = "Eenvoudig kunnen zien wanneer een het rijbewijs of paspoort verloopt van je persooneel verloopt? Hybrid SaaS maakt het mogelijk! ",
@@ -503,6 +522,8 @@ namespace Hybrid_SaaS
 
             LinkDictionary[Link.Commissiebeheer] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Commissiebeheer",
                 Url = "/Module/commissciebeheer",
                 IntroText = "Werk je met resellers? Dan is Commissiebeheer van Hybrid SaaS zeker interessant voor jouw organisatie. ",
@@ -534,6 +555,8 @@ namespace Hybrid_SaaS
 
             LinkDictionary[Link.Contractenbeheer] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Contractenbeheer",
                 Url = "/Module/contractenbeheer",
                 IntroText = "Waarom tijd blijven besteden aan steeds terugkerende facturen en bestellingen als het ook automatisch kan? Met Hybrid SaaS Contracten heb je nauwelijks omkijken naar je periodiek uitgaande facturen en bestellingen en zo verbeter je eenvoudig je positieve cashflow.",
@@ -585,6 +608,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.Crm] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Crm",
                 Url = "/Module/Crm",
                 IntroText = "",
@@ -612,6 +637,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.Correspondentie] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Correspondentie",
                 Url = "/Module/Correspondentie",
                 IntroText = "",
@@ -639,6 +666,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.Extranet] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Extranet",
                 Url = "/Module/Extranet",
                 Description = "De module Hybrid SaaS Extranetbeheer schept orde in de chaos en plaatst alle behaalde certificaten en afgesloten contracten overzichtelijk bij elkaar.Wanneer een certificaat of overeenkomst tegen de einddatum aanloopt word je hier automatisch van op de hoogte gesteld. Op deze manier voorkom je eenvoudig dat certificaten verlopen en je kosten moet betalen voor onnodige Extranet. Met Hybrid SaaS Extranetbeheer loop je nooit meer achter de feiten aan.",
@@ -651,6 +680,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.ExportBoekhouding] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Export externe boekhouding",
                 Url = "/Module/exportboekhouding",
                 IntroText = "",
@@ -675,6 +706,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.Facturatie] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Facturatie",
                 Url = "/Module/facturatie",
                 IntroText = "Een goede cashflow begint bij het op tijd versturen van je facturen. Met Hybrid SaaS Facturatie kun je eenvoudig en snel een factuur opmaken en (digitaal) versturen.",
@@ -716,6 +749,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.Financieel] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Financieel",
                 Url = "/Module/Financieel",
                 IntroText = "Wil je het boekhoudproces nog slimmer inrichten? Kies dan ons pakket Financieel. Dit is de perfecte aanvulling op bijvoorbeeld Tickets & Facturatie of Offerte & Voorraad.",
@@ -768,6 +803,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.Gebouwbeheer] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Gebouwbeheer",
                 Url = "/Module/Gebouwbeheer",
                 IntroText = "",
@@ -795,6 +832,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.Hrm] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Human Resource Management (HRM)",
                 Url = "/Module/human-resource-management",
                 IntroText = "Met Hybrid SaaS Human Resource Management kun je personeelszaken eenvoudig automatiseren en heb je altijd een up-to-date inzicht in de gehele personeelsadministratie. ",
@@ -902,6 +941,8 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.Inkoopbeheer] = new LinkInfo
             {
+                Type = LinkType.Module,
+
                 Name = "Inkoopbeheer",
                 Url = "/Module/Inkoopbeheer",
                 IntroText = "",
