@@ -252,7 +252,7 @@ namespace Hybrid_SaaS
                     new PhotoItem
                     {
                         Image = "/images/foto_img1.jpg",
-                        Title = ".r",
+                        Title = ".",
                         Description = "."
                     }
                 },
@@ -284,13 +284,13 @@ namespace Hybrid_SaaS
                     {
                         Image = "/images/foto_img1.jpg",
                         Title = "Abonnementen",
-                        Description = "Abonnementen"
+                        Description = "."
                     },
                     new PhotoItem
                     {
                         Image = "/images/foto_img1.jpg",
                         Title = "Abonnementen",
-                        Description = "Abonnementen"
+                        Description = "."
                     }
                 },
 
@@ -1667,18 +1667,33 @@ namespace Hybrid_SaaS
                 {
                     new ManualItem
                     {
-                        Name = "Beheren van de vragenlijst",
-                        Link = "http://hybridsaas.support/pages/handleiding/modules/P-Z/vragenlijst/vragenlijsten"
+                        Name = "Implementatie",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/vragenlijst%20-equettes/instalatie-werkplek/instalatie-werkplek"
                     },
                     new ManualItem
                     {
-                        Name = "Vragenlijst via het extranet",
-                        Link = "http://hybridsaas.support/pages/handleiding/modules/P-Z/vragenlijst/vragenlijsten-extranet"
+                        Name = "Een tekening toevoegen aan de vragenlijst",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/vragenlijst%20-equettes/tekening-toevoegen/tekening-toevoegen"
+                    },
+                    new ManualItem
+                    {
+                        Name = "Het instellen van de vragenlijst",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/vragenlijst%20-equettes/instellingen/vragenlijsten-instellingen"
+                    },
+                    new ManualItem
+                    {
+                        Name = "Beheren van de vragenlijst",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/vragenlijst%20-equettes/beheren/vragenlijsten-beheren"
+                    },
+                    new ManualItem
+                    {
+                        Name = "Vragenlijst extranet",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/vragenlijst%20-equettes/via-extranet/vragenlijsten-extranet"
                     },
                     new ManualItem
                     {
                         Name = "Vragenlijst invoeren op je mobiel",
-                        Link = "http://hybridsaas.support/pages/handleiding/modules/P-Z/vragenlijst/vragenlijsten%20invoeren"
+                        Link = "http://hybridsaas.support/pages/support-site/modules/vragenlijst%20-equettes/invoeren/vragenlijsten-invoeren"
                     }
                 }
             };
