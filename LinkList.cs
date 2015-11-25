@@ -2219,8 +2219,8 @@ namespace Hybrid_SaaS
             LinkDictionary[Link.ReleaseNotes] = new LinkInfo
             {
                 Name = "Release notes",
-                Url = "http://hybridsaas.support/pages/release-notes/latest/release-notes",
-                IntroText = "Ga naar de laatste release notes",
+                Url = "http://hybridsaas.support/pages/support-site/release-notes/volgende-release/volgende-release",
+                IntroText = "Ga naar de release notes",
                 OpenInNewWindow = true
             };
             LinkDictionary[Link.MenuSupport] = new LinkInfo
