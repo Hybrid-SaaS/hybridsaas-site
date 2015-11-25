@@ -293,13 +293,13 @@ namespace Hybrid_SaaS
                 {
                     new PhotoItem
                     {
-                        Image = "/images/foto_img1.jpg",
+                        Image = "/images/modules/abonnement1.jpg",
                         Title = "Abonnementen",
                         Description = "."
                     },
                     new PhotoItem
                     {
-                        Image = "/images/foto_img1.jpg",
+                        Image = "/images/modules/abonnement2.jpg",
                         Title = "Abonnementen",
                         Description = "."
                     }
@@ -1942,7 +1942,7 @@ namespace Hybrid_SaaS
                 Description = "",
                 Image = "/images/why_arrow.png",
                 Price = "€ 10,- per 10 GB",
-                LinkName = "10 GB dataopslag",
+                LinkName = "Dataopslag 10 GB",
                 ImageBig = "/images/advantage_img7.png",
                 
             };
