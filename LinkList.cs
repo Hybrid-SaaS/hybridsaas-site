@@ -103,6 +103,9 @@ namespace Hybrid_SaaS
         Voortgang,
         Inkoopbeheer,
         DataAdapter,
+        prijzenlijstpakkettenPdf,
+        prijzenlijstmodulesPdf,
+        prijzenlijstimplementatiePdf,
 
 
     }
@@ -2247,39 +2250,38 @@ namespace Hybrid_SaaS
 
             LinkDictionary[Link.LicentieVoorwaardenPdf] = new LinkInfo
             { 
-                Url = "http://www.hybridsaas.com/images/Algemene%20licentievoorwaarden%20Hybrid%20SaaS%20ICT%20BV.pdf",
-                IntroText = "",
-                Description = "",
-                Image = "/images/why_arrow.png",
-                Price = "",
-                LinkName = "LicentieVoorwaardenPdf",
-                ImageBig = "/images/advantage_img7.png",
+                Url = "http://www.hybridsaas.com/PDF/Licentievoorwaarden.pdf",
 
 
             };
             LinkDictionary[Link.AlgemeneVoorwaardenPdf] = new LinkInfo
             { 
-                Url = "http://www.hybridsaas.com/images/Algemene%20voorwaarden%20Hybrid%20SaaS%20ICT%20BV.pdf",
-                IntroText = "",
-                Description = "",
-                Image = "/images/why_arrow.png",
-                Price = "",
-                LinkName = "AlgemeneVoorwaardenPdf",
-                ImageBig = "/images/advantage_img7.png",
+                Url = "http://www.hybridsaas.com/PDF/Algemene voorwaarden Hybrid SaaS ICT BV.pdf",
 
 
             };
-            
+
             LinkDictionary[Link.Prijzenlijst] = new LinkInfo
             {
-                Url = "#",
-                IntroText = "",
-                Description = "",
-                Image = "/images/why_arrow.png",
-                Price = "",
-                LinkName = "prijzenlijst",
-                ImageBig = "/images/advantage_img7.png",
+                Url = "/Prijzenlijst",
+                Name = "Prijzenlijst"
             };
+            LinkDictionary[Link.prijzenlijstmodulesPdf] = new LinkInfo
+            {
+                Url = "http://www.hybridsaas.com/PDF/Modules.pdf",
+            };
+
+            LinkDictionary[Link.prijzenlijstpakkettenPdf] = new LinkInfo
+            {
+                Url = "http://www.hybridsaas.com/PDF/Pakketten.pdf",
+
+
+            };
+            LinkDictionary[Link.prijzenlijstimplementatiePdf] = new LinkInfo
+            {
+                Url = "http://www.hybridsaas.com/PDF/Implementatie-Inrichting.pdf",
+            };
+
 
             LinkDictionary[Link.MeestGesteldeVragen] = new LinkInfo
             {
@@ -2423,9 +2425,8 @@ namespace Hybrid_SaaS
                 LinkName = "Overige",
                 ImageBig = "/images/advantage_img7.png",
 
+};
 
-            };
-            
 
             /*var file = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\\robots.txt";
             string content = "";

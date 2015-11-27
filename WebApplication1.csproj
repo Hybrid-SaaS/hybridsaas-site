@@ -94,6 +94,7 @@
     <Content Include="css\layout.css.map">
       <DependentUpon>layout.css</DependentUpon>
     </Content>
+    <Content Include="prijzenlijst.cshtml" />
     <None Include="css\layout.less" />
     <Content Include="css\layout.css" />
     <Content Include="css\layout.min.css">
