@@ -118,7 +118,7 @@ namespace Hybrid_SaaS
 
 
     public static class LinkList
-    {
+    { 
         public class LinkInfo
         {
             public LinkType Type = LinkType.Page;
