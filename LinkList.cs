@@ -106,6 +106,8 @@ namespace Hybrid_SaaS
         prijzenlijstpakkettenPdf,
         prijzenlijstmodulesPdf,
         prijzenlijstimplementatiePdf,
+        Quote,
+        DescriptionRight,
 
 
     }
@@ -133,11 +135,16 @@ namespace Hybrid_SaaS
             //indien pagetitle leeg is, valt deze terug naar introtext
             public string PageTitle;
             public string Description = "";
-            
+            public string DescriptionRight = "";
+
             public string Image = "";
             public string ImageBig = "";
 
             public string Price = "";
+
+            public string Quote = "";
+
+            public string MetaKeywords = "";
 
             public bool OpenInNewWindow
             {
@@ -212,6 +219,10 @@ namespace Hybrid_SaaS
         {
             return LinkDictionary[link].Description;
         }
+        public static string GetDescriptionRight(Link link)
+        {
+            return LinkDictionary[link].DescriptionRight;
+        }
         public static string GetImage(Link link)
         {
             return LinkDictionary[link].Image;
@@ -228,7 +239,11 @@ namespace Hybrid_SaaS
         {
             return LinkDictionary[link].ImageBig;
         }
-        
+        public static string GetQuote(Link link)
+        {
+            return LinkDictionary[link].Quote;
+        }
+
 
 
         static LinkList()
@@ -243,15 +258,16 @@ namespace Hybrid_SaaS
 
                 IntroText = "Ga naar de module-overzichts pagina",
                 PageTitle = "Module overzicht",
+                Quote = "Vul je basispakket aan met onderstaande modules om zo de beste workflow te realiseren voor je bedrijf",
                 Price = "Vanaf € 30,- per maand",
                 LinkName = "Modules",
                 Image = "/images/module_iconen/module-45.png",
                 ImageBig = "/images/module_iconen/module-90.png",
-
+                MetaKeywords = "",
                 FactSheet = new List<string>
                 {
                     "bla bla bla",
-            "bla bla bla",
+                    "bla bla bla",
                 },
 
                 PhotoItems = new List<PhotoItem>
@@ -330,7 +346,7 @@ namespace Hybrid_SaaS
                 Image = "/images/module_iconen/bank-45.png",
                 Price = "€ 30,- per maand",
                 LinkName = "Bankrekening",
-                ImageBig = "/images/module_iconen/bank-490.png",
+                ImageBig = "/images/module_iconen/bank-90.png",
 
                 FactSheet = new List<string>
                 {
@@ -529,27 +545,64 @@ namespace Hybrid_SaaS
                 Type = LinkType.Module,
 
                 Name = "Commissiebeheer",
-                Url = "/Module/commissciebeheer",
+                Url = "/Module/Commissiebeheer",
+                Quote = "Werk je met resellers? Dan is Commissiebeheer van Hybrid SaaS zeker interessant voor jouw organisatie. ",
                 IntroText = "Werk je met resellers? Dan is Commissiebeheer van Hybrid SaaS zeker interessant voor jouw organisatie. ",
                 Description = "Met Commissiebeheer zorg je ervoor dat de registraties en betalingen van provisies altijd op orde zijn. Voor iedere factuur die jij verstuurt rekenen wij uit hoeveel commissie je af dient te dragen aan wederverkopers, resellers of agenten. Of je nu werkt met Tickets & Facturatie, Contractbeheer of Offerte & Voorraad, Commissiebeheer sluit naadloos aan bij al deze pakketten.",
                 Image = "/images/module_iconen/commissiebeheer-45.png",
                 Price = "€ 30,- per maand",
                 LinkName = "Commissiebeheer",
                 ImageBig = "/images/module_iconen/commissiebeheer-90.png",
-
+                MetaKeywords = "Courtage, Provisie, Wedeverkoper, Beloning, Kickback fee, Commissie, Commissieafspraken, Commissiebedragen",
+                FactSheet = new List<string>
+                {
+                    "Commissie ontvangende partij vast leggen, als bedrijf of als (intern)accountmanager",
+                    "Start- en einddatum vastleggen voor de commissieperiode",
+                    "Commissietype vast leggen",
+                    "Commissieafspraak aan een grootboekrekening koppelen",
+                    "Commissiepercentage vastleggen op 4 decimalen nauwkeurig",
+                    "Extra (bonus)commissie vastleggen bij eerste verkoop",
+                    "Eventuele korting procentueel verdelen over commissie ontvangende- partij en verkopende partij",
+                    "Commissie uitkering uitstellen voor betaling tot dat factuur is voldaan door koper",
+                    "Commissies kunnen gekoppeld worden aan een: Bedrijf, Extern pakket (API), Contract, Contractregel, Grootboekrekening (werkcode), Product, Project, Orderbron, Productgroep, Productsubgroep",
+                    "Per commissie kan je een notitie en een bijlage vastleggen",
+                    "Commissie vast leggen per Entiteit",
+                    "Overzicht van alle commissie ontvangende partijen, met totaal van alle facturen, gemiddelde commissiepercentage, commissiebedrag en commissieperiode",
+                    "Overzicht van alle facturen zonder commissie",
+                    "Overzicht van alle facturen met commissie",
+                    "Overzicht van alle facturen zonder commissieafspraak",
+                    "Commissies afromen over een bepaald tijdvak",
+                    "Overzicht van commissie per factuur(regel)",
+                    "Commissies herberekenen per factuur",
+                    "Commissies verwijderen per factuur(regel)",
+                    "Commissieoverzicht (digitaal) versturen naar commissie ontvangende partij",
+                    "Commissieoverzicht omzetten in inkoopfactuur",
+                },
                 PhotoItems = new List<PhotoItem>
                 {
                     new PhotoItem
                     {
                         Image = "/images/modules/commissie1.jpg",
-                        Title = "Beheer commissies per relatie",
-                        Description = "In een tabel leg je vast welke relatie welke commissie ontvangt. Kies meteen een begin en einddatum. Stel bijvoorbeeld in dat er voor twee jaar commissie wordt uitgekeerd. De provisie boek je meteen op de grootboekrekening. Van de uitgekeerde commissie maak je eenvoudig een inkoopstuk. Verder kun je in deze module per relatie aangeven hoeveel commissie er wordt uitgekeerd, of er sprake is van een bonus en/of een korting. Ook zorg je ervoor dat de commissie pas betaald wordt als de factuur is voldaan."
+                        Title = "Leg eenvoudig al je commissies afspraken eenvoudig vast",
+                        Description = "Leg gemakkelijk commissieafspraken per vertegenwoordiger of reseller van je product vast. Of het nu gaat om maandelijkse of eenmalige kickback fee’s, start up kosten of annuleringskosten dit is mogelijk met Hybrid SaaS commissiebeheer. Verdeel eventuele kortingen en betaal nooit onnodig voordat de facturen aan jou zijn voldaan."
                     },
                     new PhotoItem
                     {
                         Image = "/images/modules/commissie2.jpg",
-                        Title = "Commissiebeheer",
-                        Description = "."
+                        Title = "Waar je ook commissie op wilt uitkeren Hybrid SaaS maakt het mogelijk",
+                        Description = "Op vrij wel alles is het mogelijk om commissies vast te leggen, denk hierbij aan een Bedrijf, Contract, Contractregel, Grootboekrekening (werkcode), Product, Project, Orderbron, Productgroep, Productsubgroep. Het is zelf mogelijk om provisies uit een ander extern systeem te importeren."
+                    },
+                     new PhotoItem
+                    {
+                        Image = "/images/modules/commissie1.jpg",
+                        Title = "Eenvoudig overzicht van al je commissies",
+                        Description = "Vrijwel vanuit elke hoek kan je de commissies inzichtelijk maken of je nu vanuit de factuur of de relatie kijkt, je krijgt altijd een actueel overzicht van de aankomende en reeds betaalde courtages"
+                    },
+                    new PhotoItem
+                    {
+                        Image = "/images/modules/commissie2.jpg",
+                        Title = "Commissie overzichten eenvoudig omzetten tot een inkoopfactuur",
+                        Description = "Het uitkeren van je beloningen naar je resellers, doe je eenvoudig door digitaal een helder overzicht te sturen van alle commissies, met 1 druk op de knop zet je de commissiebedragen om naar een inkoopfactuur en lees je deze digitaal in bij je bank"
                     },
                 },
 
@@ -569,6 +622,7 @@ namespace Hybrid_SaaS
 
                 Name = "Contractenbeheer",
                 Url = "/Module/contractenbeheer",
+                Quote = "Met Hybrid SaaS Contracten heb je nauwelijks omkijken naar je periodiek uitgaande facturen en bestellingen",
                 IntroText = "Waarom tijd blijven besteden aan steeds terugkerende facturen en bestellingen als het ook automatisch kan? Met Hybrid SaaS Contracten heb je nauwelijks omkijken naar je periodiek uitgaande facturen en bestellingen en zo verbeter je eenvoudig je positieve cashflow.",
                 Description = "Periodiek terugkerende bestellingen plaats je automatisch bij je leveranciers. Abonnementen van je klanten kunnen worden ingegeven, waarbij de factuur per ingegeven termijn wordt verstuurd. Verzend facturen en bestellingen direct via e-mail. Bestaande orders en facturen kunnen direct geautomatiseerd worden.",
                 Image = "/images/module_iconen/contractbeheer-45.png",
@@ -682,6 +736,7 @@ namespace Hybrid_SaaS
 
                 Name = "Facturatie",
                 Url = "/Module/facturatie",
+                Quote = "Met Hybrid SaaS Facturatie kun je eenvoudig en snel een factuur opmaken en (digitaal) versturen.",
                 IntroText = "Een goede cashflow begint bij het op tijd versturen van je facturen. Met Hybrid SaaS Facturatie kun je eenvoudig en snel een factuur opmaken en (digitaal) versturen.",
                 Description = "Je maakt gebruik van vooraf ingestelde gegevens. Op deze manier win je veel tijd en wordt de kans op fouten aanzienlijk verkleind. Facturen worden overzichtelijk opgeslagen en zijn hierdoor eenvoudig terug te vinden. Het verzenden van kopie- en creditfacturen was nog nooit zo gemakkelijk. Daarnaast geeft de module altijd het actuele facturatieproces weer en kun je in één oogopslag zien welke facturen zijn afgehandeld en welke er nog openstaan. Wanneer een betalingstermijn van een factuur is verstreken kunnen er gemakkelijk en snel betalingsherinneringen worden verstuurd.",
                 Image = "/images/module_iconen/facturatie-45.png",
@@ -726,6 +781,7 @@ namespace Hybrid_SaaS
                 Name = "Financieel",
                 Url = "/Module/Financieel",
                 IntroText = "Wil je het boekhoudproces nog slimmer inrichten? Kies dan ons pakket Financieel. Dit is de perfecte aanvulling op bijvoorbeeld Tickets & Facturatie of Offerte & Voorraad.",
+                Quote = "Van het versturen van facturen tot een actueel overzicht in de balans, winst- en verliesrekening; dit pakket is zo ontworpen dat het voor 100% aansluit op de andere pakketten van Hybrid SaaS.",
                 Description = "Wij hebben zelf een boekhoudpakket ontwikkeld waarmee je eenvoudig digitaal online de complete boekhouding bijhoudt. Van het versturen van facturen tot een actueel overzicht in de balans, winst- en verliesrekening; dit pakket is zo ontworpen dat het voor 100% aansluit op de andere pakketten van Hybrid SaaS.",
                 Image = "/images/module_iconen/over-45.png",
                 Price = "€ 125,- per maand",
@@ -1309,7 +1365,7 @@ namespace Hybrid_SaaS
 
                 Url = "/Module/Projectbeheer",
                 Name = "Projectbeheer",
-
+                Quote = "De projecten kunnen worden gekoppeld aan relaties en worden overzichtelijk en gestructureerd weergegeven.",
                 IntroText = "Met de module Projectbeheer worden alle projectgegevens op één centrale plaats vastgelegd. De projecten kunnen worden gekoppeld aan relaties en worden overzichtelijk en gestructureerd weergegeven.",
                 Description = "Met Hybrid SaaS Projectbeheer ben je in staat om projecten eenvoudiger te managen. Ook kun je deadlines gemakkelijk monitoren, openstaande taken inzien en het vastgestelde budget bewaken. Per project kun je financiële afspraken vastleggen en altijd en overal de projecthistorie inzien. Offertes en facturen kunnen eenvoudig aan projecten worden gekoppeld en met één druk op de knop worden verstuurd. Kortom, een forse tijdbesparing!",
                 Image = "/images/module_iconen/projectbeheer-45.png",
@@ -1420,6 +1476,7 @@ namespace Hybrid_SaaS
                 Name = "Ticketsysteem",
 
                 Url = "/Module/ticket-systeem",
+                Quote = "Met het ticketsysteem krijg je de mogelijkheid om al je klantvragen te organiseren en op te volgen",
                 IntroText = "Met het ticketsysteem krijg je de mogelijkheid om al je klantvragen te organiseren en op te volgen. Weet precies wat er speelt bij je relaties, projecten en je eigen organisatie. Met behulp van de juiste categorieën en urgentie bepaal je zelf waar de prioriteiten liggen en heb je altijd een actueel overzicht. ",
                 Description = "Op deze manier krijg je een beter inzicht in openstaande acties en verhoog je de efficiëntie en servicegerichtheid naar je (klant) relaties. Communicatie is misschien wel het belangrijkste element voor een goede samenwerking. Ons doel is bedrijven en hun relaties dichter bij elkaar te brengen om op deze manier een optimale samenwerking te realiseren. Klantvragen komen via verschillende kanalen binnen en worden vaak op verschillende plaatsen opgeslagen. Door de inefficiënte gaat veel tijd verloren en gooi je onnodig geld weg. Het ticketsysteem van Hybrid SaaS biedt veel mogelijkheden om dit te voorkomen en is vrijwel door ieder bedrijf te gebruiken.",
                 Image = "/images/module_iconen/ticketsysteem-45.png",
@@ -1485,6 +1542,7 @@ namespace Hybrid_SaaS
 
                 Name = "Tijdregistratie",
                 Url = "/Module/tijdregistratie",
+                Quote = "Met Hybrid SaaS Tijdregistratie kan iedere medewerker op elke gewenst moment snel en eenvoudig uren, onkosten en kilometers registreren.",
                 IntroText = "Het bijhouden van gewerkte uren wordt door medewerkers vaak als een tijdrovende klus beschouwd. Mede hierdoor wordt deze taak nogal eens uitgesteld en worden er achteraf dikwijls foutieve gegevens vastgelegd. ",
                 Description = "Maar daar komt vanaf nu verandering in. Met Hybrid SaaS Tijdregistratie kan iedere medewerker op elke gewenst moment snel en eenvoudig uren, onkosten en kilometers registreren. Op deze manier creëer je meer uniformiteit, tijden worden accurater bijgehouden en je beschikt altijd en overal over de meest actuele gegevens.",
                 Image = "/images/module_iconen/tijdregistratie-45.png",
@@ -1776,6 +1834,7 @@ namespace Hybrid_SaaS
 
                 Name = "Webshop",
                 Url = "/Module/webshop",
+                Quote = "Met de Hybrid SaaS Webwinkel kan snel en eenvoudig een webshop worden gerealiseerd en kun je direct producten en diensten aan(potentiele) klanten aanbieden.",
                 IntroText = "Met de Hybrid SaaS Webwinkel kan snel en eenvoudig een webshop worden gerealiseerd en kun je direct producten en diensten aan(potentiele) klanten aanbieden.",
                 Description = "Met een webshop ben je niet locatie gebonden en 24 uur per dag, 7 dagen per week bereikbaar. De uitgelezen kans om nieuwe klanten aan te trekken en de behoeften van bestaande klanten te voorzien. Online winkelen, het nieuwe winkelen!",
                 Image = "/images/module_iconen/webshop-45.png",
@@ -1858,7 +1917,8 @@ namespace Hybrid_SaaS
             {
                 Name = "Gebruikers",
                 Url = "/Module/Gebruiker-intern",
-                IntroText = "",
+                IntroText = "Alles bijhouden in de backoffice Gebruikers van Hybid SaaS kunnen inloggen in de applicatie om o.a. de proccessen te volgen van het bedrijf, het versturen van de facturen of het controleren van de tijdregistraties",
+                Quote = "Alles bijhouden in de backoffice Gebruikers van Hybid SaaS kunnen inloggen in de applicatie om o.a. de proccessen te volgen van het bedrijf, het versturen van de facturen of het controleren van de tijdregistraties",
                 Description = "",
                 Image = "/images/module_iconen/gebrintern-45.png",
                 Price = "€ 5,- per gebruiker",
@@ -1905,7 +1965,8 @@ namespace Hybrid_SaaS
             {
                 Name = "Buitendienst medewerkers",
                 Url = "/Module/Gebruiker-extern",
-                IntroText = "",
+                IntroText = "Doormiddel van onze Extranet versie voor de mobiel of tablet, kunnen je medewerkers gemakkelijk hun werkbriefjes opvragen of hun tijdregistraties te noteren",
+                Quote = "Doormiddel van onze Extranet versie voor de mobiel of tablet, kunnen je medewerkers gemakkelijk hun werkbriefjes opvragen of hun tijdregistraties te noteren",
                 Description = "",
                 Image = "/images/module_iconen/gebrextern-45.png",
                 Price = "€ 10,- per 10 medewerkers",
@@ -1932,7 +1993,8 @@ namespace Hybrid_SaaS
             {
                 Name = "Dataopslag",
                 Url = "/Module/Dataopslag",
-                IntroText = "",
+                IntroText = "Alle digitale kopieën, documenten, gegevens van relaties en vele andere data, word opgeslagen in de applicatie, zodat de inforamtie altijd beschikbaar is",
+                Quote = "Alle digitale kopieën, documenten, gegevens van relaties en vele andere data, word opgeslagen in de applicatie, zodat de informatie altijd beschikbaar is",
                 Description = "",
                 Image = "/images/module_iconen/dataopslag-45.png",
                 Price = "€ 10,- per 10 GB",
@@ -2075,6 +2137,7 @@ namespace Hybrid_SaaS
             LinkDictionary[Link.PakketKwaliteitsControleTickets] = new LinkInfo
             {
                 Url = "/pakket-kwaliteitscontrolle-tickets",
+                Quote = "",
                 IntroText = "",
                 Description = "",
                 Image = "/images/why_arrow.png",
@@ -2087,8 +2150,10 @@ namespace Hybrid_SaaS
             LinkDictionary[Link.PakketKwaliteitsControle] = new LinkInfo
             {
                 Url = "/pakket-kwaliteitscontrolle",
-                IntroText = "",
-                Description = "",
+                IntroText = "In de Bouw wordt er vaak in verschillende fases gewerkt waarbij je als ondernemer altijd afhankelijk bent van de partij die voor je werkt en die na je komt. Discussies over begin- en eindsituaties worden vaak lange tijd na oplevering en zonder goede onderbouwing gevoerd. Dit kost veel tijd en vaak zonder veel resultaat. Hoe mooi zou als er in de Bouw betere digitale communicatie komt die processen verbeterd en discussies kan voorkomen of verminderen.",
+                Quote = "Voor het vroegtijdig signaleren en rapporteren van afwijkingen in het proces.",
+                Description = "Met het professionele online business software pakket kwaliteitscontrole van Hybrid SaaS dragen wij er zorg voor dat discussies met goede digitale onderbouwing worden aangegaan. Door middel van een vooraf samengestelde vragenlijst leg je vraag en antwoord eventueel aangevuld met bijbehorende foto(‘s) eenvoudig vast.",
+                DescriptionRight = "Met deze mobiele oplossing is het tijdperk van geschreven briefjes die zoek raken verleden tijd. Altijd en overal gegevens vastleggen en direct versturen zorgt voor een efficiënte communicatie voor- tijdens en na iedere fase. Vragenlijsten zijn makkelijk zelfstandig te maken en te beheren.",
                 Image = "/images/ticket_icon3a.png",
                 Price = "€ 100,- per maand",
                 LinkName = "Pakket Kwaliteitscontrole",
@@ -2099,8 +2164,10 @@ namespace Hybrid_SaaS
             LinkDictionary[Link.PakketTicketsFacturatie] = new LinkInfo
             {
                 Url = "/pakket-tickets-facturatie",
-                IntroText = "",
-                Description = "",
+                Quote = "Voor het bijhouden van alle acties in het bedrijf en het doorbelasten van de gewerkte tijd",
+                IntroText = "De e-mails, telefoontjes, tekst- en whatsappberichten van klanten vliegen je om de oren. Een van je klanten stelt ondertussen ook nog een ingewikkelde vraag waar meerdere lagen in de organisatie bij betrokken zijn. Niemand weet meer wat de actuele status is van de vraag. Hoeveel tijd er precies besteed is aan het oplossen van het vraagstuk weet al helemaal niemand meer. Conclusie: Je mist het overzicht en laat daarmee veel geld liggen, terwijl dat nergens voor nodig is! Wij hebben de bewezen oplossing om jouw problemen op te lossen.",
+                Description = "Met het professionele online business software pakket Tickets & Facturatie van Hybrid SaaS weet je zeker dat je voortaan geen zorgen meer hebt over tickets, tijdregistratie en facturatie. Het ervaren en gedreven team van Hybrid SaaS heeft krachtige software ontwikkeld die precies doet wat jij wilt. Wij steven naar perfectie en constante verbetering  van onze producten zodat jij altijd overzicht en inzicht hebt. ",
+                DescriptionRight = "Hybrid SaaS is een Nederlands product, gebaseerd op Nederlandse business logica met een professionele Nederlandse klantenservice. Bij ons hoef je niet bang te zijn voor vervelende verrassingen. We communiceren graag met onze klanten in heldere taal en vragen een eerlijke, betaalbare prijs voor onze producten.",
                 Image = "/images/ticket_icon2a.png",
                 Price = "€ 250,- per maand",
                 LinkName = "Pakket Tickets & Facturatie",
@@ -2111,8 +2178,9 @@ namespace Hybrid_SaaS
             LinkDictionary[Link.PakketContractbeheer] = new LinkInfo
             {
                 Url = "/pakket-contractbeheer",
-                IntroText = "",
-                Description = "",
+                Quote = "Voor het periodiek factureren van (cloud) diensten",
+                IntroText = "Als ICT-dienstverlener heb je een oneindige hoeveelheid contracten lopen bij klanten en leveranciers. Inkoopcontracten voor de eigen organisatie, maar ook inkoopcontracten voor klanten die weer gekoppeld zijn aan verkoopcontracten tussen jouw organisatie en de klant.",
+                Description = "Met Contractbeheer heb je eenvoudig inzicht in alle lopende contracten. Loopt een contract met een klant af, dan zie je direct welke contracten bij derden uitstaan en welke bijvoorbeeld opgezegd moeten worden.",
                 Image = "/images/ticket_icon1.png",
                 Price = "€ 125,- per maand",
                 LinkName = "Pakket Contractbeheer",

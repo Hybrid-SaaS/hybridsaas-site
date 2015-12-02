@@ -40,6 +40,29 @@
            }Hybrid SaaS | Online Business Software</title>
 
     <meta charset="UTF-8" />
+    <meta name="description" content="@{
+               if ( currentPage != null )
+               {
+                   if ( !String.IsNullOrEmpty( currentPage.IntroText ) )
+                   {
+                       @currentPage.IntroText
+                   }
+
+                   <text> - </text>
+               }
+           }Hybrid SaaS | Online Business Software">
+    <meta name="keywords" content="@{
+               if ( currentPage != null )
+               {
+                   if ( !String.IsNullOrEmpty( currentPage.MetaKeywords ) )
+                   {
+                       @currentPage.MetaKeywords
+                   }
+
+                   <text> - </text>
+               }
+           }Hybrid SaaS | Online Business Software">
+    <meta name="copyright" content="Hybrid SaaS BV">
 
     <!-- Mobile Specific Metas ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">

@@ -34,24 +34,26 @@
                                var modules = LinkList.LinkDictionary.Where(x => x.Value.Type == LinkType.Module).Select(y => y.Value);
                                foreach (var module in modules.OrderBy(x => x.LinkName))
                                {
-                                    <div class="management">
-                                        <img src="@module.Image" title="@module.IntroText" />
+                                   <div class="management">
+                                       <div>
+                                       <img src="@module.Image" title="@module.IntroText" style="float: left"/>
 
-                                        <h4>@module.LinkName</h4>
-                                        <div>
-                                            <span>@module.Price</span>
-                                        </div>
-                                        <div>
-                                            <ul>
-                                                <li><a>@module.IntroText @module.Description</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="clear"></div>
-                                        <div class="outlook">
+                                           <h4>@module.LinkName</h4>
+                                       </div>
+                                       <div>
+                                           <span>@module.Price</span>
+                                       </div>
+                                       <div>
+                                           <ul>
+                                               <li><a>@module.IntroText @module.Description</a></li>
+                                           </ul>
+                                       </div>
+                                       <div class="clear"></div>
+                                       <div class="outlook">
 
-                                            <a href="@module.Url" class="detail">detail overzicht</a>
-                                        </div>
-                                    </div>
+                                           <a href="@module.Url" class="detail">detail overzicht</a>
+                                       </div>
+                                   </div>
                                    }
                                }
                         </div>
@@ -64,41 +66,35 @@
                     <div class="centering">
                         <div class="text">
                             <article class="box-bar" style="border-bottom:initial">
+
+                                <div class="centering">
+                                </div>
                             </article>
                             <aside class="ticket">
                                 <div class="common pak1" style="margin:0px 10px 10px 10px; width:22% ">
                                     <img src="@LinkList.GetImage(Link.GebruikerIntern)" title="@LinkList.GetLinkName(Link.GebruikerIntern)" />
-                                    <h3><span>@LinkList.GetLinkName(Link.GebruikerIntern)</span></h3>
+                                    <h3>@LinkList.GetLinkName(Link.GebruikerIntern)</h3>
                                     <br /><br /><br /><cite>@LinkList.GetPrice(Link.GebruikerIntern)</cite>
-                                    <a href="@LinkList.GetLink(Link.GebruikerIntern)" class="detail" style="margin-top:60px;">Over Pakket</a>
-                                    <ul>
-                                        <li> Hybrid SaaS gebruikers</li>
-                                    </ul>
+                                    <a href="@LinkList.GetLink(Link.GebruikerIntern)" class="detail">Meer info</a>
+                                    <br /><br /><br /><h6>@LinkList.GetQuote(Link.GebruikerIntern)</h6>
                                 </div>
                                 <div class="common pak1" style="margin:0px 10px 10px 10px; width:22% ">
                                     <img src="@LinkList.GetImage(Link.GebruikerExtern)" title="@LinkList.GetLinkName(Link.GebruikerExtern)" />
-                                    <h3><span>@LinkList.GetLinkName(Link.GebruikerExtern)</span></h3>
+                                    <h3>@LinkList.GetLinkName(Link.GebruikerExtern)</h3>
                                     <cite>@LinkList.GetPrice(Link.GebruikerExtern)</cite>
-                                    <a href="@LinkList.GetLink(Link.GebruikerExtern)" class="detail" style="margin-top:60px;">Over Pakket</a>
-                                    <ul>
-                                        <li> Hybrid SaaS buitendienst medewerkers</li>
-                                    </ul>
+                                    <a href="@LinkList.GetLink(Link.GebruikerExtern)" class="detail">Meer info</a>
+                                    <br /><br /><br /><h6>@LinkList.GetQuote(Link.GebruikerExtern)</h6>
                                 </div>
                                 <div class="common pak1" style="margin:0px 10px 10px 10px; width:22%">
                                     <img src="@LinkList.GetImage(Link.Dataopslag)" title="@LinkList.GetLinkName(Link.Dataopslag)" />
-                                    <h3><span>@LinkList.GetLinkName(Link.Dataopslag)</span></h3>
+                                    <h3>@LinkList.GetLinkName(Link.Dataopslag)</h3>
                                     <br /><br /><br /><cite>@LinkList.GetPrice(Link.Dataopslag)</cite>
-                                    <a href="@LinkList.GetLink(Link.Dataopslag)" class="detail" style="margin-top:55px;">Over Pakket</a>
-                                    <ul>
-                                        <li> Hybrid SaaS dataopslag</li>
-                                    </ul>
+                                    <a href="@LinkList.GetLink(Link.Dataopslag)" class="detail">Meer info</a>
+                                    <br /><br /><br /><h6>@LinkList.GetQuote(Link.Dataopslag)</h6>
                                 </div>
                             </aside>
-                            </div>
-                        </div>
-               </article>
                             <!-- start paket bar -->
-            </section>
-		<!-- end center part -->
-	</section>
-	<!-- end content -->
+                        </div>
+                    </div>
+                </article>
+                <!-- end content -->

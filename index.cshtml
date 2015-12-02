@@ -22,7 +22,6 @@
                 <div class="centering">
                     <h2>Online Business Software voor ICT dienstverleners</h2>
                     <p>Hybrid SaaS Ticketsysteem, tijdregistratie en facturatie Eén overzichtelijk dashboard.</p>
-                    <a href="@LinkList.GetLink(Link.MenuPakketten)"><span>alle informatie over onze software vind je hier</span></a>
                 </div>
             </aside>
             <a class="downarrow" data-speed="2000" data-easing="easeOutQuint" href="#over"><img src="images/downarrow_img.png" alt="" /></a>
@@ -136,35 +135,29 @@
 
                     <aside class="ticket">
 
-                        <div class="common pak2">
+                        <div class="common pak3">
                             <img src="@LinkList.GetImage(Link.PakketTicketsFacturatie)" title="@LinkList.GetLinkName(Link.PakketTicketsFacturatie)" />
                             <h3>@LinkList.GetLinkName(Link.PakketTicketsFacturatie)</h3>
                             <cite>@LinkList.GetPrice(Link.PakketTicketsFacturatie)</cite>
                             <a href="@LinkList.GetLink(Link.PakketTicketsFacturatie)" class="detail">Over Pakket</a>
-                            <ul>
-                                <li><a> Voor het bijhouden van alle acties in het bedrijf en het doorbelasten van de gewerkte tijd</a></li>
-                            </ul>
+                            </ br><h6>@LinkList.GetQuote(Link.PakketTicketsFacturatie)</h6>
                         </div>
 
-                        <div class="common pak1">
+                        <div class="common pak3">
                             <img src="@LinkList.GetImage(Link.PakketContractbeheer)" title="@LinkList.GetLinkName(Link.PakketContractbeheer)" />
                             <h3>@LinkList.GetLinkName(Link.PakketContractbeheer)</h3>
                             <cite>@LinkList.GetPrice(Link.PakketContractbeheer)</cite>
                             <a href="@LinkList.GetLink(Link.PakketContractbeheer)" class="detail">Over Pakket</a>
-                            <ul>
-                                <li><a> Voor het periodiek factureren van (cloud) diensten</a></li>
-                            </ul>
+                            <h6>@LinkList.GetQuote(Link.PakketContractbeheer)</h6>
                         </div>
 
 
-                        <div class="common pak2">
+                        <div class="common pak3">
                             <img src="@LinkList.GetImage(Link.PakketKwaliteitsControle)" title="@LinkList.GetLinkName(Link.PakketKwaliteitsControle)" />
                             <h3>@LinkList.GetLinkName(Link.PakketKwaliteitsControle)</h3>
                             <cite>@LinkList.GetPrice(Link.PakketKwaliteitsControle)</cite>
                             <a href="@LinkList.GetLink(Link.PakketKwaliteitsControle)" class="detail">Over Pakket</a>
-                            <ul>
-                                <li><a> Voor het vroegtijdig signaleren en rapporteren van afwijkingen in het proces.</a></li>
-                            </ul>
+                            </ br><h6>@LinkList.GetQuote(Link.PakketKwaliteitsControle)</h6>
                         </div>
 
                     </aside>

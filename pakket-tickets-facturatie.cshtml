@@ -16,7 +16,7 @@
 
             <div class="header">
                 <div class="centering">
-                    <h2>@LinkList.GetLinkName(Link.PakketTicketsFacturatie)</h2>
+                    <h2>@LinkList.GetQuote(Link.PakketTicketsFacturatie)</h2>
                 </div>
             </div>
 
@@ -40,14 +40,14 @@
                 <td><h4>@LinkList.GetLinkName(Link.PakketTicketsFacturatie)</h4></td>
             </tr>
         </table>
-        <p>De e-mails, telefoontjes, tekst- en whatsappberichten van klanten vliegen je om de oren. E&#233;n van je klanten stelt ondertussen ook nog een ingewikkelde vraag waar meerdere lagen in de organisatie bij betrokken zijn. Niemand weet meer wat de actuele status is van de vraag. Hoeveel tijd er precies besteed is aan het oplossen van het vraagstuk weet al helemaal niemand meer. Conclusie: Je mist het overzicht en laat daarmee veel geld liggen, terwijl dat nergens voor nodig is! Wij hebben de bewezen oplossing om jouw problemen op te lossen.</p>
+        <p>@LinkList.GetTitle(Link.PakketTicketsFacturatie)</p>
 
         <div class="Left parah">
-            <p>Met het professionele online business software pakket Tickets & Facturatie van Hybrid SaaS weet je zeker dat je voortaan geen zorgen meer hebt over tickets, tijdregistratie en facturatie. Het ervaren en gedreven team van Hybrid SaaS heeft krachtige software ontwikkeld die precies doet wat jij wilt. Wij steven naar perfectie en constante verbetering  van onze producten zodat jij altijd overzicht en inzicht hebt. </p>
+            <p>@LinkList.GetDescription(Link.PakketTicketsFacturatie)</p>
         </div>
 
         <div class="Right parah">
-            <p>Hybrid SaaS is een Nederlands product, gebaseerd op Nederlandse business logica met een professionele Nederlandse klantenservice. Bij ons hoef je niet bang te zijn voor vervelende verrassingen. We communiceren graag met onze klanten in heldere taal en vragen een eerlijke, betaalbare prijs voor onze producten.</p>
+            <p>@LinkList.GetDescriptionRight(Link.PakketTicketsFacturatie)</p>
             <a target="_blank" href="@LinkList.GetLink(Link.Prijzenlijst)">Benieuwd naar de prijzen? Download prijslijst</a>
         </div>
         <div class="clear"></div>
@@ -229,35 +229,57 @@
     </div>
 </article>
 <!-- ends welke-bar -->
-<!-- start connecting bar -->
+<!-- start paket bar -->
 <article class="connecting-bar" style="margin:initial">
     <div class="centering">
         <div class="merge">
             <div class="module">
                 <h3>Aansluitende modules</h3>
-                <p class="misjenog">Mis je nog iets? Breid je pakket eenvoudig uit met de volgende modules.</p>
-                <div class="pakket">
-                    <ul>
-                        <li>
-                            <img src="@LinkList.GetImage(Link.Commissiebeheer)" title="@LinkList.GetLinkName(Link.Commissiebeheer)" />
-                            <h5>@LinkList.GetLinkName(Link.Commissiebeheer)</h5>
-                            <a href="@LinkList.GetLink(Link.Commissiebeheer)">Meer info</a>
-                        </li>
-                        <li>
-                            <img src="@LinkList.GetImage(Link.Contractenbeheer)" title="@LinkList.GetLinkName(Link.Contractenbeheer)" />
-                            <h5>@LinkList.GetLinkName(Link.Contractenbeheer)</h5>
-                            <a href="@LinkList.GetLink(Link.Contractenbeheer)">Meer info</a>
-                        </li>
-                        <li>
-                            <img src="@LinkList.GetImage(Link.Financieel)" title="@LinkList.GetLinkName(Link.Financieel)" />
-                            <h5>@LinkList.GetLinkName(Link.Financieel)</h5>
-                            <a href="@LinkList.GetLink(Link.Financieel)">Meer info</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                <p class="misjenog">Mis je nog iets? Bereid je pakket eenvoudig uit met de volgende modules.</p>
+               </div>
         </div>
     </div>
+    <article class="paket-bar" id="paket">
+        <div class="centering">
+            <div class="text">
+                <article class="box-bar" style="border-bottom:initial">
+                    
+                </article>
+                <aside class="ticket">
+                    <div class="common pak1" style="margin:0px 10px 10px 10px; width:22% ">
+                        <img src="@LinkList.GetImage(Link.Financieel)" title="@LinkList.GetLinkName(Link.Financieel)" />
+                        <h3>@LinkList.GetLinkName(Link.Financieel)</h3>
+                        <br /><br /><br /><cite>@LinkList.GetPrice(Link.Financieel)</cite>
+                        <a href="@LinkList.GetLink(Link.Financieel)" class="detail">Meer info</a>
+                        <br /><br /><h6>@LinkList.GetQuote(Link.Financieel)</h6>
+</div>
+                    <div class="common pak1" style="margin:0px 10px 10px 10px; width:22% ">
+                        <img src="@LinkList.GetImage(Link.Contractenbeheer)" title="@LinkList.GetLinkName(Link.Contractenbeheer)" />
+                        <h3>@LinkList.GetLinkName(Link.Contractenbeheer)</h3>
+                        <br /><br /><br /><cite>@LinkList.GetPrice(Link.Contractenbeheer)</cite>
+                        <a href="@LinkList.GetLink(Link.Contractenbeheer)" class="detail">Meer info</a>
+                        <br /><br /><h6>@LinkList.GetQuote(Link.Contractenbeheer)</h6>
+</div>
+                    <div class="common pak1" style="margin:0px 10px 10px 10px; width:22%">
+                        <img src="@LinkList.GetImage(Link.Commissiebeheer)" title="@LinkList.GetLinkName(Link.Commissiebeheer)" />
+                        <h3>@LinkList.GetLinkName(Link.Commissiebeheer)</h3>
+                        <br /><br /><br /><cite>@LinkList.GetPrice(Link.Commissiebeheer)</cite>
+                        <a href="@LinkList.GetLink(Link.Commissiebeheer)" class="detail">Meer info</a>
+                        <br /><br /><h6>@LinkList.GetQuote(Link.Commissiebeheer)</h6>
+                    </div>
+                    <div class="common pak1" style="margin:0px 10px 10px 10px; width:22%">
+                        <img src="@LinkList.GetImage(Link.MenuModules)" title="@LinkList.GetLinkName(Link.MenuModules)" />
+                        <h3>@LinkList.GetLinkName(Link.MenuModules)</h3>
+                        <br /><br /><br /><cite>@LinkList.GetPrice(Link.MenuModules)</cite>
+                        <a href="@LinkList.GetLink(Link.MenuModules)" class="detail">Meer info</a>
+                        <br /><br /><h6>@LinkList.GetQuote(Link.MenuModules)</h6>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </article>
 </article>
+<!-- start paket bar -->
+<!-- start connecting bar -->
 @Content.ContactForm(false);
 <!-- end connecting bar -->

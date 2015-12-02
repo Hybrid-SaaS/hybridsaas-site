@@ -138,6 +138,8 @@
     <Content Include="images\module_iconen\offerteorders-90.png" />
     <Content Include="images\module_iconen\outlookaddon-45.png" />
     <Content Include="images\module_iconen\outlookaddon-90.png" />
+    <Content Include="images\module_iconen\over-45.png" />
+    <Content Include="images\module_iconen\over-90.png" />
     <Content Include="images\module_iconen\prepaidkaarten-45.png" />
     <Content Include="images\module_iconen\prepaidkaarten-90.png" />
     <Content Include="images\module_iconen\productbeheer-45.png" />
@@ -155,6 +157,7 @@
     <Content Include="images\module_iconen\vragenlijst-45.png" />
     <Content Include="images\module_iconen\vragenlijst-90.png" />
     <Content Include="images\module_iconen\wachtwoordbeheer-45.png" />
+    <Content Include="images\module_iconen\wachtwoordbeheer-90.png" />
     <Content Include="images\module_iconen\webshop-45.png" />
     <Content Include="images\module_iconen\webshop-90.png" />
     <Content Include="images\module_iconen\werkbonnen-45.png" />
