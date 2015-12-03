@@ -302,37 +302,57 @@ namespace Hybrid_SaaS
                 Name = "Abonnementen",
                 Url = "/Module/Abonnementen",
                 IntroText = "Wil jij ook in één oogopslag kunnen zien wanneer een leasecontract afloopt en wanneer een telefoonabonnement of verzekering dient te worden verlengd? Hybrid SaaS maakt het mogelijk!",
-                Description = "De module Hybrid SaaS Abonnementenbeheer schept orde in de chaos en plaatst alle behaalde certificaten en afgesloten contracten overzichtelijk bij elkaar.Wanneer een certificaat of overeenkomst tegen de einddatum aanloopt word je hier automatisch van op de hoogte gesteld. Op deze manier voorkom je eenvoudig dat certificaten verlopen en je kosten moet betalen voor onnodige abonnementen. Met Hybrid SaaS Abonnementenbeheer loop je nooit meer achter de feiten aan.",
+                Description = "De module Hybrid SaaS Abonnementenbeheer schept orde in de chaos en plaatst alle behaalde certificaten en afgesloten contracten overzichtelijk bij elkaar. Wanneer een certificaat of overeenkomst tegen de einddatum aanloopt word je hier automatisch van op de hoogte gesteld. Op deze manier voorkom je eenvoudig dat certificaten verlopen en je kosten moet betalen voor onnodige abonnementen. Met Hybrid SaaS Abonnementenbeheer loop je nooit meer achter de feiten aan.",
                 Image = "/images/module_iconen/abbonnement-45.png",
                 Price = "€ 30,- per maand",
                 LinkName = "Abonnementen",
                 ImageBig = "/images/module_iconen/abbonnement-90.png",
-                
+                MetaKeywords = "Inkoopcontracten, Contributie, Maandabonnementen, Overeenstemming, Huurcontract, Telefoonabonnement",
+
+                FactSheet = new List<string>
+                {
+                    "Abonnement type ingeven",
+                    "Abonnement koppelen aan bedrijven",
+                    "Abonnement koppelen aan medewerkers",
+                    "Abonnement koppelen aan contract",
+                    "Abonnement nummer ingeven",
+                    "Een omschrijving van het abonnement ingeven",
+                    "Start- en einddatum ingeven",
+                    "Herinneringsdatum ingeven (met herinneringsfunctie voor als er een contract verleng moet worden of stopt)",
+                    "De frequentie van het contract aangeven met het daarbij behorende bedrag ",
+                    "Een opmerking kunnen toevoegen voor intern gebruik",
+                    "Digitale kopie toevoegen",
+                    "Overzicht geldige en lopende Abonnement",
+                    "Overzicht te vernieuwen Abonnement",
+                    "Overzicht verlopen Abonnement",
+                    "Overzichten exporten naar Microsoft Excel",
+                    "Digitaal document opstellen",
+                    "Digitale kopie verzenden",
+                    "Vaste lasten registreren en koppelen aan inkoopfacturen",
+
+                },
 
                 PhotoItems = new List<PhotoItem>
                 {
                     new PhotoItem
                     {
                         Image = "/images/modules/abonnement1.jpg",
-                        Title = "Abonnementen",
-                        Description = "."
+                        Title = "Helder overzicht van al je lopende inkoopcontracten en abonnementen",
+                        Description = "Zie in 1 oogopslag al je lopende abonnement en inkoopcontracten bij je leveranciers al je getekenden contracten sla je digitaal op zodat je deze altijd en overal kan raadplegen",
                     },
                     new PhotoItem
                     {
                         Image = "/images/modules/abonnement2.jpg",
-                        Title = "Abonnementen",
-                        Description = "."
-                    }
-                },
-
-                ManualItems = new List<ManualItem>
-                {
-                    new ManualItem
+                        Title = "Automatische meldingen als er contracten aflopen",
+                        Description = "Nooit meer onnodig te veel betalen voor contracten die je ben vergeten op te zeggen wij sturen dagelijks een overzicht met al je te vernieuwde of te beëindigen contracten in dien je contracten inkoopt welke je doorbelast krijg je automatisch een notificatie wanneer je een verkoopcontract beëindigt  op deze manier  heb je altijd een overzicht in je inkoop van je verkoop contracten.",
+                    },
+                    new PhotoItem
                     {
-                        Name = ".",
-                        Link = "."
-                    }
-                }
+                        Image = "/images/modules/abonnement1.jpg",
+                        Title = "Meer inzicht in je cashflow",
+                        Description = "Door het goed vast leggen van al je inkoopcontracten geven wij inzicht in je aankomende vaste lasten. Op die manier krijg j een actueel overzicht in je cashflow zodat je geen liquiditeit problemen aantreft.",
+                    },
+                },
             };
 
             LinkDictionary[Link.Bankrekening] = new LinkInfo
@@ -342,7 +362,7 @@ namespace Hybrid_SaaS
                 Name = "Bankrekening",
                 Url = "/Module/bankrekening",
                 IntroText = "De module Bankrekeningen schept orde in de chaos. U kan eenvoudig banktransacties importeren en afletteren waardoor u altijd inzicht heeft in de openstaande en betaalde facturen.",
-                Description = "Lees de banktransacties in en koppel ze eenvoudig aan openstaande verkoopfacturen. Het is ook mogelijk om incassobatches aan te maken. Het inlezen van banktransacties is ook handig voor de verwerking van inkoopfacturen. Zo kun je afschrijvingen direct koppelen aan de grootboekrekening of gegevens van inkoopfacturen automatisch gebruiken voor betalingen en incasso's.",
+                Description = " Lees de banktransacties in en koppel ze eenvoudig aan openstaande verkoopfacturen. Het is ook mogelijk om incassobatches aan te maken. Het inlezen van banktransacties is ook handig voor de verwerking van inkoopfacturen. Zo kun je afschrijvingen direct koppelen aan de grootboekrekening of gegevens van inkoopfacturen automatisch gebruiken voor betalingen en incasso's.",
                 Image = "/images/module_iconen/bank-45.png",
                 Price = "€ 30,- per maand",
                 LinkName = "Bankrekening",
@@ -423,7 +443,7 @@ namespace Hybrid_SaaS
                 Name = "Balans Winst & Verliesrekening",
                 Url = "/Module/balans-winst-verliesrekening",
                 IntroText = "De balans & winsten verliesrekening is een kasstroomoverzicht en daarmee een onderdeel van een jaarrekening. De balans & winst en verliesrekening geeft een overzicht van de kosten en opbrengsten van de entiteit over een bepaalde periode (meestal een jaar). ",
-                Description = "Het saldo van de balans & winst en verliesrekening is de over de periode behaalde winst of het over de periode geleden verlies. In dit artikel wordt het proces om een balans & winst en verliesrekening op te maken beschreven. Voordat u een Balans & Winst en verliesrekening kunt opmaken dient u eerst de basis inrichting uit te voeren",
+                Description = "Het saldo van de balans & winst en verliesrekening is de over de periode behaalde winst of het over de periode geleden verlies. In dit artikel wordt het proces om een balans & winst en verliesrekening op te maken beschreven. Voordat u een Balans & Winst en verliesrekening kunt opmaken dient u eerst de basis inrichting uit te voeren.",
                 Image = "/images/module_iconen/balanswinst-45.png",
                 Price = "€ 30,- per maand",
                 LinkName = "Balans Winst & Verliesrekening",
@@ -436,7 +456,7 @@ namespace Hybrid_SaaS
                     "Memoriaal boekingen aanmaken en inzien",
                     "Zoeken op grootboekrekeningnummers",
                     "Overzichten afdrukken",
-                    "Overzicht exporten naar Mircosoft Excel",
+                    "Overzicht exporten naar Microsoft Excel",
                     "Verkoop facturen exporteren naar ander boekhoudsysteem (Exact Online, Exact Globe, Accountview)",
                     "Inkoop facturen exporteren naar ander boekhoudsysteem (Exact Online, Exact Globe, Accountview)",
                     "Verkoopboek inzien",
@@ -465,8 +485,8 @@ namespace Hybrid_SaaS
 
                 Name = "Bedrijfsagenda",
                 Url = "/Module/bedrijfsagenda",
-                IntroText = "Met de bedrijfsagenda kan je heel eenvoudig het rooster van je mederwerkers bijhouden, je kan in één opslag zien hoeveel uur een mederwerker nog heeft staan of al heeft opgenomen. ",
-                Description = "Vanuit de bedrijfagenda kan je makkelijk een ticket aanmaken en inplannen, een verlof aanvragen of een bedrijfsgebeurtenis aanmaken. Je kan per mederwerker ook een export naar excel maken zodat je makkelijk kunt zien wanneer er vrij is genomen of ziek is geweest.",
+                IntroText = "Met de bedrijfsagenda kan je heel eenvoudig het rooster van je medewerkers  bijhouden, je kan in één opslag zien hoeveel uur een medewerkers nog heeft staan of al heeft opgenomen. ",
+                Description = "Vanuit de bedrijfsagenda kan je makkelijk een ticket aanmaken en inplannen, een verlof aanvragen of een bedrijfsgebeurtenis aanmaken. Je kan per medewerkers  ook een Microsoft Export naar excel maken zodat je makkelijk kunt zien wanneer er vrij is genomen of ziek is geweest.",
                 Image = "/images/module_iconen/bedrijfsagenda-45.png",
                 Price = "€ 30,- per maand",
                 LinkName = "Bedrijfsagenda",
@@ -494,8 +514,8 @@ namespace Hybrid_SaaS
 
                 Name = "Certificatenbeheer",
                 Url = "/Module/certificatenbeheer",
-                IntroText = "Eenvoudig kunnen zien wanneer een het rijbewijs of paspoort verloopt van je persooneel verloopt? Hybrid SaaS maakt het mogelijk! ",
-                Description = "De module Certificatenbeheer schept orde in de chaos en plaatst alle certificaten overzichtelijk bij elkaar.Wanneer een certificaat tegen de einddatum aanloopt word je hier automatisch van op de hoogte gesteld. Zodat je gegevens altijd op orde zijn.",
+                IntroText = "Eenvoudig kunnen zien wanneer een het rijbewijs of paspoort verloopt van je personeel verloopt? Hybrid SaaS maakt het mogelijk! ",
+                Description = "De module Certificatenbeheer schept orde in de chaos en plaatst alle certificaten overzichtelijk bij elkaar. Wanneer een certificaat tegen de einddatum aanloopt word je hier automatisch van op de hoogte gesteld. Zodat je gegevens altijd op orde zijn.",
                 Image = "/images/module_iconen/certificaten-45.png",
                 Price = "€ 30,- per maand",
                 LinkName = "Certificatenbeheer",
@@ -623,7 +643,7 @@ namespace Hybrid_SaaS
                 Name = "Contractenbeheer",
                 Url = "/Module/contractenbeheer",
                 Quote = "Met Hybrid SaaS Contracten heb je nauwelijks omkijken naar je periodiek uitgaande facturen en bestellingen",
-                IntroText = "Waarom tijd blijven besteden aan steeds terugkerende facturen en bestellingen als het ook automatisch kan? Met Hybrid SaaS Contracten heb je nauwelijks omkijken naar je periodiek uitgaande facturen en bestellingen en zo verbeter je eenvoudig je positieve cashflow.",
+                IntroText = "Waarom tijd blijven besteden aan steeds terugkerende facturen en bestellingen als het ook automatisch kan? Met Hybrid SaaS Contracten heb je nauwelijks omkijken naar je periodiek uitgaande facturen en bestellingen en zo verbeter je eenvoudig je positieve cashflow. ",
                 Description = "Periodiek terugkerende bestellingen plaats je automatisch bij je leveranciers. Abonnementen van je klanten kunnen worden ingegeven, waarbij de factuur per ingegeven termijn wordt verstuurd. Verzend facturen en bestellingen direct via e-mail. Bestaande orders en facturen kunnen direct geautomatiseerd worden.",
                 Image = "/images/module_iconen/contractbeheer-45.png",
                 Price = "€ 30,- per maand",
@@ -705,8 +725,8 @@ namespace Hybrid_SaaS
 
                 Name = "Extranet",
                 Url = "/Module/Extranet",
-                Description = "De module Hybrid SaaS Extranetbeheer schept orde in de chaos en plaatst alle behaalde certificaten en afgesloten contracten overzichtelijk bij elkaar.Wanneer een certificaat of overeenkomst tegen de einddatum aanloopt word je hier automatisch van op de hoogte gesteld. Op deze manier voorkom je eenvoudig dat certificaten verlopen en je kosten moet betalen voor onnodige Extranet. Met Hybrid SaaS Extranetbeheer loop je nooit meer achter de feiten aan.",
-                IntroText = "Wil jij ook in één oogopslag kunnen zien wanneer een leasecontract afloopt en wanneer een telefoonabonnement of verzekering dient te worden verlengd? Hybrid SaaS maakt het mogelijk!",
+                Description = "",
+                IntroText = "",
                 Image = "/images/module_iconen/extranet-45.png",
                 Price = "€ 30,- per maand",
                 LinkName = "Extranet",
@@ -736,7 +756,7 @@ namespace Hybrid_SaaS
 
                 Name = "Facturatie",
                 Url = "/Module/facturatie",
-                Quote = "Met Hybrid SaaS Facturatie kun je eenvoudig en snel een factuur opmaken en (digitaal) versturen.",
+                Quote = "Met Hybrid SaaS Facturatie kun je eenvoudig en snel een factuur opmaken en (digitaal) versturen. ",
                 IntroText = "Een goede cashflow begint bij het op tijd versturen van je facturen. Met Hybrid SaaS Facturatie kun je eenvoudig en snel een factuur opmaken en (digitaal) versturen.",
                 Description = "Je maakt gebruik van vooraf ingestelde gegevens. Op deze manier win je veel tijd en wordt de kans op fouten aanzienlijk verkleind. Facturen worden overzichtelijk opgeslagen en zijn hierdoor eenvoudig terug te vinden. Het verzenden van kopie- en creditfacturen was nog nooit zo gemakkelijk. Daarnaast geeft de module altijd het actuele facturatieproces weer en kun je in één oogopslag zien welke facturen zijn afgehandeld en welke er nog openstaan. Wanneer een betalingstermijn van een factuur is verstreken kunnen er gemakkelijk en snel betalingsherinneringen worden verstuurd.",
                 Image = "/images/module_iconen/facturatie-45.png",
@@ -780,7 +800,7 @@ namespace Hybrid_SaaS
 
                 Name = "Financieel",
                 Url = "/Module/Financieel",
-                IntroText = "Wil je het boekhoudproces nog slimmer inrichten? Kies dan ons pakket Financieel. Dit is de perfecte aanvulling op bijvoorbeeld Tickets & Facturatie of Offerte & Voorraad.",
+                IntroText = "Wil je het boekhoudproces nog slimmer inrichten? Kies dan ons pakket Financieel. Dit is de perfecte aanvulling op bijvoorbeeld Tickets & Facturatie ",
                 Quote = "Van het versturen van facturen tot een actueel overzicht in de balans, winst- en verliesrekening; dit pakket is zo ontworpen dat het voor 100% aansluit op de andere pakketten van Hybrid SaaS.",
                 Description = "Wij hebben zelf een boekhoudpakket ontwikkeld waarmee je eenvoudig digitaal online de complete boekhouding bijhoudt. Van het versturen van facturen tot een actueel overzicht in de balans, winst- en verliesrekening; dit pakket is zo ontworpen dat het voor 100% aansluit op de andere pakketten van Hybrid SaaS.",
                 Image = "/images/module_iconen/over-45.png",
@@ -791,7 +811,7 @@ namespace Hybrid_SaaS
 
                 FactSheet = new List<string>
                 {
-                    "Bespaar op accountantkosten",
+                    "Bespaar op accountant kosten",
                     "Altijd inzicht in de actuele betaalstatus",
                     "Informatie op verschillende plekken raadplegen",
                     "Koppeling met de Nederlandse bank",
@@ -1049,7 +1069,7 @@ namespace Hybrid_SaaS
 
                 Name = "Notities",
                 Url = "/Module/Notities",
-                IntroText = "Met de Module Notities kan je eenvoudig een verslag bijhouden wat er is afgesproken met de klant. Je kan hem inplannen zodat hij een dag van te voren als je een afspraak heb staan weer naar voren komt.",
+                IntroText = "Met de Module Notities kan je eenvoudig een verslag bijhouden wat er is afgesproken met de klant. Je kan hem inplannen zodat hij een dag van te voren als je een afspraak heb staan weer naar voren komt. ",
                 Description = "Ook kan je er bijlage in bijhouden. Dus alle relevante informatie over het gesprek word bij elkaar bewaard zodat je het altijd terug kan vinden",
                 Image = "/images/module_iconen/notities-45.png",
                 Price = "€ 30,- per maand",
@@ -1061,7 +1081,7 @@ namespace Hybrid_SaaS
                     "Notities aanmaken op bedrijven",
                     "Notities aanmaken op personen",
                     "Notities aanmaken op projecten",
-                    "Actiedatum toekennen (incl herinneringsdatum)",
+                    "Actiedatum toekennen (incl. herinneringsdatum)",
                     "Begin- en eindtijd vastleggen",
                     "Notitie toewijzen aan medewerker",
                     "Notities afhandelen",
@@ -1117,7 +1137,7 @@ namespace Hybrid_SaaS
                     "Scanfunctie om snel offerte- en orderregels toe te voegen",
                     "Offerte omzetten in order",
                     "Offerte en orders omzetten in een factuur",
-                    "Offerte en orders omzetten in proformafactuur",
+                    "Offerte en orders omzetten in proforma factuur",
                     "Offerte en orders omzetten in een contract",
                     "Offertes en orders digitaal versturen via e-mail",
                     "Offertes en orders uitprinten",
@@ -1231,7 +1251,7 @@ namespace Hybrid_SaaS
 
                 Name = "Outlook Add-In",
                 Url = "/Module/Outlook-Add-in",
-                IntroText = "Door middel van de Outlook add-in krijg je de mogelijkheid om e-mails vanuit Microsoft Outlook mailbox om te zetten in tickets. ",
+                IntroText = "Door middel van de Outlook Add-in krijg je de mogelijkheid om e-mails vanuit Microsoft Outlook mailbox om te zetten in tickets. ",
                 Description = "Op deze manier kan je je mailbox leeg houden en sla je e-mails netjes op bij de juiste relaties en/ of projecten.",
                 Image = "/images/module_iconen/outlookaddon-45.png",
                 Price = "€ 30,- per maand",
@@ -1366,7 +1386,7 @@ namespace Hybrid_SaaS
                 Url = "/Module/Projectbeheer",
                 Name = "Projectbeheer",
                 Quote = "De projecten kunnen worden gekoppeld aan relaties en worden overzichtelijk en gestructureerd weergegeven.",
-                IntroText = "Met de module Projectbeheer worden alle projectgegevens op één centrale plaats vastgelegd. De projecten kunnen worden gekoppeld aan relaties en worden overzichtelijk en gestructureerd weergegeven.",
+                IntroText = "Met de module Projectbeheer worden alle projectgegevens op één centrale plaats vastgelegd. De projecten kunnen worden gekoppeld aan relaties en worden overzichtelijk en gestructureerd weergegeven. ",
                 Description = "Met Hybrid SaaS Projectbeheer ben je in staat om projecten eenvoudiger te managen. Ook kun je deadlines gemakkelijk monitoren, openstaande taken inzien en het vastgestelde budget bewaken. Per project kun je financiële afspraken vastleggen en altijd en overal de projecthistorie inzien. Offertes en facturen kunnen eenvoudig aan projecten worden gekoppeld en met één druk op de knop worden verstuurd. Kortom, een forse tijdbesparing!",
                 Image = "/images/module_iconen/projectbeheer-45.png",
                 Price = "€ 30,- per maand",
@@ -1391,8 +1411,8 @@ namespace Hybrid_SaaS
                 Name = "Relatiebeheer",
 
                 Url = "/Module/relatiebeheer",
-                IntroText = "Relaties zijn de motor van iedere organisatie. Juist daarom is het belangrijk om als organisatie over een compleet en overzichtelijk CRM-systeem (Customer Relationship Management) te beschikken.",
-                Description = ".Met de module Relatiebeheer van Hybrid SaaS kunnen klantgegevens gemakkelijk en snel worden vastgelegd. Bovendien heeft elke medewerker altijd en overal toegang tot de actuele gegevens en de historie van elke klant. Dit is ook voor de klant een goede zaak, want dit zorgt voor een optimale klantbediening.",
+                IntroText = "Relaties zijn de motor van iedere organisatie. Juist daarom is het belangrijk om als organisatie over een compleet en overzichtelijk CRM-systeem (Customer Relationship Management) te beschikken. ",
+                Description = "Met de module Relatiebeheer van Hybrid SaaS kunnen klantgegevens gemakkelijk en snel worden vastgelegd. Bovendien heeft elke medewerker altijd en overal toegang tot de actuele gegevens en de historie van elke klant. Dit is ook voor de klant een goede zaak, want dit zorgt voor een optimale klantbediening.",
                 Image = "/images/module_iconen/relatiebeheer-45.png",
                 Price = "€ 30,- per maand",
                 LinkName = "Relatiebeheer",
@@ -1403,7 +1423,7 @@ namespace Hybrid_SaaS
                     "Leads",
                     "Klanten",
                     "Leveranciers",
-                    "Frabikanten",
+                    "Fabrikanten",
                     "Overige",
                     "Extranet gebruikers",
                     "Personen",
@@ -1485,7 +1505,7 @@ namespace Hybrid_SaaS
                 ImageBig = "/images/module_iconen/ticketsysteem-90.png",
             FactSheet = new List<string>
                 {
-                    "Tickets aanmaken via Extranet anonien",
+                    "Tickets aanmaken via Extranet anoniem",
                     "Tickets aanmaken via Extranet met logingegevens",
                     "Tickets koppelen aan bedrijven, personen, projecten en werklocaties",
                     "Ticketstatus aanmaken",
@@ -1644,10 +1664,10 @@ namespace Hybrid_SaaS
                     "Verpakkingseenheid",
                     "Productafbeelding opslaan",
                     "Opmerkingen aanmaken",
-                    "Producten onderverdelen in subproducten (productonderdelen)",
+                    "Producten onderverdelen in sub producten (productonderdelen)",
                     "Gerelateerde producten vastleggen",
                     "Producten dupliceren",
-                    "Productlabels en barcodes aanmaken",
+                    "Product labels en barcodes aanmaken",
                     "Gekoppelde orders inzien bij producten",
                     "Overzichten exporten naar Microsoft Excel",
                     "Producten importen via Microsoft Excel",
@@ -1724,7 +1744,7 @@ namespace Hybrid_SaaS
                 Name = "Vragenlijst & Equettes",
                 Url = "/Module/vragenlijsten",
                 IntroText = "Informatie is misschien wel het belangrijkste onderdeel binnen elke organisatie. Maar hoe zorgt u ervoor dat u de juiste informatie krijgt, zonder dat er een hele papierstroom aan vooraf gaat.",
-                Description = " Met de Online Enquête en vragenlijsten van Hybrid SaaS kunt u klanttevredenheidsonderzoeken uitvoeren, gestandaardiseerde (voor) opnamelijsten en nog veel meer. U heeft de volledige vrijheid om zelf vragen op te stellen en deze te laten beantwoorden door middel van muliplechoice of open antwoorden.",
+                Description = " Met de Online Enquête en vragenlijsten van Hybrid SaaS kunt u klanttevredenheidsonderzoeken uitvoeren, gestandaardiseerde (voor) opnamelijsten en nog veel meer. U heeft de volledige vrijheid om zelf vragen op te stellen en deze te laten beantwoorden door middel van multiple choice of open antwoorden.",
                 Image = "/images/module_iconen/vragenlijst-45.png",
                 Price = "€ 30,- per maand",
                 LinkName = "Vragenlijst & Equettes",
@@ -1734,7 +1754,7 @@ namespace Hybrid_SaaS
                 {
                     "Vragenlijsten opstellen bij bedrijven, personen, medewerkers en projecten",
                     "Openvragen toevoegen op vragenlijst",
-                    "Muliplechoice vragen toevoegen op vragenlijst",
+                    "Multiple choice vragen toevoegen op vragenlijst",
                     "Overzicht ingevulde en afgehandelde vragenlijsten",
                     "Een tekening toevoegen aan de vragenlijst",
                 },
@@ -1795,7 +1815,7 @@ namespace Hybrid_SaaS
 
                 Name = "Wachtwoordbeheer",
                 Url = "/Module/wachtwoordbeheer",
-                IntroText = "Je heb zoveel verschillende website's en zoveel verschillende inloggegevens dat je het overzicht zo kwijt ben welk wachtwoord waarbij hoort. ",
+                IntroText = "Je heb zoveel verschillende websites en zoveel verschillende inloggegevens dat je het overzicht zo kwijt ben welk wachtwoord waarbij hoort. ",
                 Description = "In deze module kunt u wachtwoorden registreren en koppelen aan het bedrijf zodat u altijd uw wachtwoorden bij de hand heeft.",
                 Image = "/images/module_iconen/wachtwoordbeheer-45.png",
                 Price = "€ 30,- per maand",
@@ -1834,7 +1854,7 @@ namespace Hybrid_SaaS
 
                 Name = "Webshop",
                 Url = "/Module/webshop",
-                Quote = "Met de Hybrid SaaS Webwinkel kan snel en eenvoudig een webshop worden gerealiseerd en kun je direct producten en diensten aan(potentiele) klanten aanbieden.",
+                Quote = "Met de Hybrid SaaS Webwinkel kan snel en eenvoudig een webshop worden gerealiseerd en kun je direct producten en diensten aan(potentiele) klanten aanbieden. ",
                 IntroText = "Met de Hybrid SaaS Webwinkel kan snel en eenvoudig een webshop worden gerealiseerd en kun je direct producten en diensten aan(potentiele) klanten aanbieden.",
                 Description = "Met een webshop ben je niet locatie gebonden en 24 uur per dag, 7 dagen per week bereikbaar. De uitgelezen kans om nieuwe klanten aan te trekken en de behoeften van bestaande klanten te voorzien. Online winkelen, het nieuwe winkelen!",
                 Image = "/images/module_iconen/webshop-45.png",
@@ -1917,8 +1937,8 @@ namespace Hybrid_SaaS
             {
                 Name = "Gebruikers",
                 Url = "/Module/Gebruiker-intern",
-                IntroText = "Alles bijhouden in de backoffice Gebruikers van Hybid SaaS kunnen inloggen in de applicatie om o.a. de proccessen te volgen van het bedrijf, het versturen van de facturen of het controleren van de tijdregistraties",
-                Quote = "Alles bijhouden in de backoffice Gebruikers van Hybid SaaS kunnen inloggen in de applicatie om o.a. de proccessen te volgen van het bedrijf, het versturen van de facturen of het controleren van de tijdregistraties",
+                IntroText = "Alles bijhouden in de backoffice Gebruikers van Hybrid  SaaS kunnen inloggen in de applicatie om o.a. de processen te volgen van het bedrijf, het versturen van de facturen of het controleren van de tijdregistraties",
+                Quote = "Alles bijhouden in de backoffice Gebruikers van Hybrid  SaaS kunnen inloggen in de applicatie om o.a. de processen te volgen van het bedrijf, het versturen van de facturen of het controleren van de tijdregistraties",
                 Description = "",
                 Image = "/images/module_iconen/gebrintern-45.png",
                 Price = "€ 5,- per gebruiker",
