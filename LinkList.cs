@@ -2275,8 +2275,8 @@ namespace Hybrid_SaaS
             LinkDictionary[Link.InvoerTicket] = new LinkInfo
             {
                 Url = "https://hybridsaas.hybridsaas.com/Extranet-revisited/Ticket/Ticket.create.asp",
-                IntroText = "",
-                Description = "Stel snel en gemakkelijk uw vraag online aan onze organisatie.",
+                IntroText = "Wij zijn met vakantie van 21-12-2015 t/m 03-01-2016. Uw vraag word na de vakantie in behandeling genomen",
+                Description = "Stel snel en gemakkelijk uw vraag online aan onze organisatie. ",
                 Image = "/images/why_arrow.png",
                 Price = "",
                 LinkName = "Ticketsysteem",
