@@ -686,7 +686,7 @@ namespace Hybrid_SaaS
                 {
                     new PhotoItem
                     {
-                        Image = "/images/modules/contracten1.jpg",
+                        Image = "/images/contractbeheer/algemene_contract_gegevens.png",
                         Title = "Contractenbeheer",
                         Description = "."
                     },
