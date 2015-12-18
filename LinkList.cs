@@ -1293,7 +1293,7 @@ namespace Hybrid_SaaS
                     {
                         Name = "Outlook Add-in installeren",
                         Link = "http://hybridsaas.support/pages/support-site/modules/outlook-addin/installeren/outlook-add-in-installeren"
-                    }
+                    },
                     new ManualItem
                     {
                         Name = "Handige weetjes",
@@ -2293,7 +2293,7 @@ namespace Hybrid_SaaS
             LinkDictionary[Link.InvoerTicket] = new LinkInfo
             {
                 Url = "https://hybridsaas.hybridsaas.com/Extranet-revisited/Ticket/Ticket.create.asp",
-                IntroText = "Wij zijn met vakantie van 21-12-2015 t/m 03-01-2016. Uw vraag word na de vakantie in behandeling genomen",
+                IntroText = "Wij zijn met vakantie van 21-12-2015 t/m 03-01-2016. Uw vraag wordt na de vakantie in behandeling genomen",
                 Description = "Stel snel en gemakkelijk uw vraag online aan onze organisatie. ",
                 Image = "/images/why_arrow.png",
                 Price = "",
