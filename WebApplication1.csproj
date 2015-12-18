@@ -95,6 +95,7 @@
       <DependentUpon>layout.css</DependentUpon>
     </Content>
     <Content Include="images\algemene_contract_gegevens.png" />
+    <Content Include="images\modules\algemene_contract_gegevens.png" />
     <Content Include="images\module_iconen\abbonnement-45.png" />
     <Content Include="images\module_iconen\abbonnement-90.png" />
     <Content Include="images\module_iconen\balanswinst-45.png" />
