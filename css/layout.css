@@ -1901,13 +1901,7 @@ a:hover {
   margin: 135px -10px 0 0;
 }
 .advantage-bar .image {
-  padding: 6px;
-  margin: 2px 0 10px 52px;
-  box-shadow: -7px 5px 8px #bdbdbd;
-  -webkit-box-shadow: -7px 5px 8px #bdbdbd;
-  -ms-box-shadow: -7px 5px 8px #bdbdbd;
   float: left;
-  background: #dbdbdb;
 }
 .advantage-bar .para {
   float: right;
