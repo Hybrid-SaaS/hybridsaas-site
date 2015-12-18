@@ -673,6 +673,14 @@ namespace Hybrid_SaaS
                     "Contracten automatisch samenvoegen",
                     "Facturenoverzicht per contract inzien",
                 },
+                ManualItems = new List<ManualItem>
+                {
+                    new ManualItem
+                    {
+                        Name = "Plannings interval",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/contractbeheer/plannings-interval"
+                    },
+                },
 
                 PhotoItems = new List<PhotoItem>
                 {
@@ -1213,6 +1221,11 @@ namespace Hybrid_SaaS
                     {
                         Name = "Zicht-Consignatie factuur omzetten naar Retour/Factuur",
                         Link = "http://hybridsaas.support/pages/support-site/modules/offertes-orders/zicht-consignatie-factuur-omzetten/zicht-consignatie-factuur-omzetten"
+                    },
+                    new ManualItem
+                    {
+                        Name = "Betaalwijze aanpassen",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/offertes-orders/betaalwijze-aanpassen/betaalwijze-aanpassen"
                     }
                 }
             };
@@ -1280,6 +1293,11 @@ namespace Hybrid_SaaS
                     {
                         Name = "Outlook Add-in installeren",
                         Link = "http://hybridsaas.support/pages/support-site/modules/outlook-addin/installeren/outlook-add-in-installeren"
+                    }
+                    new ManualItem
+                    {
+                        Name = "Handige weetjes",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/outlook-addin/handige-weetjes/handige-weetjes"
                     }
                 }
             };
