@@ -108,6 +108,7 @@ namespace Hybrid_SaaS
         prijzenlijstimplementatiePdf,
         Quote,
         DescriptionRight,
+        Additional,
 
 
     }
@@ -145,6 +146,7 @@ namespace Hybrid_SaaS
             public string Quote = "";
 
             public string MetaKeywords = "";
+            public string Additional = "";
 
             public bool OpenInNewWindow
             {
@@ -243,7 +245,10 @@ namespace Hybrid_SaaS
         {
             return LinkDictionary[link].Quote;
         }
-
+        public static string GetAdditional(Link link)
+        {
+            return LinkDictionary[link].Additional;
+        }
 
 
         static LinkList()
@@ -574,6 +579,8 @@ namespace Hybrid_SaaS
                 LinkName = "Commissiebeheer",
                 ImageBig = "/images/module_iconen/commissiebeheer-90.png",
                 MetaKeywords = "Courtage, Provisie, Wedeverkoper, Beloning, Kickback fee, Commissie, Commissieafspraken, Commissiebedragen",
+                
+
                 FactSheet = new List<string>
                 {
                     "Commissie ontvangende partij vast leggen, als bedrijf of als (intern)accountmanager",
@@ -642,36 +649,117 @@ namespace Hybrid_SaaS
 
                 Name = "Contractenbeheer",
                 Url = "/Module/contractenbeheer",
-                Quote = "Met Hybrid SaaS Contracten heb je nauwelijks omkijken naar je periodiek uitgaande facturen en bestellingen",
+                Quote = "Waarom tijd blijven besteden aan steeds terugkerende facturen en bestellingen als het ook automatisch kan? ",
                 IntroText = "Waarom tijd blijven besteden aan steeds terugkerende facturen en bestellingen als het ook automatisch kan? Met Hybrid SaaS Contracten heb je nauwelijks omkijken naar je periodiek uitgaande facturen en bestellingen en zo verbeter je eenvoudig je positieve cashflow. ",
-                Description = "Periodiek terugkerende bestellingen plaats je automatisch bij je leveranciers. Abonnementen van je klanten kunnen worden ingegeven, waarbij de factuur per ingegeven termijn wordt verstuurd. Verzend facturen en bestellingen direct via e-mail. Bestaande orders en facturen kunnen direct geautomatiseerd worden.",
+                Description = "Periodiek terugkerende bestellingen plaats je automatisch bij je leveranciers. Abonnementen van je klanten kunnen worden ingegeven, waarbij de factuur per ingegeven termijn wordt verstuurd. Verzend facturen en bestellingen direct via e-mail. Bestaande orders en facturen kunnen direct geautomatiseerd worden. Als ICT - dienstverlener heb je een oneindige hoeveelheid contracten lopen bij klanten en leveranciers.Inkoopcontracten voor de eigen organisatie, maar ook inkoopcontracten voor klanten die weer gekoppeld zijn aan verkoopcontracten tussen jouw organisatie en de klant.",
                 Image = "/images/module_iconen/contractbeheer-45.png",
                 Price = "€ 30,- per maand",
                 LinkName = "Contractenbeheer",
+                Additional = "Contract- en abonnementenbeheer kan als volgt worden genoemd: Periodieke facturatie, abonnementen factureren, abonnementskosten factureren, Huurcontracten, telefoonabonnementen, service contracten, onderhoudscontracten, verzekeringen, managementfee’s, hosting, licenties, domeinnamen, contributies",
                 ImageBig = "/images/module_iconen/contractbeheer-90.png",
 
                 FactSheet = new List<string>
                 {
-                    "Periodieke facturen/ contracten instellen",
-                    "Frequentie bepalen (maand, kwartaal, jaar)",
-                    "Contractwaarde instellen (maand, kwartaal, jaar)",
-                    "Meerdere contractregels invoeren met eigen werkcode",
-                    "Commissieafdracht vastleggen",
-                    "Contracten dupliceren",
-                    "Documenten opmaken bij contracten",
-                    "Automatisch commissies uitrekenen per contractregel",
-                    "Contractduur vastleggen",
+                    "***Algemeen***",
+                    "Contracten vastleggen bij entiteit",
+                    "Kenmerk of type vastleggen",
+                    "Leverancier vastleggen",
+                    "Contract opmaken voor een organisatie (bedrijf)",
+                    "Contract opmaken bij een persoon (particuliere klant)",
+                    "Factuuradres vastleggen",
+                    "Afleveradres vastleggen",
+                    "Contract koppelen aan een eindklant (eindgebruiker)",
+                    "Contract koppelen aan adres van eindklant",
+                    "E-mailadres vastleggen",
+                    "Afdeling vastleggen",
+                    "T.a.v. vastleggen",
+                    "Automatisch contractnummer laten genereren",
+                    "Contractomschrijving ingeven",
+                    "Externe referentie van de klant vastleggen (bijv. PO nummers)",
+                    "Weergave in referentie vastleggen",
+                    "Ingangsdatum contract vastleggen",
+                    "Einddatum of expiratiedatum contract vastleggen",
                     "Herinneringsdatum vastleggen",
-                    "Generatiemoment (moment van factureren) vastleggen",
-                    "Contracten samenvoegen",
-                    "Digitale kopie opslaan",
-                    "Online bestanden opslaan bij contracten",
-                    "Overzicht lopende contracten",
-                    "Overzicht vervallen contracten",
+                    "Laatste verlengdatum vastleggen",
+                    "Type uitvoer vastleggen (factuur of order)",
+                    "Uitsteldatum vastleggen",
+                    "Contract uitschakelen voor verwerken",
+                    "Frequentie van verwerken en genereren bepalen (dag, week, maand, kwartaal, jaar)",
+                    "Contract automatisch verlengen na einddatum",
+                    "Ingangsdatum van eerste contractverwerking instellen",
+                    "Aantal en interval van verwerkingen vastleggen",
+                    "Einddatum van verwerken vastleggen",
+                    "Facturatiemoment bepalen (vooraf of achteraf)",
+                    "Betalingscondities vastleggen (automatische incasso, overmaking via bank)",
+                    "Contractwaarde instellen (dag, week, maand, kwartaal, jaar)",
+                    "Onderscheid maken in terugkerende en eenmalige kosten",
+                    "Setup- en cancelkosten vastleggen",
+                    "Planningsoverzicht van geplande facturen in de toekomst (datum, aantal, waarde en tijdsinterval)",
+                    "Overzicht van de reeds opgemaakte facturen uit het contract (factuurnummer, datum, aantal, waarde en factuurperiode)",
+                    "Gegenereerde facturen direct inzien",
+                    "Automatisch commissies en provisies vastleggen (per contract en/of contractregel)",
+                    "Digitale kopie of scan van getekend contract online opslaan",
+                    "Online bestanden en contractbijlagen overzichtelijk opslaan",
+                    "Opmerkingen toevoegen (intern en/ of extern)",
+                    "Inkoopcontracten en abonnementen koppelen aan contract",
+                    "Overzicht van alle gekoppelde inkoopcontracten en inkoopabonnementen ",
+                    "Automatische melding en notificaties van te beëindigen inkoopcontracten",
+
+                    "***Acties***",
+                    "Contracten dupliceren",
+                    "Contracten opmaken op basis van template of sjabloon",
                     "Overzichten exporten naar Microsoft Excel",
-                    "Contracten factureren per type, organisatie of persoon",
+                    "Contracten digitaal verzenden per mail",
+                    "Contracten direct uitprinten",
+                    "Direct details van contract inzien",
+                    "Direct factuurregels inzien",
+                    "Direct facturenoverzicht per contract inzien",
+                    "Contracten factureren per entiteit, type, organisatie of persoon, project",
                     "Contracten automatisch samenvoegen",
-                    "Facturenoverzicht per contract inzien",
+                    "Proefronde draaien van contracten en abonnementen",
+
+                    "***Overzichten***",
+                    "Overzicht actieve en lopende contracten",
+                    "Overzicht aflopende contracten",
+                    "Overzicht verlopen en afgesloten contracten",
+                    "Overzicht externe contracten",
+                    "Overzicht te verwerken contracten",
+                    "Historie van acties per contract",
+
+                    "***Contract- en factuurregels***",
+                    "Meerdere contractregels tegelijkertijd beëindigingen of verwijderen",
+                    "Afzonderlijke contract- en factuurregels aan grootboekrekening koppelen",
+                    "Afzonderlijke contract- en factuurregels aan btw code en percentage koppelen",
+                    "Afzonderlijke contract- en factuurregels aan kostenplaats koppelen",
+                    "Afzonderlijke contract- en factuurregelsS aan prepaidkaarten koppelen",
+                    "Afzonderlijke contract- en factuurregels aan product uit productcatalogus koppelen",
+                    "Afzonderlijke contract- en factuurregels aan prognoseproduct uit productcatalogus koppelen voor forecast",
+                    "(Afwijkende) omschrijving contract- en factuurregels vastleggen",
+                    "Aantal vastleggen (geconsolideerd of opgebouwd uit losse regels)",
+                    "Eenheid bepalen (bijv. stuks, uur, m²)",
+                    "Basisprijs (inclusief of exclusief BTW) vastleggen",
+                    "Marge/ korting vastleggen",
+                    "Totaalbedrag contract- en factuurregels (inclusief of exclusief BTW)",
+                    "Totaalbedrag BTW contract- en factuurregels",
+                    "Inkoopprijs per contract- en factuurregels vastleggen",
+                    "Type contract- en factuurregel vastleggen (opstartkosten of annuleringskosten)",
+                    "Contract- en factuurregels uitsluiten voor commissie",
+
+                    "***Details contract- en factuurregels***",
+                    "Variabele looptijden en eigenschappen per contractregel vastleggen (1 product met verschillende looptijden)",
+                    "Aparte omschrijving vastleggen",
+                    "Koppelen aan een verkooporder",
+                    "Ingangsdatum contractregel vastleggen",
+                    "Einddatum of expiratiedatum contractregel vastleggen",
+                    "Contract- en factuurregels automatisch verlengen na einddatum",
+                    "Herinneringsdatum contract- factuurregel vastleggen",
+                    "Laatste verlengdatum contract- factuurregel vastleggen",
+                    "Overzicht eerste generatiemoment contract- factuurregel",
+                    "Overzicht einde vorige interval contract- factuurregel",
+                    "Overzicht begin volgende interval contract- factuurregel",
+                    "Opmerking contract- factuurregel vastleggen",
+
+
                 },
                 ManualItems = new List<ManualItem>
                 {
@@ -686,15 +774,81 @@ namespace Hybrid_SaaS
                 {
                     new PhotoItem
                     {
-                        Image = "/images/modules/algemene_contract_gegevens.png",
-                        Title = "Contractenbeheer",
-                        Description = "."
+                        Image = "/images/modules/contractbeheer/algemene_contract_gegevens.png",
+                        Title = "Contractgegevens op één centrale plaats",
+                        Description = "Je krijgt de mogelijk om alle noodzakelijke contractgegevens op één plaats te beheren. Of het nu gaat om de contactgegevens of een referentie van je klant hier is het mogelijk. Koppel abonnementen eenvoudig aan bedrijven, personen of projecten. Doormiddel van templates en sjablonen maak je in een handomdraai een professionele overeenkomst in je eigen huisstijl."
                     },
                     new PhotoItem
                     {
-                        Image = "/images/modules/contracten2.jpg",
-                        Title = "Contractenbeheer",
-                        Description = "."
+                        Image = "/images/modules/contractbeheer/interval_en_duur_instellen.png",
+                        Title = "Beheer looptijden van je contracten",
+                        Description = "Of een contract per maand of per jaar gefactureerd dient te worden maakt niet meer uit. Leg eenvoudig de looptijd van het abonnement vast en bepaal het moment waarop de facturatie moet plaatsvinden. Automatisch incasseren van het abonnement is geen probleem."
+                    },
+                    new PhotoItem
+                    {
+                        Image = "/images/modules/contractbeheer/contractwaarde_overzicht.png",
+                        Title = "Alle contracten overzichtelijk op een rij",
+                        Description = "Alle verkoopcontracten en abonnementen in één duidelijk overzicht. In één oogopslag de contractwaarde en resterende looptijd per abonnement. Nooit meer zorgen maken of een contract wel of niet gefactureerd."
+                    },
+                    new PhotoItem
+                    {
+                        Image = "/images/modules/contractbeheer/variabele_looptijden_per_contractregel.png",
+                        Title = "Looptijden per contractregel beheren",
+                        Description = "Wanneer je één product verkoopt met verschillende looptijden kan je makkelijk en overzichtelijk vastleggen. Factuurregels met dezelfde periode worden netjes gebundeld terwijl afwijkende periodes separaat worden weergegeven. Je factuur is nog nooit zo duidlelijk geweest."
+                    },
+                    new PhotoItem
+                    {
+                        Image = "/images/modules/contractbeheer/planning_periodieke_facturen.png",
+                        Title = "Overzichtelijke planning  van de aankomende facturen",
+                        Description = "Wil je weten welke facturen er voor de komende tijd op de planning staan? In een duidelijk overzicht krijg je informatie over de facturen voor de komende periodes. Aan de hand van aantallen en bedragen zie je snel eventuele onregelmatigheden. Tevens zie je gelijk welke facturen reeds verzonden zijn of welke facturen nog verzonden dienen te worden"
+                    },
+                    new PhotoItem
+                    {
+                        Image = "/images/modules/contractbeheer/contractregels_koppelen_ aan_prepaidkaart_en_grootboekrekening.png",
+                        Title = "Ieder contract- en factuurregel een eigen grootboekrekening",
+                        Description = "Optimale flexibiliteit, doordat je per regel details kunt vastleggen. Bepaal aan welke grootboekrekening of BTW percentage de contract- en factuuregel gekoppeld dient te worden. Prijzen, omschrijvingen worden automatisch voor je ingevuld doordat je gebruik maakt van de productencatalogus. Werk je met prepaidkaarten dan worden saldo’s automatisch gemuteerd."
+                    },
+                    new PhotoItem
+                    {
+                        Image = "/images/modules/contractbeheer/factuuregels_contract.png",
+                        Title = "Factuur met uitgebreide specificaties",
+                        Description = "Facturen zijn nog nooit zo duidelijk geweest. Doordat factuuregels tot in het kleinste details vastgelegd worden krijg je de mogelijkheid duidelijke en gedetailleerde gegevens op je factuur te laten zien."
+                    },
+                    new PhotoItem
+                    {
+                        Image = "/images/modules/contractbeheer/getekende_overeenkomst_digitaal_opslaan.png",
+                        Title = "Getekende overeenkomst opslaan",
+                        Description = "Ordners (hang) mappen behoren tot het verleden. Getekende contracten en abonnementsovereenkomsten scan je eenvoudig in en sla je op bij je digitale contract. Heb je bijlagen of andere digitale bestanden, dan sla je deze overzichtelijk online op. Alles centraal en digitaal op één plaats. "
+                    },
+                    new PhotoItem
+                    {
+                        Image = "/images/modules/contractbeheer/inkoopcontracten_en_abonnementen_vastleggen_bij_contract.png",
+                        Title = "Koppel inkoopcontracten aan verkoopcontracten",
+                        Description = "Je klant zegt het contract bij jou op en je vergeet je inkoopcontract stop te zetten. Dit zal je vanaf nu nooit meer overkomen. Automatisch krijg je een bericht als je een contract beëindigd. Tevens krijg je in duidelijk overzicht van al jou inkoopverplichtingen behorend bij je abonnementen"
+                    },
+                    new PhotoItem
+                    {
+                        Image = "/images/modules/contractbeheer/commissies_beheren.png",
+                        Title = "Provisie en commissiebeheer",
+                        Description = "Verkopen doe je niet alleen! Werk je met partners of agenten die jouw producten of diensten verkopen dan draag je eenvoudig provisies en commissies af. Op basis van het contract of zelfs factuurregels stuur je een helder overzicht van alle provisies over een bepaalde periode. Eenmalig instellen en “klaar is Kees”."
+                    },
+                    new PhotoItem
+                    {
+                        Image = "/images/modules/contractbeheer/contracten_verwerken.png",
+                        Title = "Met één druk op de knop contract opmaken en versturen",
+                        Description = "Waarom zou je veel tijd moeten spenderen aan terugkerende facturen die elke periode hetzelfde zijn? Met één druk op de knop worden al je contracten en abonnementen omgezet in een factuur. Jij bepaalt zelf naar wie en wat je factureert."
+                    },
+                    new PhotoItem
+                    {
+                        Image = "/images/modules/contractbeheer/automtische_incasso_contracten_en_abonnementen.png",
+                        Title = "Koppelen met je financiële administratie en automatische incasso via SEPA",
+                        Description = "Al je verzonden facturen worden overzichtelijk weergegeven op basis van grootboekrekeningen. Zie precies waar je omzet vandaan komt en waar extra aandacht nodig is. Abonnementskosten worden automatisch geïncasseerd bij de bank zodat je niet onnodig lang op je geld hoeft te wachten. "
+                    },
+                    new PhotoItem
+                    {
+                        Image = "/images/modules/contractbeheer/order_omzetten_in_contract.png",
+                        Title = "Met één druk orders omzetten in een contract",
+                        Description = "Het aanmaken van een nieuw of bestaand contract is abonnement is nog nooit zo makkelijk geweest. Op basis van een order zet je in een handomdraai alle gegevens om in een contract. Is je contract aangemaakt dan gaat de facturatie vanaf nu lekker vanzelf."
                     }
                 },
             };
