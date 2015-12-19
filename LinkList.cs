@@ -609,7 +609,7 @@ namespace Hybrid_SaaS
                 {
                     new PhotoItem
                     {
-                        Image = "/images/modules/commissie1.jpg",
+                        Image = "/images/modules/commissie1.png",
                         Title = "Leg eenvoudig al je commissies afspraken eenvoudig vast",
                         Description = "Leg gemakkelijk commissieafspraken per vertegenwoordiger of reseller van je product vast. Of het nu gaat om maandelijkse of eenmalige kickback fee’s, start up kosten of annuleringskosten dit is mogelijk met Hybrid SaaS commissiebeheer. Verdeel eventuele kortingen en betaal nooit onnodig voordat de facturen aan jou zijn voldaan."
                     },
