@@ -1015,7 +1015,7 @@ a:hover {
   overflow: hidden;
 }
 .support-bar .text {
-  margin: 35px 15px 0 0;
+  margin: 12px 15px 0 0;
   width: 73%;
   float: right;
 }
@@ -1028,13 +1028,13 @@ a:hover {
   -webkit-box-sizing: border-box;
 }
 .support-bar .right {
-  padding: 15px 0 0 50px;
+  padding: 0 0 0 50px;
 }
 .support-bar .right .image {
   width: 15%;
 }
 .support-bar .right .text {
-  margin: 20px 50px 10px 0;
+  margin: 12px 50px 10px 0;
 }
 .support-bar .left li {
   padding: 0;
@@ -1567,23 +1567,6 @@ a:hover {
   padding: 0px 0 5px;
   overflow: hidden;
 }
-
-.boxdetail-bar .ticket .common.custom ul,
-.boxdetail-bar .ticket .common.custom ul {
-  padding: 0px 0 5px;
-  overflow: hidden;
-  margin: 0 auto;
-    width: 700px;
-    list-style: none;
-
-}
-
-.boxdetail-bar .ticket .common.custom li,
-.boxdetail-bar .ticket .common.custom li{
- width:150px;
- text-align: center;
-    display: inline-block;
-}
 .boxdetail-bar .ticket .common.pak3 li:first-child,
 .boxdetail-bar .ticket .common.pak2 li:first-child {
   padding-left: 2px;
@@ -1713,7 +1696,7 @@ a:hover {
   font-size: 36px;
   line-height: 40px;
   color: #f7941e;
-    margin-left: 75px;
+  margin-left: 75px;
 }
 .select-bar .management ul {
   padding: 0 150px 0 0;
@@ -1880,25 +1863,25 @@ a:hover {
 }
 .advantage-bar h3 {
   padding: 0 125px;
-  margin: 25px 0 0;
+  margin: 25px 0 150px 0;
   text-align: center;
   font-size: 40px;
   line-height: 40px;
   color: #777;
 }
 .advantage-bar .merge {
-  padding: 0 0 80px;
-  margin: 80px 0 0;
+  padding: 0 0 50px;
+  margin: 25px 0 0;
   overflow: hidden;
   border-bottom: 1px dashed #c5c5c5;
 }
 .advantage-bar .merge.second {
-  padding-bottom: 150px;
-  margin: 115px -10px 0 0;
+  padding-bottom: 50px;
+  margin: 25px -10px 0 0;
 }
 .advantage-bar .merge.third {
-  padding-bottom: 150px;
-  margin: 135px -10px 0 0;
+  padding-bottom: 50px;
+  margin: 25px -10px 0 0;
 }
 .advantage-bar .image {
   float: left;
@@ -1987,9 +1970,6 @@ a:hover {
 .connecting-bar .merge {
   margin: 90px 0 0;
 }
-.connecting-bar .module.custom {
-    text-align: center;
-}
 .connecting-bar .pakket {
   margin: 35px 0 0;
 }
@@ -2050,7 +2030,6 @@ a:hover {
 }
 .connecting-bar .form {
   margin: 20px 0 0;
-  
   float: right;
 }
 .connecting-bar .form h4 {
@@ -2681,7 +2660,7 @@ a:hover {
   }
   p {
     text-align: justify;
-    word-break: break-all;
+    word-break: normal;
   }
   .nav-bar .rightmenu {
     margin: 0 5% 0 0;
@@ -2861,6 +2840,11 @@ a:hover {
   }
   .advantage-bar .merge.third {
     margin-top: 20px;
+  }
+  .advantage-bar .image img {
+    height: 400px;
+    object-fit: contain;
+    display: none !important;
   }
   .connecting-bar {
     padding-bottom: 20px;

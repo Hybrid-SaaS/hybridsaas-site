@@ -176,6 +176,10 @@
     <Content Include="images\module_iconen\werkbonnen-45.png" />
     <Content Include="images\module_iconen\werkbonnen-90.png" />
     <Content Include="prijzenlijst.cshtml" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
     <None Include="css\layout.less" />
     <Content Include="css\layout.css" />
     <Content Include="css\layout.min.css">

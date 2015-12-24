@@ -54,7 +54,6 @@ C:\Workspace\Ontwikkeling\GitHub\hybridsaas-site\bin\System.Web.Webpages.Deploym
 C:\Workspace\Ontwikkeling\GitHub\hybridsaas-site\bin\System.Web.Webpages.Razor.xml
 C:\Workspace\Ontwikkeling\GitHub\hybridsaas-site\bin\System.Web.Helpers.xml
 C:\Workspace\Ontwikkeling\GitHub\hybridsaas-site\bin\System.Web.Mvc.xml
-C:\Workspace\Ontwikkeling\GitHub\hybridsaas-site\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
 \\192.168.33.33\hybridsaas-site\bin\Microsoft.Web.Infrastructure.dll
 \\192.168.33.33\hybridsaas-site\bin\System.Web.Helpers.dll
 \\192.168.33.33\hybridsaas-site\bin\System.Web.Mvc.dll
@@ -68,3 +67,4 @@ C:\Workspace\Ontwikkeling\GitHub\hybridsaas-site\obj\Debug\WebApplication1.cspro
 \\192.168.33.33\hybridsaas-site\bin\System.Web.WebPages.xml
 \\192.168.33.33\hybridsaas-site\bin\System.Web.WebPages.Deployment.xml
 \\192.168.33.33\hybridsaas-site\bin\System.Web.WebPages.Razor.xml
+C:\Workspace\Ontwikkeling\GitHub\hybridsaas-site\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
