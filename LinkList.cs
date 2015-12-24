@@ -2435,8 +2435,8 @@ namespace Hybrid_SaaS
             LinkDictionary[Link.FotoAdapter] = new LinkInfo
             {
                 Url = "https://downloadsite.blob.core.windows.net/hybrid-saas-tools/tools.exe",
-                IntroText = "",
-                Description = "",
+                IntroText = "Download hier de FotoAdapter van Hybrid SaaS",
+                Description = "Download hier de laatste versie van FotoAdapter van Hybrid SaaS",
                 Image = "/images/why_arrow.png",
                 Price = "",
                 LinkName = "Hybrid SaaS FotoAdapter",
