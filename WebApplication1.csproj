@@ -97,6 +97,8 @@
     <Content Include="images\modules\contractbeheer\algemene_contract_gegevens.png" />
     <Content Include="images\modules\contractbeheer\automtische_incasso_contracten_en_abonnementen.png" />
     <Content Include="images\modules\contractbeheer\commissies_beheren.png" />
+    <Content Include="images\modules\contractbeheer\contractbeheer-45.png" />
+    <Content Include="images\modules\contractbeheer\contractbeheer-90.png" />
     <Content Include="images\modules\contractbeheer\contracten_verwerken.png" />
     <Content Include="images\modules\contractbeheer\contractregels_koppelen_ aan_prepaidkaart_en_grootboekrekening.png" />
     <Content Include="images\modules\contractbeheer\contractwaarde_overzicht.png" />
@@ -119,8 +121,6 @@
     <Content Include="images\module_iconen\certificaten-90.png" />
     <Content Include="images\module_iconen\commissiebeheer-45.png" />
     <Content Include="images\module_iconen\commissiebeheer-90.png" />
-    <Content Include="images\module_iconen\contractbeheer-45.png" />
-    <Content Include="images\module_iconen\contractbeheer-90.png" />
     <Content Include="images\module_iconen\crediteurbeheer-45.png" />
     <Content Include="images\module_iconen\crediteurbeheer-90.png" />
     <Content Include="images\module_iconen\dataopslag-45.png" />

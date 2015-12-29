@@ -652,11 +652,11 @@ namespace Hybrid_SaaS
                 Quote = "Waarom tijd blijven besteden aan steeds terugkerende facturen en bestellingen als het ook automatisch kan? ",
                 IntroText = "Waarom tijd blijven besteden aan steeds terugkerende facturen en bestellingen als het ook automatisch kan? Met Hybrid SaaS Contracten heb je nauwelijks omkijken naar je periodiek uitgaande facturen en bestellingen en zo verbeter je eenvoudig je positieve cashflow. ",
                 Description = "Periodiek terugkerende bestellingen plaats je automatisch bij je leveranciers. Abonnementen van je klanten kunnen worden ingegeven, waarbij de factuur per ingegeven termijn wordt verstuurd. Verzend facturen en bestellingen direct via e-mail. Bestaande orders en facturen kunnen direct geautomatiseerd worden. Als ICT - dienstverlener heb je een oneindige hoeveelheid contracten lopen bij klanten en leveranciers.Inkoopcontracten voor de eigen organisatie, maar ook inkoopcontracten voor klanten die weer gekoppeld zijn aan verkoopcontracten tussen jouw organisatie en de klant.",
-                Image = "/images/module_iconen/contractbeheer-45.png",
+                Image = "/images/modules/contractbeheer/contractbeheer-45.png",
                 Price = "€ 30,- per maand",
                 LinkName = "Contractenbeheer",
                 Additional = "Contract- en abonnementenbeheer kan als volgt worden genoemd: Periodieke facturatie, abonnementen factureren, abonnementskosten factureren, Huurcontracten, telefoonabonnementen, service contracten, onderhoudscontracten, verzekeringen, managementfee’s, hosting, licenties, domeinnamen, contributies",
-                ImageBig = "/images/module_iconen/contractbeheer-90.png",
+                ImageBig = "/images/modules/contractbeheer/contractbeheer-90.png",
 
                 FactSheet = new List<string>
                 {
@@ -766,7 +766,7 @@ namespace Hybrid_SaaS
                     new ManualItem
                     {
                         Name = "Plannings interval",
-                        Link = "http://hybridsaas.support/pages/support-site/modules/contractbeheer/plannings-interval"
+                        Link = "http://hybridsaas.support/pages/support-site/modules/contractenbeheer/plannings-interval"
                     },
                 },
 
