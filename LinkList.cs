@@ -109,6 +109,7 @@ namespace Hybrid_SaaS
         Quote,
         DescriptionRight,
         Additional,
+        FotoAdapter,
 
 
     }
@@ -2427,6 +2428,18 @@ namespace Hybrid_SaaS
                 Image = "/images/why_arrow.png",
                 Price = "",
                 LinkName = "Hybrid SaaS DataAdapter",
+                ImageBig = "/images/advantage_img7.png",
+
+
+            };
+            LinkDictionary[Link.FotoAdapter] = new LinkInfo
+            {
+                Url = "https://downloadsite.blob.core.windows.net/hybrid-saas-tools/tools.exe",
+                IntroText = "Download hier de FotoAdapter van Hybrid SaaS",
+                Description = "Download hier de laatste versie van FotoAdapter van Hybrid SaaS",
+                Image = "/images/why_arrow.png",
+                Price = "",
+                LinkName = "Hybrid SaaS FotoAdapter",
                 ImageBig = "/images/advantage_img7.png",
 
 
