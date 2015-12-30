@@ -1520,6 +1520,11 @@ namespace Hybrid_SaaS
                     {
                         Name = "Importeren Producten",
                         Link = "http://hybridsaas.support/pages/support-site/modules/productenbeheer/importeren/producten-importeren-cms"
+                    },
+                    new ManualItem
+                    {
+                        Name = "Importeren foto bij producten",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/foto-adapter/fotoadapter-instellen"
                     }
                 }
             };
