@@ -656,7 +656,7 @@ namespace Hybrid_SaaS
                 Image = "/images/modules/contractbeheer/contractbeheer-45.png",
                 Price = "€ 30,- per maand",
                 LinkName = "Contractenbeheer",
-                Additional = "Contract- en abonnementenbeheer kan als volgt worden genoemd: Periodieke facturatie, abonnementen factureren, abonnementskosten factureren, Huurcontracten, telefoonabonnementen, service contracten, onderhoudscontracten, verzekeringen, managementfee’s, hosting, licenties, domeinnamen, contributies",
+                Additional = "Contract- en abonnementenbeheer kan als volgt worden genoemd: Periodieke facturatie, abonnementen factureren, abonnementskosten factureren, Huurcontracten, telefoonabonnementen, service contracten, onderhoudscontracten, verzekeringen, managementfee’s, hosting, licenties, domeinnamen, contributies, abonnementenadministratie, online abonnementenbeheersysteem, online abonnementen beheer systeem, abonnementenadministratie software",
                 ImageBig = "/images/modules/contractbeheer/contractbeheer-90.png",
 
                 FactSheet = new List<string>
