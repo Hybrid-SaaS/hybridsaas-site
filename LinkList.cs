@@ -110,6 +110,8 @@ namespace Hybrid_SaaS
         DescriptionRight,
         Additional,
         FotoAdapter,
+        Testomgeving,
+
 
 
     }
@@ -309,10 +311,10 @@ namespace Hybrid_SaaS
                 Url = "/Module/Abonnementen",
                 IntroText = "Wil jij ook in één oogopslag kunnen zien wanneer een leasecontract afloopt en wanneer een telefoonabonnement of verzekering dient te worden verlengd? Hybrid SaaS maakt het mogelijk!",
                 Description = "De module Hybrid SaaS Abonnementenbeheer schept orde in de chaos en plaatst alle behaalde certificaten en afgesloten contracten overzichtelijk bij elkaar. Wanneer een certificaat of overeenkomst tegen de einddatum aanloopt word je hier automatisch van op de hoogte gesteld. Op deze manier voorkom je eenvoudig dat certificaten verlopen en je kosten moet betalen voor onnodige abonnementen. Met Hybrid SaaS Abonnementenbeheer loop je nooit meer achter de feiten aan.",
-                Image = "/images/module_iconen/abbonnement-45.png",
+                Image = "/images/modules/abonnement/abbonnement-45.png",
                 Price = "€ 30,- per maand",
                 LinkName = "Abonnementen",
-                ImageBig = "/images/module_iconen/abbonnement-90.png",
+                ImageBig = "/images/modules/abonnement/abbonnement-90.png",
                 MetaKeywords = "Inkoopcontracten, Contributie, Maandabonnementen, Overeenstemming, Huurcontract, Telefoonabonnement",
 
                 FactSheet = new List<string>
@@ -1666,6 +1668,43 @@ namespace Hybrid_SaaS
                 }
             };
 
+            LinkDictionary[Link.Testomgeving] = new LinkInfo
+            {
+                Type = LinkType.Module,
+
+                Name = "Test- en trainingsomgeving",
+                Url = "/Module/testomgeving",
+                IntroText = "Hybrid SaaS biedt de mogelijkheid om naast je huidige Hybrid SaaS omgeving een tweede omgeving te activeren. ",
+                Description = "De testomgeving bevat dezelfde data en instellingen als in bestaande “live” omgeving. Met deze omgeving krijg je de mogelijkheid veilig situaties na te spelen zonder dat dit schade kan veroorzaken aan de productieomgeving. ",
+                Image = "/images/module_iconen/over-45.png",
+                Price = "€ 100,- per maand",
+                LinkName = "Test- en trainingsomgeving",
+                ImageBig = "/images/module_iconen/over-90.png",
+                MetaKeywords = "",
+
+                PhotoItems = new List<PhotoItem>
+                {
+                    new PhotoItem
+                    {
+                        Image = "/images/modules/testomgeving/medewerkers_trainen.png",
+                        Title = "(Nieuwe) medewerkers trainen ",
+                        Description = "Dit is de ideale mogelijkheid om medewerkers eerst op te leiden voordat deze met de live omgeving gaan werken. Medewerkers krijgen de mogelijkheid zichzelf wegwijs te maken en situaties na te spelen. Doordat in testomgeving wordt gewerkt komt bestaande bedrijfsdata niet in gevaar.",
+                    },
+                    new PhotoItem
+                    {
+                        Image = "/images/modules/testomgeving/testen_en_accepteren.png",
+                        Title = "Aanpassingen en updates testen ",
+                        Description = "Test als eerste nieuwe functies en BETA versies voordat deze in productie gaan. Nieuwe ontwikkelingen in de programmatuur welke voor jouw bedrijf van toepassing zijn kan je direct testen. De kwaliteit van oplevering zal worden vergroot en grote verassingen bij een nieuwe update.",
+                    },
+                    new PhotoItem
+                    {
+                        Image = "/images/modules/testomgeving/complexe_processen_uitwerken.png",
+                        Title = "Processen simuleren ",
+                        Description = "Als zicht een situatie voordoet welke niet dagelijks wordt uitgevoerd kan deze eerst in de testomgeving worden uitgevoerd. Snel zal duidelijk worden of de acties het gewenste resultaat opleveren. Complexe processen test je veilig en zonder dat de live omgeving in gevaar komt.",
+                    },
+                },
+            };
+
 
             LinkDictionary[Link.TicketSysteem] = new LinkInfo
             {
@@ -2465,7 +2504,7 @@ namespace Hybrid_SaaS
             LinkDictionary[Link.InvoerTicket] = new LinkInfo
             {
                 Url = "https://hybridsaas.hybridsaas.com/Extranet-revisited/Ticket/Ticket.create.asp",
-                IntroText = "Wij zijn met vakantie van 21-12-2015 t/m 03-01-2016. Uw vraag wordt na de vakantie in behandeling genomen",
+                IntroText = "",
                 Description = "Stel snel en gemakkelijk uw vraag online aan onze organisatie. ",
                 Image = "/images/why_arrow.png",
                 Price = "",
