@@ -1687,7 +1687,7 @@ namespace Hybrid_SaaS
                     new PhotoItem
                     {
                         Image = "/images/modules/testomgeving/medewerkers_trainen.png",
-                        Title = "(Nieuwe) medewerkers trainen ",
+                        Title = "(Nieuwe) Medewerkers trainen ",
                         Description = "Dit is de ideale mogelijkheid om medewerkers eerst op te leiden voordat deze met de live omgeving gaan werken. Medewerkers krijgen de mogelijkheid zichzelf wegwijs te maken en situaties na te spelen. Doordat in testomgeving wordt gewerkt komt bestaande bedrijfsdata niet in gevaar.",
                     },
                     new PhotoItem
