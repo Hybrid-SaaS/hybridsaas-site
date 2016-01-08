@@ -1652,13 +1652,13 @@ namespace Hybrid_SaaS
                     {
                         Image = "/images/modules/testomgeving/testen_en_accepteren.png",
                         Title = "Aanpassingen en updates testen ",
-                        Description = "Test als eerste nieuwe functies en BETA versies voordat deze in productie gaan. Nieuwe ontwikkelingen in de programmatuur welke voor jouw bedrijf van toepassing zijn kan je direct testen. De kwaliteit van oplevering zal worden vergroot en grote verassingen bij een nieuwe update.",
+                        Description = "Test als eerste nieuwe functies en BETA versies voordat deze in productie gaan. Nieuwe ontwikkelingen in de programmatuur welke voor jouw bedrijf van toepassing zijn kan je direct testen. De kwaliteit van oplevering zal worden vergroot en grote verassingen bij een nieuwe update zullen uitblijven.",
                     },
                     new PhotoItem
                     {
                         Image = "/images/modules/testomgeving/complexe_processen_uitwerken.png",
                         Title = "Processen simuleren ",
-                        Description = "Als zicht een situatie voordoet welke niet dagelijks wordt uitgevoerd kan deze eerst in de testomgeving worden uitgevoerd. Snel zal duidelijk worden of de acties het gewenste resultaat opleveren. Complexe processen test je veilig en zonder dat de live omgeving in gevaar komt.",
+                        Description = "Als zich een situatie voordoet welke niet dagelijks wordt uitgevoerd kan deze eerst in de testomgeving worden uitgevoerd. Snel zal duidelijk worden of de acties het gewenste resultaat opleveren. Complexe processen test je veilig en zonder dat de live omgeving in gevaar komt.",
                     },
                 },
             };
