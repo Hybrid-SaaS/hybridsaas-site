@@ -625,6 +625,7 @@
     <Content Include="Module\oud\_wachtwoordbeheer.cshtml" />
     <Content Include="Module\oud\_Webshop.cshtml" />
     <Content Include="Module\oud\_werkbonnen.cshtml" />
+    <Content Include="PDF\URL list.zip" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -111,6 +111,7 @@ namespace Hybrid_SaaS
         Additional,
         FotoAdapter,
         Testomgeving,
+        Omgeving,
 
 
 
@@ -442,49 +443,6 @@ namespace Hybrid_SaaS
                         Link = "http://hybridsaas.support/pages/support-site/modules/bankrekening/kas-als-bankrekening/de-kas-als-bankrekening-aanmaken"
                     }
                 }
-            };
-
-            LinkDictionary[Link.BalansWinstVerliesrekening] = new LinkInfo
-            {
-                Type = LinkType.Module,
-
-                Name = "Balans Winst & Verliesrekening",
-                Url = "/Module/balans-winst-verliesrekening",
-                IntroText = "De balans & winsten verliesrekening is een kasstroomoverzicht en daarmee een onderdeel van een jaarrekening. De balans & winst en verliesrekening geeft een overzicht van de kosten en opbrengsten van de entiteit over een bepaalde periode (meestal een jaar). ",
-                Description = "Het saldo van de balans & winst en verliesrekening is de over de periode behaalde winst of het over de periode geleden verlies. In dit artikel wordt het proces om een balans & winst en verliesrekening op te maken beschreven. Voordat u een Balans & Winst en verliesrekening kunt opmaken dient u eerst de basis inrichting uit te voeren.",
-                Image = "/images/module_iconen/balanswinst-45.png",
-                Price = "€ 30,- per maand",
-                LinkName = "Balans Winst & Verliesrekening",
-                ImageBig = "/images/module_iconen/balanswinst-90.png",
-
-                FactSheet = new List<string>
-                {
-                    "Winst- en verlies rekening opstellen",
-                    "Balans opstellen",
-                    "Memoriaal boekingen aanmaken en inzien",
-                    "Zoeken op grootboekrekeningnummers",
-                    "Overzichten afdrukken",
-                    "Overzicht exporten naar Microsoft Excel",
-                    "Verkoop facturen exporteren naar ander boekhoudsysteem (Exact Online, Exact Globe, Accountview)",
-                    "Inkoop facturen exporteren naar ander boekhoudsysteem (Exact Online, Exact Globe, Accountview)",
-                    "Verkoopboek inzien",
-                },
-
-                PhotoItems = new List<PhotoItem>
-                {
-                    new PhotoItem
-                    {
-                        Image = "/images/modules/balanswinstverlies1.jpg",
-                        Title = "Balans Winst & Verliesrekening",
-                        Description = "."
-                    },
-                    new PhotoItem
-                    {
-                        Image = "/images/modules/balanswinstverlies2.jpg",
-                        Title = "Balans Winst & Verliesrekening",
-                        Description = "."
-                    }
-                },
             };
 
             LinkDictionary[Link.Bedrijfsagenda] = new LinkInfo
@@ -2489,6 +2447,17 @@ namespace Hybrid_SaaS
 
             };
 
+            LinkDictionary[Link.Omgeving] = new LinkInfo
+            {
+                Url = "http://www.hybridsaas.com/PDF/URLlist.zip",
+                IntroText = "Download hier de een bestandje om meerdere omgevingen van Hybrid SaaS te instaleren",
+                Description = "Een gemakkelijke inlog voor meerdere omgevingen van Hybrid SaaS",
+                Image = "/images/why_arrow.png",
+                Price = "",
+                LinkName = "Hybrid SaaS Omgevingen",
+                ImageBig = "/images/advantage_img7.png",
+            };
+
             LinkDictionary[Link.KijkMetMijMee] = new LinkInfo
             { 
                 Url = "http://www.kijkmetmijmee.nl/Hybrid%20SaaS%20-%20Customer%20Support.exe",
@@ -2599,7 +2568,7 @@ namespace Hybrid_SaaS
                 Url = "http://www.hybridsaas.com/PDF/Implementatie-Inrichting.pdf",
             };
 
-
+            
             LinkDictionary[Link.MeestGesteldeVragen] = new LinkInfo
             {
                 Url = "http://hybridsaas.support/pages",
