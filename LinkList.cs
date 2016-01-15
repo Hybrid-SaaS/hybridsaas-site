@@ -2424,7 +2424,7 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.DataAdapter] = new LinkInfo
             {
-                Url = "http://www.hybridsaas.com/PDF/dataadapter.zip",
+                Url = "http://www.hybridsaas.com/PDF/dataadapter.7z",
                 IntroText = "Download hier de DataAdapter van Hybrid SaaS",
                 Description = "Download hier de laatste versie van DataAdapter van Hybrid SaaS",
                 Image = "/images/why_arrow.png",
