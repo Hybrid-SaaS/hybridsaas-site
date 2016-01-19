@@ -96,6 +96,8 @@
     </Content>
     <Content Include="images\modules\abonnement\abbonnement-45.png" />
     <Content Include="images\modules\abonnement\abbonnement-90.png" />
+    <Content Include="images\modules\abonnement\cashflow_verloop.png" />
+    <Content Include="images\modules\abonnement\herinneringsmail_abonnementen.png" />
     <Content Include="images\modules\abonnement\lopende_abonnement.png" />
     <Content Include="images\modules\contractbeheer\algemene_contract_gegevens.png" />
     <Content Include="images\modules\contractbeheer\automtische_incasso_contracten_en_abonnementen.png" />

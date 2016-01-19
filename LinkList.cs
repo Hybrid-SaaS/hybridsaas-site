@@ -95,7 +95,7 @@ namespace Hybrid_SaaS
         Werkbonnen,
         WordAddDownload,
         Youtube,
-        Prijzenlijst,
+        prijslijst,
         PakketCommisiebeheer,
         Consultancy,
         Correspondentie,
@@ -103,9 +103,9 @@ namespace Hybrid_SaaS
         Voortgang,
         Inkoopbeheer,
         DataAdapter,
-        prijzenlijstpakkettenPdf,
-        prijzenlijstmodulesPdf,
-        prijzenlijstimplementatiePdf,
+        prijslijstpakkettenPdf,
+        prijslijstmodulesPdf,
+        prijslijstimplementatiePdf,
         Quote,
         DescriptionRight,
         Additional,
@@ -345,19 +345,19 @@ namespace Hybrid_SaaS
                 {
                     new PhotoItem
                     {
-                        Image = "/images/modules/abonnement1.jpg",
+                        Image = "/images/modules/abonnement/lopende_abonnement.png",
                         Title = "Helder overzicht van al je lopende inkoopcontracten en abonnementen",
                         Description = "Zie in 1 oogopslag al je lopende abonnement en inkoopcontracten bij je leveranciers al je getekenden contracten sla je digitaal op zodat je deze altijd en overal kan raadplegen",
                     },
                     new PhotoItem
                     {
-                        Image = "/images/modules/abonnement2.jpg",
+                        Image = "/images/modules/abonnement/herinneringsmail_abonnementen.png",
                         Title = "Automatische meldingen als er contracten aflopen",
                         Description = "Nooit meer onnodig te veel betalen voor contracten die je ben vergeten op te zeggen wij sturen dagelijks een overzicht met al je te vernieuwde of te beëindigen contracten in dien je contracten inkoopt welke je doorbelast krijg je automatisch een notificatie wanneer je een verkoopcontract beëindigt  op deze manier  heb je altijd een overzicht in je inkoop van je verkoop contracten.",
                     },
                     new PhotoItem
                     {
-                        Image = "/images/modules/abonnement1.jpg",
+                        Image = "/images/modules/abonnement/cashflow_verloop.png",
                         Title = "Meer inzicht in je cashflow",
                         Description = "Door het goed vast leggen van al je inkoopcontracten geven wij inzicht in je aankomende vaste lasten. Op die manier krijg j een actueel overzicht in je cashflow zodat je geen liquiditeit problemen aantreft.",
                     },
@@ -403,13 +403,13 @@ namespace Hybrid_SaaS
                 {
                     new PhotoItem
                     {
-                        Image = "/images/modules/bankrekening1.jpg",
+                        Image = "/images/foto_img.jpg",
                         Title = "Bankrekening",
                         Description = "."
                     },
                     new PhotoItem
                     {
-                        Image = "/images/modules/bankrekening2.jpg",
+                        Image = "/images/foto_img1.jpg",
                         Title = "Bankrekening",
                         Description = "."
                     }
@@ -2547,23 +2547,23 @@ namespace Hybrid_SaaS
 
             };
 
-            LinkDictionary[Link.Prijzenlijst] = new LinkInfo
+            LinkDictionary[Link.prijslijst] = new LinkInfo
             {
-                Url = "/Prijzenlijst",
-                Name = "Prijzenlijst"
+                Url = "/prijslijst",
+                Name = "prijslijst"
             };
-            LinkDictionary[Link.prijzenlijstmodulesPdf] = new LinkInfo
+            LinkDictionary[Link.prijslijstmodulesPdf] = new LinkInfo
             {
                 Url = "http://www.hybridsaas.com/PDF/Modules.pdf",
             };
 
-            LinkDictionary[Link.prijzenlijstpakkettenPdf] = new LinkInfo
+            LinkDictionary[Link.prijslijstpakkettenPdf] = new LinkInfo
             {
                 Url = "http://www.hybridsaas.com/PDF/Pakketten.pdf",
 
 
             };
-            LinkDictionary[Link.prijzenlijstimplementatiePdf] = new LinkInfo
+            LinkDictionary[Link.prijslijstimplementatiePdf] = new LinkInfo
             {
                 Url = "http://www.hybridsaas.com/PDF/Implementatie-Inrichting.pdf",
             };
