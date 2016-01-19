@@ -222,7 +222,7 @@
     <Content Include="Module\wachtwoordbeheer.cshtml" />
     <Content Include="Module\webshop.cshtml" />
     <Content Include="Module\werkbonnen.cshtml" />
-    <Content Include="prijzenlijst.cshtml" />
+    <Content Include="prijslijst.cshtml" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
