@@ -914,6 +914,11 @@ namespace Hybrid_SaaS
                     {
                         Name = "Overzicht van de openstaande facturen met dagen",
                         Link = "http://hybridsaas.support/pages/support-site/modules/facturatie/herinneren-per-klant/herinneren-per-klant"
+                    },
+                    new ManualItem
+                    {
+                        Name = "Export van Jupa",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/facturatie/export-jupa/export-jupa"
                     }
                 }
             };
@@ -1111,6 +1116,15 @@ namespace Hybrid_SaaS
                         Description = "."
                     }
                 },
+
+                ManualItems = new List<ManualItem>
+                {
+                    new ManualItem
+                    {
+                        Name = "Inventariseren.",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/voorraadbeheer/inventrariseren"
+                    }
+                }
             };
             LinkDictionary[Link.Inkoopbeheer] = new LinkInfo
             {
