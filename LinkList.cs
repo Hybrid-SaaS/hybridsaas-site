@@ -441,6 +441,11 @@ namespace Hybrid_SaaS
                     {
                         Name = "De kas als bankrekening aanmaken",
                         Link = "http://hybridsaas.support/pages/support-site/modules/bankrekening/kas-als-bankrekening/de-kas-als-bankrekening-aanmaken"
+                    },
+                    new ManualItem
+                    {
+                        Name = "Een kas transactie aanmaken",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/bankrekening/kastransactie-aanmaken/kastransactie-aanmaken"
                     }
                 }
             };
