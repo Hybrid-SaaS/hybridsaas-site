@@ -1821,6 +1821,11 @@ namespace Hybrid_SaaS
                     {
                         Name = "Verwerking verschillende overuren",
                         Link = "http://hybridsaas.support/pages/support-site/modules/tijdregistratie/verwerking-verschillende-overuren/verwerking-verschillende-overuren"
+                    },
+                    new ManualItem
+                    {
+                        Name = "Uren per medewerker per dag",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/tijdregistratie/uren-per-medewerker-per-dag/uren-per-medewerker-per-dag"
                     }
                 }
             };
@@ -2126,6 +2131,13 @@ namespace Hybrid_SaaS
                         Description = "."
                     }
                 },
+                ManualItems = new List<ManualItem>
+                {
+                    new ManualItem
+                    {
+                        Name = "Process werkbonnen",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/werkbonnen/proces-werkbonnen/proces-werkbonnen"
+                    },
             };
             LinkDictionary[Link.GebruikerIntern] = new LinkInfo
             {
