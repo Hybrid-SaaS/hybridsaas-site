@@ -1127,7 +1127,7 @@ namespace Hybrid_SaaS
                     new ManualItem
                     {
                         Name = "Inventariseren.",
-                        Link = "http://hybridsaas.support/pages/support-site/modules/voorraadbeheer/inventrariseren"
+                        Link = "http://hybridsaas.support/pages/support-site/modules/voorraadbeheer/inventrariseren/inventrariseren"
                     }
                 }
             };
@@ -1360,6 +1360,11 @@ namespace Hybrid_SaaS
                     {
                         Name = "Betaalwijze aanpassen",
                         Link = "http://hybridsaas.support/pages/support-site/modules/offertes-orders/betaalwijze-aanpassen/betaalwijze-aanpassen"
+                    },
+                    new ManualItem
+                    {
+                        Name = "Inkooporder routine",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/inkooporder/inkooporder-routine/inkooporder-routine"
                     }
                 }
             };
@@ -1905,6 +1910,13 @@ namespace Hybrid_SaaS
                         Description = "."
                     }
                 },
+                ManualItems = new List<ManualItem>
+                {
+                    new ManualItem
+                    {
+                        Name = "Voorraad consignatie",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/voorraadbeheer/vooraad-consignatie/vooraad-consignatie"
+                    },
             };
             LinkDictionary[Link.Voortgang] = new LinkInfo
             {
