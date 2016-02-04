@@ -1916,7 +1916,8 @@ namespace Hybrid_SaaS
                     {
                         Name = "Voorraad consignatie",
                         Link = "http://hybridsaas.support/pages/support-site/modules/voorraadbeheer/vooraad-consignatie/vooraad-consignatie"
-                    },
+                    }
+                },
             };
             LinkDictionary[Link.Voortgang] = new LinkInfo
             {
