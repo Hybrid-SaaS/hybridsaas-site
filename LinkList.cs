@@ -927,7 +927,7 @@ namespace Hybrid_SaaS
                     }
                 }
             };
-            LinkDictionary[Link.Financieel] = new LinkInfo
+            /*  LinkDictionary[Link.Financieel] = new LinkInfo
             {
                 Type = LinkType.Module,
 
@@ -981,7 +981,8 @@ namespace Hybrid_SaaS
                         Description = "Met het Hybrid SaaS boekhoudpakket weet je zeker dat jou geen financiële verrassingen te wachten staan. Je kunt altijd zien hoe je ervoor staat door de balans, winst- en verliesrekening te openen. Zo kun je dit zelf aanpassen. Door op de verschillende posten van de rekeningen te klikken, krijg je alle informatie tot in detail te zien. Dit kan duidelijkheid scheppen of fouten aan het licht brengen. Is het tijd om de administratie naar de belasting te brengen? Dan kan jouw boekhouder met een eigen inlogcode de rekeningen controleren. Correcties aanbrengen kan direct in de rekening als dat nodig is. Daarna exporteer je het bestand naar Excel."
                     }
                 },
-            };
+            };  */
+
             LinkDictionary[Link.Gebouwbeheer] = new LinkInfo
             {
                 Type = LinkType.Module,
