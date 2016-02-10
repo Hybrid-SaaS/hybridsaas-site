@@ -2151,8 +2151,10 @@ namespace Hybrid_SaaS
                     {
                         Name = "Process werkbonnen",
                         Link = "http://hybridsaas.support/pages/support-site/modules/werkbonnen/proces-werkbonnen/proces-werkbonnen"
-                    },
+                    }
+                }
             };
+
             LinkDictionary[Link.GebruikerIntern] = new LinkInfo
             {
                 Name = "Gebruikers",
@@ -2597,10 +2599,7 @@ namespace Hybrid_SaaS
                 Url = "/prijslijst",
                 Name = "prijslijst"
             };
-            LinkDictionary[Link.prijslijstmodulesPdf] = new LinkInfo
-            {
-                Url = "http://www.hybridsaas.com/PDF/Modules.pdf",
-            };
+           
 
             LinkDictionary[Link.prijslijstpakkettenPdf] = new LinkInfo
             {
