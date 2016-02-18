@@ -2589,7 +2589,7 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.AlgemeneVoorwaardenPdf] = new LinkInfo
             { 
-                Url = "http://www.hybridsaas.com/PDF/Algemene voorwaarden Hybrid SaaS ICT BV.pdf",
+                Url = "http://www.hybridsaas.com/PDF/algemene-voorwaarden.pdf",
 
 
             };
