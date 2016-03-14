@@ -112,6 +112,7 @@ namespace Hybrid_SaaS
         FotoAdapter,
         Testomgeving,
         Omgeving,
+        TerminalServerFix,
 
 
 
@@ -2489,6 +2490,18 @@ namespace Hybrid_SaaS
                 Image = "/images/why_arrow.png",
                 Price = "",
                 LinkName = "Hybrid SaaS FotoAdapter",
+                ImageBig = "/images/advantage_img7.png",
+
+
+            };
+            LinkDictionary[Link.TerminalServerFix] = new LinkInfo
+            {
+                Url = "https://downloadsite.blob.core.windows.net/fix/TerminalServerFix.zip",
+                IntroText = "Download hier de Terminal Server Fix Hybrid SaaS",
+                Description = "Download hier de laatste versie van Terminal Server Fix van Hybrid SaaS",
+                Image = "/images/why_arrow.png",
+                Price = "",
+                LinkName = "Terminal Server Fix",
                 ImageBig = "/images/advantage_img7.png",
 
 
