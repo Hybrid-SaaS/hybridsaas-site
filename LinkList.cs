@@ -2460,7 +2460,7 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.OutlookAddDownload] = new LinkInfo
             { 
-                Url = "http://download.hybridsaas.com/install/office/outlook/",
+                Url = "http://downloadsite.blob.core.windows.net/office/outlook/setup.exe",
                 IntroText = "",
                 Description = "",
                 Image = "/images/why_arrow.png",
