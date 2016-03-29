@@ -1175,7 +1175,8 @@ namespace Hybrid_SaaS
                     {
                         Name = "Inkoopfacturen via SEPA",
                         Link = "http://hybridsaas.support/pages/support-site/modules/inkoopbeheer/inkoopfacturen-via-sepa/inkoopfacturen-via-sepa"
-                    }
+                    },
+
                 }
             };
             LinkDictionary[Link.KmRegistratie] = new LinkInfo
@@ -1367,7 +1368,16 @@ namespace Hybrid_SaaS
                     {
                         Name = "Inkooporder routine",
                         Link = "http://hybridsaas.support/pages/support-site/modules/inkooporder/inkooporder-routine/inkooporder-routine"
-                    }
+                    },
+                    new ManualItem
+                    {
+                        Name = "Inkooporder retour naar leverancier",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/inkooporder/inkooporder-retour-sturen-leverancier/inkooporder-retour-sturen-leverancier"
+                    },new ManualItem
+                    {
+                        Name = "Inkooporder retour via magazijn naar leverancier",
+                        Link = "http://hybridsaas.support/pages/support-site/modules/inkooporder/inkooporder-vanuit-magazijn-retour-sturen-leverancier/inkooporder-vanuit-magazijn-retour-sturen-leverancier"
+                    },
                 }
             };
             LinkDictionary[Link.Onderaannemer] = new LinkInfo
