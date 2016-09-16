@@ -2446,7 +2446,7 @@ namespace Hybrid_SaaS
 
             LinkDictionary[Link.WordAddDownload] = new LinkInfo
             { 
-                Url = "https://download.hybridsaas.com/install/word/setup.exe",
+                Url = "http://downloadsite.blob.core.windows.net/office/word/setup.exe",
                 IntroText = "Hybrid SaaS Word add-in",
                 Description = "",
                 Image = "/images/why_arrow.png",
