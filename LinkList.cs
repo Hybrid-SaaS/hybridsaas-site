@@ -2458,7 +2458,7 @@ namespace Hybrid_SaaS
             };
             LinkDictionary[Link.BrowserDownload] = new LinkInfo
             { 
-                Url = "http://download.hybridsaas.com/install/hybrid%20saas/Data/Hybrid%20SaaS%20installer.exe",
+                Url = "https://downloadsite.blob.core.windows.net/hybrid-saas-browser/setup.exe",
                 IntroText = "",
                 Description = "",
                 Image = "/images/why_arrow.png",
